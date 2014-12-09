@@ -1,22 +1,23 @@
 <?php
 
 /**
- * This is the model class for table "tipo_veda".
+ * This is the model class for table "categorias".
  *
- * The followings are the available columns in table 'tipo_veda':
+ * The followings are the available columns in table 'categorias':
  * @property integer $id
- * @property string $Nombre
- * @property string $fecha_creacion
+ * @property string $nombre
+ * @property string $fec_alta
+ * @property string $fec_act
  *
  * The followings are the available model relations:
- * @property Peces[] $peces
+ * @property Fotos[] $fotoses
  */
-class TipoVeda extends CActiveRecord
+class Categorias extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return TipoVeda the static model class
+	 * @return Categorias the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -28,7 +29,7 @@ class TipoVeda extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'tipo_veda';
+		return 'categorias';
 	}
 
 	/**
@@ -39,11 +40,11 @@ class TipoVeda extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Nombre, fecha_creacion', 'required'),
-			array('Nombre', 'length', 'max'=>45),
+			array('nombre, fec_alta, fec_act', 'required'),
+			array('nombre', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, Nombre, fecha_creacion', 'safe', 'on'=>'search'),
+			array('id, nombre, fec_alta, fec_act', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,7 +56,7 @@ class TipoVeda extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'peces' => array(self::HAS_MANY, 'Peces', 'tipo_veda_id'),
+			'fotoses' => array(self::HAS_MANY, 'Fotos', 'categoria_id'),
 		);
 	}
 
@@ -66,8 +67,9 @@ class TipoVeda extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'Nombre' => 'Nombre',
-			'fecha_creacion' => 'Fecha Creacion',
+			'nombre' => 'Nombre',
+			'fec_alta' => 'Fec Alta',
+			'fec_act' => 'Fec Act',
 		);
 	}
 
@@ -83,8 +85,9 @@ class TipoVeda extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('Nombre',$this->Nombre,true);
-		$criteria->compare('fecha_creacion',$this->fecha_creacion,true);
+		$criteria->compare('nombre',$this->nombre,true);
+		$criteria->compare('fec_alta',$this->fec_alta,true);
+		$criteria->compare('fec_act',$this->fec_act,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
