@@ -8,3 +8,4 @@ protected/config/main.php
 .buildpath
 .project
 .settings/
+protected/runtime/application*
