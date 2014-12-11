@@ -27,6 +27,11 @@
 class Usuarios extends CActiveRecord
 {
 	/**
+	 * @var string, Verifica si acepto terminos y condiciones
+	 */
+	public $acepto_terminos = false;
+
+	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
 	 * @return Usuarios the static model class
@@ -52,13 +57,48 @@ class Usuarios extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('usuario, nombre, apellido, correo, telefonos, passwd, salt, calle_y_numero, colonia, municipio, estado, cp, fec_alta, fec_act', 'required'),
-			array('confimo', 'numerical', 'integerOnly'=>true),
-			array('usuario, nombre, apellido, correo, telefonos, passwd, salt, calle_y_numero, colonia, municipio, estado, cp', 'length', 'max'=>255),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('id, usuario, nombre, apellido, correo, telefonos, passwd, salt, calle_y_numero, colonia, municipio, estado, cp, confimo, fec_alta, fec_act', 'safe', 'on'=>'search'),
+				array('usuario, nombre, apellido, correo, passwd, calle_y_numero, colonia, municipio, estado, cp, acepto_terminos', 'required'),
+				array('confimo', 'numerical', 'integerOnly'=>true),
+				array('usuario, nombre, apellido, correo, telefonos, passwd, salt, calle_y_numero, colonia, municipio, estado', 'length', 'max'=>255),
+				array('cp', 'length', 'min' => 5, 'max'=>5),
+				array('acepto_terminos', 'acepto_terminos_rule'),
+				array('correo', 'valida_correo'),
+				array('usuario', 'valida_usuario'),
+				// The following rule is used by search().
+				// Please remove those attributes that should not be searched.
+				array('id, usuario, nombre, apellido, correo, telefonos, calle_y_numero, colonia, municipio, estado, cp, confimo, fec_alta, fec_act', 'safe', 'on'=>'search'),
 		);
+	}
+
+	public function acepto_terminos_rule()
+	{
+		if ($this->acepto_terminos != '1')
+			$this->addError($this->acepto_terminos, 'Debes aceptar los términos y condiciones para proseguir');
+	}
+
+	public function valida_correo()
+	{
+		$regex = '/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/';
+		if (!preg_match($regex, $this->correo))
+			$this->addError($this->correo, 'El correo no parece válido. Favor de verificar');
+		else {		
+		$correo_existe = $this->model()->findByAttributes(array('correo'=>$this->correo));
+		if ($correo_existe != NULL)
+			$this->addError($this->correo, 'Ese correo ya fue registrado por alguien más, por favor intenta con otro.');
+		}
+	}
+	
+	public function valida_usuario()
+	{
+		if (strlen($this->usuario) <= 2)
+			$this->addError($this->usuario, 'El campo usuario debe tener al menos 3 caracteres.');
+		elseif (preg_match('/\s/',$this->usuario)) 
+			$this->addError($this->usuario, 'El campo usuario no debe tener espacios.');
+		else {
+			$usuario_existe = $this->model()->findByAttributes(array('usuario'=>$this->usuario));
+			if ($usuario_existe != NULL)
+				$this->addError($this->usuario, 'Este usuario ya fue registrado por alguien más, por favor intenta con otro.');
+		}
 	}
 
 	/**
@@ -69,7 +109,7 @@ class Usuarios extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'fotoses' => array(self::HAS_MANY, 'Fotos', 'usuario_id'),
+				'fotos' => array(self::HAS_MANY, 'Fotos', 'usuario_id'),
 		);
 	}
 
@@ -79,22 +119,23 @@ class Usuarios extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'usuario' => 'Usuario',
-			'nombre' => 'Nombre',
-			'apellido' => 'Apellido',
-			'correo' => 'Correo',
-			'telefonos' => 'Telefonos',
-			'passwd' => 'Passwd',
-			'salt' => 'Salt',
-			'calle_y_numero' => 'Calle Y Numero',
-			'colonia' => 'Colonia',
-			'municipio' => 'Municipio',
-			'estado' => 'Estado',
-			'cp' => 'Cp',
-			'confimo' => 'Confimo',
-			'fec_alta' => 'Fec Alta',
-			'fec_act' => 'Fec Act',
+				'id' => 'ID',
+				'usuario' => 'Usuario',
+				'nombre' => 'Nombre(s)',
+				'apellido' => 'Apellido',
+				'correo' => 'Correo',
+				'telefonos' => 'Teléfonos',
+				'passwd' => 'Contraseña',
+				'salt' => 'Salt',
+				'calle_y_numero' => 'Calle y número',
+				'colonia' => 'Colonia',
+				'municipio' => 'Municipio',
+				'estado' => 'Estado',
+				'cp' => 'Código postal',
+				'confimo' => 'Confimo',
+				'fec_alta' => 'Fecha de alta',
+				'fec_act' => 'Fecha de última actualización',
+				'acepto_terminos' => 'Acepto términos y condiciones'
 		);
 	}
 
@@ -127,7 +168,58 @@ class Usuarios extends CActiveRecord
 		$criteria->compare('fec_act',$this->fec_act,true);
 
 		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
+				'criteria'=>$criteria,
 		));
+	}
+
+	public static function estados()
+	{
+		return array
+		(
+				'Aguascalientes' => 'Aguascalientes',
+				'Baja California' => 'Baja California',
+				'Baja California Sur' => 'Baja California Sur',
+				'Campeche' => 'Campeche',
+				'Chiapas' => 'Chiapas',
+				'Chihuahua' => 'Chihuahua',
+				'Coahuila' => 'Coahuila',
+				'Colima' => 'Colima',
+				'Distrito Federal' => 'Distrito Federal',
+				'Durango' => 'Durango',
+				'Estado de México' => 'Estado de México',
+				'Guanajuato' => 'Guanajuato',
+				'Guerrero' => 'Guerrero',
+				'Hidalgo' => 'Hidalgo',
+				'Jalisco' => 'Jalisco',
+				'Michoacán' => 'Michoacán',
+				'Morelos' => 'Morelos',
+				'Nayarit' => 'Nayarit',
+				'Nuevo León' => 'Nuevo León',
+				'Oaxaca' => 'Oaxaca',
+				'Puebla' => 'Puebla',
+				'Querétaro' => 'Querétaro',
+				'Quintana Roo' => 'Quintana Roo',
+				'San Luis Potosí' => 'San Luis Potosí',
+				'Sinaloa' => 'Sinaloa',
+				'Sonora' => 'Sonora',
+				'Tabasco' => 'Tabasco',
+				'Tamaulipas' => 'Tamaulipas',
+				'Tlaxcala' => 'Tlaxcala',
+				'Veracruz' => 'Veracruz',
+				'Yucatán' => 'Yucatán',
+				'Zacatecas' => 'Zacatecas'
+		);
+	}
+
+	public function send_mail()
+	{
+		$para = $this->correo;
+		$titulo = 'Registro para el '.Yii::app()->name;
+		$mensaje = "<br><br>".$this->nombre.' '.$this->apellido.",";
+		$mensaje.= "<br><br>Gracias por completar el registro, para poder acceder necesitas confirmar tu cuenta en el siguiente ";
+		$mensaje.= "<a href=\"".Yii::app()->baseUrl."/usuarios/confirmo?id=".$this->id."&fec_alta=".urlencode($this->fec_alta)."\" target=\"_blank\">enlace</a>.";
+		$cabeceras = "Content-type: text/html; charset=utf-8"."\r\n";
+		$cabeceras.= "From: noreply@conabio.gob.mx"."\r\n";
+		mail($para, $titulo, $mensaje, $cabeceras);
 	}
 }

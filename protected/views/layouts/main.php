@@ -227,7 +227,7 @@ input.gsc-search-button {
 													<?php echo CHtml::link(CHtml::image(Yii::app()->request->baseUrl."/imagenes/aplicacion/img_pecesComerciales.png", "Peces", array("width" => "665px;")), Yii::app()->request->baseUrl); ?>
 													</td>
 												<td width="320" bgcolor="#D2CEB9"><?php 
-												$this->renderPartial('/peces/_buscador');
+												//$this->renderPartial('/peces/_buscador');
 												?>
 												</td>
 											</tr>

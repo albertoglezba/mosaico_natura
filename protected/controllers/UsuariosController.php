@@ -14,8 +14,8 @@ class UsuariosController extends Controller
 	public function filters()
 	{
 		return array(
-			'accessControl', // perform access control for CRUD operations
-			'postOnly + delete', // we only allow deletion via POST request
+				'accessControl', // perform access control for CRUD operations
+				'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
 
@@ -27,21 +27,21 @@ class UsuariosController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
-			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
+				array('allow',  // allow all users to perform 'index' and 'view' actions
+						'actions'=>array('create', 'confirmo'),
+						'users'=>array('*'),
+				),
+				array('allow', // allow authenticated user to perform 'create' and 'update' actions
+						'actions'=>array('view','update'),
+						'users'=>array('@'),
+				),
+				array('allow', // allow admin user to perform 'admin' and 'delete' actions
+						'actions'=>array('index','view','admin','delete'),
+						'users'=>array('admin'),
+				),
+				array('deny',  // deny all users
+						'users'=>array('*'),
+				),
 		);
 	}
 
@@ -52,7 +52,7 @@ class UsuariosController extends Controller
 	public function actionView($id)
 	{
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+				'model'=>$this->loadModel($id),
 		));
 	}
 
@@ -70,12 +70,17 @@ class UsuariosController extends Controller
 		if(isset($_POST['Usuarios']))
 		{
 			$model->attributes=$_POST['Usuarios'];
+			$model->fec_alta=self::fechaAlta();
+
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			{
+				$model->send_mail();
+				$this->redirect(array('/site/confirma'));
+			}
 		}
 
 		$this->render('create',array(
-			'model'=>$model,
+				'model'=>$model,
 		));
 	}
 
@@ -86,21 +91,26 @@ class UsuariosController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
-		$model=$this->loadModel($id);
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Usuarios']))
+		if (Yii::app()->user->id_usuario==$id)
 		{
-			$model->attributes=$_POST['Usuarios'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
-		}
+			$model=$this->loadModel($id);
 
-		$this->render('update',array(
-			'model'=>$model,
-		));
+			// Uncomment the following line if AJAX validation is needed
+			// $this->performAjaxValidation($model);
+
+			if(isset($_POST['Usuarios']))
+			{
+				$model->attributes=$_POST['Usuarios'];
+				if($model->save())
+					$this->redirect(array('view','id'=>$model->id));
+			}
+
+			$this->render('update',array(
+					'model'=>$model,
+			));
+		} else {
+			throw new CHttpException(404,'No tienes permisos para realizar esa acción.');
+		}
 	}
 
 	/**
@@ -110,11 +120,15 @@ class UsuariosController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+		if (Yii::app()->user->id_usuario==$id)
+		{
+			$this->loadModel($id)->delete();
 
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+			if(!isset($_GET['ajax']))
+				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		} else
+			throw new CHttpException(404,'No tienes permisos para realizar esa acción.');
 	}
 
 	/**
@@ -124,7 +138,7 @@ class UsuariosController extends Controller
 	{
 		$dataProvider=new CActiveDataProvider('Usuarios');
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+				'dataProvider'=>$dataProvider,
 		));
 	}
 
@@ -139,8 +153,28 @@ class UsuariosController extends Controller
 			$model->attributes=$_GET['Usuarios'];
 
 		$this->render('admin',array(
-			'model'=>$model,
+				'model'=>$model,
 		));
+	}
+	
+	public function actionConfirmo()
+	{
+		if (isset($_GET['id']) && !empty($_GET['id']) && isset($_GET['fec_alta']) && !empty($_GET['fec_alta']))
+		{
+			$usuario = Usuarios::model()->findByPk($_GET['id']);
+			if ($usuario == NULL)
+				throw new CHttpException(404,'Hubo un error en la petición. Por favor cierra esta ventana e inténtalo de nuevo.');
+			elseif ($usuario->fec_alta == $_GET['fec_alta'])
+			{
+				$usuario->confirmo = 1;
+				$usuario->save();	
+				$this->render('index',array(
+						'situacion'=>'Tu cuenta ha sido confirmada.'
+				));
+			} else
+				throw new CHttpException(404,'Hubo un error en la petición. Por favor cierra esta ventana e inténtalo de nuevo.');
+		} else
+			throw new CHttpException(404,'Hubo un error en la petición. Por favor cierra esta ventana e inténtalo de nuevo.');
 	}
 
 	/**

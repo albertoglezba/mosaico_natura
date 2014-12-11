@@ -2,11 +2,6 @@
 /* @var $this SiteController */
 /* @var $model LoginForm */
 /* @var $form CActiveForm  */
-/*
-$this->pageTitle=Yii::app()->name . ' - Acceso';
-$this->breadcrumbs=array(
-	'Login',
-);*/
 ?>
 
 <span style='color:#BD5D28'>
@@ -14,12 +9,11 @@ $this->breadcrumbs=array(
 if (isset($_GET['situacion']))
 	echo $_GET['situacion'];  
 ?>
-
 </span>
 
-<h1>Registro de actividades</h1>
+<h1>Ingresa a tu cuenta</h1>
 
-<p>Para crear, actualizar o borrar un evento es necesario <?php 
+<p>Para subir tus fotograf&iacute;as es necesario <?php 
 			echo CHtml::link('registrarse.',array('/usuarios/create'), array('style'=>'color:#BD5D28'));
 			?></p>
 
