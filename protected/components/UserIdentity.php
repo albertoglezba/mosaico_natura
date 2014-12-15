@@ -33,7 +33,7 @@ class UserIdentity extends CUserIdentity
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
 			elseif ($users[$this->username]===$this->password)
 			{
-				if ($credenciales->confimo == 0)
+				if ($credenciales->confirmo == 0)
 					$this->errorCode=self::ERROR_UNKNOWN_IDENTITY;
 				else
 					$this->errorCode=self::ERROR_NONE;

@@ -156,25 +156,27 @@ class UsuariosController extends Controller
 				'model'=>$model,
 		));
 	}
-	
+
 	public function actionConfirmo()
 	{
 		if (isset($_GET['id']) && !empty($_GET['id']) && isset($_GET['fec_alta']) && !empty($_GET['fec_alta']))
 		{
 			$usuario = Usuarios::model()->findByPk($_GET['id']);
 			if ($usuario == NULL)
-				throw new CHttpException(404,'Hubo un error en la petición. Por favor cierra esta ventana e inténtalo de nuevo.');
+				throw new CHttpException(404,'Hubo un error en la petición.');
 			elseif ($usuario->fec_alta == $_GET['fec_alta'])
 			{
-				$usuario->confirmo = 1;
-				$usuario->save();	
-				$this->render('index',array(
-						'situacion'=>'Tu cuenta ha sido confirmada.'
-				));
+				if ($usuario->confirmo == 1)
+					throw new CHttpException(404,'Tu cuenta ya ha sido confirmada, intenta ingresar con tus credenciales.');
+				else {
+					$usuario->attributes = array('confirmo'=>1);
+					if ($usuario->save())
+						$this->redirect(array('/site/login?situacion='.urlencode('Tu cuenta ha sido confirmada.')));
+				}
 			} else
-				throw new CHttpException(404,'Hubo un error en la petición. Por favor cierra esta ventana e inténtalo de nuevo.');
+				throw new CHttpException(404,'Hubo un error en la petición.');
 		} else
-			throw new CHttpException(404,'Hubo un error en la petición. Por favor cierra esta ventana e inténtalo de nuevo.');
+			throw new CHttpException(404,'Hubo un error en la petición.');
 	}
 
 	/**

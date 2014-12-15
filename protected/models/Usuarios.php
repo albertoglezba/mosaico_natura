@@ -17,7 +17,7 @@
  * @property string $municipio
  * @property string $estado
  * @property string $cp
- * @property integer $confimo
+ * @property integer $confirmo
  * @property string $fec_alta
  * @property string $fec_act
  *
@@ -57,16 +57,17 @@ class Usuarios extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-				array('usuario, nombre, apellido, correo, passwd, calle_y_numero, colonia, municipio, estado, cp, acepto_terminos', 'required'),
-				array('confimo', 'numerical', 'integerOnly'=>true),
+				array('usuario, nombre, apellido, correo, passwd, calle_y_numero, colonia, municipio, estado, cp', 'required'),
+				array('acepto_terminos', 'required', 'on'=>'insert'),
+				array('confirmo', 'numerical', 'integerOnly'=>true),
 				array('usuario, nombre, apellido, correo, telefonos, passwd, salt, calle_y_numero, colonia, municipio, estado', 'length', 'max'=>255),
 				array('cp', 'length', 'min' => 5, 'max'=>5),
-				array('acepto_terminos', 'acepto_terminos_rule'),
-				array('correo', 'valida_correo'),
-				array('usuario', 'valida_usuario'),
+				array('acepto_terminos', 'acepto_terminos_rule', 'on'=>'insert'),
+				array('correo', 'valida_correo', 'on'=>'insert'),
+				array('usuario', 'valida_usuario', 'on'=>'insert'),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.
-				array('id, usuario, nombre, apellido, correo, telefonos, calle_y_numero, colonia, municipio, estado, cp, confimo, fec_alta, fec_act', 'safe', 'on'=>'search'),
+				array('id, usuario, nombre, apellido, correo, telefonos, calle_y_numero, colonia, municipio, estado, cp, confirmo, fec_alta, fec_act', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -128,11 +129,11 @@ class Usuarios extends CActiveRecord
 				'passwd' => 'Contraseña',
 				'salt' => 'Salt',
 				'calle_y_numero' => 'Calle y número',
-				'colonia' => 'Colonia',
-				'municipio' => 'Municipio',
+				'colonia' => 'Colonia / Asentamiento',
+				'municipio' => 'Dlegación / Municipio',
 				'estado' => 'Estado',
 				'cp' => 'Código postal',
-				'confimo' => 'Confimo',
+				'confirmo' => 'Confirmo',
 				'fec_alta' => 'Fecha de alta',
 				'fec_act' => 'Fecha de última actualización',
 				'acepto_terminos' => 'Acepto términos y condiciones'
@@ -163,7 +164,7 @@ class Usuarios extends CActiveRecord
 		$criteria->compare('municipio',$this->municipio,true);
 		$criteria->compare('estado',$this->estado,true);
 		$criteria->compare('cp',$this->cp,true);
-		$criteria->compare('confimo',$this->confimo);
+		$criteria->compare('confirmo',$this->confirmo);
 		$criteria->compare('fec_alta',$this->fec_alta,true);
 		$criteria->compare('fec_act',$this->fec_act,true);
 
