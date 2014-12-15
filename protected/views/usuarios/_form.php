@@ -85,6 +85,7 @@
 		<?php //echo $form->error($model,'cp'); ?>
 	</div>
 
+	<?php if ($model->isNewRecord) { ?>
 	<div class="row">
 		<iframe id="tcIframe" width="100%" height="550"
 			src="<?php echo Yii::app()->getBaseUrl(false); ?>/index.php/site/terminos_y_condiciones"></iframe>
@@ -94,12 +95,20 @@
 		<?php echo $form->labelEx($model,'acepto_terminos'); ?>
 		<?php echo $form->checkBox($model,'acepto_terminos'); ?>
 	</div>
+	<?php } ?>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear cuenta' : 'Guardar cambios'); ?>
 	</div>
 
 	<?php $this->endWidget(); ?>
-
+	
+	<?php if (!$model->isNewRecord) { ?>
+	<form
+		action="<?php echo Yii::app()->getBaseUrl(false); ?>/index.php/usuarios/delete" method="POST">
+		<?php echo CHtml::submitButton('Borra tu cuenta', array('confirm'=>'¿Estás seguro de querer eliminar tu cuenta?')); ?>
+		<input type="hidden" name="id" value="<?php echo $model->id; ?>">
+	</form>
+	<?php } ?>
 </div>
 <!-- form -->

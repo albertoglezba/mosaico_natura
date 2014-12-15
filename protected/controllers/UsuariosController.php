@@ -32,12 +32,12 @@ class UsuariosController extends Controller
 						'users'=>array('*'),
 				),
 				array('allow', // allow authenticated user to perform 'create' and 'update' actions
-						'actions'=>array('view','update'),
+						'actions'=>array('view','update', 'delete'),
 						'users'=>array('@'),
 				),
 				array('allow', // allow admin user to perform 'admin' and 'delete' actions
-						'actions'=>array('index','view','admin','delete'),
-						'users'=>array('admin'),
+						'actions'=>array('index','view','admin'),
+						'users'=>array('calonso'),
 				),
 				array('deny',  // deny all users
 						'users'=>array('*'),
@@ -118,15 +118,16 @@ class UsuariosController extends Controller
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
 	 */
-	public function actionDelete($id)
+	public function actionDelete()
 	{
-		if (Yii::app()->user->id_usuario==$id)
+		if (Yii::app()->user->id_usuario==$_POST["id"])
 		{
-			$this->loadModel($id)->delete();
+			Yii::app()->user->logout();
+			$this->loadModel($_POST["id"])->delete();
 
-			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+			//if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 			if(!isset($_GET['ajax']))
-				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+				$this->redirect(Yii::app()->homeUrl);
 		} else
 			throw new CHttpException(404,'No tienes permisos para realizar esa acción.');
 	}
