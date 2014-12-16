@@ -30,6 +30,7 @@ class Usuarios extends CActiveRecord
 	 * @var string, Verifica si acepto terminos y condiciones
 	 */
 	public $acepto_terminos = false;
+	public $confirma_passwd = "";
 
 	/**
 	 * Returns the static model of the specified AR class.
@@ -57,17 +58,19 @@ class Usuarios extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-				array('usuario, nombre, apellido, correo, passwd, calle_y_numero, colonia, municipio, estado, cp', 'required'),
-				array('acepto_terminos', 'required', 'on'=>'insert'),
-				array('confirmo', 'numerical', 'integerOnly'=>true),
+				array('usuario, nombre, apellido, edad, correo, passwd, calle_y_numero, colonia, municipio, estado, cp', 'required'),
+				array('acepto_terminos, confirma_passwd', 'required', 'on'=>'insert'),
+				array('confirmo, edad', 'numerical', 'integerOnly'=>true),
 				array('usuario, nombre, apellido, correo, telefonos, passwd, salt, calle_y_numero, colonia, municipio, estado', 'length', 'max'=>255),
 				array('cp', 'length', 'min' => 5, 'max'=>5),
 				array('acepto_terminos', 'acepto_terminos_rule', 'on'=>'insert'),
 				array('correo', 'valida_correo', 'on'=>'insert'),
 				array('usuario', 'valida_usuario', 'on'=>'insert'),
+				array('edad', 'valida_edad', 'on'=>'insert'),
+				array('confirma_passwd', 'valida_passwd', 'on'=>'insert'),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.
-				array('id, usuario, nombre, apellido, correo, telefonos, calle_y_numero, colonia, municipio, estado, cp, confirmo, fec_alta, fec_act', 'safe', 'on'=>'search'),
+				array('id, usuario, nombre, apellido, edad, correo, telefonos, calle_y_numero, colonia, municipio, estado, cp, confirmo, fec_alta, fec_act', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -101,6 +104,26 @@ class Usuarios extends CActiveRecord
 				$this->addError($this->usuario, 'Este usuario ya fue registrado por alguien más, por favor intenta con otro.');
 		}
 	}
+	
+	public function valida_edad()
+	{
+		if ($this->edad < 14)
+		{
+			$this->addError($this->edad, 'Lo sentimos, la edad mínima para participar es 14 años.');
+			return false;
+		}
+		if ($this->edad < 14)
+		{
+			$this->addError($this->edad, 'Lo sentimos, la edad máxima para participar es 130 años.');
+			return false;
+		}			
+	}
+	
+	public function valida_passwd()
+	{
+		if ($this->passwd != $this->confirma_passwd)
+			$this->addError($this->edad, 'La contraseñ no coincide con la confirmación.');
+	}
 
 	/**
 	 * @return array relational rules.
@@ -124,6 +147,7 @@ class Usuarios extends CActiveRecord
 				'usuario' => 'Usuario',
 				'nombre' => 'Nombre(s)',
 				'apellido' => 'Apellido',
+				'eadad' => 'Edad',
 				'correo' => 'Correo',
 				'telefonos' => 'Teléfonos',
 				'passwd' => 'Contraseña',
@@ -136,7 +160,8 @@ class Usuarios extends CActiveRecord
 				'confirmo' => 'Confirmo',
 				'fec_alta' => 'Fecha de alta',
 				'fec_act' => 'Fecha de última actualización',
-				'acepto_terminos' => 'Acepto términos y condiciones'
+				'acepto_terminos' => 'Acepto términos y condiciones',
+				'confirma_passwd' => 'Confirma contraseña'
 		);
 	}
 
@@ -155,6 +180,7 @@ class Usuarios extends CActiveRecord
 		$criteria->compare('usuario',$this->usuario,true);
 		$criteria->compare('nombre',$this->nombre,true);
 		$criteria->compare('apellido',$this->apellido,true);
+		$criteria->compare('edad',$this->edad);
 		$criteria->compare('correo',$this->correo,true);
 		$criteria->compare('telefonos',$this->telefonos,true);
 		$criteria->compare('passwd',$this->passwd,true);
@@ -222,5 +248,18 @@ class Usuarios extends CActiveRecord
 		$cabeceras = "Content-type: text/html; charset=utf-8"."\r\n";
 		$cabeceras.= "From: noreply@conabio.gob.mx"."\r\n";
 		mail($para, $titulo, $mensaje, $cabeceras);
+	}
+	
+	/**
+	 * Da las categorias que ya no puede tomar (una foto por categoria)
+	 */
+	public function usuarios_categorias()
+	{
+		$categorias = array();
+		foreach ($this->fotos as $f)
+		{
+			array_push($categorias, $f->categoria->nombre);		
+		}		
+		return $categorias;
 	}
 }

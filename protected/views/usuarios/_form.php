@@ -29,26 +29,6 @@
 		<?php //echo $form->error($model,'apellido'); ?>
 	</div>
 
-	<?php if ($model->isNewRecord) { ?>
-	<div class="row">
-		<?php echo $form->labelEx($model,'correo'); ?>
-		<?php echo $form->textField($model,'correo',array('size'=>60,'maxlength'=>255)); ?>
-		<?php //echo $form->error($model,'correo'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'usuario'); ?>
-		<?php echo $form->textField($model,'usuario',array('size'=>60,'maxlength'=>255, 'autocomplete'=>'off')); ?>
-		<?php //echo $form->error($model,'usuario'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'passwd'); ?>
-		<?php echo $form->passwordField($model,'passwd',array('size'=>60,'maxlength'=>255)); ?>
-		<?php //echo $form->error($model,'passwd'); ?>
-	</div>
-	<?php } ?>
-
 	<div class="row">
 		<?php echo $form->labelEx($model,'telefonos'); ?>
 		<?php echo $form->textField($model,'telefonos',array('size'=>60,'maxlength'=>255)); ?>
@@ -85,7 +65,39 @@
 		<?php //echo $form->error($model,'cp'); ?>
 	</div>
 
+	<br><b>Los siguientes campos no pueden ser modificados una vez creado el registro.</b>
 	<?php if ($model->isNewRecord) { ?>
+	<div class="row">
+		<?php echo $form->labelEx($model,'edad'); ?>
+		<?php echo $form->textField($model,'edad',array('size'=>2,'maxlength'=>2)); ?>
+		<br>(Dependiendo tu edad es la categoria en la que ingresas; 14 a 17 a&ntilde;os para categoria juvenil y de 18 a&ntilde;os en adelante para profesionales)
+		<?php //echo $form->error($model,'apellido'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'correo'); ?>
+		<?php echo $form->textField($model,'correo',array('size'=>60,'maxlength'=>255)); ?>
+		<?php //echo $form->error($model,'correo'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'usuario'); ?>
+		<?php echo $form->textField($model,'usuario',array('size'=>60,'maxlength'=>255, 'autocomplete'=>'off')); ?>
+		<?php //echo $form->error($model,'usuario'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'passwd'); ?>
+		<?php echo $form->passwordField($model,'passwd',array('size'=>60,'maxlength'=>255)); ?>
+		<?php //echo $form->error($model,'passwd'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'confirma_passwd'); ?>
+		<?php echo $form->passwordField($model,'confirma_passwd',array('size'=>60,'maxlength'=>255)); ?>
+		<?php //echo $form->error($model,'passwd'); ?>
+	</div>
+	
 	<div class="row">
 		<iframe id="tcIframe" width="100%" height="550"
 			src="<?php echo Yii::app()->getBaseUrl(false); ?>/index.php/site/terminos_y_condiciones"></iframe>

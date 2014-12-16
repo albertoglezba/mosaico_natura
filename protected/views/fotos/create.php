@@ -1,18 +1,9 @@
 <?php
 /* @var $this FotosController */
 /* @var $model Fotos */
-
-$this->breadcrumbs=array(
-	'Fotoses'=>array('index'),
-	'Create',
-);
-
-$this->menu=array(
-	array('label'=>'List Fotos', 'url'=>array('index')),
-	array('label'=>'Manage Fotos', 'url'=>array('admin')),
-);
 ?>
 
-<h1>Create Fotos</h1>
+<h1>Sube una fotografía</h1>
+(Recuerda que solo puedes subir una por categoria)
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

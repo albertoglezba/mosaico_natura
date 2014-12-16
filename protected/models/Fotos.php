@@ -20,6 +20,8 @@
  */
 class Fotos extends CActiveRecord
 {
+	public $fotografia;
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -46,13 +48,54 @@ class Fotos extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombre_original, nombre, size, type, fec_alta, fec_act, usuario_id, categoria_id', 'required'),
-			array('usuario_id, categoria_id', 'numerical', 'integerOnly'=>true),
-			array('nombre_original, nombre, size, type', 'length', 'max'=>255),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('id, nombre_original, nombre, size, type, fec_alta, fec_act, usuario_id, categoria_id', 'safe', 'on'=>'search'),
+				array('categoria_id', 'required'),
+				array('usuario_id, categoria_id', 'numerical', 'integerOnly'=>true),
+				array('nombre_original, nombre, size, type, ruta', 'length', 'max'=>255),
+				array('fotografia', 'file', 'types'=>'jpg, gif, png', 'maxSize'=>1024*1024*10),
+				// The following rule is used by search().
+				// Please remove those attributes that should not be searched.
+				array('id, nombre_original, nombre, ruta, size, type, fec_alta, fec_act, usuario_id, categoria_id', 'safe', 'on'=>'search'),
 		);
+	}
+	
+	/**
+	 * (non-PHPdoc)
+	 * @see CActiveRecord::beforeSave()
+	 */
+	public function beforeSave()
+	{
+		$foto = CUploadedFile::getInstance($this, 'fotografia');		
+		$this->size = $foto->getSize();
+		$this->type = $foto->getType();
+		$this->nombre_original = $foto->getName();
+		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+		$this->nombre = date("Y-m-d_H-i-s")."_".$usuario->id."_".$this->nombre_original;
+		$this->fec_alta = date("Y-m-d_H-i-s");
+
+		$acentos = array('Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',
+				'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ñ'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U',
+				'Ú'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss', 'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a', 'æ'=>'a', 'ç'=>'c',
+				'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o',
+				'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y');
+		
+		$categoria = strtr($this->categoria->nombre, $acentos);
+		$categoria = str_replace(" ", "_", $categoria);
+		$categoria = strtolower($categoria);
+		
+		if($usuario->edad > 17)
+		{
+			$ruta = Yii::app()->request->baseUrl.'/imagenes/fotografias/profesional/'.$categoria;
+			if (!file_exists($ruta))
+				mkdir($ruta, 0755, true);
+			$this->ruta = $ruta;
+		}
+		else 
+		{
+			$ruta = Yii::app()->request->baseUrl.'/imagenes/fotografias/juvenil/'.$categoria;
+			if (!file_exists($ruta))
+				mkdir($ruta, 0755, true);
+			$this->ruta = $ruta;
+		}
 	}
 
 	/**
@@ -63,8 +106,8 @@ class Fotos extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'usuario' => array(self::BELONGS_TO, 'Usuarios', 'usuario_id'),
-			'categoria' => array(self::BELONGS_TO, 'Categorias', 'categoria_id'),
+				'usuario' => array(self::BELONGS_TO, 'Usuarios', 'usuario_id'),
+				'categoria' => array(self::BELONGS_TO, 'Categorias', 'categoria_id'),
 		);
 	}
 
@@ -74,15 +117,16 @@ class Fotos extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'nombre_original' => 'Nombre Original',
-			'nombre' => 'Nombre',
-			'size' => 'Size',
-			'type' => 'Type',
-			'fec_alta' => 'Fec Alta',
-			'fec_act' => 'Fec Act',
-			'usuario_id' => 'Usuario',
-			'categoria_id' => 'Categoria',
+				'id' => 'ID',
+				'nombre_original' => 'Nombre Original',
+				'nombre' => 'Nombre',
+				'size' => 'Size',
+				'type' => 'Type',
+				'fec_alta' => 'Fec Alta',
+				'fec_act' => 'Fec Act',
+				'usuario_id' => 'Usuario',
+				'categoria_id' => 'Categoria',
+				'fotografia' => 'Fotografía'
 		);
 	}
 
@@ -108,7 +152,36 @@ class Fotos extends CActiveRecord
 		$criteria->compare('categoria_id',$this->categoria_id);
 
 		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
+				'criteria'=>$criteria,
 		));
+	}
+
+	/**
+	 * Muestra las categorias que deben de ir
+	 */
+	public function categorias($form=NULL, $model=NULL)
+	{
+		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+		$categorias_usuario = $usuario->usuarios_categorias();
+		
+		if (count($categorias_usuario) > 0)
+		{
+			$lista = "<select>";
+			$lista.= "<option>--Selecciona---</option>";
+			$categorias = Categorias::model()->findAll();
+
+			foreach ($categorias as $c)
+			{
+				if (in_array($c->nombre, $categorias_usuario))
+					$lista.= "<option>".$c->nombre."</option>";
+				else
+					$lista.= "<option disabled>".$c->nombre."</option>";
+			}
+			$lista.= "</select>";
+		} else
+			$lista = $form->dropDownList($model, 'categoria_id', 
+					CHtml::listData(Categorias::model()->findAll(), 'id', 'nombre'),
+					array('prompt'=>'---Selecciona---'));
+		return $lista;	
 	}
 }
