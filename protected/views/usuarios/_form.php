@@ -65,15 +65,18 @@
 		<?php //echo $form->error($model,'cp'); ?>
 	</div>
 
-	<br><b>Los siguientes campos no pueden ser modificados una vez creado el registro.</b>
 	<?php if ($model->isNewRecord) { ?>
+	<br> <b>Los siguientes campos no pueden ser modificados una vez creado
+		el registro.</b>
 	<div class="row">
 		<?php echo $form->labelEx($model,'edad'); ?>
 		<?php echo $form->textField($model,'edad',array('size'=>2,'maxlength'=>2)); ?>
-		<br>(Dependiendo tu edad es la categoria en la que ingresas; 14 a 17 a&ntilde;os para categoria juvenil y de 18 a&ntilde;os en adelante para profesionales)
+		<br>(Dependiendo tu edad es la categoria en la que ingresas; 14 a 17
+		a&ntilde;os para categoria juvenil y de 18 a&ntilde;os en adelante
+		para profesionales)
 		<?php //echo $form->error($model,'apellido'); ?>
 	</div>
-	
+
 	<div class="row">
 		<?php echo $form->labelEx($model,'correo'); ?>
 		<?php echo $form->textField($model,'correo',array('size'=>60,'maxlength'=>255)); ?>
@@ -91,13 +94,13 @@
 		<?php echo $form->passwordField($model,'passwd',array('size'=>60,'maxlength'=>255)); ?>
 		<?php //echo $form->error($model,'passwd'); ?>
 	</div>
-	
+
 	<div class="row">
 		<?php echo $form->labelEx($model,'confirma_passwd'); ?>
 		<?php echo $form->passwordField($model,'confirma_passwd',array('size'=>60,'maxlength'=>255)); ?>
 		<?php //echo $form->error($model,'passwd'); ?>
 	</div>
-	
+
 	<div class="row">
 		<iframe id="tcIframe" width="100%" height="550"
 			src="<?php echo Yii::app()->getBaseUrl(false); ?>/index.php/site/terminos_y_condiciones"></iframe>
@@ -107,6 +110,19 @@
 		<?php echo $form->labelEx($model,'acepto_terminos'); ?>
 		<?php echo $form->checkBox($model,'acepto_terminos'); ?>
 	</div>
+
+	<?php } else { //pone la cinfirmacion del passwd ?> 
+	<div class="row">
+		<?php echo $form->labelEx($model,'passwd'); ?>
+		<?php echo $form->passwordField($model,'passwd',array('size'=>60,'maxlength'=>255)); ?>
+		<?php //echo $form->error($model,'passwd'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'confirma_passwd'); ?>
+		<?php echo $form->passwordField($model,'confirma_passwd',array('size'=>60,'maxlength'=>255, 'value' => $model->passwd)); ?>
+		<?php //echo $form->error($model,'passwd'); ?>
+	</div>
 	<?php } ?>
 
 	<div class="row buttons">
@@ -114,10 +130,11 @@
 	</div>
 
 	<?php $this->endWidget(); ?>
-	
+
 	<?php if (!$model->isNewRecord) { ?>
 	<form
-		action="<?php echo Yii::app()->getBaseUrl(false); ?>/index.php/usuarios/delete" method="POST">
+		action="<?php echo Yii::app()->getBaseUrl(false); ?>/index.php/usuarios/delete"
+		method="POST">
 		<?php echo CHtml::submitButton('Borra tu cuenta', array('confirm'=>'¿Estás seguro de querer eliminar tu cuenta?')); ?>
 		<input type="hidden" name="id" value="<?php echo $model->id; ?>">
 	</form>

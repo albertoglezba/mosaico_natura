@@ -67,7 +67,7 @@ class Usuarios extends CActiveRecord
 				array('correo', 'valida_correo', 'on'=>'insert'),
 				array('usuario', 'valida_usuario', 'on'=>'insert'),
 				array('edad', 'valida_edad', 'on'=>'insert'),
-				array('confirma_passwd', 'valida_passwd', 'on'=>'insert'),
+				array('confirma_passwd', 'valida_passwd'),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.
 				array('id, usuario, nombre, apellido, edad, correo, telefonos, calle_y_numero, colonia, municipio, estado, cp, confirmo, fec_alta, fec_act', 'safe', 'on'=>'search'),
@@ -122,7 +122,7 @@ class Usuarios extends CActiveRecord
 	public function valida_passwd()
 	{
 		if ($this->passwd != $this->confirma_passwd)
-			$this->addError($this->edad, 'La contraseñ no coincide con la confirmación.');
+			$this->addError($this->edad, 'La contraseña no coincide con la confirmación.');
 	}
 
 	/**
@@ -258,7 +258,7 @@ class Usuarios extends CActiveRecord
 		$categorias = array();
 		foreach ($this->fotos as $f)
 		{
-			array_push($categorias, $f->categoria->nombre);		
+			array_push($categorias, $f->categoria->id);		
 		}		
 		return $categorias;
 	}

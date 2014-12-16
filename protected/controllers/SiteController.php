@@ -96,7 +96,7 @@ class SiteController extends Controller
 			if($model->validate() && $model->login())
 			{
 				$this->setIdUsuario(Yii::app()->user->id);
-				$this->redirect(Yii::app()->homeUrl);
+				$this->redirect(Yii::app()->user->returnUrl);
 			}
 		}
 

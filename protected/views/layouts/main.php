@@ -4,7 +4,7 @@
 <!-- InstanceBegin template="/Templates/usos_alimentacion.dwt" codeOutsideHTMLIsLocked="false" -->
 <HEAD>
 <!-- InstanceBeginEditable name="doctitle" -->
-<TITLE>Peces comestibles</TITLE>
+<TITLE><?php echo Yii::app()->name; ?></TITLE>
 <meta name="keywords" content="peces, alimentacion;, uso">
 <!-- InstanceEndEditable -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

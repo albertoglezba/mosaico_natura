@@ -28,7 +28,7 @@ class UsuariosController extends Controller
 	{
 		return array(
 				array('allow',  // allow all users to perform 'index' and 'view' actions
-						'actions'=>array('create', 'confirmo'),
+						'actions'=>array('create', 'confirmo', 'reset_passwd'),
 						'users'=>array('*'),
 				),
 				array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -178,6 +178,11 @@ class UsuariosController extends Controller
 				throw new CHttpException(404,'Hubo un error en la petición.');
 		} else
 			throw new CHttpException(404,'Hubo un error en la petición.');
+	}
+	
+	public function actionReset_passwd()
+	{
+		
 	}
 
 	/**

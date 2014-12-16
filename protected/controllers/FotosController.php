@@ -9,13 +9,32 @@ class FotosController extends Controller
 	public $layout='//layouts/column2';
 
 	/**
+	 * Declares class-based actions.
+	 */
+	public function actions()
+	{
+		return array(
+				// captcha action renders the CAPTCHA image displayed on the contact page
+				'captcha'=>array(
+						'class'=>'CCaptchaAction',
+						'backColor'=>0xFFFFFF,
+				),
+				// page action renders "static" pages stored under 'protected/views/site/pages'
+				// They can be accessed via: index.php?r=site/page&view=FileName
+				'page'=>array(
+						'class'=>'CViewAction',
+				),
+		);
+	}
+	
+	/**
 	 * @return array action filters
 	 */
 	public function filters()
 	{
 		return array(
-			'accessControl', // perform access control for CRUD operations
-			'postOnly + delete', // we only allow deletion via POST request
+				'accessControl', // perform access control for CRUD operations
+				'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
 
@@ -27,17 +46,17 @@ class FotosController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('view','create'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('index','admin','delete','update'),
-				'users'=>array('calonso'),
-			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
+				array('allow', // allow authenticated user to perform 'create' and 'update' actions
+						'actions'=>array('index','create'),
+						'users'=>array('@'),
+				),
+				array('allow', // allow admin user to perform 'admin' and 'delete' actions
+						'actions'=>array('view','admin','delete','update'),
+						'users'=>array('calonso'),
+				),
+				array('deny',  // deny all users
+						'users'=>array('*'),
+				),
 		);
 	}
 
@@ -48,7 +67,7 @@ class FotosController extends Controller
 	public function actionView($id)
 	{
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+				'model'=>$this->loadModel($id),
 		));
 	}
 
@@ -67,13 +86,13 @@ class FotosController extends Controller
 		{
 			$model->attributes=$_POST['Fotos'];
 			$model->fec_alta=self::fechaAlta();
-			
+				
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('create',array(
-			'model'=>$model,
+				'model'=>$model,
 		));
 	}
 
@@ -97,7 +116,7 @@ class FotosController extends Controller
 		}
 
 		$this->render('update',array(
-			'model'=>$model,
+				'model'=>$model,
 		));
 	}
 
@@ -120,9 +139,13 @@ class FotosController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Fotos');
+		$dataProvider=new CActiveDataProvider('Fotos', array(
+				'criteria'=>array(
+						'condition'=>'usuario_id='.Yii::app()->user->id_usuario,
+						'order'=>'fec_alta DESC',
+				)));
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+				'dataProvider'=>$dataProvider,
 		));
 	}
 
@@ -137,7 +160,7 @@ class FotosController extends Controller
 			$model->attributes=$_GET['Fotos'];
 
 		$this->render('admin',array(
-			'model'=>$model,
+				'model'=>$model,
 		));
 	}
 

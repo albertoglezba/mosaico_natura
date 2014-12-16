@@ -26,12 +26,27 @@
 	</div>
 	
 	<div class="row">
-		<?php echo $form->labelEx($model,'fotografia'); ?>
+		<?php echo $form->labelEx($model,'fotografia'); ?><span class="required">*</span>
+		<br> (Solo se permiten archivos jpj, png y gif con un peso máximo de 10 MB)<br>
 		<?php echo CHtml::activeFileField($model,'fotografia'); ?>
 	</div>
 
+	<?php /*if(CCaptcha::checkRequirements()) { ?>
+	<div class="row">
+		<?php echo $form->labelEx($model,'verifyCode'); ?>
+		<div>
+		<?php $this->widget('CCaptcha', array('captchaAction' => 'site/captcha')); ?>
+		<?php echo $form->textField($model,'verifyCode'); ?>
+		</div>
+		<div class="hint">Por favor pon las letras que se muestran a continuación.
+		<br/>No hay distinci&oacute;n entre may&uacute;sculas y min&uacute;sculas.</div>
+		<?php //echo $form->error($model,'verifyCode'); ?>
+	</div>
+	<?php } */?>
+	
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Subir' : 'Actualizar'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Subir' : 'Actualizar', 
+				array('confirm' => '¿Estás seguro de querer subir esta fotografía? Recuerda que no se puede cambiar de fotografía una vez en el servidor')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

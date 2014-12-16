@@ -11,7 +11,7 @@ if (isset($_GET['situacion']))
 ?>
 </span>
 
-<h1>Ingresa a tu cuenta</h1>
+<h1>Ingresa tus datos</h1>
 
 <p>Para subir tus fotograf&iacute;as es necesario <?php 
 			echo CHtml::link('registrarse.',array('/usuarios/create'), array('style'=>'color:#BD5D28'));
@@ -27,7 +27,7 @@ if (isset($_GET['situacion']))
 )); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'usuario'); ?>
+		<b>Usuario o correo</b><br>
 		<?php echo $form->textField($model,'username'); ?>
 		<?php echo $form->error($model,'username'); ?>
 	</div>
@@ -43,6 +43,10 @@ if (isset($_GET['situacion']))
 		<?php echo $form->checkBox($model,'rememberMe'); ?>
 		<label for="LoginForm_rememberMe">Recordarme la próxima vez</label>
 		<?php echo $form->error($model,'rememberMe'); ?>
+	</div>
+	
+	<div>
+		¿Has olvidado tu <a href="<?php echo Yii::app()->baseUrl."/index.php/usuarios/reset_passwd"; ?>">contrase&ntilde;a</a>?
 	</div>
 
 	<div class="row buttons">

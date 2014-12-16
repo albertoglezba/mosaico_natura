@@ -21,6 +21,7 @@
 class Fotos extends CActiveRecord
 {
 	public $fotografia;
+	public $verifyCode;
 
 	/**
 	 * Returns the static model of the specified AR class.
@@ -52,6 +53,8 @@ class Fotos extends CActiveRecord
 				array('usuario_id, categoria_id', 'numerical', 'integerOnly'=>true),
 				array('nombre_original, nombre, size, type, ruta', 'length', 'max'=>255),
 				array('fotografia', 'file', 'types'=>'jpg, gif, png', 'maxSize'=>1024*1024*10),
+				array('verifyCode', 'captcha', 'on'=>'captchaRequired'),
+				//array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(), 'captcaAction' => 'site/captcha'),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.
 				array('id, nombre_original, nombre, ruta, size, type, fec_alta, fec_act, usuario_id, categoria_id', 'safe', 'on'=>'search'),
@@ -64,12 +67,19 @@ class Fotos extends CActiveRecord
 	 */
 	public function beforeSave()
 	{
+		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+		if (in_array($this->categoria, $usuario->usuarios_categorias())){
+			$this->addError($this->categoria_id, 'Solo se puede subir una fotografía por categoria.');
+			return false;
+		}
+			
 		$foto = CUploadedFile::getInstance($this, 'fotografia');		
 		$this->size = $foto->getSize();
 		$this->type = $foto->getType();
-		$this->nombre_original = $foto->getName();
-		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
-		$this->nombre = date("Y-m-d_H-i-s")."_".$usuario->id."_".$this->nombre_original;
+		$this->nombre_original = $foto->getName();	
+		$extension = substr($this->nombre_original, -3);	
+		$this->usuario_id = $usuario->id;
+		$this->nombre = date("Y-m-d_H-i-s")."_".$usuario->id.".".$extension;
 		$this->fec_alta = date("Y-m-d_H-i-s");
 
 		$acentos = array('Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',
@@ -84,18 +94,22 @@ class Fotos extends CActiveRecord
 		
 		if($usuario->edad > 17)
 		{
-			$ruta = Yii::app()->request->baseUrl.'/imagenes/fotografias/profesional/'.$categoria;
+			$url = Yii::app()->baseUrl.'/imagenes/fotografias/profesional/'.$categoria; 
+			$ruta = Yii::app()->basePath.'/../imagenes/fotografias/profesional/'.$categoria;
 			if (!file_exists($ruta))
 				mkdir($ruta, 0755, true);
-			$this->ruta = $ruta;
+			$this->ruta = $url;
 		}
 		else 
 		{
-			$ruta = Yii::app()->request->baseUrl.'/imagenes/fotografias/juvenil/'.$categoria;
+			$url = Yii::app()->baseUrl.'/imagenes/fotografias/juvenil/'.$categoria;
+			$ruta = Yii::app()->basePath.'/../imagenes/fotografias/juvenil/'.$categoria;
 			if (!file_exists($ruta))
 				mkdir($ruta, 0755, true);
-			$this->ruta = $ruta;
+			$this->ruta = $url;
 		}
+		$foto->saveAs($ruta."/".$this->nombre.".".$extension);
+		return parent::beforeSave();
 	}
 
 	/**
@@ -166,16 +180,16 @@ class Fotos extends CActiveRecord
 		
 		if (count($categorias_usuario) > 0)
 		{
-			$lista = "<select>";
+			$lista = "<select name=\"Fotos[categoria_id]\" id=\"Fotos_categoria_id\">";
 			$lista.= "<option>--Selecciona---</option>";
 			$categorias = Categorias::model()->findAll();
 
 			foreach ($categorias as $c)
 			{
-				if (in_array($c->nombre, $categorias_usuario))
-					$lista.= "<option>".$c->nombre."</option>";
-				else
+				if (in_array($c->id, $categorias_usuario))
 					$lista.= "<option disabled>".$c->nombre."</option>";
+				else
+					$lista.= "<option value=\"".$c->id."\">".$c->nombre."</option>";
 			}
 			$lista.= "</select>";
 		} else
