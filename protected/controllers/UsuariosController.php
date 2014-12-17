@@ -170,7 +170,7 @@ class UsuariosController extends Controller
 			$usuario = Usuarios::model()->findByPk($_GET['id']);
 			if ($usuario == NULL)
 				throw new CHttpException(404,'Hubo un error en la petición.');
-			elseif (str_replace(" ", "", $usuario->fec_alta) == urldecode($_GET['fec_alta']))
+			elseif ($usuario->fec_alta == urldecode($_GET['fec_alta']))
 			{
 				if ($usuario->confirmo == 1)
 					throw new CHttpException(404,'Tu cuenta ya ha sido confirmada, intenta ingresar con tus credenciales.');
@@ -178,6 +178,8 @@ class UsuariosController extends Controller
 					$usuario->attributes = array('confirmo'=>1);
 					if ($usuario->save())
 						$this->redirect(array('/site/login?situacion='.urlencode('Tu cuenta ha sido confirmada.')));
+					else
+						throw new CHttpException(404,'Hubo un error en la petición.');
 				}
 			} else
 				throw new CHttpException(404,'Hubo un error en la petición.');

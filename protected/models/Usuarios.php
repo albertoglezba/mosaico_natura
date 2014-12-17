@@ -269,14 +269,12 @@ class Usuarios extends CActiveRecord
 		$imagen.= "</td><td width=\"790\" align=\"center\" bgcolor=\"#FFFFFF\">";
 		$imagen.= "<img	src=\"http://www.mosaiconatura.net/images/barraLogos.png\" width=\"707\" height=\"79\">";
 		$imagen.= "</td></tr></tbody></table>";
-		$fecha = str_replace(" ", "", $this->fec_alta);
-		$fecha = urlencode($fecha);
 		
 		$para = $this->correo;
 		$titulo = 'Registro para el '.Yii::app()->name;
 		$mensaje = $imagen."<br><br>".$this->nombre.' '.$this->apellido.",";
 		$mensaje.= "<br><br>Gracias por completar el registro, para poder acceder necesitas confirmar tu cuenta en el siguiente ";
-		$mensaje.= "<a href=\"".Yii::app()->createAbsoluteUrl('usuarios/confirmo')."?id=".$this->id."&fec_alta=".$fecha."\" target=\"_blank\">enlace</a>.";
+		$mensaje.= "<a href=\"".Yii::app()->createAbsoluteUrl('usuarios/confirmo')."?id=".$this->id."&fec_alta=".urlencode($this->fec_alta)."\" target=\"_blank\">enlace</a>.";
 		$cabeceras = "Content-type: text/html; charset=utf-8"."\r\n";
 		$cabeceras.= "From: noreply@conabio.gob.mx"."\r\n";
 		mail($para, $titulo, $mensaje, $cabeceras);
