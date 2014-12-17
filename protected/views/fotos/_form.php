@@ -24,10 +24,10 @@
 		<?php //echo $form->textField($model,'categoria_id'); ?>
 		<?php //echo $form->error($model,'categoria_id'); ?>
 	</div>
-	
+	<br><br>
 	<div class="row">
-		<?php echo $form->labelEx($model,'fotografia'); ?><span class="required">*</span>
-		<br> (Solo se permiten archivos jpj, png y gif con un peso máximo de 10 MB)<br>
+		<?php echo $form->labelEx($model,'fotografia'); ?>
+		<br> (Solo se permiten archivos jpj con un peso máximo de 10 MB)<span class="required">*</span><br>
 		<?php echo CHtml::activeFileField($model,'fotografia'); ?>
 	</div>
 
@@ -43,7 +43,7 @@
 		<?php //echo $form->error($model,'verifyCode'); ?>
 	</div>
 	<?php } */?>
-	
+	<br>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Subir' : 'Actualizar', 
 				array('confirm' => '¿Estás seguro de querer subir esta fotografía? Recuerda que no se puede cambiar de fotografía una vez en el servidor')); ?>

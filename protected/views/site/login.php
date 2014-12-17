@@ -33,7 +33,7 @@ if (isset($_GET['situacion']))
 	</div>
 
 	<div class="row">
-		<label>Contrase&ntilde;a</label>
+		<label>Contrase&ntilde;a</label><br>
 		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password'); ?>
 		
