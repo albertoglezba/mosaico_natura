@@ -263,11 +263,18 @@ class Usuarios extends CActiveRecord
 
 	public function send_mail()
 	{
+		$imagen = "<table width=\"990\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\">";
+		$imagen.= "<tbody><tr><td width=\"200\" align=\"center\" bgcolor=\"#000000\">";
+		$imagen.= "<img src=\"http://www.mosaiconatura.net/images/logo_mosaicon_natura.png\" width=\"153\" height=\"79\" border=\"0\">";
+		$imagen.= "</td><td width=\"790\" align=\"center\" bgcolor=\"#FFFFFF\">";
+		$imagen.= "<img	src=\"http://www.mosaiconatura.net/images/barraLogos.png\" width=\"707\" height=\"79\">";
+		$imagen.= "</td></tr></tbody></table>";
+		
 		$para = $this->correo;
 		$titulo = 'Registro para el '.Yii::app()->name;
-		$mensaje = "<br><br>".$this->nombre.' '.$this->apellido.",";
+		$mensaje = $imagen."<br><br>".$this->nombre.' '.$this->apellido.",";
 		$mensaje.= "<br><br>Gracias por completar el registro, para poder acceder necesitas confirmar tu cuenta en el siguiente ";
-		$mensaje.= "<a href=\"".Yii::app()->baseUrl."/usuarios/confirmo?id=".$this->id."&fec_alta=".urlencode($this->fec_alta)."\" target=\"_blank\">enlace</a>.";
+		$mensaje.= "<a href=\"".Yii::app()->createAbsoluteUrl('usuarios/confirmo')."?id=".$this->id."&fec_alta=".urlencode($this->fec_alta)."\" target=\"_blank\">enlace</a>.";
 		$cabeceras = "Content-type: text/html; charset=utf-8"."\r\n";
 		$cabeceras.= "From: noreply@conabio.gob.mx"."\r\n";
 		mail($para, $titulo, $mensaje, $cabeceras);
