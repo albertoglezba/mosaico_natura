@@ -46,13 +46,17 @@ class LoginForm extends CFormModel
 	 */
 	public function authenticate($attribute,$params)
 	{
-		if(!$this->hasErrors())
-			$this->_identity=new UserIdentity($this->username,$this->password);
-		if(!$this->_identity->authenticate()){
-			$this->addError('password','Nombre de usuario o contraseña incorrectos2.');
-		echo $this->_identity->authenticate();
+		$this->_identity=new UserIdentity($this->username,$this->password);	
+		$auth = $this->_identity->authenticate();
+		
+		if(empty($auth['error']))
+		{
+			if (isset($auth['descripcion']))
+				$this->addError('username',$auth['descripcion']);
+			else
+				$this->addError('username','Usuario no puede ser nulo.');
 		}
-		}
+	}
 
 	/**
 	 * Logs in the user using the given username and password in the model.

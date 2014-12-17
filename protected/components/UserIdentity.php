@@ -20,31 +20,42 @@ class UserIdentity extends CUserIdentity
 	public function authenticate()
 	{
 		$credenciales = $this->validaLogin($this->username);
+		$errores = array();
 
 		if($credenciales != NULL)
 		{
 			$users=array(
-					$this->username => $credenciales->passwd
+					$this->username => $credenciales->passwd,
+					'salt' => $credenciales->salt,
 			);
-
+			
 			if(!isset($users[$this->username]))
+			{
 				$this->errorCode=self::ERROR_USERNAME_INVALID;
-			elseif($users[$this->username]!==$this->password)
+				$errores['descripcion'] = 'La contraseña no puede ser nula.';
+			}
+			elseif($users[$this->username]!==md5($this->password."|".$users['salt']))
+			{
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
-			elseif ($users[$this->username]===$this->password)
+			$errores['descripcion'] = 'Usuario o contraseña inválidos.';
+			}
+			elseif ($users[$this->username]===md5($this->password."|".$users['salt']))
 			{
 				if ($credenciales->confirmo == 0)
+				{
 					$this->errorCode=self::ERROR_UNKNOWN_IDENTITY;
-				else
+					$errores['descripcion'] = 'Primero tienes de confirmar tu cuenta con el enlace que se te envió a tu correo.';
+				} else
 					$this->errorCode=self::ERROR_NONE;
 			}
 			else
 				$this->errorCode=self::ERROR_NONE;
-			return !$this->errorCode;
-
 		} else {
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
 		}
+		
+		$errores['error'] = !$this->errorCode;
+		return $errores;
 	}
 
 	/**

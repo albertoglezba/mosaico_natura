@@ -32,11 +32,11 @@ class UsuariosController extends Controller
 						'users'=>array('*'),
 				),
 				array('allow', // allow authenticated user to perform 'create' and 'update' actions
-						'actions'=>array('view','update', 'delete'),
+						'actions'=>array('view','update'),
 						'users'=>array('@'),
 				),
 				array('allow', // allow admin user to perform 'admin' and 'delete' actions
-						'actions'=>array('index','view','admin'),
+						'actions'=>array('index','view','admin', 'delete'),
 						'users'=>array('calonso'),
 				),
 				array('deny',  // deny all users
@@ -51,9 +51,14 @@ class UsuariosController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
-				'model'=>$this->loadModel($id),
-		));
+		if (Yii::app()->user->id_usuario==$id)
+		{
+			$this->render('view',array(
+					'model'=>$this->loadModel($id),
+			));
+		} else {
+			throw new CHttpException(404,'No tienes permisos para realizar esa acción.');
+		}
 	}
 
 	/**
@@ -179,10 +184,10 @@ class UsuariosController extends Controller
 		} else
 			throw new CHttpException(404,'Hubo un error en la petición.');
 	}
-	
+
 	public function actionReset_passwd()
 	{
-		
+
 	}
 
 	/**

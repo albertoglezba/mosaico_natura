@@ -27,7 +27,7 @@
 	<br><br>
 	<div class="row">
 		<?php echo $form->labelEx($model,'fotografia'); ?>
-		<br> (Solo se permiten archivos jpj con un peso máximo de 10 MB)<span class="required">*</span><br>
+		<br> (Solo se permiten archivos "jpg" con un peso máximo de 10 MB)<span class="required">*</span><br>
 		<?php echo CHtml::activeFileField($model,'fotografia'); ?>
 	</div>
 

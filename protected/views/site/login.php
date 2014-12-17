@@ -45,9 +45,9 @@ if (isset($_GET['situacion']))
 		<?php echo $form->error($model,'rememberMe'); ?>
 	</div>
 	
-	<div>
+	<!-- div>
 		¿Has olvidado tu <a href="<?php echo Yii::app()->baseUrl."/index.php/usuarios/reset_passwd"; ?>">contrase&ntilde;a</a>?
-	</div>
+	</div-->
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Entra'); ?>

@@ -71,9 +71,9 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'edad'); ?>
 		<?php echo $form->textField($model,'edad',array('size'=>2,'maxlength'=>2)); ?>
-		<br>(Dependiendo tu edad es la categoria en la que ingresas; 14 a 17
-		a&ntilde;os para categoria juvenil y de 18 a&ntilde;os en adelante
-		para profesionales)
+		<br>(Dependiendo tu edad es la categor&iacute;a en la que ingresas; menores de 18
+		a&ntilde;os para categor&iacute;a <b>J&oacute;venes</b> y de 18 a&ntilde;os en adelante
+		para categor&iacute;a <b>Adultos</b>)
 		<?php //echo $form->error($model,'apellido'); ?>
 	</div>
 
@@ -112,15 +112,16 @@
 	</div>
 
 	<?php } else { //pone la cinfirmacion del passwd ?> 
+	<br>Si no deseas cambiar tu contrase&ntilde;a por favor deja estos campos vac&iacute;os.
 	<div class="row">
 		<?php echo $form->labelEx($model,'passwd'); ?>
-		<?php echo $form->passwordField($model,'passwd',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->passwordField($model,'passwd',array('size'=>60,'maxlength'=>255,'value'=>'')); ?>
 		<?php //echo $form->error($model,'passwd'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'confirma_passwd'); ?>
-		<?php echo $form->passwordField($model,'confirma_passwd',array('size'=>60,'maxlength'=>255, 'value' => $model->passwd)); ?>
+		<?php echo $form->passwordField($model,'confirma_passwd',array('size'=>60,'maxlength'=>255,'value'=>'')); ?>
 		<?php //echo $form->error($model,'passwd'); ?>
 	</div>
 	<?php } ?>
@@ -131,13 +132,13 @@
 
 	<?php $this->endWidget(); ?>
 
-	<?php if (!$model->isNewRecord) { ?>
+	<?php /*if (!$model->isNewRecord) { ?>
 	<form
 		action="<?php echo Yii::app()->getBaseUrl(false); ?>/index.php/usuarios/delete"
 		method="POST">
 		<?php echo CHtml::submitButton('Borra tu cuenta', array('confirm'=>'¿Estás seguro de querer eliminar tu cuenta?')); ?>
 		<input type="hidden" name="id" value="<?php echo $model->id; ?>">
 	</form>
-	<?php } ?>
+	<?php }*/ ?>
 </div>
 <!-- form -->

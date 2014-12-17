@@ -4,8 +4,8 @@
 ?>
 
 <h1>Informaci&oacute;n de tu cuenta</h1>
-
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php echo CHtml::link('Configura', Yii::app()->baseUrl."/index.php/usuarios/update/".$model->id, array('style'=>"color:#BD5D28;")); ?> tu cuenta.
+<br><br><?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'usuario',

@@ -58,8 +58,8 @@ class Usuarios extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-				array('usuario, nombre, apellido, edad, correo, passwd, calle_y_numero, colonia, municipio, estado, cp', 'required'),
-				array('acepto_terminos, confirma_passwd', 'required', 'on'=>'insert'),
+				array('usuario, nombre, apellido, edad, correo, calle_y_numero, colonia, municipio, estado, cp', 'required'),
+				array('acepto_terminos, passwd, confirma_passwd', 'required', 'on'=>'insert'),
 				array('confirmo, edad', 'numerical', 'integerOnly'=>true),
 				array('usuario, nombre, apellido, correo, telefonos, passwd, salt, calle_y_numero, colonia, municipio, estado', 'length', 'max'=>255),
 				array('cp', 'length', 'min' => 5, 'max'=>5),
@@ -85,44 +85,67 @@ class Usuarios extends CActiveRecord
 		$regex = '/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/';
 		if (!preg_match($regex, $this->correo))
 			$this->addError($this->correo, 'El correo no parece válido. Favor de verificar');
-		else {		
-		$correo_existe = $this->model()->findByAttributes(array('correo'=>$this->correo));
-		if ($correo_existe != NULL)
-			$this->addError($this->correo, 'Ese correo ya fue registrado por alguien más, por favor intenta con otro.');
+		else {
+			$correo_existe = $this->model()->findByAttributes(array('correo'=>$this->correo));
+			if ($correo_existe != NULL)
+				$this->addError($this->correo, 'Ese correo ya fue registrado por alguien más, por favor intenta con otro.');
 		}
 	}
-	
+
 	public function valida_usuario()
 	{
 		if (strlen($this->usuario) <= 2)
 			$this->addError($this->usuario, 'El campo usuario debe tener al menos 3 caracteres.');
-		elseif (preg_match('/\s/',$this->usuario)) 
-			$this->addError($this->usuario, 'El campo usuario no debe tener espacios.');
+		elseif (preg_match('/\s/',$this->usuario))
+		$this->addError($this->usuario, 'El campo usuario no debe tener espacios.');
 		else {
 			$usuario_existe = $this->model()->findByAttributes(array('usuario'=>$this->usuario));
 			if ($usuario_existe != NULL)
 				$this->addError($this->usuario, 'Este usuario ya fue registrado por alguien más, por favor intenta con otro.');
 		}
 	}
-	
+
 	public function valida_edad()
 	{
-		if ($this->edad < 14)
+		if ($this->edad < 6)
 		{
-			$this->addError($this->edad, 'Lo sentimos, la edad mínima para participar es 14 años.');
+			$this->addError($this->edad, 'Lo sentimos, la edad mínima para participar es 6 años.');
 			return false;
 		}
-		if ($this->edad < 14)
+		if ($this->edad > 130)
 		{
 			$this->addError($this->edad, 'Lo sentimos, la edad máxima para participar es 130 años.');
 			return false;
-		}			
+		}
 	}
-	
+
 	public function valida_passwd()
 	{
 		if ($this->passwd != $this->confirma_passwd)
 			$this->addError($this->edad, 'La contraseña no coincide con la confirmación.');
+	}
+
+	/**
+	 * (non-PHPdoc)
+	 * @see CActiveRecord::beforeSave()
+	 */
+	public function beforeSave()
+	{
+		if ($this->isNewRecord)
+		{
+			$this->salt = rand()*rand() + rand();
+			$this->passwd = md5($this->passwd."|".$this->salt);
+		} else {
+			if (empty($this->passwd))
+			{
+				$usuario = $this->findByPk($this->id);
+				$this->passwd = $usuario->passwd;
+			} else {
+				$this->salt = rand()*rand() + rand();
+				$this->passwd = md5($this->passwd."|".$this->salt);
+			}
+		}
+		return parent::beforeSave();
 	}
 
 	/**
@@ -154,7 +177,7 @@ class Usuarios extends CActiveRecord
 				'salt' => 'Salt',
 				'calle_y_numero' => 'Calle y número',
 				'colonia' => 'Colonia / Asentamiento',
-				'municipio' => 'Dlegación / Municipio',
+				'municipio' => 'Delegación / Municipio',
 				'estado' => 'Estado',
 				'cp' => 'Código postal',
 				'confirmo' => 'Confirmo',
@@ -249,7 +272,7 @@ class Usuarios extends CActiveRecord
 		$cabeceras.= "From: noreply@conabio.gob.mx"."\r\n";
 		mail($para, $titulo, $mensaje, $cabeceras);
 	}
-	
+
 	/**
 	 * Da las categorias que ya no puede tomar (una foto por categoria)
 	 */
@@ -258,8 +281,8 @@ class Usuarios extends CActiveRecord
 		$categorias = array();
 		foreach ($this->fotos as $f)
 		{
-			array_push($categorias, $f->categoria->id);		
-		}		
+			array_push($categorias, $f->categoria->id);
+		}
 		return $categorias;
 	}
 }

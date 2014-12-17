@@ -94,16 +94,16 @@ class Fotos extends CActiveRecord
 		
 		if($usuario->edad > 17)
 		{
-			$url = Yii::app()->baseUrl.'/imagenes/fotografias/profesional/'.$categoria; 
-			$ruta = Yii::app()->basePath.'/../imagenes/fotografias/profesional/'.$categoria;
+			$url = Yii::app()->baseUrl.'/imagenes/fotografias/adultos/'.$categoria; 
+			$ruta = Yii::app()->basePath.'/../imagenes/fotografias/adultos/'.$categoria;
 			if (!file_exists($ruta))
 				mkdir($ruta, 0755, true);
 			$this->ruta = $url;
 		}
 		else 
 		{
-			$url = Yii::app()->baseUrl.'/imagenes/fotografias/juvenil/'.$categoria;
-			$ruta = Yii::app()->basePath.'/../imagenes/fotografias/juvenil/'.$categoria;
+			$url = Yii::app()->baseUrl.'/imagenes/fotografias/jovenes/'.$categoria;
+			$ruta = Yii::app()->basePath.'/../imagenes/fotografias/jovenes/'.$categoria;
 			if (!file_exists($ruta))
 				mkdir($ruta, 0755, true);
 			$this->ruta = $url;
