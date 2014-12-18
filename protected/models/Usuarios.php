@@ -31,6 +31,7 @@ class Usuarios extends CActiveRecord
 	 */
 	public $acepto_terminos = false;
 	public $confirma_passwd = "";
+	public $para_confirmar = false;
 
 	/**
 	 * Returns the static model of the specified AR class.
@@ -61,7 +62,7 @@ class Usuarios extends CActiveRecord
 				array('usuario, nombre, apellido, edad, correo, calle_y_numero, colonia, municipio, estado, cp', 'required'),
 				array('acepto_terminos, passwd, confirma_passwd', 'required', 'on'=>'insert'),
 				array('confirmo, edad', 'numerical', 'integerOnly'=>true),
-				array('usuario, nombre, apellido, correo, telefonos, passwd, salt, calle_y_numero, colonia, municipio, estado', 'length', 'max'=>255),
+				array('usuario, nombre, apellido, correo, telefonos, passwd, confirma_passwd, salt, calle_y_numero, colonia, municipio, estado', 'length', 'max'=>255),
 				array('cp', 'length', 'min' => 5, 'max'=>5),
 				array('acepto_terminos', 'acepto_terminos_rule', 'on'=>'insert'),
 				array('correo', 'valida_correo', 'on'=>'insert'),
@@ -121,8 +122,11 @@ class Usuarios extends CActiveRecord
 
 	public function valida_passwd()
 	{
-		if ($this->passwd != $this->confirma_passwd)
-			$this->addError($this->edad, 'La contraseña no coincide con la confirmación.');
+		if(empty($this->para_confirmar))  //Para evitar cuando se guarda confirmo y la fecha
+		{
+			if ($this->passwd != $this->confirma_passwd)
+				$this->addError($this->passwd, 'La contraseña no coincide con la confirmación.');
+		}
 	}
 
 	/**
@@ -141,8 +145,11 @@ class Usuarios extends CActiveRecord
 				$usuario = $this->findByPk($this->id);
 				$this->passwd = $usuario->passwd;
 			} else {
-				$this->salt = rand()*rand() + rand();
-				$this->passwd = md5($this->passwd."|".$this->salt);
+				if (empty($this->para_confirmar))  //Para evitar cuando se confirma 
+				{
+					$this->salt = rand()*rand() + rand();
+					$this->passwd = md5($this->passwd."|".$this->salt);
+				}
 			}
 		}
 		return parent::beforeSave();
@@ -269,7 +276,7 @@ class Usuarios extends CActiveRecord
 		$imagen.= "</td><td width=\"790\" align=\"center\" bgcolor=\"#FFFFFF\">";
 		$imagen.= "<img	src=\"http://www.mosaiconatura.net/images/barraLogos.png\" width=\"707\" height=\"79\">";
 		$imagen.= "</td></tr></tbody></table>";
-		
+
 		$para = $this->correo;
 		$titulo = 'Registro para el '.Yii::app()->name;
 		$mensaje = $imagen."<br><br>".$this->nombre.' '.$this->apellido.",";

@@ -175,7 +175,10 @@ class UsuariosController extends Controller
 				if ($usuario->confirmo == 1)
 					throw new CHttpException(404,'Tu cuenta ya ha sido confirmada, intenta ingresar con tus credenciales.');
 				else {
-					$usuario->attributes = array('confirmo'=>1);
+					$usuario->confirmo = 1;
+					$usuario->fecha_confirmo = self::fechaAlta();
+					$usuario->para_confirmar = true;
+					
 					if ($usuario->save())
 						$this->redirect(array('/site/login?situacion='.urlencode('Tu cuenta ha sido confirmada.')));
 					else
