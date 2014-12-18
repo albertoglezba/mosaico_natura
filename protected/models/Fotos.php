@@ -108,7 +108,7 @@ class Fotos extends CActiveRecord
 				mkdir($ruta, 0755, true);
 			$this->ruta = $url;
 		}
-		$foto->saveAs($ruta."/".$this->nombre.".".$extension);
+		$foto->saveAs($ruta."/".$this->nombre);
 		return parent::beforeSave();
 	}
 
