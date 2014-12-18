@@ -88,6 +88,18 @@ var YII_PATH = "<?php echo Yii::app()->request->baseUrl; ?>";
 															src="http://www.mosaiconatura.net/images/pleca_concurso2.png"
 															width="895" height="270" usemap="#Map">
 													</p>
+													<p>
+													<?php 
+													if (!Yii::app()->user->isGuest)
+													{
+														$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+														echo CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'), array('style'=>'color:#BD5D28'));
+														echo " | ".CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('style'=>'color:#BD5D28'));
+													}	
+													else
+														echo CHtml::link('Inicia sesión', array('site/login'), array('style'=>'color:#BD5D28'));
+													?>
+													</p>
 													<?php echo $content; ?>
 													</td>
 											</tr>
