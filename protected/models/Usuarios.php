@@ -83,7 +83,7 @@ class Usuarios extends CActiveRecord
 
 	public function valida_correo()
 	{
-		$regex = '/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/';
+		$regex = '/^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,3})$/';
 		if (!preg_match($regex, $this->correo))
 			$this->addError($this->correo, 'El correo no parece válido. Favor de verificar');
 		else {
