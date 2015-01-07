@@ -44,7 +44,11 @@ class UserIdentity extends CUserIdentity
 				if ($credenciales->confirmo == 0)
 				{
 					$this->errorCode=self::ERROR_UNKNOWN_IDENTITY;
-					$errores['descripcion'] = 'Primero tienes de confirmar tu cuenta con el enlace que se te envió a tu correo.';
+					$error = 'Primero tienes que confirmar tu cuenta con el enlace que se te envió a tu correo. ';
+					$error.= '<br><b>NOTA:</b> A veces el correo de confirmaci&oacute;n llega a la carpeta de "spam" o "correo no deseado", ';
+					$error.= 'por favor asegurate de revisarlas. En caso de no haberte llegado el correo de confirmaci&oacute;n, escribenos '; 
+                    $error.= 'a mosaiconatura@xolo.conabio.gob.mx del correo que registraste, para poder activar tu cuenta.';
+					$errores['descripcion'] = $error;
 				} else
 					$this->errorCode=self::ERROR_NONE;
 			}
