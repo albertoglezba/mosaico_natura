@@ -51,8 +51,9 @@ class Fotos extends CActiveRecord
 		return array(
 				array('categoria_id', 'required'),
 				array('usuario_id, categoria_id', 'numerical', 'integerOnly'=>true),
-				array('nombre_original, nombre, size, type, ruta', 'length', 'max'=>255),
-				array('fotografia', 'file', 'types'=>'jpg', 'maxSize'=>1024*1024*10),
+				array('nombre_original, nombre, size, type, ruta, estado, municipio', 'length', 'max'=>255),
+				array('descripcion', 'safe'),
+				array('fotografia', 'file', 'types'=>'jpg', 'maxSize'=>1024*1024*10, 'on'=>'insert'),
 				array('verifyCode', 'captcha', 'on'=>'captchaRequired'),
 				//array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(), 'captcaAction' => 'site/captcha'),
 				// The following rule is used by search().
@@ -67,6 +68,9 @@ class Fotos extends CActiveRecord
 	 */
 	public function beforeSave()
 	{
+		if (!$this->isNewRecord)
+			return parent::beforeSave();
+		
 		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 		if (in_array($this->categoria, $usuario->usuarios_categorias())){
 			$this->addError($this->categoria_id, 'Solo se puede subir una fotografía por categoria.');
@@ -140,7 +144,9 @@ class Fotos extends CActiveRecord
 				'fec_act' => 'Fec Act',
 				'usuario_id' => 'Usuario',
 				'categoria_id' => 'Categoría',
-				'fotografia' => 'Fotografía'
+				'fotografia' => 'Fotografía',
+				'municipio' => 'Delegación / Municipio',
+				'descripcion' => 'Breve descripción'
 		);
 	}
 

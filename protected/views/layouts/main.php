@@ -89,15 +89,28 @@ var YII_PATH = "<?php echo Yii::app()->request->baseUrl; ?>";
 															width="895" height="270" usemap="#Map">
 													</p>
 													<p>
-													<?php 
+													<?php
 													if (!Yii::app()->user->isGuest)
 													{
-														$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
-														echo CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'), array('style'=>'color:#BD5D28'));
-														echo " | ".CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('style'=>'color:#BD5D28'));
-													}	
-													else
-														echo CHtml::link('Inicia sesión', array('site/login'), array('style'=>'color:#BD5D28'));
+														if (!isset(Yii::app()->user->id_usuario) || empty(Yii::app()->user->id_usuario))
+														{
+															if (!isset(Yii::app()->user->id) || empty(Yii::app()->user->id))
+															{
+																Yii::app()->user->logout();
+																echo CHtml::link('Inicia sesión', array('site/login'), array('style'=>'color:#FFD503;font-size:15px;'));
+															} else {
+																$this->setIdUsuario(Yii::app()->user->id);
+																$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+																echo CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'), array('style'=>'color:#FFD503;font-size:15px;'));
+																echo " | ".CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('style'=>'color:#FFD503;font-size:15px;'));
+															}		
+														} else {
+															$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+															echo CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'), array('style'=>'color:#FFD503;font-size:15px;'));
+															echo " | ".CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('style'=>'color:#FFD503;font-size:15px;'));
+														}
+													} else
+														echo CHtml::link('Inicia sesión', array('site/login'), array('style'=>'color:#FFD503;font-size:15px;'));
 													?>
 													</p>
 													<?php echo $content; ?>
