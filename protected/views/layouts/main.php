@@ -130,7 +130,7 @@ var YII_PATH = "<?php echo Yii::app()->request->baseUrl; ?>";
 			</tr>
 			<tr>
 				<td height="20" colspan="2" align="right" class="negrop">Mosaico
-					Natura 2011 <strong>|</strong> <a
+					Natura <?php echo date('Y'); ?> <strong>|</strong> <a
 					href="mailto:mosaiconatura@conabio.gob.mx" style="color: #333333">mosaiconatura@conabio.gob.mx</a>
 				</td>
 			</tr>
@@ -157,7 +157,7 @@ var YII_PATH = "<?php echo Yii::app()->request->baseUrl; ?>";
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-
+<?php //echo md5("FernandaRuiz|5741974"); ?>
 	<!-- Fin de CÃ³digo -->
 </BODY>
 <!-- InstanceEnd -->
