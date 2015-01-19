@@ -101,16 +101,19 @@ var YII_PATH = "<?php echo Yii::app()->request->baseUrl; ?>";
 															} else {
 																$this->setIdUsuario(Yii::app()->user->id);
 																$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
-																echo CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'), array('style'=>'color:#FFD503;font-size:15px;'));
+																echo CHtml::link('Tus fotografías', array('fotos/index'), array('style'=>'color:#FFD503;font-size:15px;'));
 																echo " | ".CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('style'=>'color:#FFD503;font-size:15px;'));
+																echo " | ".CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'), array('style'=>'color:#FFD503;font-size:15px;'));
 															}		
 														} else {
 															$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
-															echo CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'), array('style'=>'color:#FFD503;font-size:15px;'));
+															echo CHtml::link('Tus fotografías', array('fotos/index'), array('style'=>'color:#FFD503;font-size:15px;'));
 															echo " | ".CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('style'=>'color:#FFD503;font-size:15px;'));
+															echo " | ".CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'), array('style'=>'color:#FFD503;font-size:15px;'));
 														}
 													} else
 														echo CHtml::link('Inicia sesión', array('site/login'), array('style'=>'color:#FFD503;font-size:15px;'));
+													echo " | ".CHtml::link('Preguntas frecuentes', 'http://www.mosaiconatura.net/preguntasFrecuentes.html', array('style'=>'color:#FFD503;font-size:15px;', 'target'=>'_blank')); 
 													?>
 													</p>
 													<?php echo $content; ?>
@@ -142,7 +145,7 @@ var YII_PATH = "<?php echo Yii::app()->request->baseUrl; ?>";
 
 	<!-- CÃ³digo para estadÃ­sticas en Google Analytics -->
 <map name="Map">
-  <area shape="rect" coords="682,3,896,213" href="<?php echo Yii::app()->baseUrl."/index.php/fotos/index"; ?>">
+  <area shape="rect" coords="682,3,896,213" href="<?php echo Yii::app()->baseUrl."/index.php/fotos/create"; ?>">
   <area shape="rect" coords="724,218,853,269" href="<?php echo Yii::app()->baseUrl."/index.php/usuarios/create"; ?>">
   <area shape="rect" coords="7,5,674,265" href="<?php echo Yii::app()->baseUrl."/"; ?>">
 </map>
