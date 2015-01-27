@@ -277,7 +277,7 @@ class Usuarios extends CActiveRecord
 		$imagen.= "<img	src=\"http://www.mosaiconatura.net/images/barraLogos.png\" width=\"707\" height=\"79\">";
 		$imagen.= "</td></tr></tbody></table>";
 
-		$para = $this->correo;
+		$para = $this->correo.", mosaiconatura@conabio.gob.mx";
 		$titulo = 'Registro para el '.Yii::app()->name;
 		$mensaje = $imagen."<br><br>".$this->nombre.' '.$this->apellido.",";
 		$mensaje.= "<br><br>Gracias por completar el registro, para poder acceder necesitas confirmar tu cuenta en el siguiente ";

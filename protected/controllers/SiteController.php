@@ -90,7 +90,7 @@ class SiteController extends Controller
 		// collect user input data
 		if(isset($_POST['LoginForm']))
 		{
-			
+				
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
@@ -120,20 +120,29 @@ class SiteController extends Controller
 	{
 		$this->render('maintenance');
 	}
-	
+
 	public function actionPage($alias)
 	{
 		echo "This is $alias.";
 	}
-	
+
 	public function actionTerminos_y_condiciones()
 	{
 		$this->layout = false;
 		$this->render('terminos_y_condiciones');
 	}
-	
+
 	public function actionConfirma()
 	{
+		if (isset($_GET['id']) && !empty($_GET['id']) && isset($_GET['fec_alta']) && !empty($_GET['fec_alta']))
+		{
+			$usuario = Usuarios::model()->findByPk($_GET['id']);
+			if ($usuario != NULL)
+			{
+				if ($usuario->fec_alta == urldecode($_GET['fec_alta']))
+					$usuario->send_mail();
+			}
+		}
 		$this->render('confirma');
 	}
 }
