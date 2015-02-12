@@ -39,6 +39,12 @@
 	<?php echo CHtml::image($model->ruta."/".$model->nombre, $model->nombre_original,
 			array("title"=>$model->categoria->nombre, "width"=>"300px")); ?>
 	<?php } ?>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'marca'); ?>
+		<?php echo $form->textField($model,'marca',array('size'=>60,'maxlength'=>255)); ?>
+	</div>
+	
 	<div class="row">
 		<?php echo $form->labelEx($model,'estado'); ?>
 		<?php echo $form->dropDownList($model, 'estado', Usuarios::estados(), array('prompt'=>'---Selecciona---')); ?>

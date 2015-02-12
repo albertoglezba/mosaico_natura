@@ -51,14 +51,14 @@ class Fotos extends CActiveRecord
 		return array(
 				array('categoria_id', 'required'),
 				array('usuario_id, categoria_id', 'numerical', 'integerOnly'=>true),
-				array('nombre_original, nombre, size, type, ruta, estado, municipio', 'length', 'max'=>255),
+				array('nombre_original, nombre, size, type, ruta, estado, municipio, marca', 'length', 'max'=>255),
 				array('descripcion', 'safe'),
 				array('fotografia', 'file', 'types'=>'jpg', 'maxSize'=>1024*1024*10, 'on'=>'insert'),
 				array('verifyCode', 'captcha', 'on'=>'captchaRequired'),
 				//array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(), 'captcaAction' => 'site/captcha'),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.
-				array('id, nombre_original, nombre, ruta, size, type, fec_alta, fec_act, usuario_id, categoria_id', 'safe', 'on'=>'search'),
+				array('id, nombre_original, nombre, ruta, size, type, marca, fec_alta, fec_act, usuario_id, categoria_id', 'safe', 'on'=>'search'),
 		);
 	}
 	
@@ -146,7 +146,8 @@ class Fotos extends CActiveRecord
 				'categoria_id' => 'Categoría',
 				'fotografia' => 'Fotografía',
 				'municipio' => 'Delegación / Municipio',
-				'descripcion' => 'Breve descripción'
+				'descripcion' => 'Breve descripción',
+				'marca' => 'Marca/modelo de tu cámara fotográfica'
 		);
 	}
 

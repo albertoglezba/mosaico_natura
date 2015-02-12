@@ -67,7 +67,7 @@ var YII_PATH = "<?php echo Yii::app()->request->baseUrl; ?>";
 						src="http://www.mosaiconatura.net/images/logo_mosaicon_natura.png"
 						width="153" height="79" border="0"> </a></td>
 				<td width="790" align="center" bgcolor="#FFFFFF"><img
-					src="http://www.mosaiconatura.net/images/barraLogos.png" width="707"
+					src="http://www.mosaiconatura.net/images/barraLogos.png" width="804"
 					height="79"></td>
 			</tr>
 			<tr>
