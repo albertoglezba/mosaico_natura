@@ -58,7 +58,7 @@ class Fotos extends CActiveRecord
 				//array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(), 'captcaAction' => 'site/captcha'),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.
-				array('id, nombre_original, nombre, ruta, size, type, marca, fec_alta, fec_act, usuario_id, categoria_id', 'safe', 'on'=>'search'),
+				array('id, nombre_original, nombre, fotografia, ruta, size, type, marca, fec_alta, fec_act, usuario_id, categoria_id', 'safe', 'on'=>'search'),
 		);
 	}
 	
@@ -72,7 +72,8 @@ class Fotos extends CActiveRecord
 			return parent::beforeSave();
 		
 		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
-		if (in_array($this->categoria, $usuario->usuarios_categorias())){
+		if (in_array($this->categoria->id, $usuario->usuarios_categorias()))
+		{
 			$this->addError($this->categoria_id, 'Solo se puede subir una fotografía por categoria.');
 			return false;
 		}
@@ -80,10 +81,10 @@ class Fotos extends CActiveRecord
 		$foto = CUploadedFile::getInstance($this, 'fotografia');		
 		$this->size = $foto->getSize();
 		$this->type = $foto->getType();
-		$this->nombre_original = $foto->getName();	
 		$extension = substr($this->nombre_original, -3);	
 		$this->usuario_id = $usuario->id;
 		$this->nombre = date("Y-m-d_H-i-s")."_".$usuario->id.".".$extension;
+		$this->nombre_original = $this->nombre;
 		$this->fec_alta = date("Y-m-d_H-i-s");
 
 		$acentos = array('Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',

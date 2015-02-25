@@ -696,11 +696,13 @@ $dir = Yii::app()->basePath."/../imagenes/fotografias";
 deleteDirectory($dir);
 */
 
+/*
 $salt = rand()*rand() + rand();
 echo "<br>salt: ".$salt;
 $passwd = "leti";
 echo "<br>passwd:".$passwd;
 $md5 = md5($passwd."|".$salt);
 echo "<br>md5:".$md5;
+*/
 ?>
 
