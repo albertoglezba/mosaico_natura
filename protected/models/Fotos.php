@@ -81,7 +81,7 @@ class Fotos extends CActiveRecord
 		$foto = CUploadedFile::getInstance($this, 'fotografia');		
 		$this->size = $foto->getSize();
 		$this->type = $foto->getType();
-		$extension = substr($this->nombre_original, -3);	
+		$extension = substr($foto->getName(), -3);	
 		$this->usuario_id = $usuario->id;
 		$this->nombre = date("Y-m-d_H-i-s")."_".$usuario->id.".".$extension;
 		$this->nombre_original = $this->nombre;
