@@ -51,7 +51,7 @@ class FotosController extends Controller
 						'users'=>array('@'),
 				),
 				array('allow', // allow admin user to perform 'admin' and 'delete' actions
-						'actions'=>array('view','admin','delete'),
+						'actions'=>array('view','admin','delete','renombra'),
 						'users'=>array('calonso'),
 				),
 				array('deny',  // deny all users
@@ -163,7 +163,24 @@ class FotosController extends Controller
 				'model'=>$model,
 		));
 	}
-
+	
+	public function actionRenombra() {
+		$ruta_prin = realpath ( dirname ( __FILE__ ) ) . "\..\..\..";
+		
+		$fh = fopen ( $ruta_prin . "\concurso\protected\data\archivos_binarios_a_renombrar2.csv", 'r' );
+		while ( $line = fgets ( $fh ) ) {
+			$line = trim ( $line );
+			$origen = $ruta_prin . $line;
+			$destino = "$ruta_prin$line.jpg";
+			echo "[" . $origen . "][" . $destino . "]";
+			if (rename ( $origen, $destino ))
+				echo "\trenombro<br>";
+			else
+				echo "\tNO renombro<br>";
+		}
+		fclose ( $fh );
+	}
+	
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
