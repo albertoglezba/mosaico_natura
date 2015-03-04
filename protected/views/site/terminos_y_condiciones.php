@@ -343,7 +343,8 @@ var YII_PATH = "<?php echo Yii::app()->request->baseUrl; ?>";
 </p>
 <blockquote>
 	<p>
-		- El jurado estará integrado por profesionales en el campo de la
+		- El <a href="http://www.mosaiconatura.net/jurado.html" style="text-decoration: underline;cursor:auto;color:#CCCCCC;" target="_blank">jurado</a> 
+		estará integrado por profesionales en el campo de la
 		fotografía.<br> <br> - El Comité Organizador del concurso podrá
 		hacer modificaciones en la selección de los miembros del jurado,
 		sujeto a la disponibilidad de los mismos.<br> <br> - El fallo del
