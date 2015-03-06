@@ -345,294 +345,134 @@
 	<p>El total de premios, menciones honoríficas y reconocimientos que se
 		otorgan en el concurso son 30 (treinta).</p>
 </blockquote>
-<table width="800" border="0" align="center" cellpadding="5"
-	cellspacing="1">
-	<tbody>
-		<tr>
-			<td colspan="6" align="center" bgcolor="#666666"><p align="center"
-					class="nar">Categoría Adulto</p></td>
-		</tr>
-		<tr>
-			<td width="74" align="center" bgcolor="#999999">&nbsp;</td>
-			<td width="132" bgcolor="#999999"><p align="center">
-					<span class="cifras1Negro"><strong>Fauna silvestre</strong> </span>
-				</p></td>
-			<td width="130" bgcolor="#999999"><p align="center">
-					<span class="cifras1Negro"><strong>Plantas y hongos</strong> </span>
-				</p></td>
-			<td width="131" bgcolor="#999999"><p align="center">
-					<span class="cifras1Negro"><strong>Naturaleza y ser humano</strong>
-					</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="cifras1Negro"><strong>Paisajes y ecosistemas</strong>
-					</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="cifras1Negro"><strong>Naturaleza en destinos
-							turísticos</strong> </span>
-				</p></td>
-		</tr>
-		<tr>
-			<td width="74" bgcolor="#999999"><p align="center">
-					<span class="negrop"><strong>1er Lugar</strong> </span>
-				</p></td>
-			<td width="132" bgcolor="#999999"><p align="center">
-					<span class="negrop">$15,000</span>
-				</p></td>
-			<td width="130" bgcolor="#999999"><p align="center">
-					<span class="negrop">$15,000</span>
-				</p></td>
-			<td width="131" bgcolor="#999999"><p align="center">
-					<span class="negrop">$15,000</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">$15,000</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">$15,000</span>
-				</p></td>
-		</tr>
-		<tr>
-			<td width="74" rowspan="3" bgcolor="#999999"><p align="center">
-					<span class="negrop"><strong>&nbsp;</strong> </span>
-				</p>
-				<p align="center">
-					<span class="negrop"><strong>&nbsp;</strong> </span>
-				</p>
-				<p align="center">
-					<span class="negrop"><strong>&nbsp;</strong> </span>
-				</p></td>
-			<td width="132" bgcolor="#999999"><p align="center">
-					<span class="negrop">Fotodiario en revista NG</span>
-				</p></td>
-			<td width="130" bgcolor="#999999"><p align="center">
-					<span class="negrop">Fotodiario en revista NG</span>
-				</p></td>
-			<td width="131" bgcolor="#999999"><p align="center">
-					<span class="negrop">Fotodiario en revista NG</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Fotodiario en revista NG</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Fotodiario en revista NG</span>
-				</p></td>
-		</tr>
-		<tr>
-			<td width="132" bgcolor="#999999"><p align="center">
-					<span class="negrop">Viaje ANPs*</span>
-				</p></td>
-			<td width="130" bgcolor="#999999"><p align="center">
-					<span class="negrop">Viaje ANPs*</span>
-				</p></td>
-			<td width="131" bgcolor="#999999"><p align="center">
-					<span class="negrop">Viaje ANPs*</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Viaje ANPs*</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Viaje ANPs*</span>
-				</p></td>
-		</tr>
-		<tr>
-			<td width="132" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="130" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="131" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-		</tr>
-		<tr>
-			<td width="74" bgcolor="#999999"><p align="center">
-					<span class="negrop"><strong>2do Lugar</strong> </span>
-				</p></td>
-			<td width="132" bgcolor="#999999"><p align="center">
-					<span class="negrop">$10,000</span>
-				</p></td>
-			<td width="130" bgcolor="#999999"><p align="center">
-					<span class="negrop">$10,000</span>
-				</p></td>
-			<td width="131" bgcolor="#999999"><p align="center">
-					<span class="negrop">$10,000</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">$10,000</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">$10,000</span>
-				</p></td>
-		</tr>
-		<tr>
-			<td width="74" bgcolor="#999999"><p align="center">
-					<span class="negrop"><strong>&nbsp;</strong> </span>
-				</p></td>
-			<td width="132" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="130" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="131" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-		</tr>
-		<tr>
-			<td width="74" bgcolor="#999999"><p align="center">
-					<span class="negrop"><strong>3er Lugar</strong> </span>
-				</p></td>
-			<td width="132" bgcolor="#999999"><p align="center">
-					<span class="negrop">$5,000</span>
-				</p></td>
-			<td width="130" bgcolor="#999999"><p align="center">
-					<span class="negrop">$5,000</span>
-				</p></td>
-			<td width="131" bgcolor="#999999"><p align="center">
-					<span class="negrop">$5,000</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">$5,000</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">$5,000</span>
-				</p></td>
-		</tr>
-		<tr>
-			<td width="74" bgcolor="#999999"><p align="center">
-					<span class="negrop"><strong>&nbsp;</strong> </span>
-				</p></td>
-			<td width="132" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="130" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="131" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-		</tr>
-		<tr>
-			<td width="74" bgcolor="#999999"><p align="center">
-					<span class="negrop"><strong>4to. Mención Honorífica</strong> </span>
-				</p></td>
-			<td width="132" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="130" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="131" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-		</tr>
-		<tr>
-			<td width="74" bgcolor="#999999"><p align="center">
-					<span class="negrop"><strong>5to. Mención Honorífica</strong> </span>
-				</p></td>
-			<td width="132" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="130" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="131" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-			<td width="133" bgcolor="#999999"><p align="center">
-					<span class="negrop">Suscripción anual NG / Mexicanísimo</span>
-				</p></td>
-		</tr>
-		<tr>
-			<td colspan="6" bgcolor="#999999"><span class="negrop"><strong>*ANP =
-						área natural protegida</strong> </span></td>
-		</tr>
-	</tbody>
-</table>
+<table width="800" border="0" align="center" cellpadding="5" cellspacing="1">
+                  <tr>
+                    <td colspan="6" align="center" bgcolor="#666666"><p align="center" class="nar">Categor&iacute;a Adulto</p></td>
+                    </tr>
+                  <tr>
+                    <td width="74" align="center" bgcolor="#999999">&nbsp;</td>
+                    <td width="132" bgcolor="#999999"><p align="center"><span class="cifras1Negro"><strong>Fauna silvestre</strong></span></p></td>
+                    <td width="130" bgcolor="#999999"><p align="center"><span class="cifras1Negro"><strong>Plantas y hongos</strong></span></p></td>
+                    <td width="131" bgcolor="#999999"><p align="center"><span class="cifras1Negro"><strong>Naturaleza y ser humano</strong></span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="cifras1Negro"><strong>Paisajes y ecosistemas</strong></span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="cifras1Negro"><strong>Naturaleza en destinos tur&iacute;sticos</strong></span></p></td>
+                    </tr>
+                  <tr>
+                    <td width="74" bgcolor="#999999"><p align="center"><span class="negrop"><strong>1er Lugar</strong></span></p></td>
+                    <td width="132" bgcolor="#999999"><p align="center"><span class="negrop">$15,000</span></p></td>
+                    <td width="130" bgcolor="#999999"><p align="center"><span class="negrop">$15,000</span></p></td>
+                    <td width="131" bgcolor="#999999"><p align="center"><span class="negrop">$15,000</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">$15,000</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">$15,000</span></p></td>
+                    </tr>
+                  <tr>
+                    <td width="74" rowspan="4" bgcolor="#999999"><p align="center"><span class="negrop"><strong>&nbsp;</strong></span></p>                      <p align="center"><span class="negrop"><strong>&nbsp;</strong></span></p>                      <p align="center"><span class="negrop"><strong>&nbsp;</strong></span></p>                      <p align="center">&nbsp;</p></td>
+                    <td width="132" bgcolor="#999999"><p align="center"><span class="negrop">Fotodiario en revista NG</span></p></td>
+                    <td width="130" bgcolor="#999999"><p align="center"><span class="negrop">Fotodiario en revista NG</span></p></td>
+                    <td width="131" bgcolor="#999999"><p align="center"><span class="negrop">Fotodiario en revista NG</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Fotodiario en revista NG</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Fotodiario en revista NG</span></p></td>
+                    </tr>
+                  <tr>
+                    <td width="132" bgcolor="#999999"><p align="center"><span class="negrop">Viaje ANPs*</span></p></td>
+                    <td width="130" bgcolor="#999999"><p align="center"><span class="negrop">Viaje ANPs*</span></p></td>
+                    <td width="131" bgcolor="#999999"><p align="center"><span class="negrop">Viaje ANPs*</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Viaje ANPs*</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Viaje ANPs*</span></p></td>
+                    </tr>
+                  <tr>
+                    <td width="132" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo / M&eacute;xico Desconocido</span></p></td>
+                    <td width="130" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop">/ M&eacute;xico Desconocido</span></p></td>
+                    <td width="131" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop">/ M&eacute;xico Desconocido</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop">/ M&eacute;xico Desconocido</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo / M&eacute;xico Desconocido</span></p></td>
+                    </tr>
+                  <tr>
+                    <td bgcolor="#999999"><p align="center" class="negrop">C&aacute;mara fotogr&aacute;fica Nikon - R&eacute;flex, modelo D3300</p></td>
+                    <td bgcolor="#999999"><p align="center"><span class="negrop">C&aacute;mara fotogr&aacute;fica Nikon - R&eacute;flex, modelo D3300</span></p></td>
+                    <td bgcolor="#999999"><p align="center"><span class="negrop">C&aacute;mara fotogr&aacute;fica Nikon - R&eacute;flex, modelo D3300</span></p></td>
+                    <td bgcolor="#999999"><p align="center"><span class="negrop">C&aacute;mara fotogr&aacute;fica Nikon - R&eacute;flex, modelo D3300</span></p></td>
+                    <td bgcolor="#999999"><p align="center"><span class="negrop">C&aacute;mara fotogr&aacute;fica Nikon - R&eacute;flex, modelo D3300</span></p></td>
+                  </tr>
+                  <tr>
+                    <td width="74" bgcolor="#999999"><p align="center"><span class="negrop"><strong>2do Lugar</strong></span></p></td>
+                    <td width="132" bgcolor="#999999"><p align="center"><span class="negrop">$10,000</span></p></td>
+                    <td width="130" bgcolor="#999999"><p align="center"><span class="negrop">$10,000</span></p></td>
+                    <td width="131" bgcolor="#999999"><p align="center"><span class="negrop">$10,000</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">$10,000</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">$10,000</span></p></td>
+                    </tr>
+                  <tr>
+                    <td width="74" bgcolor="#999999"><p align="center"><span class="negrop"><strong>&nbsp;</strong></span></p></td>
+                    <td width="132" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="130" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="131" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    </tr>
+                  <tr>
+                    <td width="74" bgcolor="#999999"><p align="center"><span class="negrop"><strong>3er Lugar</strong></span></p></td>
+                    <td width="132" bgcolor="#999999"><p align="center"><span class="negrop">$5,000</span></p></td>
+                    <td width="130" bgcolor="#999999"><p align="center"><span class="negrop">$5,000</span></p></td>
+                    <td width="131" bgcolor="#999999"><p align="center"><span class="negrop">$5,000</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">$5,000</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">$5,000</span></p></td>
+                    </tr>
+                  <tr>
+                    <td width="74" bgcolor="#999999"><p align="center"><span class="negrop"><strong>&nbsp;</strong></span></p></td>
+                    <td width="132" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="130" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="131" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    </tr>
+                  <tr>
+                    <td width="74" bgcolor="#999999"><p align="center"><span class="negrop"><strong>4to. Menci&oacute;n Honor&iacute;fica</strong></span></p></td>
+                    <td width="132" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="130" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="131" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    </tr>
+                  <tr>
+                    <td width="74" bgcolor="#999999"><p align="center"><span class="negrop"><strong>5to. Menci&oacute;n Honor&iacute;fica</strong></span></p></td>
+                    <td width="132" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="130" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="131" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo  / M&eacute;xico Desconocido</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&iacute;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    </tr>
+                  <tr>
+                    <td colspan="6" bgcolor="#999999"><span class="negrop"><strong>*ANP = &aacute;rea natural protegida</strong></span></td>
+                    </tr>
+                </table>
 <blockquote>
-	<table width="800" border="0" align="center" cellpadding="5"
-		cellspacing="1">
-		<tbody>
-			<tr>
-				<td colspan="6" align="center" bgcolor="#666666"><p align="center"
-						class="nar">Categoría jóvenes</p></td>
-			</tr>
-			<tr>
-				<td width="74" align="center" bgcolor="#999999">&nbsp;</td>
-				<td width="132" bgcolor="#999999"><p align="center">
-						<span class="cifras1Negro"><strong>Fauna silvestre</strong> </span>
-					</p></td>
-				<td width="130" bgcolor="#999999"><p align="center">
-						<span class="cifras1Negro"><strong>Plantas y hongos</strong> </span>
-					</p></td>
-				<td width="131" bgcolor="#999999"><p align="center">
-						<span class="cifras1Negro"><strong>Naturaleza y ser humano</strong>
-						</span>
-					</p></td>
-				<td width="133" bgcolor="#999999"><p align="center">
-						<span class="cifras1Negro"><strong>Paisajes y ecosistemas</strong>
-						</span>
-					</p></td>
-				<td width="133" bgcolor="#999999"><p align="center">
-						<span class="cifras1Negro"><strong>Naturaleza en destinos
-								turísticos</strong> </span>
-					</p></td>
-			</tr>
-			<tr>
-				<td width="74" bgcolor="#999999"><p align="center">
-						<span class="negrop"><strong>1er Lugar</strong> </span>
-					</p></td>
-				<td width="132" align="center" bgcolor="#999999" class="negrop">Cámara
-					compacta Suscripción anual NG / Mexicanìsimo</td>
-				<td width="130" bgcolor="#999999"><p align="center">
-						<span class="negrop">Cámara compacta Suscripción anual NG /
-							Mexicanìsimo</span>
-					</p></td>
-				<td width="131" bgcolor="#999999"><p align="center">
-						<span class="negrop">Cámara compacta Suscripción anual NG /
-							Mexicanìsimo</span>
-					</p></td>
-				<td width="133" bgcolor="#999999"><p align="center">
-						<span class="negrop">Cámara compacta Suscripción anual NG /
-							Mexicanìsimo</span>
-					</p></td>
-				<td width="133" bgcolor="#999999"><p align="center">
-						<span class="negrop">Cámara compacta Suscripción anual NG /
-							Mexicanìsimo</span>
-					</p></td>
-			</tr>
-		</tbody>
-	</table>
+	<table width="800" border="0" align="center" cellpadding="5" cellspacing="1">
+                    <tr>
+                      <td colspan="6" align="center" bgcolor="#666666"><p align="center" class="nar">Categor&iacute;a j&oacute;venes</p></td>
+                    </tr>
+                    <tr>
+                      <td width="74" align="center" bgcolor="#999999">&nbsp;</td>
+                      <td width="132" bgcolor="#999999"><p align="center"><span class="cifras1Negro"><strong>Fauna silvestre</strong></span></p></td>
+                      <td width="130" bgcolor="#999999"><p align="center"><span class="cifras1Negro"><strong>Plantas y hongos</strong></span></p></td>
+                      <td width="131" bgcolor="#999999"><p align="center"><span class="cifras1Negro"><strong>Naturaleza y ser humano</strong></span></p></td>
+                      <td width="133" bgcolor="#999999"><p align="center"><span class="cifras1Negro"><strong>Paisajes y ecosistemas</strong></span></p></td>
+                      <td width="133" bgcolor="#999999"><p align="center"><span class="cifras1Negro"><strong>Naturaleza en destinos tur&iacute;sticos</strong></span></p></td>
+                    </tr>
+                    <tr>
+                      <td width="74" bgcolor="#999999"><p align="center"><span class="negrop"><strong>1er Lugar</strong></span></p></td>
+                      <td width="132" align="center" bgcolor="#999999" class="negrop"><p>C&aacute;mara compacta Nikon, coolpix modelo P530</p>
+                        <p>Suscripci&oacute;n anual NG / Mexican&igrave;simo  / M&eacute;xico Desconocido</p></td>
+                      <td width="130" bgcolor="#999999"><p align="center" class="negrop">C&aacute;mara compacta Nikon, coolpix modelo P530</p>
+                        <p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&igrave;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                      <td width="131" bgcolor="#999999"><p align="center" class="negrop">C&aacute;mara compacta Nikon, coolpix modelo P530</p>
+                        <p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&igrave;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                      <td width="133" bgcolor="#999999"><p align="center" class="negrop">C&aacute;mara compacta Nikon, coolpix modelo P530</p>
+                        <p align="center"><span class="negrop">Suscripci&oacute;n anual NG / Mexican&igrave;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                      <td width="133" bgcolor="#999999"><p align="center"><span class="negrop">C&aacute;mara compacta Nikon, coolpix modelo P530</span></p>
+                        <p align="center"><span class="negrop"> Suscripci&oacute;n anual NG / Mexican&igrave;simo</span> <span class="negrop"> / M&eacute;xico Desconocido</span></p></td>
+                    </tr>
+                </table>
 </blockquote>
 <p>
 	<strong><br> </strong><span class="nar"><br> 13. Exhibición y
