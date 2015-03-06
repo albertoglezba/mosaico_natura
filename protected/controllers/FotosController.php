@@ -51,7 +51,7 @@ class FotosController extends Controller
 						'users'=>array('@'),
 				),
 				array('allow', // allow admin user to perform 'admin' and 'delete' actions
-						'actions'=>array('view','admin','delete','renombra'),
+						'actions'=>array('view','admin','delete'),//,'renombra','borra'),
 						'users'=>array('calonso'),
 				),
 				array('deny',  // deny all users
@@ -164,7 +164,8 @@ class FotosController extends Controller
 		));
 	}
 	
-	public function actionRenombra() {
+	public function actionRenombra() 
+	{
 		$ruta_prin = realpath ( dirname ( __FILE__ ) ) . "\..\..\..";
 		
 		$fh = fopen ( $ruta_prin . "\concurso\protected\data\archivos_binarios_a_renombrar2.csv", 'r' );
@@ -179,6 +180,20 @@ class FotosController extends Controller
 				echo "\tNO renombro<br>";
 		}
 		fclose ( $fh );
+	}
+	
+	public function actionBorra() 
+	{
+		$ruta_prin = realpath ( dirname ( __FILE__ ) ) . "\..\..\..";
+		$archivos = array("adultos\plantas_y_hongos_en_vida_silvestre\2015-02-26_09-49-03_528.jpg","adultos\fauna_en_vida_silvestre\2015-02-26_10-24-06_528.jpg");
+	
+		foreach ($archivos as $a)
+		{
+			if (unlink("$ruta_prin\concurso\imagenes\fotografias\$a"))
+				echo "Borro: $a";
+			else
+				echo "No borro: $a";
+		}
 	}
 	
 	/**
