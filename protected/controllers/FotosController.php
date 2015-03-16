@@ -26,7 +26,7 @@ class FotosController extends Controller
 				),
 		);
 	}
-	
+
 	/**
 	 * @return array action filters
 	 */
@@ -77,23 +77,28 @@ class FotosController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Fotos;
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Fotos']))
+		$fecha = date("YmdHis");
+		if ($fecha < Yii::app()->params->fecha_termino)
 		{
-			$model->attributes=$_POST['Fotos'];
-			$model->fec_alta=self::fechaAlta();
-				
-			if($model->save())
-				$this->redirect(array('index'));
-		}
+			$model=new Fotos;
 
-		$this->render('create',array(
-				'model'=>$model,
-		));
+			// Uncomment the following line if AJAX validation is needed
+			// $this->performAjaxValidation($model);
+
+			if(isset($_POST['Fotos']))
+			{
+				$model->attributes=$_POST['Fotos'];
+				$model->fec_alta=self::fechaAlta();
+
+				if($model->save())
+					$this->redirect(array('index'));
+			}
+
+			$this->render('create',array(
+					'model'=>$model,
+			));
+		} else
+			throw new CHttpException(404,"El tiempo para registrar tus fotografias ha terminado. Para más información consulta la convocatoria.");
 	}
 
 	/**
@@ -163,11 +168,11 @@ class FotosController extends Controller
 				'model'=>$model,
 		));
 	}
-	
-	public function actionRenombra() 
+
+	public function actionRenombra()
 	{
 		$ruta_prin = realpath ( dirname ( __FILE__ ) ) . "\..\..\..";
-		
+
 		$fh = fopen ( $ruta_prin . "\concurso\protected\data\archivos_binarios_a_renombrar2.csv", 'r' );
 		while ( $line = fgets ( $fh ) ) {
 			$line = trim ( $line );
@@ -181,12 +186,12 @@ class FotosController extends Controller
 		}
 		fclose ( $fh );
 	}
-	
-	public function actionBorra() 
+
+	public function actionBorra()
 	{
 		$ruta_prin = realpath ( dirname ( __FILE__ ) ) . "\..\..\..";
 		$archivos = array("adultos\plantas_y_hongos_en_vida_silvestre\2015-02-26_09-49-03_528.jpg","adultos\fauna_en_vida_silvestre\2015-02-26_10-24-06_528.jpg");
-	
+
 		foreach ($archivos as $a)
 		{
 			if (unlink("$ruta_prin\concurso\imagenes\fotografias\$a"))
@@ -195,7 +200,7 @@ class FotosController extends Controller
 				echo "No borro: $a";
 		}
 	}
-	
+
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
