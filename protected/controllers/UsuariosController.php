@@ -67,26 +67,31 @@ class UsuariosController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Usuarios;
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Usuarios']))
+		$fecha = date("YmdHis");
+		if ($fecha < Yii::app()->params->fecha_termino)
 		{
-			$model->attributes=$_POST['Usuarios'];
-			$model->fec_alta=self::fechaAlta();
+			$model=new Usuarios;
 
-			if($model->save())
+			// Uncomment the following line if AJAX validation is needed
+			// $this->performAjaxValidation($model);
+
+			if(isset($_POST['Usuarios']))
 			{
-				$model->send_mail();
-				$this->redirect(array('/site/confirma'));
-			}
-		}
+				$model->attributes=$_POST['Usuarios'];
+				$model->fec_alta=self::fechaAlta();
 
-		$this->render('create',array(
-				'model'=>$model,
-		));
+				if($model->save())
+				{
+					$model->send_mail();
+					$this->redirect(array('/site/confirma'));
+				}
+			}
+
+			$this->render('create',array(
+					'model'=>$model,
+			));
+		} else
+			throw new CHttpException(404,"El tiempo para registrar tus fotografias ha terminado. Para más información consulta la convocatoria.");
 	}
 
 	/**
@@ -178,7 +183,7 @@ class UsuariosController extends Controller
 					$usuario->confirmo = 1;
 					$usuario->fecha_confirmo = self::fechaAlta();
 					$usuario->para_confirmar = true;
-					
+						
 					if ($usuario->save())
 						$this->redirect(array('/site/login?situacion='.urlencode('Tu cuenta ha sido confirmada.')));
 					else

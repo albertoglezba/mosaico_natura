@@ -26,7 +26,7 @@ class FotosController extends Controller
 				),
 		);
 	}
-	
+
 	/**
 	 * @return array action filters
 	 */
@@ -77,23 +77,28 @@ class FotosController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Fotos;
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Fotos']))
+		$fecha = date("YmdHis");
+		if ($fecha < Yii::app()->params->fecha_termino)
 		{
-			$model->attributes=$_POST['Fotos'];
-			$model->fec_alta=self::fechaAlta();
-				
-			if($model->save())
-				$this->redirect(array('index'));
-		}
+			$model=new Fotos;
 
-		$this->render('create',array(
-				'model'=>$model,
-		));
+			// Uncomment the following line if AJAX validation is needed
+			// $this->performAjaxValidation($model);
+
+			if(isset($_POST['Fotos']))
+			{
+				$model->attributes=$_POST['Fotos'];
+				$model->fec_alta=self::fechaAlta();
+
+				if($model->save())
+					$this->redirect(array('index'));
+			}
+
+			$this->render('create',array(
+					'model'=>$model,
+			));
+		} else
+			throw new CHttpException(404,"El tiempo para registrar tus fotografias ha terminado. Para más información consulta la convocatoria.");
 	}
 
 	/**
@@ -163,11 +168,11 @@ class FotosController extends Controller
 				'model'=>$model,
 		));
 	}
-	
-	public function actionRenombra() 
+
+	public function actionRenombra()
 	{
 		$ruta_prin = realpath ( dirname ( __FILE__ ) ) . "\..\..\..";
-		
+
 		$fh = fopen ( $ruta_prin . "\concurso\protected\data\archivos_binarios_a_renombrar2.csv", 'r' );
 		while ( $line = fgets ( $fh ) ) {
 			$line = trim ( $line );
@@ -193,8 +198,8 @@ class FotosController extends Controller
 					echo "Borro: $a";
 			else
 					echo "No borro: $a";
-        }
-    }
+        	}
+    	}
 	
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
