@@ -182,19 +182,19 @@ class FotosController extends Controller
 		fclose ( $fh );
 	}
 	
-	public function actionBorra() 
+	public function actionBorra()
 	{
 		$ruta_prin = realpath ( dirname ( __FILE__ ) ) . "\..\..\..";
-		$archivos = array("adultos\plantas_y_hongos_en_vida_silvestre\2015-02-26_09-49-03_528.jpg","adultos\fauna_en_vida_silvestre\2015-02-26_10-24-06_528.jpg");
+		$archivos = array("adultos\\plantas_y_hongos_en_vida_silvestre\\2015-02-26_09-49-03_528.jpg","adultos\\fauna_en_vida_silvestre\\2015-02-26_10-24-06_528.jpg");
 	
-		foreach ($archivos as $a)
+		foreach ($archivos as $k => $a)
 		{
-			if (unlink("$ruta_prin\concurso\imagenes\fotografias\$a"))
-				echo "Borro: $a";
+			if (unlink($ruta_prin."\\concurso\\imagenes\\fotografias\\".$a))
+					echo "Borro: $a";
 			else
-				echo "No borro: $a";
-		}
-	}
+					echo "No borro: $a";
+        }
+    }
 	
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
