@@ -10,3 +10,6 @@ protected/config/main.php
 .settings/
 protected/runtime/application.log*
 protected/data/MER_mosaico_natura.mwb.bak
+assets/
+imagenes/fotografias/
+protected/data/
