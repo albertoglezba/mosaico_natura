@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//ES">
-<!-- saved from url=(0042)http://www.mosaiconatura.net/concurso.html -->
 <html>
+<!-- saved from url=(0042)http://www.mosaiconatura.net/concurso.html -->
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -13,8 +14,6 @@
 	href="http://www.mosaiconatura.net/images/favicon.ico">
 <link rel="stylesheet" type="text/css"
 	href="http://www.mosaiconatura.net/estilos.css">
-<script type="text/javascript" async=""
-	src="http://www.mosaiconatura.net/ga.js"></script>
 <script type="text/javascript" async=""
 	src="http://www.mosaiconatura.net/ga.js"></script>
 <script src="http://www.mosaiconatura.net/googleAnalytics.js"></script>
@@ -42,16 +41,23 @@ function MM_preloadImages() { //v3.0
 	href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 <link rel="stylesheet" type="text/css"
 	href="<?php echo Yii::app()->request->baseUrl; ?>/css/jquery.qtip.min.css" />
-	
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style_aws.css">
+
 <script type="text/javascript">
 var YII_PATH = "<?php echo Yii::app()->request->baseUrl; ?>";
 </script>
 
-<script type="text/javascript"
-	src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript"
-	src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/jquery.qtip.min.js"></script>
-<link href="/css/estilosgral.css" rel="stylesheet" type="text/css">
+<!-- Start of the JavaScript -->
+        <!-- Load jQuery & jQuery UI (Needed for the FileUpload Plugin) -->
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/jquery-ui.min.js"></script>
+
+        <!-- Load the FileUpload Plugin (more info @ https://github.com/blueimp/jQuery-File-Upload) -->
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/jquery.fileupload.js"></script>
+        
+        
+<!-- script type="text/javascript"
+	src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/jquery.qtip.min.js"></script-->
 </head>
 
 
@@ -158,8 +164,7 @@ var YII_PATH = "<?php echo Yii::app()->request->baseUrl; ?>";
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-<?php //echo md5("FernandaRuiz|5741974"); ?>
 	<!-- Fin de CÃ³digo -->
 </BODY>
 <!-- InstanceEnd -->
-</HTML>
+</html>
