@@ -145,4 +145,9 @@ class SiteController extends Controller
 		}
 		$this->render('confirma');
 	}
+	
+	public function actionAws()
+	{
+		$this->render('aws');
+	}
 }
