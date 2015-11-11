@@ -123,7 +123,13 @@ return array(
 		// using Yii::app()->params['paramName']
 		'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'calonso@conabio.gob.mx',
-		'fecha_termino'=>'20160101000000'
+			'adminEmail'=>'calonso@conabio.gob.mx',
+			'fecha_termino'=>'20160101000000',
+			
+			// Parte de AWS	
+			'aws_access_key'=>'AAAAAAAAAAAAAAAAAAA',
+			'aws_secret'=>'BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',
+			'bucket'=>'nombre',
+			'region'=>'region'
 		),
 );
