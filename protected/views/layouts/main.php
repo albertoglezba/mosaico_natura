@@ -27,37 +27,36 @@ function MM_preloadImages() { //v3.0
 //-->
 </script>
 
+<?php $yii_path = Yii::app()->request->baseUrl; ?>
 
 <link rel="stylesheet" type="text/css"
-	href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css"
+	href="<?php echo $yii_path; ?>/css/print.css"
 	media="print" />
 <!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="<?php //echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
 	<![endif]-->
 
 <link rel="stylesheet" type="text/css"
-	href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
+	href="<?php echo $yii_path; ?>/css/main.css" />
 <link rel="stylesheet" type="text/css"
-	href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+	href="<?php echo $yii_path; ?>/css/form.css" />
 <link rel="stylesheet" type="text/css"
-	href="<?php echo Yii::app()->request->baseUrl; ?>/css/jquery.qtip.min.css" />
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style_aws.css">
+	href="<?php echo $yii_path; ?>/css/jquery.qtip.min.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/style_aws.css">
+<link rel="stylesheet" href="<?php echo $yii_path; ?>/css/normalize.min.css">
 
-<script type="text/javascript">
-var YII_PATH = "<?php echo Yii::app()->request->baseUrl; ?>";
-</script>
 
 <!-- Start of the JavaScript -->
         <!-- Load jQuery & jQuery UI (Needed for the FileUpload Plugin) -->
-        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/jquery.min.js"></script>
-        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src= "<?php echo $yii_path; ?>/assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="<?php echo $yii_path; ?>/assets/js/jquery-ui.min.js"></script>
 
         <!-- Load the FileUpload Plugin (more info @ https://github.com/blueimp/jQuery-File-Upload) -->
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/jquery.fileupload.js"></script>
+        <script src="<?php echo $yii_path; ?>/assets/js/jquery.fileupload.js"></script>
         
         
 <!-- script type="text/javascript"
-	src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/jquery.qtip.min.js"></script-->
+	src="<?php echo $yii_path; ?>/assets/js/jquery.qtip.min.js"></script-->
 </head>
 
 

@@ -1,9 +1,3 @@
-<?php
-/* @var $this FotosController */
-/* @var $model Fotos */
-/* @var $form CActiveForm */
-?>
-
 <div class="form">
 
 	<?php $form=$this->beginWidget('CActiveForm', array(
@@ -60,18 +54,6 @@
 		<?php echo $form->textArea($model,'descripcion',array('rows'=>10,'cols'=>90)); ?>
 	</div>
 
-	<?php /*if(CCaptcha::checkRequirements()) { ?>
-	<div class="row">
-	<?php echo $form->labelEx($model,'verifyCode'); ?>
-	<div>
-	<?php $this->widget('CCaptcha', array('captchaAction' => 'site/captcha')); ?>
-	<?php echo $form->textField($model,'verifyCode'); ?>
-	</div>
-	<div class="hint">Por favor pon las letras que se muestran a continuación.
-	<br/>No hay distinci&oacute;n entre may&uacute;sculas y min&uacute;sculas.</div>
-	<?php //echo $form->error($model,'verifyCode'); ?>
-	</div>
-	<?php } */?>
 	<br>
 	<div class="row buttons">
 		<?php if ($model->isNewRecord) 
@@ -86,4 +68,3 @@
 	<?php $this->endWidget(); ?>
 
 </div>
-<!-- form -->

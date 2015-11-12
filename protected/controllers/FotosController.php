@@ -47,7 +47,7 @@ class FotosController extends Controller
 	{
 		return array(
 				array('allow', // allow authenticated user to perform 'create' and 'update' actions
-						'actions'=>array('index','create','update'),
+						'actions'=>array('index','create','update','formulario_fotos'),
 						'users'=>array('@'),
 				),
 				array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -199,7 +199,19 @@ class FotosController extends Controller
 			else
 					echo "No borro: $a";
         	}
-    	}
+    }
+    
+    /**
+     * Formulario de fotos llamado desde ajax
+     */
+    public function actionFormulario_fotos()
+    {
+    	/*if (isset($_GET['model']) && !empty($_GET['model']))
+    		$this->render('formulario_fotos',array('model'=>json_decode($_GET['model'])));
+    	else throw new CHttpException(404,'Hubo un error al enviar los datos del formulario, por favor inténtalo de nuevo.');*/
+    		
+    	echo var_dump($_GET['model']);
+    }
 	
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
