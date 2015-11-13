@@ -8,4 +8,4 @@
  multimedia no se permiten hacer cambios)
 
 
-<?php echo $this->renderPartial('_aws', array('model'=>$model)); ?>
+<?php echo $this->renderPartial('_aws'); ?>

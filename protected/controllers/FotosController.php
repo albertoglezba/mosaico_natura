@@ -80,13 +80,12 @@ class FotosController extends Controller
 		$fecha = date("YmdHis");
 		if ($fecha < Yii::app()->params->fecha_termino)
 		{
-			$model=new Fotos;
-
 			// Uncomment the following line if AJAX validation is needed
 			// $this->performAjaxValidation($model);
 
 			if(isset($_POST['Fotos']))
 			{
+				$model=new Fotos;
 				$model->attributes=$_POST['Fotos'];
 				$model->fec_alta=self::fechaAlta();
 
@@ -94,11 +93,10 @@ class FotosController extends Controller
 					$this->redirect(array('index'));
 			}
 
-			$this->render('create',array(
-					'model'=>$model,
-			));
+			$this->render('create');
+			
 		} else
-			throw new CHttpException(404,"El tiempo para registrar tus fotografias ha terminado. Para más información consulta la convocatoria.");
+			throw new CHttpException(404,"El tiempo para registrar tus fotografias/videos ha terminado. Para más información consulta la convocatoria.");
 	}
 
 	/**
@@ -206,11 +204,12 @@ class FotosController extends Controller
      */
     public function actionFormulario_fotos()
     {
-    	/*if (isset($_GET['model']) && !empty($_GET['model']))
-    		$this->render('formulario_fotos',array('model'=>json_decode($_GET['model'])));
-    	else throw new CHttpException(404,'Hubo un error al enviar los datos del formulario, por favor inténtalo de nuevo.');*/
-    		
-    	echo var_dump($_GET['model']);
+    	$this->layout = false;
+    	$model=new Fotos;
+    	
+    	$this->render('formulario_fotos',array(
+    			'model'=>$model,
+    	));
     }
 	
 	/**

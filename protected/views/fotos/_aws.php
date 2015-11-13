@@ -120,6 +120,8 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                 <h3>Files</h3>
                 <textarea id="uploaded"></textarea>
             </div>
+            
+            <div id="formulario_fotos"></div>
 
         </div>
 
@@ -197,10 +199,10 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
 
                         $.ajax({
                         	  method: "GET",
-                        	  url: "<?php echo Yii::app()->request->baseUrl; ?>" + "/index.php/fotos/formulario_fotos.php",
-                        	  data: { ruta: "<?php json_encode($model->getJsonData()); ?>" }
-                        	}).done(function( msg ) {
-                        	    alert( "Data Saved: " + msg );
+                        	  url: "<?php echo Yii::app()->request->baseUrl; ?>" + "/index.php/fotos/formulario_fotos"
+                        	}).done(function( html ) {
+                            	$('#formulario_fotos').append(html);
+                        	    //alert( "Data Saved: " + msg );
                         	  });
                     }
                 });
