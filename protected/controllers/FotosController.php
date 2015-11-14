@@ -83,15 +83,7 @@ class FotosController extends Controller
 			// Uncomment the following line if AJAX validation is needed
 			// $this->performAjaxValidation($model);
 
-			if(isset($_POST['Fotos']))
-			{
-				$model=new Fotos;
-				$model->attributes=$_POST['Fotos'];
-				$model->fec_alta=self::fechaAlta();
-
-				if($model->save())
-					$this->redirect(array('index'));
-			}
+			
 
 			$this->render('create');
 			
@@ -206,6 +198,31 @@ class FotosController extends Controller
     {
     	$this->layout = false;
     	$model=new Fotos;
+    	$this->performAjaxValidation($model);
+    	
+    	if(isset($_POST['Fotos']))
+    	{
+    		$model->attributes=$_POST['Fotos'];
+    		$model->fec_alta=self::fechaAlta();
+    		$valid=$model->validate();
+    	
+    		if ($valid)
+    		{
+    			if($model->save())
+    			{
+    				echo CJSON::encode(array(
+    						'status'=>'success'
+    				));
+    				Yii::app()->end();
+    			}	
+    			
+    		} else {
+    			$error = CActiveForm::validate($model);
+    			if($error!='[]')
+    				echo $error;
+    			Yii::app()->end();
+    		}    			
+    	}
     	
     	$this->render('formulario_fotos',array(
     			'model'=>$model,

@@ -147,7 +147,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                         // and give it a unique name (so it won't overwrite anything already on s3).
                         
                         var file = data.files[0];
-                        var filename = "<?php echo date("Y-m-d_His_1"); ?>" + '.' + file.name.split('.').pop();
+                        var filename = "<?php echo date("Y-m-d_His_").Yii::app()->user->id_usuario; ?>" + '.' + file.name.split('.').pop();
                         form.find('input[name="Content-Type"]').val(file.type);
                         form.find('input[name="key"]').val((folders.length ? folders.join('/') + '/' : '') + filename);
 
@@ -199,10 +199,10 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
 
                         $.ajax({
                         	  method: "GET",
-                        	  url: "<?php echo Yii::app()->request->baseUrl; ?>" + "/index.php/fotos/formulario_fotos"
+                        	  url: "<?php echo Yii::app()->request->baseUrl; ?>" + "/index.php/fotos/formulario_fotos",
+                        	  data: {aws: filesUploaded}
                         	}).done(function( html ) {
                             	$('#formulario_fotos').append(html);
-                        	    //alert( "Data Saved: " + msg );
                         	  });
                     }
                 });
