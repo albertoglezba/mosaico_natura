@@ -1,12 +1,12 @@
-### mosaico_natura ###
 Inscripcion al Concurso de Mosaico Natura
 
-<strong>INTALACIÓN</strong>
+<strong>INSTALACIÓN</strong>
 
 Copiar el archivo protected/config/main.php_ejemplo.php a protected/config/main.php y configurar la base
+
 Dar permisos 777 a las carpetas assets, protected/runtime
 
-<strong>CONFIGURACION</strong>
+<strong>CONFIGURACIÓN</strong>
 
 Para cambiar el key, secret, bitacora en produccion, etc 
 /var/www/html/concurso/protected/config
@@ -25,13 +25,15 @@ Los campos "estado" y "municipio" en la tabla fotos serán sustituidos por los c
 que serán obtenidos de un gmapa, donde el usuario podrá escoger donde tomo la foto, ya sea con coordenadas o por ubicacion
 
 Crear una tabla en la base mosaico_natura llamada "videos"
+
 Videos no tendrá los mismos campos que las fotos, solo tendra un campo obligatorio "descripcion", por ende tambien crear 
+
 un nuevo formulario y modelo para los videos.
 
-Las categorias varian de acuerdo a las prpuestas por Ivan
+Las categorias varian de acuerdo a las propuestas por Iván
 
 En ese archivo especificar cuanto debe ser el mínimo y máximo de peso en las
-fots y los videos (consultar con Miguel e Ivan)
+fotos y los videos (consultar con Miguel e Iván)
 
 Las fotos de la categoria juvenil no tendrán un límite mínimo de peso para subir, asi mismo estas fotos tendrán
 el widget de facebook para que la gente les de like y pueda elegir al ganador
