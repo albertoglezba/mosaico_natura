@@ -1,7 +1,7 @@
 ### mosaico_natura ###
 Inscripcion al Concurso de Mosaico Natura
 
-<strong>INTALACIÓn</strong>
+<strong>INTALACIÓN</strong>
 
 Copiar el archivo protected/config/main.php_ejemplo.php a protected/config/main.php y configurar la base
 Dar permisos 777 a las carpetas assets, protected/runtime
