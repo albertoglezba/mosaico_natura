@@ -43,13 +43,24 @@
 	
 	<?php 
 		echo $form->hiddenField($model,'nombre_original',array('value'=>$_POST["nombre_original"])); 
+		echo $form->error($model,'nombre_original');
+		
 		echo $form->hiddenField($model,'nombre',array('value'=>$_POST["nombre"]));
+		echo $form->error($model,'nombre');
+		
 		echo $form->hiddenField($model,'ruta',array('value'=>$_POST["ruta"]));
+		echo $form->error($model,'ruta');
+		
 		echo $form->hiddenField($model,'size',array('value'=>$_POST["size"]));
+		echo $form->error($model,'size');
+		
 		echo $form->hiddenField($model,'type',array('value'=>$_POST["type"]));
+		echo $form->error($model,'type');
+		
+		echo $form->hiddenField($model,'categoria_id',array('value'=>$_POST["categoria_id"]));
+		echo $form->error($model,'categoria_id');
 	?>
 		
-
 	<br>
 
 	<?php echo CHtml::ajaxSubmitButton('Enviar',CHtml::normalizeUrl(array('fotos/formulario_fotos','render'=>true)),

@@ -204,6 +204,8 @@ class FotosController extends Controller
     	{
     		$model->attributes=$_POST['Fotos'];
     		$model->fec_alta=self::fechaAlta();
+    		$model->usuario_id=Yii::app()->user->id_usuario;
+    		
     		$valid=$model->validate();
     	
     		if ($valid)
