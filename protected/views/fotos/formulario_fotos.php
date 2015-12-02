@@ -40,6 +40,15 @@
 		<?php echo $form->textArea($model,'descripcion',array('rows'=>10,'cols'=>90)); ?>
 		<?php echo $form->error($model,'descripcion'); ?>
 	</div>
+	
+	<?php 
+		echo $form->hiddenField($model,'nombre_original',array('value'=>$_POST["nombre_original"])); 
+		echo $form->hiddenField($model,'nombre',array('value'=>$_POST["nombre"]));
+		echo $form->hiddenField($model,'ruta',array('value'=>$_POST["ruta"]));
+		echo $form->hiddenField($model,'size',array('value'=>$_POST["size"]));
+		echo $form->hiddenField($model,'type',array('value'=>$_POST["type"]));
+	?>
+		
 
 	<br>
 

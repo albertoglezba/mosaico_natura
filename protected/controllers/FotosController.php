@@ -235,9 +235,30 @@ class FotosController extends Controller
     public function actionAws()
     {
     	$this->layout = false;
+
     	if (isset($_POST['categoria']) && !empty($_POST['categoria']))
-    		$this->render('aws');    		
-    	else
+    	{
+    		$categoria_obj = Categorias::model()->findByPk((Int)$_POST['categoria']);
+    		
+    		if (!empty($categoria_obj))
+    		{	
+    		$acentos = array('Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',
+    				'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ñ'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U',
+    				'Ú'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss', 'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a', 'æ'=>'a', 'ç'=>'c',
+    				'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o',
+    				'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y');
+    		
+    		$categoria = strtr($categoria_obj->nombre, $acentos);
+    		$categoria = str_replace(" ", "_", $categoria);
+    		$categoria = strtolower($categoria);
+    		
+    		$this->render('aws', array('categoria' => $categoria, 'categoria_id' => $_POST['categoria'], 'usuario' => Yii::app()->user->id_usuario, 
+    				'fecha' => date("Y-m-d_His_"), 'material' => 'fotografías', 'adulto_juvenil' => 'adulto'));
+    		
+    		} else
+    			throw new CHttpException(NULL,'Lo sentimos, no estás autorizado para realizar esta acción.');
+    	
+    	} else
     		throw new CHttpException(NULL,'Lo sentimos, no estás autorizado para realizar esta acción.');
     }
 	

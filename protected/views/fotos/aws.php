@@ -131,11 +131,10 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
 
                 // Assigned to variable for later use.
                 var form = $('.direct-upload');
-                var filesUploaded = [];
 
                 // Place any uploads within the descending folders
                 // so ['test1', 'test2'] would become /test1/test2/filename
-                var folders = [];
+                var folders = ["<?php echo $material; ?>", "<?php echo $categoria; ?>", "<?php echo $adulto_juvenil; ?>"];
 
                 form.fileupload({
                     url: form.attr('action'),
@@ -147,7 +146,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                         // and give it a unique name (so it won't overwrite anything already on s3).
                         
                         var file = data.files[0];
-                        var filename = "<?php echo date("Y-m-d_His_").Yii::app()->user->id_usuario; ?>" + '.' + file.name.split('.').pop();
+                        var filename = "<?php echo $fecha.$usuario; ?>" + '.' + file.name.split('.').pop();
                         form.find('input[name="Content-Type"]').val(file.type);
                         form.find('input[name="key"]').val((folders.length ? folders.join('/') + '/' : '') + filename);
 
@@ -188,19 +187,20 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                         // e.g. save reference to your server / log it, etc.
                         var original = data.files[0];
                         var s3Result = data.result.documentElement.children;
-                        filesUploaded.push({
+
+                        var filesUploaded = {
                             "original_name": original.name,
                             "s3_name": s3Result[2].innerHTML,
                             "size": original.size,
-                            "url": s3Result[0].innerHTML
-                        });
-                        $('#uploaded').html(JSON.stringify(filesUploaded, null, 2));
-
+                            "url": s3Result[0].innerHTML,
+                            "type": original.type
+                        };
 
                         $.ajax({
-                        	  method: "GET",
+                        	  method: "POST",
                         	  url: "<?php echo Yii::app()->request->baseUrl; ?>" + "/index.php/fotos/formulario_fotos",
-                        	  data: {aws: filesUploaded}
+                        	  data: {categoria_id: "<?php echo $categoria_id; ?>", ruta: filesUploaded.url, nombre_original: filesUploaded.original_name,
+                            	  nombre: filesUploaded.s3_name, size: filesUploaded.size}
                         	}).done(function( html ) {
                             	$('#formulario_fotos').append(html);
                         	  });
