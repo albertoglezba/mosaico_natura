@@ -200,7 +200,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                         	  method: "POST",
                         	  url: "<?php echo Yii::app()->request->baseUrl; ?>" + "/index.php/fotos/formulario_fotos",
                         	  data: {categoria_id: "<?php echo $categoria_id; ?>", ruta: filesUploaded.url, nombre_original: filesUploaded.original_name,
-                            	  nombre: filesUploaded.s3_name, size: filesUploaded.size}
+                            	  nombre: filesUploaded.s3_name, size: filesUploaded.size, type: filesUploaded.type}
                         	}).done(function( html ) {
                             	$('#formulario_fotos').append(html);
                         	  });
