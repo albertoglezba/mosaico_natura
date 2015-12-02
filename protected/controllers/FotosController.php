@@ -79,16 +79,16 @@ class FotosController extends Controller
 	{
 		$fecha = date("YmdHis");
 		if ($fecha < Yii::app()->params->fecha_termino)
-		{
-			// Uncomment the following line if AJAX validation is needed
-			// $this->performAjaxValidation($model);
-
+		{	
+			$puede_subir = Fotos::conCategoriasDisponibles();
 			
-
-			$this->render('create');
-			
+			if ($puede_subir)
+				$this->render('create');
+			else 
+				throw new CHttpException(NULL,"Lo sentimos pero ya has subido una fotografía por cada categoría");
+					
 		} else
-			throw new CHttpException(404,"El tiempo para registrar tus fotografias/videos ha terminado. Para más información consulta la convocatoria.");
+			throw new CHttpException(NULL,"El tiempo para registrar tus fotografias/videos ha terminado. Para más información consulta la convocatoria.");
 	}
 
 	/**

@@ -189,7 +189,7 @@ class Fotos extends CActiveRecord
 		if (count($categorias_usuario) > 0)
 		{
 			$lista = "<select name=\"Fotos[categoria_id]\" id=\"Fotos_categoria_id\">";
-			$lista.= "<option>--Selecciona---</option>";
+			$lista.= "<option>---Selecciona---</option>";
 			$categorias = Categorias::model()->findAll();
 
 			foreach ($categorias as $c)
@@ -205,5 +205,20 @@ class Fotos extends CActiveRecord
 					CHtml::listData(Categorias::model()->findAll(), 'id', 'nombre'),
 					array('prompt'=>'---Selecciona---'));
 		return $lista;	
+	}
+	
+	/**
+	 * Regresa true si aun puede subir fotografias en alguna categoria, de lo cotrario false
+	 */
+	public static function conCategoriasDisponibles()
+	{
+		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+		$categorias_usuario = $usuario->usuarios_categorias();
+	
+		// Ya no puede subir mas fotografias
+		if (count($categorias_usuario) == 6)
+			return false;	
+		else			
+			return true;
 	}
 }

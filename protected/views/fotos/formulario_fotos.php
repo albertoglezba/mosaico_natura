@@ -16,21 +16,6 @@
 	<p class="note">
 		Campos con <span class="required">*</span> son requeridos.
 	</p>
-
-	<?php if ($model->isNewRecord) { ?>
-	<div class="row">
-		<?php echo $form->labelEx($model,'categoria_id'); ?>
-		<?php echo $model->categorias($form, $model); ?>
-		<?php echo $form->error($model,'categoria_id'); ?>
-	</div>
-
-	<?php } else { ?>
-	<p>
-		<?php echo "<b>Categoria: </b>".$model->categoria->nombre; ?>
-	</p>
-	<?php echo CHtml::image($model->ruta."/".$model->nombre, $model->nombre_original,
-			array("title"=>$model->categoria->nombre, "width"=>"300px")); ?>
-	<?php } ?>
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'marca'); ?>
