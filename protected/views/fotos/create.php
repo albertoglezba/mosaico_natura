@@ -1,12 +1,14 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#Fotos_categoria_id').on('change', function(){
+
 		$.ajax({
-      	  method: "GET",
-      	  url: "<?php echo Yii::app()->request->baseUrl; ?>" + "/index.php/fotos/formulario_fotos",
-      	  data: {aws: filesUploaded}
+      	  method: "POST",
+      	  url: "<?php echo Yii::app()->request->baseUrl; ?>" + "/index.php/fotos/aws",
+      	  data: {categoria: $(this).val()}
       	}).done(function( html ) {
-          	$('#formulario_fotos').append(html);
+          	$('#Fotos_categoria_id').attr('disabled', 'disabled');
+          	$('#formulario_completo').append(html);
       	  });
 	});	
 });	
@@ -20,13 +22,18 @@ $(document).ready(function(){
 			'id'=>'categoria-form',
 			'enableAjaxValidation'=>false )); ?>
 
+<div class="form">
+
 <?php $model=new Fotos; ?>
 	<div class="row">
 		<?php echo CHtml::label('Categoria','categoria_id'); ?>
 		<?php echo $model->categorias($form, $model); ?>
 		<?php echo $form->error($model,'categoria_id'); ?>
 	</div>
-	
-<?php echo $this->renderPartial('_aws'); ?>
+
+</div>
 
 <?php $this->endWidget(); ?>
+
+
+<div id='formulario_completo'></div>

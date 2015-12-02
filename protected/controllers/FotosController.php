@@ -47,7 +47,7 @@ class FotosController extends Controller
 	{
 		return array(
 				array('allow', // allow authenticated user to perform 'create' and 'update' actions
-						'actions'=>array('index','create','update','formulario_fotos'),
+						'actions'=>array('index','create','update','formulario_fotos','aws'),
 						'users'=>array('@'),
 				),
 				array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -227,6 +227,18 @@ class FotosController extends Controller
     	$this->render('formulario_fotos',array(
     			'model'=>$model,
     	));
+    }
+    
+    /**
+     * La vista del AWS
+     */
+    public function actionAws()
+    {
+    	$this->layout = false;
+    	if (isset($_POST['categoria']) && !empty($_POST['categoria']))
+    		$this->render('aws');    		
+    	else
+    		throw new CHttpException(NULL,'Lo sentimos, no estás autorizado para realizar esta acción.');
     }
 	
 	/**
