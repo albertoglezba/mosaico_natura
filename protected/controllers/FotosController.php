@@ -81,11 +81,20 @@ class FotosController extends Controller
 		if ($fecha < Yii::app()->params->fecha_termino)
 		{	
 			$puede_subir = Fotos::conCategoriasDisponibles();
+			$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 			
-			if ($puede_subir)
-				$this->render('create');
-			else 
-				throw new CHttpException(NULL,"Lo sentimos pero ya has subido una fotografía por cada categoría");
+			if (isset($usuario->edad))
+			{
+				if ($puede_subir)
+				{
+					$adulto = $usuario->edad > 17 ? '1' : '0';
+					$this->render('create', array('adulto'=>$adulto));
+				
+				} else
+					throw new CHttpException(NULL,"Lo sentimos pero ya has subido una fotografía por cada categoría");
+			
+			} else
+				throw new CHttpException(NULL,"Ocurrió un error, por favor inténtalo de nuevo.");
 					
 		} else
 			throw new CHttpException(NULL,"El tiempo para registrar tus fotografias/videos ha terminado. Para más información consulta la convocatoria.");
@@ -255,7 +264,7 @@ class FotosController extends Controller
     		$categoria = strtolower($categoria);
     		
     		$this->render('aws', array('categoria' => $categoria, 'categoria_id' => $_POST['categoria'], 'usuario' => Yii::app()->user->id_usuario, 
-    				'fecha' => date("Y-m-d_His_"), 'material' => 'fotografías', 'adulto_juvenil' => 'adulto'));
+    				'fecha' => date("Y-m-d_His_"), 'material' => 'f', 'adulto_juvenil' => 'adulto'));
     		
     		} else
     			throw new CHttpException(NULL,'Lo sentimos, no estás autorizado para realizar esta acción.');

@@ -5,7 +5,7 @@ $(document).ready(function(){
 		$.ajax({
       	  method: "POST",
       	  url: "<?php echo Yii::app()->request->baseUrl; ?>" + "/index.php/fotos/aws",
-      	  data: {categoria: $(this).val()}
+      	  data: {categoria: $(this).val(), adulto: "<?php echo $adulto; ?>"}
       	}).done(function( html ) {
           	$('#Fotos_categoria_id').attr('disabled', 'disabled');
           	$('#formulario_completo').append(html);

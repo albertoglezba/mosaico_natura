@@ -58,7 +58,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
             ['bucket' => $s3Bucket],
             ['acl' => $acl],
             ['starts-with', '$key', ''],
-            ['starts-with', '$Content-Type', ''],
+            ['starts-with', '$Content-Type', 'image/jpeg'],
             ['success_action_status' => $successStatus],
             ['x-amz-credential' => $credentials],
             ['x-amz-algorithm' => $algorithm],
@@ -108,7 +108,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
 
                 <!-- Key is the file's name on S3 and will be filled in with JS -->
                 <input type="hidden" name="key" value="">
-                <input type="file" name="file" multiple>
+                <input type="file" name="file" id="file_to_upload" multiple>
 
                 <!-- Progress Bars to show upload completion percentage -->
                 <div class="progress-bar-area"></div>
@@ -129,12 +129,19 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
         <script>
             $(document).ready(function () {
 
+            	$()
                 // Assigned to variable for later use.
                 var form = $('.direct-upload');
 
                 // Place any uploads within the descending folders
                 // so ['test1', 'test2'] would become /test1/test2/filename
+                
                 var folders = ["<?php echo $material; ?>", "<?php echo $categoria; ?>", "<?php echo $adulto_juvenil; ?>"];
+
+                if ("<?php echo $_POST['adulto']; ?>" == "1")  // Para adultos
+                
+                else
+                
 
                 form.fileupload({
                     url: form.attr('action'),
@@ -147,6 +154,9 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                         
                         var file = data.files[0];
                         var filename = "<?php echo $fecha.$usuario; ?>" + '.' + file.name.split('.').pop();
+						var size = file.size;
+						var type = file.type;
+                        
                         form.find('input[name="Content-Type"]').val(file.type);
                         form.find('input[name="key"]').val((folders.length ? folders.join('/') + '/' : '') + filename);
 
@@ -155,6 +165,20 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                             return 'You have unsaved changes.';
                         };
 
+                        if ("<?php echo $_POST['adulto']; ?>" == "1")  // Para adultos
+                        {
+                        	if (size >= 1024*1024*6 && size <= 1024*1024*10 && type == 'image/jpeg')
+                              	alert(1);
+                            else
+                                alert(2);
+
+                        } else {  // Para jovenes
+                        	if (size <= 1024*1024*10 && type == 'image/jpeg')
+                              	alert(3);
+                            else
+                                alert(4);
+                        } 
+                   
                         // Actually submit to form to S3.
                         data.submit();
 
@@ -205,6 +229,6 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                             	$('#formulario_fotos').append(html);
                         	  });
                     }
-                });
+                });  // cierra fileupload
             });
         </script>
