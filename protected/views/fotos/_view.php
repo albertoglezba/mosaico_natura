@@ -35,7 +35,7 @@
 	else 
 		echo "<b>Descripción:</b> ".$data->descripcion;
 	?>
-	<?php echo CHtml::image($data->ruta."/".$data->nombre, $data->nombre_original,
+	<?php echo CHtml::image($data->ruta, '',
 			array("title"=>$data->categoria->nombre, "width"=>"900px")) ?>
 	<br />
 </div>
