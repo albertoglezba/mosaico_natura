@@ -17,117 +17,116 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'nombre'); ?>
-		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'nombre',array('class'=>'form-control')); ?>
 		<?php //echo $form->error($model,'nombre'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'apellido'); ?>
-		<?php echo $form->textField($model,'apellido',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'apellido',array('class' => 'form-control')); ?>
 		<?php //echo $form->error($model,'apellido'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'telefonos'); ?>
-		<?php echo $form->textField($model,'telefonos',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'telefonos',array('class' => 'form-control')); ?>
 		<?php //echo $form->error($model,'telefonos'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'calle_y_numero'); ?>
-		<?php echo $form->textField($model,'calle_y_numero',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'calle_y_numero',array('class' => 'form-control')); ?>
 		<?php //echo $form->error($model,'calle_y_numero'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'colonia'); ?>
-		<?php echo $form->textField($model,'colonia',array('size'=>60,'maxlength'=>255)); ?>
-		<?php //echo $form->error($model,'colonia'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'municipio'); ?>
-		<?php echo $form->textField($model,'municipio',array('size'=>60,'maxlength'=>255)); ?>
-		<?php //echo $form->error($model,'municipio'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'estado'); ?>
-		<?php echo $form->dropDownList($model, 'estado', Usuarios::estados(), array('prompt'=>'---Selecciona---')); ?>
-		<?php //echo $form->error($model,'estado'); ?>
-	</div>
-
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'cp'); ?>
-		<?php echo $form->textField($model,'cp',array('size'=>5,'maxlength'=>5)); ?>
+		<?php echo $form->textField($model,'cp',array('class' => 'form-control')); ?>
 		<?php //echo $form->error($model,'cp'); ?>
 	</div>
 
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'estado'); ?>
+		<?php echo $form->dropDownList($model, 'estado', Usuarios::estados(), array('prompt'=>'---Selecciona---','class' => 'form-control')); ?>
+		<?php //echo $form->error($model,'estado'); ?>
+	</div>
+
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'municipio'); ?>
+		<?php echo $form->textField($model,'municipio',array('class' => 'form-control')); ?>
+		<?php //echo $form->error($model,'municipio'); ?>
+	</div>
+
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'colonia'); ?>
+		<?php echo $form->textField($model,'colonia',array('class' => 'form-control')); ?>
+		<?php //echo $form->error($model,'colonia'); ?>
+	</div>
+
+
 	<?php if ($model->isNewRecord) { ?>
-	<br> <b>Los siguientes campos no pueden ser modificados una vez creado
-		el registro.</b>
-	<div class="row">
+	<br> <b>Los siguientes campos no pueden ser modificados una vez creado el registro.</b>
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'edad'); ?>
-		<?php echo $form->textField($model,'edad',array('size'=>2,'maxlength'=>2)); ?>
+		<?php echo $form->textField($model,'edad',array('class' => 'form-control')); ?>
 		<br>(Dependiendo tu edad es la categor&iacute;a en la que ingresas; menores de 18
 		a&ntilde;os para categor&iacute;a <b>J&oacute;venes</b> y de 18 a&ntilde;os en adelante
 		para categor&iacute;a <b>Adultos</b>)
 		<?php //echo $form->error($model,'apellido'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'correo'); ?>
-		<?php echo $form->textField($model,'correo',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'correo',array('class' => 'form-control')); ?>
 		<?php //echo $form->error($model,'correo'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'usuario'); ?>
-		<?php echo $form->textField($model,'usuario',array('size'=>60,'maxlength'=>255, 'autocomplete'=>'off')); ?>
+		<?php echo $form->textField($model,'usuario',array('class' => 'form-control', 'autocomplete'=>'off')); ?>
 		<?php //echo $form->error($model,'usuario'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'passwd'); ?>
-		<?php echo $form->passwordField($model,'passwd',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->passwordField($model,'passwd',array('class' => 'form-control')); ?>
 		<?php //echo $form->error($model,'passwd'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'confirma_passwd'); ?>
-		<?php echo $form->passwordField($model,'confirma_passwd',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->passwordField($model,'confirma_passwd',array('class' => 'form-control')); ?>
 		<?php //echo $form->error($model,'passwd'); ?>
 	</div>
 
-	<div class="row">
-		<iframe id="tcIframe" width="100%" height="550"
-			src="<?php echo Yii::app()->getBaseUrl(false); ?>/index.php/site/terminos_y_condiciones"></iframe>
+	<div id="terminos">
+		<?php include('protected/views/site/terminos_y_condiciones.php'); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->labelEx($model,'acepto_terminos'); ?>
 		<?php echo $form->checkBox($model,'acepto_terminos'); ?>
 	</div>
 
-	<?php } else { //pone la cinfirmacion del passwd ?> 
+	<?php } else { //pone la confirmación del passwd ?>
 	<br>Si no deseas cambiar tu contrase&ntilde;a por favor deja estos campos vac&iacute;os.
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'passwd'); ?>
-		<?php echo $form->passwordField($model,'passwd',array('size'=>60,'maxlength'=>255,'value'=>'')); ?>
+		<?php echo $form->passwordField($model,'passwd',array('class' => 'form-control','value'=>'')); ?>
 		<?php //echo $form->error($model,'passwd'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'confirma_passwd'); ?>
-		<?php echo $form->passwordField($model,'confirma_passwd',array('size'=>60,'maxlength'=>255,'value'=>'')); ?>
+		<?php echo $form->passwordField($model,'confirma_passwd',array('class' => 'form-control','value'=>'')); ?>
 		<?php //echo $form->error($model,'passwd'); ?>
 	</div>
 	<?php } ?>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear cuenta' : 'Guardar cambios'); ?>
+	<div class="buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear cuenta' : 'Guardar cambios', array('class' => 'btn btn-sm btn-success')); ?>
 	</div>
 
 	<?php $this->endWidget(); ?>
