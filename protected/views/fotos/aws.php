@@ -58,7 +58,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
             ['bucket' => $s3Bucket],
             ['acl' => $acl],
             ['starts-with', '$key', ''],
-            ['starts-with', '$Content-Type', 'image/jpeg'],
+            ['starts-with', '$Content-Type', ''],
             ['success_action_status' => $successStatus],
             ['x-amz-credential' => $credentials],
             ['x-amz-algorithm' => $algorithm],
@@ -106,6 +106,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                     <input type="hidden" name="<?php echo $name; ?>" value="<?php echo $value; ?>">
                 <?php } ?>
 
+                <label for="file" id="label_file"></label>
                 <!-- Key is the file's name on S3 and will be filled in with JS -->
                 <input type="hidden" name="key" value="">
                 <input type="file" name="file" id="file_to_upload" multiple>
@@ -136,12 +137,13 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                 // Place any uploads within the descending folders
                 // so ['test1', 'test2'] would become /test1/test2/filename
                 
-                var folders = ["<?php echo $material; ?>", "<?php echo $categoria; ?>", "<?php echo $adulto_juvenil; ?>"];
+                var folders = ["<?php echo $material; ?>", "<?php echo $categoria; ?>"];
 
                 if ("<?php echo $_POST['adulto']; ?>" == "1")  // Para adultos
-                
+                	folders.push("adulto");
                 else
-                
+                	folders.push("juvenil");
+        
 
                 form.fileupload({
                     url: form.attr('action'),
@@ -168,28 +170,50 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                         if ("<?php echo $_POST['adulto']; ?>" == "1")  // Para adultos
                         {
                         	if (size >= 1024*1024*6 && size <= 1024*1024*10 && type == 'image/jpeg')
-                              	alert(1);
-                            else
-                                alert(2);
+                        	{
+                        		$('#label_file').empty();
+                        		// Actually submit to form to S3.
+                                data.submit();
+
+                                // Show the progress bar
+                                // Uses the file size as a unique identifier
+                                var bar = $('<div class="progress" data-mod="'+file.size+'"><div class="bar"></div></div>');
+                                $('.progress-bar-area').append(bar);
+                                bar.slideDown('fast');
+
+                                // Hidde the input file, one at a time
+                                form.find('input[name="file"]').hide();
+                        	}		
+
+                            else {
+                                $('#label_file').empty().html('La fotografía debe de ser .jpg y debe pesar por lo menos 6MB y máximo 10 MB');
+                                return false;
+                            }    
 
                         } else {  // Para jovenes
                         	if (size <= 1024*1024*10 && type == 'image/jpeg')
-                              	alert(3);
-                            else
-                                alert(4);
+                        	{
+                        		$('#label_file').empty();
+                        		// Actually submit to form to S3.
+                                data.submit();
+
+                                // Show the progress bar
+                                // Uses the file size as a unique identifier
+                                var bar = $('<div class="progress" data-mod="'+file.size+'"><div class="bar"></div></div>');
+                                $('.progress-bar-area').append(bar);
+                                bar.slideDown('fast');
+
+                                // Hidde the input file, one at a time
+                                form.find('input[name="file"]').hide();
+                        	}	
+
+                        	else {
+                            	$('#label_file').empty().html('La fotografía debe de ser .jpg y debe pesar por lo menos 6MB y máximo 10 MB');
+                                return false;
+                            }   
                         } 
                    
-                        // Actually submit to form to S3.
-                        data.submit();
-
-                        // Show the progress bar
-                        // Uses the file size as a unique identifier
-                        var bar = $('<div class="progress" data-mod="'+file.size+'"><div class="bar"></div></div>');
-                        $('.progress-bar-area').append(bar);
-                        bar.slideDown('fast');
-
-                        // Hidde the input file, one at a time
-                        form.find('input[name="file"]').hide();
+                      
                     },
                     progress: function (e, data) {
                         // This is what makes everything really cool, thanks to that callback
