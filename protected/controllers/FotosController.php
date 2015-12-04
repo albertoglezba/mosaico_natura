@@ -247,7 +247,7 @@ class FotosController extends Controller
     {
     	$this->layout = false;
 
-    	if (isset($_POST['categoria']) && !empty($_POST['categoria']) && isset($_POST['adulto']) && !empty($_POST['adulto']))
+    	if (isset($_POST['categoria']) && !empty($_POST['categoria']) && isset($_POST['adulto']))
     	{
     		$categoria_obj = Categorias::model()->findByPk((Int)$_POST['categoria']);
     		
@@ -264,7 +264,7 @@ class FotosController extends Controller
     		$categoria = strtolower($categoria);
     		
     		$this->render('aws', array('categoria' => $categoria, 'categoria_id' => $_POST['categoria'], 'usuario' => Yii::app()->user->id_usuario, 
-    				'fecha' => date("Y-m-d_His_"), 'material' => 'fotografías', 'adulto' => $_POST['adulto']));
+    				'fecha' => date("Y-m-d_His_"), 'material' => 'fotografias', 'adulto' => $_POST['adulto']));
     		
     		} else
     			throw new CHttpException(NULL,'Lo sentimos, no estás autorizado para realizar esta acción.');

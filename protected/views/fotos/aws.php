@@ -109,7 +109,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                 <label for="file" id="label_file"></label>
                 <!-- Key is the file's name on S3 and will be filled in with JS -->
                 <input type="hidden" name="key" value="">
-                <input type="file" name="file" id="file_to_upload" multiple>
+                <input type="file" name="file" id="file_to_upload">
 
                 <!-- Progress Bars to show upload completion percentage -->
                 <div class="progress-bar-area"></div>
@@ -128,15 +128,101 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
 
 
         <script>
-            $(document).ready(function () {
 
-            	$()
+        
+
+        
+            $(document).ready(function () {           	                              
+
+
+
+
+
+            	// Para obtener las dimensiones del archivo antes de mandarlo y el tipo de archivo
+                res = {};
+
+                loadImage = function (file) {
+                    //var fr, img;
+                    //this.res = 0;
+                    
+                    //var _self = this;
+
+               		     
+                    
+                    /*
+                    fr = new FileReader();
+                    //fr.onload = createImage;
+                    
+                    img = document.createElement('img');
+                    //img.onload = imageLoaded;
+
+                    if ("<?php //echo $_POST['adulto']; ?>" == "1")  // Para adultos
+                    {
+                    	if (img.width >= 3000 || img.height >= 3000)
+                        {
+                            if (file.type == 'image/jpeg')
+                            {
+                                res.is_valid = true;
+                            } else {
+                            	res.is_valid = false;
+                                res.error = 'Solo se admiten extensiones .jpg';
+                            }
+                            
+                        } else {
+                            res.is_valid = false;
+                            console.log(img.width);
+                            res.error = 'La resolución de tu fotografá es: ' + img.width + 'x' + img.height + 'px; El requisito es que el lado mas grande tu fotogrfá debe ser mínimo de 3000px';
+                        }     
+
+                    } else {  // Para jovenes
+                    	if (file.type == 'image/jpeg')
+                        {
+                            res.is_valid = true;
+                        } else {
+                        	res.is_valid = false;
+                            res.error = 'Solo se admiten extensiones .jpg';
+                        }
+                    }
+                    
+                    img.src = fr.result;        
+                    fr.readAsDataURL(file);*/
+
+                    var reader  = new FileReader();
+
+                    reader.onchage   = function(e)
+                    {
+                        var image   = new Image();
+                        //res.width =  'siii';
+
+                        //console.log(res);
+                        image.onload    = function()
+                        {
+                            //console.log(image.width, image.height);
+                            res.width =  image.width;
+                            //console.log(res.width);
+                            
+                        };
+
+                        image.src   = e.target.result;
+                    };
+
+                    //console.log(res.width);
+                    reader.readAsDataURL(file);       
+                    return res;
+                }
+
+
+
+
+
+
+
+
+                        
                 // Assigned to variable for later use.
                 var form = $('.direct-upload');
 
-                // Place any uploads within the descending folders
-                // so ['test1', 'test2'] would become /test1/test2/filename
-                
+                // Place any uploads within the descending folders                
                 var folders = ["<?php echo $material; ?>", "<?php echo $categoria; ?>"];
 
                 if ("<?php echo $_POST['adulto']; ?>" == "1")  // Para adultos
@@ -156,8 +242,8 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                         
                         var file = data.files[0];
                         var filename = "<?php echo $fecha.$usuario; ?>" + '.' + file.name.split('.').pop();
-						var size = file.size;
-						var type = file.type;
+						//var size = file.size;
+						//var type = file.type;
                         
                         form.find('input[name="Content-Type"]').val(file.type);
                         form.find('input[name="key"]').val((folders.length ? folders.join('/') + '/' : '') + filename);
@@ -165,13 +251,19 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                         // Show warning message if your leaving the page during an upload.
                         window.onbeforeunload = function () {
                             return 'You have unsaved changes.';
-                        };
+                        };      
+                        
+                        
+                        console.log(loadImage(file));
+                                      
 
-                        if ("<?php echo $_POST['adulto']; ?>" == "1")  // Para adultos
+                        /*
+                        if ("<?php //echo $_POST['adulto']; ?>" == "1")  // Para adultos
                         {
                         	if (size >= 1024*1024*6 && size <= 1024*1024*10 && type == 'image/jpeg')
                         	{
                         		$('#label_file').empty();
+                        		
                         		// Actually submit to form to S3.
                                 data.submit();
 
@@ -211,9 +303,27 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                             	$('#label_file').empty().html('La fotografía debe de ser .jpg y debe pesar por lo menos 6MB y máximo 10 MB');
                                 return false;
                             }   
-                        } 
-                   
-                      
+                        } */
+
+                        if (res.is_valid)
+                        {
+                        	$('#label_file').empty();
+                    		// Actually submit to form to S3.
+                            data.submit();
+
+                            // Show the progress bar
+                            // Uses the file size as a unique identifier
+                            var bar = $('<div class="progress" data-mod="'+file.size+'"><div class="bar"></div></div>');
+                            $('.progress-bar-area').append(bar);
+                            bar.slideDown('fast');
+
+                            // Hidde the input file, one at a time
+                            form.find('input[name="file"]').hide();
+                            
+                        } else {
+                        	$('#label_file').empty().html(res.error);
+                            return false;   
+                        }                                  
                     },
                     progress: function (e, data) {
                         // This is what makes everything really cool, thanks to that callback
