@@ -47,11 +47,11 @@ class VideosController extends Controller
 	{
 		return array(
 				array('allow', // allow authenticated user to perform 'create' and 'update' actions
-						'actions'=>array('index','create','update','formulario_fotos','aws'),
+						'actions'=>array('index','create','formulario_videos'),
 						'users'=>array('@'),
 				),
 				array('allow', // allow admin user to perform 'admin' and 'delete' actions
-						'actions'=>array('view','admin','delete'),//,'renombra','borra'),
+						'actions'=>array('view','admin','delete', 'update'),//,'renombra','borra'),
 						'users'=>array('calonso'),
 				),
 				array('deny',  // deny all users
@@ -80,24 +80,25 @@ class VideosController extends Controller
 		$fecha = date("YmdHis");
 		if ($fecha < Yii::app()->params->fecha_termino)
 		{	
-			$puede_subir = Fotos::conCategoriasDisponibles();
+			$puede_subir = Videos::soloUnVideo();
 			$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 			
-			if (isset($usuario->edad))
+			if (isset($usuario->edad) && $usuario->edad > 17)
 			{
 				if ($puede_subir)
 				{
 					$adulto = $usuario->edad > 17 ? '1' : '0';
-					$this->render('create', array('adulto'=>$adulto));
+					$this->render('create', array('material'=>'videos', 'usuario' => Yii::app()->user->id_usuario, 
+    				'fecha' => date("Y-m-d_His_")));
 				
 				} else
-					throw new CHttpException(NULL,"Lo sentimos pero ya has subido una fotografía por cada categoría");
+					throw new CHttpException(NULL,"Lo sentimos pero solo se permite subir un video");
 			
 			} else
-				throw new CHttpException(NULL,"Ocurrió un error, por favor inténtalo de nuevo.");
+				throw new CHttpException(NULL,"Lo sentimos, esta opción solo es para participantes a partir de 18 años.");
 					
 		} else
-			throw new CHttpException(NULL,"El tiempo para registrar tus fotografias/videos ha terminado. Para más información consulta la convocatoria.");
+			throw new CHttpException(NULL,"El tiempo para registrar tus videos ha terminado. Para más información consulta la convocatoria.");
 	}
 
 	/**
@@ -203,15 +204,15 @@ class VideosController extends Controller
     /**
      * Formulario de fotos llamado desde ajax
      */
-    public function actionFormulario_fotos()
+    public function actionFormulario_videos()
     {
     	$this->layout = false;
-    	$model=new Fotos;
+    	$model=new Videos;
     	$this->performAjaxValidation($model);
     	
-    	if(isset($_POST['Fotos']))
+    	if(isset($_POST['Videos']))
     	{
-    		$model->attributes=$_POST['Fotos'];
+    		$model->attributes=$_POST['Videos'];
     		$model->fec_alta=self::fechaAlta();
     		$model->usuario_id=Yii::app()->user->id_usuario;
     		
@@ -235,42 +236,9 @@ class VideosController extends Controller
     		}    			
     	}
     	
-    	$this->render('formulario_fotos',array(
+    	$this->render('formulario_videos',array(
     			'model'=>$model,
     	));
-    }
-    
-    /**
-     * La vista del AWS
-     */
-    public function actionAws()
-    {
-    	$this->layout = false;
-
-    	if (isset($_POST['categoria']) && !empty($_POST['categoria']) && isset($_POST['adulto']))
-    	{
-    		$categoria_obj = Categorias::model()->findByPk((Int)$_POST['categoria']);
-    		
-    		if (!empty($categoria_obj))
-    		{	
-    		$acentos = array('Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',
-    				'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ñ'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U',
-    				'Ú'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss', 'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a', 'æ'=>'a', 'ç'=>'c',
-    				'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o',
-    				'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y');
-    		
-    		$categoria = strtr($categoria_obj->nombre, $acentos);
-    		$categoria = str_replace(" ", "_", $categoria);
-    		$categoria = strtolower($categoria);
-    		
-    		$this->render('aws', array('categoria' => $categoria, 'categoria_id' => $_POST['categoria'], 'usuario' => Yii::app()->user->id_usuario, 
-    				'fecha' => date("Y-m-d_His_"), 'material' => 'fotografias', 'adulto' => $_POST['adulto']));
-    		
-    		} else
-    			throw new CHttpException(NULL,'Lo sentimos, no estás autorizado para realizar esta acción.');
-    	
-    	} else
-    		throw new CHttpException(NULL,'Lo sentimos, no estás autorizado para realizar esta acción.');
     }
 	
 	/**
@@ -282,7 +250,7 @@ class VideosController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Fotos::model()->findByPk($id);
+		$model=Videos::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -294,7 +262,7 @@ class VideosController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='fotos-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='videos-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
