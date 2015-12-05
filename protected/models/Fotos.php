@@ -162,7 +162,7 @@ class Fotos extends CActiveRecord
 		
 		if (count($categorias_usuario) > 0)
 		{
-			$lista = "<select name=\"Fotos[categoria_id]\" id=\"Fotos_categoria_id\">";
+			$lista = "<select name=\"Fotos[categoria_id]\" id=\"Fotos_categoria_id\" class=\"form-control\">";
 			$lista.= "<option>---Selecciona---</option>";
 			$categorias = Categorias::model()->findAll();
 
@@ -177,7 +177,7 @@ class Fotos extends CActiveRecord
 		} else
 			$lista = $form->dropDownList($model, 'categoria_id', 
 					CHtml::listData(Categorias::model()->findAll(), 'id', 'nombre'),
-					array('prompt'=>'---Selecciona---'));
+					array('prompt'=>'---Selecciona---', 'class'=>'form-control'));
 		return $lista;	
 	}
 	
