@@ -14,10 +14,10 @@ $(document).ready(function(){
 });	
 </script>
 
-<h4><em>Primer paso</em>, elige subir una fotografía o un video</h4>
+<h4><em>Primer paso</em>, una categoría</h4>
 <p class="text-warning">
-	(Recuerda que solo puedes subir una por categor&iacute;a, una vez procesado el material
-	multimedia no se permiten hacer cambios)
+	(Recuerda que solo puedes subir una fotografía por categor&iacute;a, una vez procesada
+	no se permiten hacer cambios)
 </p>
 
 <?php $form=$this->beginWidget('CActiveForm', array(

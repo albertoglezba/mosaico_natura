@@ -28,6 +28,7 @@
 	<!-- Load the FileUpload Plugin (more info @ https://github.com/blueimp/jQuery-File-Upload) -->
 	<script type="text/javascript" src="<?php echo $yii_path; ?>/assets/js/jquery.fileupload.js"></script>
 	<script type="text/javascript" src="<?php echo $yii_path; ?>/assets/js/jquery.qtip.min.js"></script>	
+	<script type="text/javascript" src='http://maps.google.com/maps/api/js?libraries=places'></script>
 
 	<!-- Start of the Cascading Style Sheets -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
