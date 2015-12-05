@@ -1,4 +1,4 @@
-
+<?php $yii_path = Yii::app()->request->baseUrl; ?>
 <!-- Intro Header -->
 <header class="intro">
 	<div class="intro-body">
@@ -31,7 +31,7 @@
 	<div class="row">
 		<div class="col-lg-7">
 			<h2>QUI&Eacute;NES SOMOS</h2>
-			<p><img src="img/logo-mosaiconaturav.png" width="163" height="90" alt=""/> tiene como objetivos: ser una ventana para dar a conocer la riqueza natural de M&eacute;xico captada en im&aacute;genes y un sitio de promoci&oacute;n de fot&oacute;grafos de naturaleza mexicana.</p>
+			<p><img src="<?php echo $yii_path; ?>/img/logo-mosaiconaturav.png" width="163" height="90" alt=""/> tiene como objetivos: ser una ventana para dar a conocer la riqueza natural de M&eacute;xico captada en im&aacute;genes y un sitio de promoci&oacute;n de fot&oacute;grafos de naturaleza mexicana.</p>
 
 			<p>En esta segunda etapa, Mosaico Natura M&eacute;xico se transforma en un concurso anual de fotograf&iacute;a de naturaleza que est&aacute; abierto a fot&oacute;grafos aficionados y profesionales, menores y mayores de 18 a&ntilde;os.</p>
 
@@ -74,15 +74,15 @@
 				<h4 class="bases-izq">Temas</h4>
 				<div class="categorias-adultos">
 					<dl class="dl-horizontal">
-						<dt><img src="img/bases-01.png" alt="Fauna"></dt>
+						<dt><img src="<?php echo $yii_path; ?>/img/bases-01.png" alt="Fauna"></dt>
 						<dd><span style="color:#ffd400; font-weight:bold;">Fauna</span><br/>Fotos de animales en vida silvestre. No se aceptan fotos en cautiverio, ni animales dom&eacute;sticos o mascotas.</dd>
-						<dt><img src="img/bases-02.png" alt="Plantas y Hongos"></dt>
+						<dt><img src="<?php echo $yii_path; ?>/img/bases-02.png" alt="Plantas y Hongos"></dt>
 						<dd><span style="color:#ffd400; font-weight:bold;">Plantas y Hongos</span><br/>Fotos de plantas y hongos en vida silvestre. No se aceptan fotos de plantas cultivadas de maceta o jard&iacute;n.</dd>
-						<dt><img src="img/bases-03.png" alt="Paisajes"></dt>
+						<dt><img src="<?php echo $yii_path; ?>/img/bases-03.png" alt="Paisajes"></dt>
 						<dd><span style="color:#ffd400; font-weight:bold;">Paisajes</span><br/>Vistas a&eacute;reas, terrestres, acu&aacute;ticas y subacu&aacute;ticas, donde se enfatizan elementos naturales.</dd>
-						<dt><img src="img/bases-04.png" alt="Naturaleza y ser humano"></dt>
+						<dt><img src="<?php echo $yii_path; ?>/img/bases-04.png" alt="Naturaleza y ser humano"></dt>
 						<dd><span style="color:#ffd400; font-weight:bold;">Naturaleza y ser humano</span><br/>Usos y costumbres relacionados con el entorno natural: actividades agr&iacute;colas, artesanales, gastron&oacute;micas, medicinales, espirituales, recreativas, ceremoniales. Escenas de manejo sustentable.</dd>
-						<dt><img src="img/bases-05.png" alt="Solo un mundo"></dt>
+						<dt><img src="<?php echo $yii_path; ?>/img/bases-05.png" alt="Solo un mundo"></dt>
 						<dd><span style="color:#ffd400; font-weight:bold;">Solo un mundo</span><br/>Im&aacute;genes de paisajes, y/o flora y fauna deteriorados o impactados directa o indirectamente por actividades humanas.</dd>
 					</dl>
 
@@ -90,7 +90,7 @@
 				<h4 class="bases-der">Premios <span style="font-size:22px; line-height:15px;"><br/>(por cada tema)</span></h4>
 				<table class="tabla-premios-adulto" width="100%" border="0" cellpadding="0" cellspacing="0">
 					<tr>
-						<td valign="bottom"><img src="img/bases-06.png">
+						<td valign="bottom"><img src="<?php echo $yii_path; ?>/img/bases-06.png">
 							<table width="100%" border="3" cellpadding="0" cellspacing="0" style="border-color:#ffd400; border-style:solid; border-right-width:0">
 								<tr>
 									<td bgcolor="#403d35" style="padding:10px 0;">$20,000 pesos<br>
@@ -100,14 +100,14 @@
 								</tr>
 							</table>
 						</td>
-						<td valign="bottom"><img src="img/bases-07.png">
+						<td valign="bottom"><img src="<?php echo $yii_path; ?>/img/bases-07.png">
 							<table width="100%" border="3" cellpadding="0" cellspacing="0" style="border-color:#ffd400; border-style:solid;">
 								<tr>
 									<td bgcolor="#403d35" style="padding:15px 0;">$25,000 pesos<br>C&aacute;mara Reflex Nikon<br>Viaje a una ANP<br>Suscripci&oacute;n anual:<br>National Geographic en Espa&ntilde;ol<br>Mexican&iacute;simo<br></td>
 								</tr>
 							</table>
 						</td>
-						<td valign="bottom"><img src="img/bases-08.png">
+						<td valign="bottom"><img src="<?php echo $yii_path; ?>/img/bases-08.png">
 							<table width="100%" border="3" cellpadding="0" cellspacing="0" style="border-color:#ffd400; border-style:solid; border-left-width:0">
 								<tr>
 									<td bgcolor="#403d35" style="padding:5px 0;" >$15,000 pesos<br>
@@ -129,7 +129,7 @@
 
 				<div id="formatos-wrapper">
 					<div class="faq-formatos">
-						<img src="img/bases-10.png">
+						<img src="<?php echo $yii_path; ?>/img/bases-10.png">
 						<ul>
 							<li>Resoluci&oacute;n 300 DPI</li>
 							<li>Tama&ntilde;o m&iacute;nimo: 3,000 pixeles por lado m&aacute;s grande</li>
@@ -155,7 +155,7 @@
 			<div class="col-md-6 col-xs-12">
 				<h3>J&Oacute;VENES		<i class="fa fa-caret-right"></i>   <span class="pleca_ama">2 fotos por participante, tema libre</span></h3>
 				<p>Fotos en M&eacute;xico de animales o plantas en su ambiente natural, paisajes naturales, actividades relacionadas con el ser humano y la naturaleza. No se aceptan fotos de plantas cultivadas, animales en cautiverio o en ambientes controlados.</p>
-				<img src="img/bases-11.png">
+				<img src="<?php echo $yii_path; ?>/img/bases-11.png">
 				<h4 class="bases-izq">Premios</h4>
 
 				<table class="tabla-premios-jovenes" width="100%" border="0">
@@ -163,7 +163,7 @@
 						<td>
 							<table width="100%" border="0">
 								<tr>
-									<td width="10%" bgcolor="#99141b" style="text-align:right; padding:8px 5px;"><img src="img/bases-07.png" alt="primer lugar"></td>
+									<td width="10%" bgcolor="#99141b" style="text-align:right; padding:8px 5px;"><img src="<?php echo $yii_path; ?>/img/bases-07.png" alt="primer lugar"></td>
 									<td bgcolor="#42423d" style="padding:5px;">C&aacute;mara Reflex Nikon. Suscripci&oacute;n anual: National Geographic en Espa&ntilde;ol, Mexican&iacute;simo
 									</td>
 								</tr>
@@ -175,7 +175,7 @@
 						<td>
 							<table width="100%" border="0">
 								<tr>
-									<td width="20%" bgcolor="#99141b" style="text-align:right; padding:8px 5px;"><img src="img/bases-06.png" alt="primer lugar"></td>
+									<td width="20%" bgcolor="#99141b" style="text-align:right; padding:8px 5px;"><img src="<?php echo $yii_path; ?>/img/bases-06.png" alt="primer lugar"></td>
 									<td bgcolor="#575652" style="padding:5px;">C&aacute;mara Reflex Nikon. Suscripci&oacute;n anual: National Geographic en Espa&ntilde;ol, Mexican&iacute;simo
 									</td>
 								</tr>
@@ -187,7 +187,7 @@
 						<td>
 							<table width="100%" border="0">
 								<tr>
-									<td width="30%" bgcolor="#99141b" style="text-align:right; padding:8px 5px;"><img src="img/bases-08.png" alt="primer lugar"></td>
+									<td width="30%" bgcolor="#99141b" style="text-align:right; padding:8px 5px;"><img src="<?php echo $yii_path; ?>/img/bases-08.png" alt="primer lugar"></td>
 									<td bgcolor="#6c6c68" style="padding:5px;">C&aacute;mara Reflex Nikon. Suscripci&oacute;n anual: National Geograph;ic en Espa&ntilde;ol, Mexican&iacute;simo
 									</td>
 								</tr>
@@ -205,7 +205,7 @@
 				<h4 class="bases-izq">Formato</h4>
 
 				<div class="vid-formato">
-					<img src="img/bases-13.png">
+					<img src="<?php echo $yii_path; ?>/img/bases-13.png">
 					<ul>
 						<li>Duraci&oacute;n de 30 a 60 segundos</li>
 						<li>Dimensiones Full HD (1920 x 1080 px)</li>
@@ -225,7 +225,7 @@
 						<td>
 							<table width="100%" border="0">
 								<tr>
-									<td><img src="img/bases-07.png"></td>
+									<td><img src="<?php echo $yii_path; ?>/img/bases-07.png"></td>
 								</tr>
 								<tr>
 									<td>$25,000 pesos<br/>C&aacute;mara Reflex Nikon<br/>Viaje a una ANP<br/>Suscripci&oacute;n anual:<br/>National Geographic en Espa&ntilde;ol<br/>Mexican&iacute;simo</td>
@@ -236,7 +236,7 @@
 						<td >
 							<table width="100%" border="0">
 								<tr>
-									<td><img src="img/bases-06.png"></td>
+									<td><img src="<?php echo $yii_path; ?>/img/bases-06.png"></td>
 								</tr>
 								<tr>
 									<td>$20,000 pesos<br/>Suscripci&oacute;n anual:<br/>National Geographic en Espa&ntilde;ol<br/>Mexican&iacute;simo</td>
@@ -246,7 +246,7 @@
 						<td>
 							<table width="100%" border="0">
 								<tr>
-									<td><img src="img/bases-08.png"></td>
+									<td><img src="<?php echo $yii_path; ?>/img/bases-08.png"></td>
 								</tr>
 								<tr>
 									<td>$15,000 pesos<br/>Suscripci&oacute;n anual:<br/>National Geographic en Espa&ntilde;ol<br/>Mexican&iacute;simo</td>
@@ -261,9 +261,9 @@
 			<div id="reconocimiento-md" class="col-lg-12">
 				<table class="recxestado" width="100%" height="56px" border="0">
 					<tr>
-						<td width="10%" bgcolor="#403d35" ><img src="img/bases-15.png" alt="méxico"></td>
+						<td width="10%" bgcolor="#403d35" ><img src="<?php echo $yii_path; ?>/img/bases-15.png" alt="méxico"></td>
 						<td width="30%" bgcolor="#403d35" style="font-weight:bold;">Reconocimiento especial por estado</td>
-						<td bgcolor="#595448" style="text-align:left; padding:0;"><img src="img/bases-16.png"></td>
+						<td bgcolor="#595448" style="text-align:left; padding:0;"><img src="<?php echo $yii_path; ?>/img/bases-16.png"></td>
 						<td bgcolor="#595448" style="text-align:left; padding-left:5px;">Ser&aacute; seleccionada la mejor foto de cada estado (32 seleccionadas) y participar&aacute; en la exposici&oacute;n Visiones de nuestra naturaleza. </td>
 					</tr>
 				</table>
@@ -271,7 +271,7 @@
 			</div>
 
 			<div id="reconocimiento-xs" class="col-xs-12">
-				<img src="img/bases-15.png">
+				<img src="<?php echo $yii_path; ?>/img/bases-15.png">
 				<h4>Reconocimiento especial por estado</h4>
 				<p>Ser&aacute; seleccionada la mejor foto de cada estado (32 seleccionadas) y participar&aacute; en la exposici&oacute;n Visiones de nuestra naturaleza. </p>
 
@@ -285,13 +285,13 @@
 				<table class="como-participar" width="100%" border="0">
 					<tr>
 						<td>Entra a <a href="#">www.mosaiconatura.net</a><br/>y crea una cuenta</td>
-						<td><img src="img/bases-17.png"></td>
+						<td><img src="<?php echo $yii_path; ?>/img/bases-17.png"></td>
 						<td>Confirma tu correo</td>
-						<td><img src="img/bases-17.png"></td>
+						<td><img src="<?php echo $yii_path; ?>/img/bases-17.png"></td>
 						<td>Accede a tu cuenta</td>
-						<td><img src="img/bases-17.png"></td>
+						<td><img src="<?php echo $yii_path; ?>/img/bases-17.png"></td>
 						<td>Sube tus fotos y llena el formulario con la informaci&oacute;n de cada una</td>
-						<td><img src="img/bases-17.png"></td>
+						<td><img src="<?php echo $yii_path; ?>/img/bases-17.png"></td>
 						<td>Los resultados ser&aacute;n publicados en&#x3; <a href="#">www.mosaiconatura.net</a> </td>
 					</tr>
 				</table>
@@ -330,14 +330,14 @@
 	<div class="jurado-content">
 		<div class="container">
 			<div class="col-md-3">
-				<img src="img/team/sabinajimenez.jpg" class="img-responsive img-circle" alt="persona1">
+				<img src="<?php echo $yii_path; ?>/img/team/sabinajimenez.jpg" class="img-responsive img-circle" alt="persona1">
 				<h3>SABINA JIM&Eacute;NEZ BARRAG&Aacute;N</h3>
 				<p>Ciudad de México, 1999. Tuvo su primer acercamiento con la fotografía, su primera exposición colectiva y participó con una serie de autorretratos antes de los 10 anos. En  2012 expone su pieza titulada "Guardianes de la ciudad" en el Albergue del Arte, Coyoacán.</p>
 				<p>En 2015 comparte exposición nuevamente en colectivo con un tríptico de fotografías intervenidas en técnica plástica, con el título "Las pesadillas de Venus". Primer lugar en la categoría juvenil el 1er Concurso Nacional de Fotografía de Naturaleza, Mosaico Natura, en la categoría juvenil, ganando el primer lugar con una fotografía de paisaje de las cascadas petrificadas en Oaxaca, llevando a cabo una exposición itinerante que ha sido expuesta en las rejas de Chapultepec y actualmente está en el zoológico de Aragón.</p>
 			</div>
 
 			<div class="col-md-3">
-				<img src="img/team/jorgedouglas.jpg" class="img-responsive img-circle" alt="persona1">
+				<img src="<?php echo $yii_path; ?>/img/team/jorgedouglas.jpg" class="img-responsive img-circle" alt="persona1">
 				<h3>JORGE DOUGLAS BRANDON PLIEGO</h3>
 				<p>Oaxaca. Biólogo marino de la Universidad del Mar. Fotógrafo de naturaleza y conservación. Ha impartido más de 39 cursos de fotografía de naturaleza publicado artículos y fotografías en revistas nacionales e internacionales, como National Geographic en Espanol y México Desconocido.</p>
 				<p>Recibió un reconocimiento por Mosaico Natura México, CONABIO, National Geographic y Canon por su contribución a la fotografía como fuente de conocimiento sobre la riqueza natural de México.
@@ -348,13 +348,13 @@
 			</div>
 
 			<div class="col-md-3">
-				<img src="img/team/natgeo.jpg" class="img-responsive img-circle" alt="persona1">
+				<img src="<?php echo $yii_path; ?>/img/team/natgeo.jpg" class="img-responsive img-circle" alt="persona1">
 				<h3>JURADO SORPRESA</h3>
 
 			</div>
 
 			<div class="col-md-3">
-				<img src="img/team/nikon.jpg" class="img-responsive img-circle" alt="persona1">
+				<img src="<?php echo $yii_path; ?>/img/team/nikon.jpg" class="img-responsive img-circle" alt="persona1">
 				<h3>JURADO SORPRESA</h3>
 			</div>
 
@@ -404,13 +404,13 @@
 				<p>Las fotograf&iacute;as de Mosaico Natura M&eacute;xico participan en las siguientes publicaciones con previo consentimiento de los autores.</p>
 			</div>
 			<div class="col-md-4">
-				<object type="image/svg+xml" data="img/svg/Biodiversitas.svg">Biodiversitas</object>
+				<object type="image/svg+xml" data="<?php echo $yii_path; ?>/img/svg/Biodiversitas.svg">Biodiversitas</object>
 			</div>
 			<div class="col-md-4">
-				<object type="image/svg+xml" data="img/svg/NatGeo.svg">National Geographic</object>
+				<object type="image/svg+xml" data="<?php echo $yii_path; ?>/img/svg/NatGeo.svg">National Geographic</object>
 			</div>
 			<div class="col-md-4">
-				<object type="image/svg+xml" data="img/svg/Mexicanisimo.svg">Mexicanisimo</object>
+				<object type="image/svg+xml" data="<?php echo $yii_path; ?>/img/svg/Mexicanisimo.svg">Mexicanisimo</object>
 
 			</div>
 		</div>
@@ -435,26 +435,26 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<h4>&iquest;C&oacute;mo puedo participar?</h4>
-					<img src="img/faq-01.png"><p>&nbsp;</p>
+					<img src="<?php echo $yii_path; ?>/img/faq-01.png"><p>&nbsp;</p>
 
 
 				</div>
 				<div class="col-lg-8 col-xs-12 caractsm">
 					<h4>&iquest;C&oacute;mo me registro en la p&aacute;gina del Segundo concurso de Fotograf&iacute;a de Naturaleza Mosaico Natura M&eacute;xico?</h4>
 					<div class="faqdiv">
-						<img src="img/faq-02.png">
+						<img src="<?php echo $yii_path; ?>/img/faq-02.png">
 						<p>1. Entra al sitio <a href="http://www.mosaiconatura.net/">mosaiconatura.net</a></p>
 					</div>
 					<div class="faqdiv">
-						<img src="img/faq-03.png">
+						<img src="<?php echo $yii_path; ?>/img/faq-03.png">
 						<p>2. <a href="#registro">Reg&iacute;strate</a></p>
 					</div>
 					<div class="faqdiv">
-						<img src="img/faq-04.png">
+						<img src="<?php echo $yii_path; ?>/img/faq-04.png">
 						<p>3. Recibir&aacute;s un correo de confirmaci&oacute;n</p>
 					</div>
 					<div class="faqdiv">
-						<img src="img/faq-05.png">
+						<img src="<?php echo $yii_path; ?>/img/faq-05.png">
 						<p>4. Confirma tu correo</p>
 					</div>
 				</div>
@@ -463,22 +463,22 @@
 			<div class="row caract">
 				<div class="col-md-3 col-xs-6">
 					<h4>No he recibido el correo de confirmaci&oacute;n.</h4>
-					<img src="img/faq-06.png" alt="revisar bandeja de spam">
+					<img src="<?php echo $yii_path; ?>/img/faq-06.png" alt="revisar bandeja de spam">
 					<p>Revisa tu bandeja de spam o correos no deseados.</p>
 				</div>
 				<div class="col-md-3 col-xs-6">
 					<h4>&iquest;D&oacute;nde debo de subir mis fotos?</h4>
-					<img src="img/faq-07.png" alt="subir fotos" style="margin:20px auto 2px auto;">
+					<img src="<?php echo $yii_path; ?>/img/faq-07.png" alt="subir fotos" style="margin:20px auto 2px auto;">
 					<p>Una vez registrado y confirmado tu registro por correo electr&oacute;nico sube tus fotos <a href="#">aqu&iacute;.</a></p>
 				</div>
 				<div class="col-md-3 col-xs-6 caractsm">
 					<h4>Olvid&eacute; poner la descripci&oacute;n y locaci&oacute;n de mis fotos.</h4>
-					<img src="img/faq-08.png" alt="tu perfil">
+					<img src="<?php echo $yii_path; ?>/img/faq-08.png" alt="tu perfil">
 					<p>Podr&aacute;s a&ntilde;adir la informaci&oacute;n directamente sobre tu perfil una vez que hayas ingresado a tu cuenta.</p>
 				</div>
 				<div class="col-md-3 col-xs-6 caractsm">
 					<h4>&iquest;Puedo participar si soy extranjero?</h4>
-					<img src="img/faq-09.png" alt="residentes mexicanos">
+					<img src="<?php echo $yii_path; ?>/img/faq-09.png" alt="residentes mexicanos">
 					<p>Podr&aacute;n participar todos los extranjeros que residan en M&eacute;xico.</p>
 				</div>
 			</div>
@@ -492,7 +492,7 @@
 				<div class="col-lg-5">
 					<div class="faq-formatos">
 						<h4><span style="color:#ffd400; text-align:left;">Categor&iacute;a adultos</span></h4>
-						<img src="img/faq-10.png">
+						<img src="<?php echo $yii_path; ?>/img/faq-10.png">
 						<ul>
 							<li>Resoluci&oacute;n 300 DPI</li>
 							<li>Tama&ntilde;o m&iacute;nimo: 3,000 pixeles por lado m&aacute;s grande</li>
@@ -506,14 +506,14 @@
 
 				<div class="col-lg-2">
 					<h4><span style="color:#ffd400;">Categor&iacute;a j&oacute;venes</span></h4>
-					<img src="img/faq-11.png">
+					<img src="<?php echo $yii_path; ?>/img/faq-11.png">
 
 				</div>
 
 				<div class="col-lg-5">
 					<div class="faq-formatos-video">
 						<h4><span style="color:#ffd400; text-align:left;">Categor&iacute;a video</span></h4>
-						<img src="img/faq-11.png">
+						<img src="<?php echo $yii_path; ?>/img/faq-11.png">
 						<ul>
 							<li>Dimensiones Full HD (1920 x 1080 px)</li>
 							<li>Duraci&oacute;n de 30 a 60 segundos</li>
@@ -581,8 +581,8 @@
 					</div>
 					<!--<h3>x</h3>
                     <div class="list-group">-->
-					<!--<a class="list-group-item sb" href="img/infografia_150.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> 1000 x 700</a>
-                    <a href="img/infografia_150.jpg" target="_blank"><img src="img/infografia_150.jpg" width="100%" height="auto"></a>-->
+					<!--<a class="list-group-item sb" href="<?php echo $yii_path; ?>/img/infografia_150.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> 1000 x 700</a>
+                    <a href="<?php echo $yii_path; ?>/img/infografia_150.jpg" target="_blank"><img src="<?php echo $yii_path; ?>/img/infografia_150.jpg" width="100%" height="auto"></a>-->
 					<!--</div>-->
 				</div>
 			</div>
