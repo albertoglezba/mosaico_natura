@@ -1,8 +1,3 @@
-<?php $yii_path = Yii::app()->request->baseUrl; ?>
-
-<script type="text/javascript" src="<?php echo $yii_path; ?>/assets/js/locationpicker.jquery.js"></script>
-
-	
 <div class="form">
 
 	<?php $form=$this->beginWidget('CActiveForm', array(
@@ -15,64 +10,37 @@
 	),
 )); ?>
 
-	<h4><em>Tercer paso</em>, completa el registro</h4>
-	
 	<div class="errorMessage" id="formResult"></div>
 	<div id="AjaxLoader" style="display: none"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/aplicacion/loading.gif"></img></div>
 	
 	<p class="note">
 		Campos con <span class="required">*</span> son requeridos.
 	</p>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'titulo'); ?>
-		Puede ser algo ilustrativo como el nombre de la especie que viste, el lugar, etc
-		<?php echo $form->textField($model,'titulo',array('rows'=>10,'cols'=>90, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'titulo'); ?>
-	</div>
-	
-	<div class="row">
-		<?php echo $form->labelEx($model,'direccion'); ?>
-		Puedes autocompletar el lugar en el cual tomaste tu fotografía, arrastrar el marcador del mapa o completar las coordenadas. 
-		<?php echo $form->textField($model,'direccion',array('size'=>60,'maxlength'=>500, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'direccion'); ?>
-	</div>
-	
-	<div id="mapa" style="width: 500px; height: 400px;"></div>				
-	
-	<div class="row">
-		<?php echo $form->labelEx($model,'latitud'); ?>
-		<?php echo $form->textField($model,'latitud',array('size'=>60,'maxlength'=>255, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'latitud'); ?>
-	</div>
-	
-	<div class="row">
-		<?php echo $form->labelEx($model,'longitud'); ?>
-		<?php echo $form->textField($model,'longitud',array('size'=>60,'maxlength'=>255, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'longitud'); ?>
-	</div>
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'marca'); ?>
-		<?php echo $form->textField($model,'marca',array('size'=>60,'maxlength'=>255, 'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'marca',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'marca'); ?>
 	</div>
 	
-	<script>
-	$('#mapa').locationpicker({
-		location: {latitude: 22.21179847133122, longitude: -101.9306640625},	
-		radius: 3,
-		inputBinding: {
-	        latitudeInput: $('#Fotos_latitud'),
-    	    longitudeInput: $('#Fotos_longitud'),
-        	locationNameInput: $('#Fotos_direccion')
-    	},
-    	enableAutocomplete: true,
-    	zoom: 4
-	});
+	<div class="row">
+		<?php echo $form->labelEx($model,'estado'); ?>
+		<?php echo $form->dropDownList($model, 'estado', Usuarios::estados(), array('prompt'=>'---Selecciona---')); ?>
+		<?php echo $form->error($model,'estado'); ?>
+	</div>
 
-	</script>
+	<div class="row">
+		<?php echo $form->labelEx($model,'municipio'); ?>
+		<?php echo $form->textField($model,'municipio',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'municipio'); ?>
+	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'descripcion'); ?>
+		<?php echo $form->textArea($model,'descripcion',array('rows'=>10,'cols'=>90)); ?>
+		<?php echo $form->error($model,'descripcion'); ?>
+	</div>
+	
 	<?php 
 		echo $form->hiddenField($model,'nombre_original',array('value'=>$_POST["nombre_original"])); 
 		echo $form->error($model,'nombre_original');
@@ -102,7 +70,8 @@
                      'success'=>'function(data) {
                          $("#AjaxLoader").hide();  
                         if(data.status=="success"){
-                         window.location.replace("'.Yii::app()->request->baseUrl.'/index.php/fotos/index?msj=Tu fotografía se subió correctamente");
+                         $("#formResult").html("form submitted successfully.");
+                         //$("#user-form")[0].reset();
                  		
                         }
                          else{

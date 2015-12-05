@@ -14,11 +14,8 @@ $(document).ready(function(){
 });	
 </script>
 
-<h4><em>Primer paso</em>, una categoría</h4>
-<p class="text-warning">
-	(Recuerda que solo puedes subir una fotografía por categor&iacute;a, una vez procesada
-	no se permiten hacer cambios)
-</p>
+<h1><em>Sube un video</h1>
+(Recuerda que una vez procesado el video no se permiten hacer cambios)
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'categoria-form',
@@ -27,7 +24,7 @@ $(document).ready(function(){
 <div class="form">
 
 <?php $model=new Fotos; ?>
-	<div class="form-group">
+	<div class="row">
 		<?php echo CHtml::label('Categoria','categoria_id'); ?>
 		<?php echo $model->categorias($form, $model); ?>
 		<?php echo $form->error($model,'categoria_id'); ?>
