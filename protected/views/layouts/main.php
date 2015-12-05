@@ -12,8 +12,6 @@
 	<?php $yii_path = Yii::app()->request->baseUrl; ?>
 
 	<!-- Start of the JavaScript -->
-	<script type="text/javascript" async="" src="http://www.mosaiconatura.net/ga.js"></script>
-	<script type="text/javascript" src="http://www.mosaiconatura.net/googleAnalytics.js"></script>
 	<script type="text/javascript">
 		function MM_preloadImages() { //v3.0
 			var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
@@ -25,20 +23,33 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
-	<!-- Load the FileUpload Plugin (more info @ https://github.com/blueimp/jQuery-File-Upload) -->
-	<script type="text/javascript" src="<?php echo $yii_path; ?>/assets/js/jquery.fileupload.js"></script>
-	<script type="text/javascript" src="<?php echo $yii_path; ?>/assets/js/jquery.qtip.min.js"></script>
+	<script type="text/javascript" src="<?php echo $yii_path; ?>/js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="<?php echo $yii_path; ?>/js/bootstrap.min.js.js"></script>
 
-		<!-- Start of the Cascading Style Sheets -->
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-	<!--link rel="stylesheet" type="text/css" href="http://www.mosaiconatura.net/estilos.css"-->
-	<!--link rel="stylesheet" type="text/css" href="<?php //echo $yii_path; ?>/css/print.css" media="print" /-->
-	<!--link rel="stylesheet" type="text/css" href="<?php //echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" /-->
-	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/main.css">
-	<!--link rel="stylesheet" type="text/css" href="<?php //echo $yii_path; ?>/css/form.css" -->
+	<!-- Custom Theme JavaScript -->
+	<script type="text/javascript" src="<?php echo $yii_path; ?>/js/grayscale.js"></script>
+
+	<!-- Load the FileUpload Plugin (more info @ https://github.com/blueimp/jQuery-File-Upload) -->
+	<script type="text/javascript" src="<?php echo $yii_path; ?>/js/jquery.fileupload.js"></script>
+	<script type="text/javascript" src="<?php echo $yii_path; ?>/js/jquery.qtip.min.js"></script>
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Start of the Cascading Style Sheets -->
+	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/jquery.qtip.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/style_aws.css">
-	<!--link rel="stylesheet" href="<?php //echo $yii_path; ?>/css/normalize.min.css"-->
+
+	<!-- Custom Fonts -->
+    <link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+
 </head>
 
 
@@ -82,6 +93,12 @@
 	<area shape="rect" coords="7,5,674,265" href="<?php echo Yii::app()->baseUrl."/"; ?>">
 </map>
 
+<!--Adobe font-->
+<script src="https://use.typekit.net/uhe3shv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<!-- Código para estadísticas en Google Analytics -->
+<script src="http://bdi.conabio.gob.mx/fotoweb/googleAnalytics.js"></script>
 <script type="text/javascript">
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-8226401-8']);
@@ -92,7 +109,7 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	})();
 </script>
-<!-- Fin de Código -->
+
 </body>
 <!-- InstanceEnd -->
 </html>
