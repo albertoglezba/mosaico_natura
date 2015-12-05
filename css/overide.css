@@ -917,3 +917,10 @@ table.como-participar td{
     opacity: 0;
     filter: alpha(opacity=0);
 }
+
+.view{
+	padding: 20px 5px;
+}
+.view h1, .view h2, .view h3, .view h4, .view h5, .view h6{
+	margin: 0;
+} 

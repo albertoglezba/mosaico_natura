@@ -4,33 +4,19 @@
 ?>
 
 <div class="view">
-	<?php 
-	if (empty($data->titulo))
-		echo "<span style=\"color:red;\">SIN DATOS</span>";
-	else 
-		echo "<strong>".$data->titulo."</strong>";
-	?>
 	
-	<p>
-	<b><?php echo "<b>".CHtml::encode($data->categoria->nombre) ?></b> 
-	</p>
+	<h2><?php echo CHtml::encode($data->categoria->nombre) ?></h2>
+	<h3><strong><em><?php echo $data->titulo; ?></em></strong></h3>
+	<div>
+	<?php echo CHtml::image($data->ruta, '', array("title"=>$data->titulo, "width"=>"900px")) ?>
+	</div>	
 	
-	<br>
+	<?php echo "<h5>Ubicación:".$data->direccion." (".$data->latitud.",".$data->longitud.")</h5>";?>
 	<?php 
-	if (empty($data->direccion))
-		echo "<b>Ubicación:</b> <span style=\"color:red;\">SIN DATOS</span>";
-	else
-		echo "<b>Ubicación:</b> ".$data->direccion." (".$data->latitud.",".$data->longitud.")";
+	if (empty($data->marca)){
+		echo "<h5><b>Marca/modelo de tu cámara fotográfica:</b> <span style=\"color:red;\">SIN DATOS</span></h5>";
+	}else{
+		echo "<h5><b>Marca/modelo de tu cámara fotográfica:</b> ".$data->marca."</h5>";
+	}
 	?>
-	<br>
-	<?php 
-	if (empty($data->marca))
-		echo "<b>Marca/modelo de tu cámara fotográfica:</b> <span style=\"color:red;\">SIN DATOS</span>";
-	else
-		echo "<b>Marca/modelo de tu cámara fotográfica:</b> ".$data->marca;
-	?>
-	<br>
-	<?php echo CHtml::image($data->ruta, '',
-			array("title"=>$data->titulo, "width"=>"900px")) ?>
-	<br />
 </div>

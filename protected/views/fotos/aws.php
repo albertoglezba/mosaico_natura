@@ -96,7 +96,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
 ?>
 <div class="containerAWS">
 
-<h4><em>Segundo paso</em>, selecciona una forografía</h4>
+<h4><em>Segundo paso</em>, selecciona una fotografía</h4>
 Debe ser un .jpg con 3000px como mínimo en su lado más grande
 
     <!-- Direct Upload to S3 Form -->

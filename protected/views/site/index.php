@@ -135,7 +135,7 @@
 							<li>Tama&ntilde;o m&iacute;nimo: 3,000 pixeles por lado m&aacute;s grande</li>
 							<li>Sin marcas de agua</li>
 							<li>Sin alteraciones digitales</li>
-							<li><a href="descargar/tutorial_foto.pdf"><i class="fa fa-caret-right"></i> Ver tutorial</a></li>
+							<li><a href="<?php echo $yii_path; ?>/descargar/tutorial_foto.pdf"><i class="fa fa-caret-right"></i> Ver tutorial</a></li>
 						</ul>
 					</div>
 				</div>

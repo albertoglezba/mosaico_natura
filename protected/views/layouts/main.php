@@ -27,7 +27,7 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&libraries=places"></script>
 
 	<script type="text/javascript" src="<?php echo $yii_path; ?>/js/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="<?php echo $yii_path; ?>/js/bootstrap.min.js"></script>
@@ -72,7 +72,7 @@
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 				<i class="fa fa-bars"></i>
 			</button>
-			<a class="navbar-brand page-scroll" href="index.html">
+			<a class="navbar-brand page-scroll" href="<?php echo $yii_path; ?>">
 				<h2>MOSAICO NATURA M&Eacute;XICO</h2><img src="<?php echo $yii_path; ?>/img/logo-mosaiconatura.png" alt="Mosaico-Natura">
 			</a>
 		</div>
@@ -112,7 +112,71 @@
 	<!-- /.container -->
 </nav>
 
+<?php if (Yii::app()->request->pathInfo != '' && Yii::app()->request->pathInfo != 'site/index'){ ?>
+
+<section id="registro" class="content-section text-center">
+	<div class="registro-header">
+		<div class="container">
+			<div class="col-lg-8 col-lg-offset-2">
+			
+			<?php $ruta = explode('/', Yii::app()->request->pathInfo) ?>
+			<?php if($ruta[0] == 'fotos' || $ruta[0] == 'videos') { ?>
+			<h2><?php echo strtoupper($ruta[0]); ?></h2>
+			<?php } else if($ruta[0] == 'usuarios' && (Int)$ruta[1] !== 0) { ?>
+			<h2>CUENTA</h2>
+			<?php } else if($ruta[1] == 'terminos_condiciones'){ ?>
+			<h2>TÉRMINOS Y CONDICIONES</h2>
+			<?php } else { ?>
+			<h2>REGISTRO</h2>
+			<?php } ?>
+			</div>
+		</div>
+	</div>
+
+	<div class="registro-content">
+		<div class="container">
+			<div class="col-md-12">
+				<p>
+					<?php
+					if (!Yii::app()->user->isGuest)
+					{
+						if (!isset(Yii::app()->user->id_usuario) || empty(Yii::app()->user->id_usuario))
+						{
+							if (!isset(Yii::app()->user->id) || empty(Yii::app()->user->id))
+							{
+								Yii::app()->user->logout();
+								echo CHtml::link('Inicia sesión', array('site/login'));
+							} else {
+								$this->setIdUsuario(Yii::app()->user->id);
+								$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+								echo CHtml::link('Tus fotografías', array('fotos/index'));
+								echo " | ".CHtml::link('Tu video', array('videos/index'));
+								echo " | ".CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id));
+								echo " | ".CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'));
+							}
+						} else {
+							$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+							echo CHtml::link('Tus fotografías', array('fotos/index'));
+							echo " | ".CHtml::link('Tu video', array('videos/index'));
+							echo " | ".CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id));
+							echo " | ".CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'));
+						}
+					} else{?>
+					
+					<?php }?>
+				</p>
+
+
 <?php echo $content; ?>
+
+			</div>
+		</div>
+	</div>
+
+</section>
+<?php } else { echo $content; } ?>
+
+
 <!-- Footer -->
 
 <div id="colaboradores">
@@ -184,7 +248,7 @@
 		<div class="col-md-3">
 			<p>LEGAL</p>
 			<ul>
-				<li><a href="terminos_condiciones.html" target="_blank">T&eacute;rminos y condiciones</a></li>
+				<li><a href="<?php echo Yii::app()->baseUrl;?>/index.php/site/terminos_condiciones">T&eacute;rminos y condiciones</a></li>
 			</ul>
 		</div>
 	</div>
