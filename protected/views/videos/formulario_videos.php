@@ -5,7 +5,6 @@
 			'enableAjaxValidation'=>true,
 			'action'=>$this->createUrl('videos/formulario_videos'),
 			'enableClientValidation'=>true,
-
 	)
 ); ?>
 
