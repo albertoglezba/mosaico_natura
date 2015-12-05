@@ -96,7 +96,7 @@
 	</div>
 	
 	<div id="terminos">
-		<?php include('protected/views/site/terminos_y_condiciones.php'); ?>
+		<?php include('protected/views/site/terminos_condiciones.php'); ?>
 	</div>
 
 	<div class="">

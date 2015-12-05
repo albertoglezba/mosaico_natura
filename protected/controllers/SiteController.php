@@ -96,7 +96,7 @@ class SiteController extends Controller
 			if($model->validate() && $model->login())
 			{
 				$this->setIdUsuario(Yii::app()->user->id);
-				$this->redirect(Yii::app()->user->returnUrl);
+				$this->redirect(Yii::app()->request->baseUrl."/index.php/site/logged");
 			}
 		}
 
@@ -112,6 +112,11 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+	
+	public function actionLogged()
+	{
+		$this->render('logged');
+	}
 
 	/**
 	 * Pone la ventana de mantenimiento
@@ -126,10 +131,10 @@ class SiteController extends Controller
 		echo "This is $alias.";
 	}
 
-	public function actionTerminos_y_condiciones()
+	public function actionTerminos_condiciones()
 	{
-		$this->layout = false;
-		$this->render('terminos_y_condiciones');
+		//$this->layout = false;
+		$this->render('terminos_condiciones');
 	}
 
 	public function actionConfirma()

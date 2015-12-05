@@ -1,16 +1,7 @@
 <div class="view">
-	<h4>Haz subido un video llamado "<?php echo $data->nombre_original ?>" con la siguiente información:</h4>
-	<?php
-	if (empty($data->titulo)) 
-		echo "<b>Título:</b> <span style=\"color:red;\">SIN DATOS</span>";
-	else
-		echo "<strong>".$data->titulo."</strong>"; 
-	?>
-	<br>
-	<?php 
-	if (empty($data->descripcion))
-		echo "<b>Descripción:</b> <span style=\"color:red;\">SIN DATOS</span>";
-	else 
-		echo "<b>Descripción:</b> ".$data->descripcion;
-	?>
+	<div class="alert alert-success" role="alert">
+		<h3>Haz subido un video llamado "<?php echo $data->nombre_original ?>"</h3> con la siguiente información:
+	</div>
+	<h4>Título: <strong><em><?php echo $data->titulo; ?></em></strong></h4>
+	<h4>Descripción: <strong><em><?php echo $data->descripcion;?></em></strong></h4>
 </div>

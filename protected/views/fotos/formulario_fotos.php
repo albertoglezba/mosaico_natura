@@ -1,6 +1,6 @@
 <?php $yii_path = Yii::app()->request->baseUrl; ?>
 
-<script type="text/javascript" src="<?php echo $yii_path; ?>/assets/js/locationpicker.jquery.js"></script>
+<script type="text/javascript" src="<?php echo $yii_path; ?>/js/locationpicker.jquery.js"></script>
 
 	
 <div class="form">
@@ -115,7 +115,7 @@
                      'beforeSend'=>'function(){                        
                            $("#AjaxLoader").show();
                       }'
-                     ),array('id'=>'mybtn','class'=>'class1 class2')); 
+                     ),array('id'=>'mybtn','class'=>'class1 class2 btn btn-success')); 
 	?>
                      
 	<?php $this->endWidget(); ?>
