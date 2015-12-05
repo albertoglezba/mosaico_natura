@@ -50,26 +50,17 @@ class Fotos extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		
-		$rules = array(
-				array('nombre_original, categoria_id, nombre, ruta, size, type', 'required'),
+		return array(
+				array('nombre_original, categoria_id, nombre, ruta, size, type, titulo, direccion, latitud, longitud', 'required'),
 				array('usuario_id, categoria_id', 'numerical', 'integerOnly'=>true),
-				array('nombre_original, nombre, type, ruta, estado, municipio, marca', 'length', 'max'=>255),
-				array('descripcion', 'safe'),
+				array('nombre_original, nombre, type, ruta, latitud, longitud, marca, titulo', 'length', 'max'=>255),
+				array('direccion', 'length', 'max'=>500),
 				//array('verifyCode', 'captcha', 'on'=>'captchaRequired'),
 				//array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(), 'captcaAction' => 'site/captcha'),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.
 				array('id, nombre_original, nombre, fotografia, ruta, size, type, marca, fec_alta, fec_act, usuario_id, categoria_id', 'safe', 'on'=>'search'),
 		);
-		
-		// Por si es la categoria de adulto
-		if ($this->es_adulto)
-			array_push($rules, array('size', 'numerical', 'integerOnly'=>true, 'min'=>1024*1024*6, 'max'=>1024*1024*10, 
-					'tooSmall'=>'La fotografía no puede ser más chica que 6MB', 'tooBig'=>'La fotografá no puede ser más grande que 10 MB'));
-		else
-			array_push($rules, array('size', 'numerical', 'integerOnly'=>true, 'max'=>1024*1024*10, 'tooBig'=>'La fotografá no puede ser más grande que 10 MB'));
-		
-		return $rules;
 	}
 	
 	/**
@@ -120,8 +111,10 @@ class Fotos extends CActiveRecord
 				'usuario_id' => 'Usuario',
 				'categoria_id' => 'Categoría',
 				'fotografia' => 'Fotografía',
-				'municipio' => 'Delegación / Municipio',
-				'descripcion' => 'Breve descripción',
+				'direccion' => 'Dirección',
+				'latitud' => 'Latitud',
+				'longitud' => 'Longitud',
+				'titulo' => 'Título',
 				'marca' => 'Marca/modelo de tu cámara fotográfica'
 		);
 	}

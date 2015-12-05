@@ -1,3 +1,8 @@
+<?php $yii_path = Yii::app()->request->baseUrl; ?>
+
+<script type="text/javascript" src='http://maps.google.com/maps/api/js?libraries=places'></script>
+<script type="text/javascript" src="<?php echo $yii_path; ?>/assets/js/locationpicker.jquery.js"></script>
+	
 <div class="form">
 
 	<?php $form=$this->beginWidget('CActiveForm', array(
@@ -16,6 +21,32 @@
 	<p class="note">
 		Campos con <span class="required">*</span> son requeridos.
 	</p>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'titulo'); ?>
+		<?php echo $form->textField($model,'titulo',array('rows'=>10,'cols'=>90)); ?>
+		<?php echo $form->error($model,'titulo'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'direccion'); ?>
+		<?php echo $form->textField($model,'direccion',array('size'=>60,'maxlength'=>500)); ?>
+		<?php echo $form->error($model,'direccion'); ?>
+	</div>
+	
+	<div id="mapa" style="width: 500px; height: 400px;"></div>				
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'latitud'); ?>
+		<?php echo $form->textField($model,'latitud',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'latitud'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'longitud'); ?>
+		<?php echo $form->textField($model,'longitud',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'longitud'); ?>
+	</div>
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'marca'); ?>
@@ -23,24 +54,20 @@
 		<?php echo $form->error($model,'marca'); ?>
 	</div>
 	
-	<div class="row">
-		<?php echo $form->labelEx($model,'estado'); ?>
-		<?php echo $form->dropDownList($model, 'estado', Usuarios::estados(), array('prompt'=>'---Selecciona---')); ?>
-		<?php echo $form->error($model,'estado'); ?>
-	</div>
+	<script>
+	$('#mapa').locationpicker({
+		location: {latitude: 22.21179847133122, longitude: -101.9306640625},	
+		radius: 3,
+		inputBinding: {
+	        latitudeInput: $('#Fotos-latitud'),
+    	    longitudeInput: $('#Fotos-longitud'),
+        	locationNameInput: $('#Fotos_direccion')
+    	},
+    	enableAutocomplete: true,
+    	zoom: 4
+	});
+	</script>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'municipio'); ?>
-		<?php echo $form->textField($model,'municipio',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'municipio'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'descripcion'); ?>
-		<?php echo $form->textArea($model,'descripcion',array('rows'=>10,'cols'=>90)); ?>
-		<?php echo $form->error($model,'descripcion'); ?>
-	</div>
-	
 	<?php 
 		echo $form->hiddenField($model,'nombre_original',array('value'=>$_POST["nombre_original"])); 
 		echo $form->error($model,'nombre_original');
