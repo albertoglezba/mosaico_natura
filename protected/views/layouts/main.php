@@ -29,19 +29,14 @@
 	<script type="text/javascript" src="<?php echo $yii_path; ?>/assets/js/jquery.fileupload.js"></script>
 	<script type="text/javascript" src="<?php echo $yii_path; ?>/assets/js/jquery.qtip.min.js"></script>
 
-	<!-- Script de autocompletado del domicilio, hay algun equivalente a content_for?-->
-	<script type="text/javascript" src="<?php echo $yii_path; ?>/assets/js/domicilio.js"></script>
-
-	<!-- Start of the Cascading Style Sheets -->
+		<!-- Start of the Cascading Style Sheets -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<!--link rel="stylesheet" type="text/css" href="http://www.mosaiconatura.net/estilos.css"-->
-	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
+	<!--link rel="stylesheet" type="text/css" href="<?php //echo $yii_path; ?>/css/print.css" media="print" /-->
+	<!--link rel="stylesheet" type="text/css" href="<?php //echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" /-->
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/main.css">
 	<!--link rel="stylesheet" type="text/css" href="<?php //echo $yii_path; ?>/css/form.css" -->
-	<!--link rel="stylesheet" type="text/css" href="<?php //echo $yii_path; ?>/css/jquery.qtip.min.css" /-->
+	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/jquery.qtip.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/style_aws.css">
 	<!--link rel="stylesheet" href="<?php //echo $yii_path; ?>/css/normalize.min.css"-->
 </head>
