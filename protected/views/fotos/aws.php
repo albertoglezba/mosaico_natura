@@ -134,10 +134,6 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
         
             $(document).ready(function () {           	                              
 
-
-
-
-
             	// Para obtener las dimensiones del archivo antes de mandarlo y el tipo de archivo
                 res = {};
 
@@ -189,7 +185,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
 
                     var reader  = new FileReader();
 
-                    reader.onchage   = function(e)
+                    reader.onload   = function(e)
                     {
                         var image   = new Image();
                         //res.width =  'siii';
@@ -253,8 +249,27 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                             return 'You have unsaved changes.';
                         };      
                         
+
+                        $('#label_file').empty();
+                		
+                		// Actually submit to form to S3.
+                        data.submit();
+
+                        // Show the progress bar
+                        // Uses the file size as a unique identifier
+                        var bar = $('<div class="progress" data-mod="'+file.size+'"><div class="bar"></div></div>');
+                        $('.progress-bar-area').append(bar);
+                        bar.slideDown('fast');
+
+                        // Hidde the input file, one at a time
+                        form.find('input[name="file"]').hide();
+
+
+
                         
-                        console.log(loadImage(file));
+
+                        
+                        //console.log(loadImage(file));
                                       
 
                         /*
@@ -303,7 +318,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                             	$('#label_file').empty().html('La fotografía debe de ser .jpg y debe pesar por lo menos 6MB y máximo 10 MB');
                                 return false;
                             }   
-                        } */
+                        } 
 
                         if (res.is_valid)
                         {
@@ -323,7 +338,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                         } else {
                         	$('#label_file').empty().html(res.error);
                             return false;   
-                        }                                  
+                        }       */                           
                     },
                     progress: function (e, data) {
                         // This is what makes everything really cool, thanks to that callback
