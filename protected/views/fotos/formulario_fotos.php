@@ -26,14 +26,14 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'titulo'); ?>
-		Puede ser algo ilustrativo como el nombre de la especie que viste, el lugar, etc
+		Puede ser algo ilustrativo como el nombre de la especie que viste, el lugar, etc.
 		<?php echo $form->textField($model,'titulo',array('rows'=>10,'cols'=>90, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'titulo'); ?>
 	</div>
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'direccion'); ?>
-		Puedes autocompletar el lugar en el cual tomaste tu fotografía, arrastrar el marcador del mapa o completar las coordenadas. 
+		Puedes autocompletar el lugar en el cual tomaste tu fotografía, arrastrar el marcador del mapa o escribir las coordenadas. 
 		<?php echo $form->textField($model,'direccion',array('size'=>60,'maxlength'=>500, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'direccion'); ?>
 	</div>
@@ -95,7 +95,7 @@
 		
 	<br>
 
-	<?php echo CHtml::ajaxSubmitButton('Enviar',CHtml::normalizeUrl(array('fotos/formulario_fotos','render'=>true)),
+	<?php echo CHtml::ajaxSubmitButton('Enviar fotografía',CHtml::normalizeUrl(array('fotos/formulario_fotos','render'=>true)),
                  array(
                      'dataType'=>'json',
                      'type'=>'post',

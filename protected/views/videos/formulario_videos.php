@@ -1,43 +1,33 @@
 <div class="form">
 
 	<?php $form=$this->beginWidget('CActiveForm', array(
-			'id'=>'fotos-form',
+			'id'=>'videos-form',
 			'enableAjaxValidation'=>true,
-			'action'=>$this->createUrl('fotos/formulario_fotos'),
+			'action'=>$this->createUrl('videos/formulario_videos'),
 			'enableClientValidation'=>true,
-			'htmlOptions' => array(
-			'enctype' => 'multipart/form-data',
-	),
-)); ?>
 
+	)
+); ?>
+
+	<h4><em>Segundo paso</em>, completa el registro</h4>
+	
 	<div class="errorMessage" id="formResult"></div>
 	<div id="AjaxLoader" style="display: none"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/aplicacion/loading.gif"></img></div>
 	
 	<p class="note">
 		Campos con <span class="required">*</span> son requeridos.
 	</p>
-	
-	<div class="row">
-		<?php echo $form->labelEx($model,'marca'); ?>
-		<?php echo $form->textField($model,'marca',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'marca'); ?>
-	</div>
-	
-	<div class="row">
-		<?php echo $form->labelEx($model,'estado'); ?>
-		<?php echo $form->dropDownList($model, 'estado', Usuarios::estados(), array('prompt'=>'---Selecciona---')); ?>
-		<?php echo $form->error($model,'estado'); ?>
-	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'municipio'); ?>
-		<?php echo $form->textField($model,'municipio',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'municipio'); ?>
+		<?php echo $form->labelEx($model,'titulo'); ?>
+		Puede ser algo ilustrativo como el nombre de la especie que viste, el lugar, etc.
+		<?php echo $form->textField($model,'titulo',array('size'=>60,'maxlength'=>255, 'class'=>'form-control')); ?>
+		<?php echo $form->error($model,'titulo'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'descripcion'); ?>
-		<?php echo $form->textArea($model,'descripcion',array('rows'=>10,'cols'=>90)); ?>
+		<?php echo $form->textArea($model,'descripcion',array('rows'=>10,'cols'=>90, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'descripcion'); ?>
 	</div>
 	
@@ -56,28 +46,24 @@
 		
 		echo $form->hiddenField($model,'type',array('value'=>$_POST["type"]));
 		echo $form->error($model,'type');
-		
-		echo $form->hiddenField($model,'categoria_id',array('value'=>$_POST["categoria_id"]));
-		echo $form->error($model,'categoria_id');
 	?>
 		
 	<br>
 
-	<?php echo CHtml::ajaxSubmitButton('Enviar',CHtml::normalizeUrl(array('fotos/formulario_fotos','render'=>true)),
+	<?php echo CHtml::ajaxSubmitButton('Enviar video',CHtml::normalizeUrl(array('videos/formulario_videos','render'=>true)),
                  array(
                      'dataType'=>'json',
                      'type'=>'post',
                      'success'=>'function(data) {
                          $("#AjaxLoader").hide();  
                         if(data.status=="success"){
-                         $("#formResult").html("form submitted successfully.");
-                         //$("#user-form")[0].reset();
+                         window.location.replace("'.Yii::app()->request->baseUrl.'/index.php/videos/index?msj=Tu video se subió correctamente");
                  		
                         }
                          else{
                         $.each(data, function(key, val) {
-                        $("#fotos-form #"+key+"_em_").text(val);                                                    
-                        $("#fotos-form #"+key+"_em_").show();
+                        $("#videos-form #"+key+"_em_").text(val);                                                    
+                        $("#videos-form #"+key+"_em_").show();
                         });
                         }       
                     }',                    
