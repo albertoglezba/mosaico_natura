@@ -164,6 +164,7 @@ class Usuarios extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 				'fotos' => array(self::HAS_MANY, 'Fotos', 'usuario_id'),
+				'videos' => array(self::HAS_MANY, 'Videos', 'usuario_id')
 		);
 	}
 
