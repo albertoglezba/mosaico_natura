@@ -183,7 +183,7 @@ class Fotos extends CActiveRecord
 		$categorias_usuario = $usuario->usuarios_categorias();
 	
 		// Ya no puede subir mas fotografias
-		if (count($categorias_usuario) == 6)
+		if (count($categorias_usuario) == 5)
 			return false;	
 		else			
 			return true;

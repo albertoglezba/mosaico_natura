@@ -96,6 +96,8 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
 ?>
 <div class="container">
 
+<h4><em>Segundo paso</em>, selecciona una forografía</h4>
+
     <!-- Direct Upload to S3 Form -->
     <form action="<?php echo $s3FormDetails['url']; ?>"
           method="POST"
@@ -147,7 +149,8 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
 
                 var file = data.files[0];
                 var filename = "<?php echo $fecha.$usuario; ?>" + '.' + file.name.split('.').pop();
-                var toAWS = function(){
+                
+                var toAWS = function() {
                     $('#label_file').empty();
                     $('#label_file').removeClass('hidden');
                     $('#label_file').removeClass('alert-warning');
@@ -166,6 +169,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                     // Hide the input file, one at a time
                     form.find('input[name="file"]').hide();
                 };
+                
                 form.find('input[name="Content-Type"]').val(file.type);
                 form.find('input[name="key"]').val((folders.length ? folders.join('/') + '/' : '') + filename);
 
@@ -188,7 +192,6 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                                     return false;
                                 }
                             } else {
-                                console.log(image.width);
                                 $('#label_file').removeClass('hidden').empty().html('La resolución de tu fotografía es: ' + image.width + 'x' + image.height + 'px; El requisito es que el lado mas grande tu fotogrfá debe ser mínimo de 3000px');
                                 return false;
                             }
