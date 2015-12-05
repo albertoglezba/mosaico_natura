@@ -59,12 +59,14 @@
 				$this->setIdUsuario(Yii::app()->user->id);
 				$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 				echo CHtml::link('Tus fotografías', array('fotos/index'), array('style'=>'color:#FFD503;font-size:15px;'));
+				echo " | ".CHtml::link('Tus videos', array('videos/index'), array('style'=>'color:#FFD503;font-size:15px;'));
 				echo " | ".CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('style'=>'color:#FFD503;font-size:15px;'));
 				echo " | ".CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'), array('style'=>'color:#FFD503;font-size:15px;'));
 			}
 		} else {
 			$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 			echo CHtml::link('Tus fotografías', array('fotos/index'), array('style'=>'color:#FFD503;font-size:15px;'));
+			echo " | ".CHtml::link('Tus videos', array('videos/index'), array('style'=>'color:#FFD503;font-size:15px;'));
 			echo " | ".CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('style'=>'color:#FFD503;font-size:15px;'));
 			echo " | ".CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'), array('style'=>'color:#FFD503;font-size:15px;'));
 		}

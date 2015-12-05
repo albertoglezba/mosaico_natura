@@ -144,7 +144,7 @@ class VideosController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Fotos', array(
+		$dataProvider=new CActiveDataProvider('Videos', array(
 				'criteria'=>array(
 						'condition'=>'usuario_id='.Yii::app()->user->id_usuario,
 						'order'=>'fec_alta DESC',

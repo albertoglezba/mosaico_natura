@@ -176,8 +176,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
 
 				if (file.type == 'video/quicktime' || file.type == 'video/mpeg')
 				{
-					//if (file.size >= 1024*1024*19 && file.size <= 1024*1024*1024*5)
-					if (file.size <= 1024*1024*1024*5)
+					if (file.size >= 1024*1024*19 && file.size <= 1024*1024*1024*5)
 					{
 						toAWS();
 					} else {
