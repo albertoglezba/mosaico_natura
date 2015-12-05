@@ -111,7 +111,7 @@ class Fotos extends CActiveRecord
 				'usuario_id' => 'Usuario',
 				'categoria_id' => 'Categoría',
 				'fotografia' => 'Fotografía',
-				'direccion' => 'Dirección',
+				'direccion' => 'Ubicación',
 				'latitud' => 'Latitud',
 				'longitud' => 'Longitud',
 				'titulo' => 'Título',

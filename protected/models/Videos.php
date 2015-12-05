@@ -45,15 +45,15 @@ class Videos extends CActiveRecord
 		// will receive user inputs.
 		
 		return array(
-				array('nombre_original, nombre, ruta, size, type', 'required'),
+				array('nombre_original, nombre, ruta, size, type, titulo, descripcion', 'required'),
 				array('usuario_id', 'numerical', 'integerOnly'=>true),
-				array('nombre_original, nombre, type, ruta', 'length', 'max'=>255),
+				array('nombre_original, nombre, type, ruta, titulo', 'length', 'max'=>255),
 				array('descripcion', 'safe'),
 				//array('verifyCode', 'captcha', 'on'=>'captchaRequired'),
 				//array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(), 'captcaAction' => 'site/captcha'),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.
-				array('id, nombre_original, nombre, ruta, size, type, fec_alta, fec_act, usuario_id', 'safe', 'on'=>'search'),
+				array('id, nombre_original, nombre, ruta, size, type, fec_alta, fec_act, titulo, descripcion, usuario_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -83,6 +83,7 @@ class Videos extends CActiveRecord
 				'fec_alta' => 'Fec Alta',
 				'fec_act' => 'Fec Act',
 				'usuario_id' => 'Usuario',
+				'titulo' => 'Título',
 				'descripcion' => 'Breve descripción'
 		);
 	}
@@ -110,5 +111,16 @@ class Videos extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 				'criteria'=>$criteria,
 		));
+	}
+	
+	public static function soloUnVideo()
+	{
+		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+		
+		// Ya no puede subir mas fotografias
+		if (count($usuario->videos) == 1)
+			return false;
+		else
+			return true;
 	}
 }

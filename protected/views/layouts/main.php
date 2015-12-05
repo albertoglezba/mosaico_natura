@@ -112,7 +112,6 @@
 	<!-- /.container -->
 </nav>
 
-
 <?php echo $content; ?>
 <!-- Footer -->
 

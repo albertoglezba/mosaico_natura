@@ -59,11 +59,11 @@ class Usuarios extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-				array('usuario, nombre, apellido, edad, correo, calle_y_numero, colonia, municipio, estado, cp', 'required'),
+				array('usuario, nombre, apellido, edad, correo, municipio, estado, compromiso, difusion', 'required'),
 				array('acepto_terminos, passwd, confirma_passwd', 'required', 'on'=>'insert'),
 				array('confirmo, edad', 'numerical', 'integerOnly'=>true),
-				array('usuario, nombre, apellido, correo, telefonos, passwd, confirma_passwd, salt, calle_y_numero, colonia, municipio, estado', 'length', 'max'=>255),
-				array('cp', 'length', 'min' => 5, 'max'=>5),
+				array('usuario, nombre, apellido, correo, telefonos, passwd, confirma_passwd, salt, municipio, estado', 'length', 'max'=>255),
+				array('compromiso', 'safe'),
 				array('acepto_terminos', 'acepto_terminos_rule', 'on'=>'insert'),
 				array('correo', 'valida_correo', 'on'=>'insert'),
 				array('usuario', 'valida_usuario', 'on'=>'insert'),
@@ -71,7 +71,7 @@ class Usuarios extends CActiveRecord
 				array('confirma_passwd', 'valida_passwd'),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.
-				array('id, usuario, nombre, apellido, edad, correo, telefonos, calle_y_numero, colonia, municipio, estado, cp, confirmo, fec_alta, fec_act', 'safe', 'on'=>'search'),
+				array('id, usuario, nombre, apellido, edad, correo, telefonos, municipio, estado, confirmo, fec_alta, fec_act', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -164,6 +164,7 @@ class Usuarios extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 				'fotos' => array(self::HAS_MANY, 'Fotos', 'usuario_id'),
+				'videos' => array(self::HAS_MANY, 'Videos', 'usuario_id')
 		);
 	}
 
@@ -182,16 +183,15 @@ class Usuarios extends CActiveRecord
 				'telefonos' => 'Teléfonos',
 				'passwd' => 'Contraseña',
 				'salt' => 'Salt',
-				'calle_y_numero' => 'Calle y número',
-				'colonia' => 'Colonia / Asentamiento',
 				'municipio' => 'Delegación / Municipio',
 				'estado' => 'Estado',
-				'cp' => 'Código postal',
 				'confirmo' => 'Confirmo',
 				'fec_alta' => 'Fecha de alta',
 				'fec_act' => 'Fecha de última actualización',
 				'acepto_terminos' => 'Acepto términos y condiciones',
-				'confirma_passwd' => 'Confirma contraseña'
+				'confirma_passwd' => 'Confirma contraseña',
+				'compromiso' => 'Compromiso',
+				'difusion' => '¿Cómo te enteraste del concurso?'
 		);
 	}
 
@@ -215,11 +215,8 @@ class Usuarios extends CActiveRecord
 		$criteria->compare('telefonos',$this->telefonos,true);
 		$criteria->compare('passwd',$this->passwd,true);
 		$criteria->compare('salt',$this->salt,true);
-		$criteria->compare('calle_y_numero',$this->calle_y_numero,true);
-		$criteria->compare('colonia',$this->colonia,true);
 		$criteria->compare('municipio',$this->municipio,true);
 		$criteria->compare('estado',$this->estado,true);
-		$criteria->compare('cp',$this->cp,true);
 		$criteria->compare('confirmo',$this->confirmo);
 		$criteria->compare('fec_alta',$this->fec_alta,true);
 		$criteria->compare('fec_act',$this->fec_act,true);
@@ -265,6 +262,18 @@ class Usuarios extends CActiveRecord
 				'Veracruz' => 'Veracruz',
 				'Yucatán' => 'Yucatán',
 				'Zacatecas' => 'Zacatecas'
+		);
+	}
+	
+	public static function difusiones()
+	{
+		return array
+		(
+			'Redes sociales' => 'Redes sociales', 
+			'Medios impresos' => 'Medios impresos',
+			'Radio' => 'Radio', 
+			'Televisión' => 'Televisión',
+			'Otros' => 'Otros'	
 		);
 	}
 

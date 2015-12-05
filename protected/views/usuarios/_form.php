@@ -36,18 +36,6 @@
 	</div>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'calle_y_numero'); ?>
-		<?php echo $form->textField($model,'calle_y_numero',array('class' => 'form-control')); ?>
-		<?php //echo $form->error($model,'calle_y_numero'); ?>
-	</div>
-
-	<div class="form-group">
-		<?php echo $form->labelEx($model,'cp'); ?>
-		<?php echo $form->textField($model,'cp',array('class' => 'form-control')); ?>
-		<?php //echo $form->error($model,'cp'); ?>
-	</div>
-
-	<div class="form-group">
 		<?php echo $form->labelEx($model,'estado'); ?>
 		<?php echo $form->dropDownList($model, 'estado', Usuarios::estados(), array('prompt'=>'---Selecciona---','class' => 'form-control')); ?>
 		<?php //echo $form->error($model,'estado'); ?>
@@ -58,13 +46,6 @@
 		<?php echo $form->textField($model,'municipio',array('class' => 'form-control')); ?>
 		<?php //echo $form->error($model,'municipio'); ?>
 	</div>
-
-	<div class="form-group">
-		<?php echo $form->labelEx($model,'colonia'); ?>
-		<?php echo $form->textField($model,'colonia',array('class' => 'form-control')); ?>
-		<?php //echo $form->error($model,'colonia'); ?>
-	</div>
-
 
 	<?php if ($model->isNewRecord) { ?>
 	<br> <b>Los siguientes campos no pueden ser modificados una vez creado el registro.</b>
@@ -101,6 +82,19 @@
 		<?php //echo $form->error($model,'passwd'); ?>
 	</div>
 
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'compromiso'); ?>
+		Como es que tu aportas al cuidado de la naturaleza y ¿a qué te comprometes para seguir cuidandola?
+		<?php echo $form->textArea($model,'compromiso',array('class' => 'form-control', 'rows'=>10,'cols'=>90)); ?>
+		<?php //echo $form->error($model,'usuario'); ?>
+	</div>
+	
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'difusion'); ?>
+		<?php echo $form->dropDownList($model, 'difusion', Usuarios::difusiones(), array('prompt'=>'---Selecciona---','class' => 'form-control')); ?>
+		<?php //echo $form->error($model,'estado'); ?>
+	</div>
+	
 	<div id="terminos">
 		<?php include('protected/views/site/terminos_y_condiciones.php'); ?>
 	</div>
