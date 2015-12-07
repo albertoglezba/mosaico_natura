@@ -42,30 +42,30 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
     $url = '//' . $s3Bucket . '.' . $service . '-' . $region . '.amazonaws.com';
 
     // Step 1: Generate the Scope
-    $scope = [
+    $scope = array(
         Yii::app()->params['aws_access_key'],
         $shortDate,
         $region,
         $service,
         $requestType
-    ];
+    );
     $credentials = implode('/', $scope);
 
     // Step 2: Making a Base64 Policy
-    $policy = [
+    $policy = array(
         'expiration' => gmdate('Y-m-d\TG:i:s\Z', strtotime('+6 hours')),
-        'conditions' => [
-            ['bucket' => $s3Bucket],
-            ['acl' => $acl],
-            ['starts-with', '$key', ''],
-            ['starts-with', '$Content-Type', ''],
-            ['success_action_status' => $successStatus],
-            ['x-amz-credential' => $credentials],
-            ['x-amz-algorithm' => $algorithm],
-            ['x-amz-date' => $date],
-            ['x-amz-expires' => $expires],
-        ]
-    ];
+        'conditions' => array(
+            array('bucket' => $s3Bucket),
+            array('acl' => $acl),
+            array('starts-with', '$key', ''),
+            array('starts-with', '$Content-Type', ''),
+            array('success_action_status' => $successStatus),
+            array('x-amz-credential' => $credentials),
+            array('x-amz-algorithm' => $algorithm),
+            array('x-amz-date' => $date),
+            array('x-amz-expires' => $expires),
+        )
+    );
     $base64Policy = base64_encode(json_encode($policy));
 
     // Step 3: Signing your Request (Making a Signature)
@@ -78,7 +78,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
 
     // Step 4: Build form inputs
     // This is the data that will get sent with the form to S3
-    $inputs = [
+    $inputs = array(
         'Content-Type' => '',
         'acl' => $acl,
         'success_action_status' => $successStatus,
@@ -88,7 +88,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
         'X-amz-date' => $date,
         'X-amz-expires' => $expires,
         'X-amz-signature' => $signature
-    ];
+    );
 
     return compact('url', 'inputs');
 }

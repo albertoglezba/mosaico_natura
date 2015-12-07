@@ -48,7 +48,7 @@
 	<![endif]-->
 
 	<!-- Start of the Cascading Style Sheets -->
-	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/style_aws.css"-->
+	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/style_aws.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/grayscale.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/overide.css" />
@@ -60,11 +60,12 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
 
+	<link rel="icon" type="images/ico"	href="http://www.mosaiconatura.net/favicon.ico">
 </head>
 
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+<?php echo $yii_path ?>
 <!-- Navigation -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
@@ -72,7 +73,7 @@
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 				<i class="fa fa-bars"></i>
 			</button>
-			<a class="navbar-brand page-scroll" href="<?php echo $yii_path; ?>">
+			<a class="navbar-brand page-scroll" href="<?php echo $yii_path; ?>/index.php">
 				<h2>MOSAICO NATURA M&Eacute;XICO</h2><img src="<?php echo $yii_path; ?>/img/logo-mosaiconatura.png" alt="Mosaico-Natura">
 			</a>
 		</div>
@@ -85,25 +86,25 @@
 					<a href="<?php echo $yii_path; ?>#page-top"></a>
 				</li>
 				<li>
-					<a class="page-scroll" href="<?php echo $yii_path; ?>#about">Qui&eacute;nes somos</a>
+					<a class="page-scroll" href="<?php echo $yii_path; ?>/#about">Qui&eacute;nes somos</a>
 				</li>
 				<li>
-					<a class="page-scroll" href="<?php echo $yii_path; ?>#bases">Concurso</a>
+					<a class="page-scroll" href="<?php echo $yii_path; ?>/#bases">Concurso</a>
 				</li>
 				<li>
-					<a class="page-scroll" href="<?php echo $yii_path; ?>#jurado">Jurado</a>
+					<a class="page-scroll" href="<?php echo $yii_path; ?>/#jurado">Jurado</a>
 				</li>
 				<li>
-					<a class="page-scroll" href="<?php echo $yii_path; ?>#expos">Exposiciones</a>
+					<a class="page-scroll" href="<?php echo $yii_path; ?>/#expos">Exposiciones</a>
 				</li>
 				<li>
-					<a class="page-scroll" href="<?php echo $yii_path; ?>#preguntas">Preguntas Frecuentes</a>
+					<a class="page-scroll" href="<?php echo $yii_path; ?>/#preguntas">Preguntas Frecuentes</a>
 				</li>
 				<li>
-					<a class="page-scroll" href="<?php echo $yii_path; ?>#registro">Registro</a>
+					<a class="page-scroll" href="<?php echo $yii_path; ?>/#registro">Registro</a>
 				</li>
 				<li>
-					<a class="page-scroll" href="<?php echo $yii_path; ?>#medios">Medios</a>
+					<a class="page-scroll" href="<?php echo $yii_path; ?>/#medios">Medios</a>
 				</li>
 			</ul>
 		</div>

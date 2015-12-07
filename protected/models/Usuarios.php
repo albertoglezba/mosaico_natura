@@ -279,13 +279,14 @@ class Usuarios extends CActiveRecord
 
 	public function send_mail()
 	{
-		$imagen = "<table width=\"990\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\">";
-		$imagen.= "<tbody><tr><td width=\"200\" align=\"center\" bgcolor=\"#000000\">";
-		$imagen.= "<img src=\"http://www.mosaiconatura.net/images/logo_mosaicon_natura.png\" width=\"153\" height=\"79\" border=\"0\">";
-		$imagen.= "</td><td width=\"790\" align=\"center\" bgcolor=\"#FFFFFF\">";
-		$imagen.= "<img	src=\"http://www.mosaiconatura.net/images/barraLogos.png\" width=\"707\" height=\"79\">";
-		$imagen.= "</td></tr></tbody></table>";
 
+		ini_set("SMTP", "xolo.conabio.gob.mx");
+		ini_set("sendmail_from", "noreply@conabio.gob.mx");
+
+		$imagen = "<table border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\">";
+		$imagen.= "<tbody><tr><td align=\"center\" bgcolor=\"#333333\">";
+		$imagen.= "<div style=\"background:url('http://www.mosaiconatura.net/img/bg-registro.jpg') no-repeat center center scroll;\"><img src=\"http://www.mosaiconatura.net/img/logo-mosaiconatura.png\" border=\"0\"></div>";
+		$imagen.= "</td></tr></tbody></table>";
 		$para = $this->correo.", mosaiconatura@conabio.gob.mx";
 		$titulo = 'Registro para el '.Yii::app()->name;
 		$mensaje = $imagen."<br><br>".$this->nombre.' '.$this->apellido.",";
