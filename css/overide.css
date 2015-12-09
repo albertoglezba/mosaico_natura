@@ -25,8 +25,6 @@ a.navbar-brand h2{
 	padding:4px auto;
 
 	}
-	
-
 
 .pleca_ama {
 	font-size: 18px;
@@ -89,8 +87,6 @@ h3.mosaico-titulo{
 #formatos-wrapper{
 	display:block;
 	clear:both;
-	/*background: #0F9;*/
-    width: 80%;
     height: 200px;
     margin: 0px auto;
 	}
@@ -309,9 +305,7 @@ table.como-participar td{
 	
 .publi {
 	margin:50px 0 20px 0;
-	}	
-	
-	
+	}		
 	
 .preguntas-header {
     width: 100%;
@@ -389,7 +383,6 @@ table.como-participar td{
 	text-align:center;
 	padding:20px 0;
 	margin-left:0;
-	
 	}
 	
 .faq-formatos-video img{
@@ -403,7 +396,6 @@ table.como-participar td{
 	text-align:center;
 	padding:20px 0;
 	margin-left:0;
-	
 	}	
 	
 .faq-formatos-video h4{
@@ -488,6 +480,97 @@ table.como-participar td{
 	 margin-bottom:20px;
  }
 
+footer { 
+	text-align:center;
+}
+	
+footer ul {
+	padding:0;
+	list-style-type:none;
+	text-decoration:none;
+	line-height:1;
+}
+		
+#enlaces {
+	background-color:#595448;
+	padding: 30px 0;
+}
+				
+#enlaces p {
+	font-size:18px;
+	font-weight:bold;
+	color:#ffd400;
+	margin-bottom:3px;
+}
+
+#enlaces ul {
+	font-size:16px;
+}	
+	
+#enlaces a {
+	color:#fff;
+}
+	
+#enlaces a:hover {
+	color:#ffd400;
+}		
+#copyright {
+	padding:10px 0;
+	margin:0;
+}	
+	
+#copyright p {
+	font-size:18px;
+	line-height:1;
+	margin:0;
+}	
+		
+#colaboradores {
+	align-content:center;
+	background-color:#fff;
+	padding:15px 0;
+	margin-top:100px;
+}
+		
+#colaboradores ul {
+	text-align:center;
+	padding:13px 0 8px 0;
+	margin:auto;
+}	
+	
+#colaboradores li {
+	display:inline;
+	list-style-type:none;
+}	
+	
+#colaboradores li img {
+	padding:10px 10px;
+	height:auto;
+}	
+
+.premiosvid {
+	width: 100%;
+	background-color: #2D2C26;
+	border-collapse: separate;
+    border-spacing: 15px 0px;
+	margin: 30px 0 30px 0px;
+	-webkit-box-shadow: 0px 0px 23px 5px rgba(148,148,148,1);
+	-moz-box-shadow: 0px 0px 23px 5px rgba(148,148,148,1);
+	box-shadow: 0px 0px 23px 5px rgba(148,148,148,1);
+}
+
+.bfilm {
+	background-image: url(../img/bg_film.png);
+    background-repeat: repeat-x;
+    background-position-y: 5px;
+    line-height: 27px;
+}
+
+.premiosvid2 {
+	background: #5B5446;
+	padding: 15px;
+	text-align: left;
+}
 
 @media(min-width:992px){
 
@@ -500,7 +583,7 @@ table.como-participar td{
 	}	
 	
 	a.navbar-brand h2{
-		display:none;
+		display: none;
 	}
 	
 }
@@ -738,7 +821,7 @@ table.como-participar td{
 	.vid-formato img{
 		float:left;
 		padding:0;
-		margin-left:10%;
+		/*margin-left:10%;*/
 	}	
 
 	.vid-formato ul{
@@ -747,6 +830,7 @@ table.como-participar td{
 		padding:4px 20px 10px 8px;
 		margin:0;
 		background:url(../img/bases-14.png) right top no-repeat;
+		line-height: 30px;
 	}	
 	
 
@@ -813,83 +897,16 @@ table.como-participar td{
 	.content-section {
         padding-top: 50px;
     }	
-
-	#colaboradores{
-		align-content:center;
-		background-color:#fff;
-		padding:15px 0;
-		margin-top:100px;
-	}
-		
-	#colaboradores ul{
-		text-align:center;
-		padding:13px 0 8px 0;
-		margin:auto;
-	}	
-		
-	#colaboradores li{
-		display:inline;
-		list-style-type:none;
-	}	
-		
-	#colaboradores li img{
-		padding:10px 10px;
-		height:auto;
-	}	
 	
-		#colaboradores li img{
+	#colaboradores li img {
 		padding:0 10px;
 	}		
 	
-	footer{
-		text-align:center;
-	}
-	
-	footer ul{
-		padding:0;
-		list-style-type:none;
-		text-decoration:none;
-		line-height:1;
-	}
-		
-	#enlaces{
-		background-color:#595448;
-		padding: 30px 0;
-	}
-			
-		
-	#enlaces p{
-		font-size:18px;
-		font-weight:bold;
-		color:#ffd400;
-		margin-bottom:3px;
-	}
-	
-	#enlaces ul{
-		font-size:16px;
-		}	
-		
-	#enlaces a{
-		color:#fff;
-		}
-	#enlaces a:hover{
-		color:#ffd400;
-		}			
-	#copyright{
-		padding:10px 0;
-		margin:0;
-		}	
-		
-	#copyright p{
-		font-size:18px;
-		line-height:1;
-		margin:0;
-		}		
-		
-	#copyright p{
+	#copyright p {
 		font-size:15px;
 	}
 }	
+
 
 
 #terminos{
