@@ -29,7 +29,7 @@
 <!-- About Section -->
 <section id="about" class="container content-section text-center">
 	<div class="row">
-		<div class="col-lg-7">
+		<div class="col-lg-7 col-sm-12">
 			<h2>QUI&Eacute;NES SOMOS</h2>
 			<p><img src="<?php echo $yii_path; ?>/img/logo-mosaiconaturav.png" width="163" height="90" alt=""/> tiene como objetivos: ser una ventana para dar a conocer la riqueza natural de M&eacute;xico captada en im&aacute;genes y un sitio de promoci&oacute;n de fot&oacute;grafos de naturaleza mexicana.</p>
 
@@ -44,8 +44,8 @@
 			<!--<p> <a href="#">Conoce a nuestros ganadores del a&ntilde;o pasado</a></p>-->
 		</div>
 
-		<div class="col-lg-5">
-			<iframe class="video-mosaico" src="https://player.vimeo.com/video/146709536" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<div class="col-lg-5 col-sm-12">
+			<iframe src="https://player.vimeo.com/video/146709536?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</div>
 	</div>
 </section>
@@ -220,41 +220,57 @@
 
 				<h4 class="bases-der">Premios</h4>
 
-				<table width="100%" border="0" cellspacing="10">
-					<tr>
-						<td>
-							<table width="100%" border="0">
-								<tr>
-									<td><img src="<?php echo $yii_path; ?>/img/bases-07.png"></td>
-								</tr>
-								<tr>
-									<td>$25,000 pesos<br/>C&aacute;mara Reflex Nikon<br/>Viaje a una ANP<br/>Suscripci&oacute;n anual:<br/>National Geographic en Espa&ntilde;ol<br/>Mexican&iacute;simo</td>
-								</tr>
-							</table>
-
-						</td>
-						<td >
-							<table width="100%" border="0">
-								<tr>
-									<td><img src="<?php echo $yii_path; ?>/img/bases-06.png"></td>
-								</tr>
-								<tr>
-									<td>$20,000 pesos<br/>Suscripci&oacute;n anual:<br/>National Geographic en Espa&ntilde;ol<br/>Mexican&iacute;simo</td>
-								</tr>
-							</table>
-						</td>
-						<td>
-							<table width="100%" border="0">
-								<tr>
-									<td><img src="<?php echo $yii_path; ?>/img/bases-08.png"></td>
-								</tr>
-								<tr>
-									<td>$15,000 pesos<br/>Suscripci&oacute;n anual:<br/>National Geographic en Espa&ntilde;ol<br/>Mexican&iacute;simo</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-				</table>
+				<table class="premiosvid">
+  						<tr>
+                            <td colspan="3" class="bfilm">&nbsp;</td>
+                      </tr>
+  						<tr>
+  						  <td valign="top">
+                          <table width="100%">
+  						    <tr>
+  						      <td class="premiosvid2"><img src="<?php echo $yii_path; ?>/img/bases-07.png"></td>
+					        </tr>
+  						    <tr>
+  						      <td class="premiosvid2">$25,000 pesos<br/>
+  						        C&aacute;mara Reflex Nikon<br/>
+  						        Viaje a una ANP<br/>
+  						        Suscripci&oacute;n anual:<br/>
+  						        National Geographic en Espa&ntilde;ol<br/>
+  						        Mexican&iacute;simo</td>
+					        </tr>
+					      </table></td>
+  						  <td valign="top" ><table width="100%">
+  						    <tr>
+  						      <td class="premiosvid2"><img src="<?php echo $yii_path; ?>/img/bases-06.png"></td>
+					        </tr>
+  						    <tr>
+  						      <td class="premiosvid2"><br>
+  						        <br>
+  						        $20,000 pesos<br/>
+  						        Suscripci&oacute;n anual:<br/>
+  						        National Geographic en Espa&ntilde;ol<br/>
+  						        Mexican&iacute;simo</td>
+					        </tr>
+					      </table></td>
+  						  <td valign="top"><table width="100%">
+  						    <tr>
+  						      <td class="premiosvid2"><img src="<?php echo $yii_path; ?>/img/bases-08.png"></td>
+					        </tr>
+  						    <tr>
+  						      <td class="premiosvid2"><br>
+  						        <br>
+  						        $15,000 pesos<br/>
+  						        Suscripci&oacute;n anual:<br/>
+  						        National Geographic en Espa&ntilde;ol<br/>
+  						        Mexican&iacute;simo</td>
+					        </tr>
+					      </table></td>
+					  </tr>
+  						<tr>
+  						  <td colspan="3" class="bfilm">&nbsp;</td>
+					  </tr>
+					</table>
+                    
 
 			</div>
 
@@ -330,31 +346,34 @@
 	<div class="jurado-content">
 		<div class="container">
 			<div class="col-md-3">
-				<img src="<?php echo $yii_path; ?>/img/team/sabinajimenez.jpg" class="img-responsive img-circle" alt="persona1">
+				<img src="<?php echo $yii_path; ?>/img/team/sabinajimenez.jpg" class="img-responsive img-circle" alt="SABINA JIM&Eacute;NEZ BARRAG&Aacute;N">
 				<h3>SABINA JIM&Eacute;NEZ BARRAG&Aacute;N</h3>
-				<p>Ciudad de México, 1999. Tuvo su primer acercamiento con la fotografía, su primera exposición colectiva y participó con una serie de autorretratos antes de los 10 anos. En  2012 expone su pieza titulada "Guardianes de la ciudad" en el Albergue del Arte, Coyoacán.</p>
+				<p>Ciudad de México, 1999. Tuvo su primera exposición colectiva y participó con una serie de autorretratos antes de los 10 anos. En  2012 expone su pieza titulada "Guardianes de la ciudad" en el Albergue del Arte, Coyoacán.</p>
 				<p>En 2015 comparte exposición nuevamente en colectivo con un tríptico de fotografías intervenidas en técnica plástica, con el título "Las pesadillas de Venus". Primer lugar en la categoría juvenil el 1er Concurso Nacional de Fotografía de Naturaleza, Mosaico Natura, en la categoría juvenil, ganando el primer lugar con una fotografía de paisaje de las cascadas petrificadas en Oaxaca, llevando a cabo una exposición itinerante que ha sido expuesta en las rejas de Chapultepec y actualmente está en el zoológico de Aragón.</p>
 			</div>
 
 			<div class="col-md-3">
-				<img src="<?php echo $yii_path; ?>/img/team/jorgedouglas.jpg" class="img-responsive img-circle" alt="persona1">
+				<img src="<?php echo $yii_path; ?>/img/team/jorgedouglas.jpg" class="img-responsive img-circle" alt="JORGE DOUGLAS BRANDON PLIEGO">
 				<h3>JORGE DOUGLAS BRANDON PLIEGO</h3>
-				<p>Oaxaca. Biólogo marino de la Universidad del Mar. Fotógrafo de naturaleza y conservación. Ha impartido más de 39 cursos de fotografía de naturaleza publicado artículos y fotografías en revistas nacionales e internacionales, como National Geographic en Espanol y México Desconocido.</p>
+				<p>Oaxaca. Biólogo marino de la Universidad del Mar. Fotógrafo de naturaleza y conservación. Ha impartido más de 39 cursos de fotografía de naturaleza publicado artículos y fotografías en revistas nacionales e internacionales, como National Geographic en Español y México Desconocido.</p>
 				<p>Recibió un reconocimiento por Mosaico Natura México, CONABIO, National Geographic y Canon por su contribución a la fotografía como fuente de conocimiento sobre la riqueza natural de México.
 					Cuenta con 34 exposiciones colectivas y 22 individuales en diferentes estados de México y ha participado como juez en 15 concursos nacionales.<br>
-					Actualmente se desempena como fotógrafo independiente y como presidente de la Asociación Civil "Barro Jaguar Fotografía y Conservación A.C.".
+					Actualmente se desempeña como fotógrafo independiente y como presidente de la Asociación Civil "Barro Jaguar Fotografía y Conservación A.C.".
 				</p>
 
 			</div>
 
 			<div class="col-md-3">
-				<img src="<?php echo $yii_path; ?>/img/team/natgeo.jpg" class="img-responsive img-circle" alt="persona1">
-				<h3>JURADO SORPRESA</h3>
+				<img src="<?php echo $yii_path; ?>/img/team/javiersandoval.jpg" class="img-responsive img-circle" alt="LUIS JAVIER SANDOVAL">
+				<h3>LUIS JAVIER<br>
+				SANDOVAL</h3>
+                <p>Guadalajara. En 1979, a los 19 años se mudó a Cancún para iniciar su educación como buzo profesional, actualmente es instructor de buceo con el rango de "master scuba diver trainer" PADI, buzo técnico de cuevas, buzo técnico de nitrox avanzado y procedimientos especiales de descompresión. En 2004 se mudó a Sharm El Sheikh en Egipto, ahí trabajó durante 4 años como gerente en una tienda de buceo y fue ahí donde inició también un sueño que tenía desde pequeño que es la fotografía submarina.<br>
+Sus fotografías han aparecido en revistas y libros en todo el mundo, incluyendo National Geographic, Telmex, Scottia Bank, entre otros.</p>
 
 			</div>
 
 			<div class="col-md-3">
-				<img src="<?php echo $yii_path; ?>/img/team/nikon.jpg" class="img-responsive img-circle" alt="persona1">
+				<img src="<?php echo $yii_path; ?>/img/team/natgeonikon.jpg" class="img-responsive img-circle" alt="JURADO SORPRESA">
 				<h3>JURADO SORPRESA</h3>
 			</div>
 

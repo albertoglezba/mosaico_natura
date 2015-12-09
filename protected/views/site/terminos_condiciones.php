@@ -44,8 +44,7 @@
 			</h4>
 			<p>
 				Fotograf&iacute;a Adultos de 18 a&ntilde;os en adelante<br>
-				Fotograf&iacute;a J&oacute;venes menores de 18 a&ntilde;os (Voto del
-				p&uacute;blico)<br> Categor&iacute;a de video
+				Fotograf&iacute;a J&oacute;venes menores de 18 a&ntilde;os<br> Categor&iacute;a de video
 			</p>
 			<p>
 				<strong>ADULTOS</strong><br> Cada participante puede enviar
