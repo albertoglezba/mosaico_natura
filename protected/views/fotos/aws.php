@@ -229,13 +229,14 @@ Debe ser un .jpg con 3000px como mínimo en su lado más grande
                 // from here you can do what you want as the file is on S3
                 // e.g. save reference to your server / log it, etc.
                 var original = data.files[0];
-                var s3Result = data.result.documentElement.children;
-
+                var url = $(data.result.documentElement).children().contents()[0].textContent;
+                var s3_name = $(data.result.documentElement).children().contents()[2].textContent;
+                
                 var filesUploaded = {
                     "original_name": original.name,
-                    "s3_name": s3Result[2].innerHTML,
+                    "s3_name": s3_name,
                     "size": original.size,
-                    "url": s3Result[0].innerHTML,
+                    "url": url,
                     "type": original.type
                 };
                 $.ajax({
