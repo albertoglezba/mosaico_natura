@@ -1,8 +1,8 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 //defined('YII_DEBUG', true);
 
 // change the following paths if necessary
@@ -15,5 +15,4 @@ defined('YII_DEBUG') or define('YII_DEBUG',true);
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
 
 require_once($yii);
-require dirname(__FILE__).'/protected/vendors/aws-sdk-php/vendor/autoload.php';;
 Yii::createWebApplication($config)->run();
