@@ -280,7 +280,7 @@
 						<td width="10%" bgcolor="#403d35" ><img src="<?php echo $yii_path; ?>/img/bases-15.png" alt="méxico"></td>
 						<td width="30%" bgcolor="#403d35" style="font-weight:bold;">Reconocimiento especial por estado</td>
 						<td bgcolor="#595448" style="text-align:left; padding:0;"><img src="<?php echo $yii_path; ?>/img/bases-16.png"></td>
-						<td bgcolor="#595448" style="text-align:left; padding-left:5px;">Ser&aacute; seleccionada la mejor foto de cada estado (32 seleccionadas) y participar&aacute; en la exposici&oacute;n Visiones de nuestra naturaleza. </td>
+						<td bgcolor="#595448" style="text-align:left; padding-left:5px;">Ser&aacute; seleccionada la mejor foto de cada estado (32 seleccionadas) y participar&aacute; en la exposici&oacute;n Visiones de nuestra naturaleza y dos módulos de Nikon School. </td>
 					</tr>
 				</table>
 
@@ -289,7 +289,7 @@
 			<div id="reconocimiento-xs" class="col-xs-12">
 				<img src="<?php echo $yii_path; ?>/img/bases-15.png">
 				<h4>Reconocimiento especial por estado</h4>
-				<p>Ser&aacute; seleccionada la mejor foto de cada estado (32 seleccionadas) y participar&aacute; en la exposici&oacute;n Visiones de nuestra naturaleza. </p>
+				<p>Ser&aacute; seleccionada la mejor foto de cada estado (32 seleccionadas) y participar&aacute; en la exposici&oacute;n Visiones de nuestra naturaleza y dos módulos de Nikon School. </p>
 
 			</div>
 
@@ -480,22 +480,22 @@ Sus fotografías han aparecido en revistas y libros en todo el mundo, incluyendo
 			</div>
 
 			<div class="row caract">
-				<div class="col-md-3 col-xs-6">
+				<div class="col-md-4 col-xs-6">
 					<h4>No he recibido el correo de confirmaci&oacute;n.</h4>
 					<img src="<?php echo $yii_path; ?>/img/faq-06.png" alt="revisar bandeja de spam">
 					<p>Revisa tu bandeja de spam o correos no deseados.</p>
 				</div>
-				<div class="col-md-3 col-xs-6">
+				<div class="col-md-4 col-xs-6">
 					<h4>&iquest;D&oacute;nde debo de subir mis fotos?</h4>
 					<img src="<?php echo $yii_path; ?>/img/faq-07.png" alt="subir fotos" style="margin:20px auto 2px auto;">
 					<p>Una vez registrado y confirmado tu registro por correo electr&oacute;nico sube tus fotos <a href="#">aqu&iacute;.</a></p>
 				</div>
-				<div class="col-md-3 col-xs-6 caractsm">
+				<!--<div class="col-md-3 col-xs-6 caractsm">
 					<h4>Olvid&eacute; poner la descripci&oacute;n y locaci&oacute;n de mis fotos.</h4>
 					<img src="<?php echo $yii_path; ?>/img/faq-08.png" alt="tu perfil">
 					<p>Podr&aacute;s a&ntilde;adir la informaci&oacute;n directamente sobre tu perfil una vez que hayas ingresado a tu cuenta.</p>
-				</div>
-				<div class="col-md-3 col-xs-6 caractsm">
+				</div>-->
+				<div class="col-md-4 col-xs-6 caractsm">
 					<h4>&iquest;Puedo participar si soy extranjero?</h4>
 					<img src="<?php echo $yii_path; ?>/img/faq-09.png" alt="residentes mexicanos">
 					<p>Podr&aacute;n participar todos los extranjeros que residan en M&eacute;xico.</p>
