@@ -6,6 +6,7 @@
 <div class="view">
 	
 	<h2><?php echo CHtml::encode($data->categoria->nombre) ?></h2>
+	<br><?php echo CHtml::link('[modificar la ubicación, título o marca/modelo de tu cámara fotográfica]', array('fotos/update/'.$data->id), array('style'=>'color:#BD5D28')); ?>
 	<h3><strong><em><?php echo $data->titulo; ?></em></strong></h3>
 	<div>
 	<?php echo CHtml::image($data->ruta, '', array("title"=>$data->titulo, "width"=>"900px")) ?>

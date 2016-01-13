@@ -47,7 +47,7 @@ class FotosController extends Controller
 	{
 		return array(
 				array('allow', // allow authenticated user to perform 'create' and 'update' actions
-						'actions'=>array('index','create','update','formulario_fotos','aws'),
+						'actions'=>array('index','create','update','formulario_fotos','formulario_fotos_editar','aws'),
 						'users'=>array('@'),
 				),
 				array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -108,20 +108,14 @@ class FotosController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Fotos']))
-		{
-			$model->attributes=$_POST['Fotos'];
-			if($model->save())
-				$this->redirect(array('index'));
-		}
-
-		$this->render('update',array(
-				'model'=>$model,
-		));
+    	 
+    	if((Int) Yii::app()->user->id_usuario == $model->usuario_id)
+    	{
+    		$this->render('formulario_fotos_editar',array(
+    				'model'=>$model,
+    		));
+    	} else 
+    		throw new CHttpException(NULL,'Lo sentimos, no estás autorizado para realizar esta acción.');
 	}
 
 	/**
@@ -241,6 +235,38 @@ class FotosController extends Controller
     }
     
     /**
+     * Formulario de fotos llamado desde ajax
+     */
+    public function actionFormulario_fotos_editar($id)
+    {
+    	$model=$this->loadModel($id);
+    	$this->performAjaxValidation($model);
+    	 
+    	if(isset($_POST['Fotos']))
+    	{
+    		$model->attributes=$_POST['Fotos'];
+    		$valid=$model->validate();
+    		 
+    		if ($valid)
+    		{
+    			if($model->save())
+    			{
+    				echo CJSON::encode(array(
+    						'status'=>'success'
+    				));
+    				Yii::app()->end();
+    			}
+    			 
+    		} else {
+    			$error = CActiveForm::validate($model);
+    			if($error!='[]')
+    				echo $error;
+    			Yii::app()->end();
+    		}
+    	}
+    }
+    
+    /**
      * La vista del AWS
      */
     public function actionAws()
@@ -284,7 +310,7 @@ class FotosController extends Controller
 	{
 		$model=Fotos::model()->findByPk($id);
 		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
+			throw new CHttpException(404,'La página solicitada no existe..');
 		return $model;
 	}
 
