@@ -127,18 +127,21 @@ Debe ser un .jpg con 3000px como mínimo en su lado más grande
 </div>
 <script>
     $(document).ready(function () {
-
         // Assigned to variable for later use.
         var form = $('.direct-upload');
-
-        // Place any uploads within the descending folders
-        var folders = ["<?php echo $material; ?>", "<?php echo $categoria; ?>"];
-
-        if ("<?php echo $_POST['adulto']; ?>" == "1")  // Para adultos
+		var adulto = "<?php echo $adulto; ?>";
+        
+        if (adulto == "1")  // Para adultos
+        {
+        	// Place any uploads within the descending folders
+            var folders = ["<?php echo $material; ?>", "<?php echo $categoria; ?>"];
             folders.push("adulto");
-        else
+        } else {
+        	// Place any uploads within the descending folders
+            var folders = ["<?php echo $material; ?>"];
             folders.push("juvenil");
-
+        }
+            
         form.fileupload({
             url: form.attr('action'),
             type: form.attr('method'),
@@ -184,7 +187,7 @@ Debe ser un .jpg con 3000px como mínimo en su lado más grande
 
                     var image   = new Image();
                     image.onload    = function(){
-                        if ("<?php echo $_POST['adulto']; ?>" == "1"){  // Para adultos
+                        if (adulto == "1"){  // Para adultos
                             if (image.width >= 3000 || image.height >= 3000){
                                 if (file.type == 'image/jpeg'){
                                     toAWS();
@@ -239,14 +242,17 @@ Debe ser un .jpg con 3000px como mínimo en su lado más grande
                     "url": url,
                     "type": original.type
                 };
+
                 $.ajax({
-                    method: "POST",
-                    url: "<?php echo Yii::app()->request->baseUrl; ?>" + "/index.php/fotos/formulario_fotos",
-                    data: {categoria_id: "<?php echo $categoria_id; ?>", ruta: filesUploaded.url, nombre_original: filesUploaded.original_name,
-                        nombre: filesUploaded.s3_name, size: filesUploaded.size, type: filesUploaded.type}
+                     method: "POST",
+                     url: "<?php echo Yii::app()->request->baseUrl; ?>" + "/index.php/fotos/formulario_fotos",
+                     data: {categoria_id: "<?php echo $categoria_id; ?>", ruta: filesUploaded.url, nombre_original: filesUploaded.original_name,
+                	     nombre: filesUploaded.s3_name, size: filesUploaded.size, type: filesUploaded.type}
                 }).done(function( html ) {
                     $('#formulario_fotos').append(html);
                 });
+
+               
             }
         });  // cierra fileupload
     });

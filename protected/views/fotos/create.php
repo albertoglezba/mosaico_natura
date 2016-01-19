@@ -1,5 +1,7 @@
 <?php $yii_path = Yii::app()->request->baseUrl; ?>
-
+					
+				<?php if ($adulto == '1') { ?>
+				
 				<script type="text/javascript">
 					$(document).ready(function(){
 						$('#Fotos_categoria_id').on('change', function(){
@@ -15,8 +17,7 @@
 						});
 					});
 				</script>
-
-
+				
 				<h4><em>Primer paso</em>, elige una categoría</h4>
 				<p class="text-warning">
 					(Recuerda que solo puedes subir una fotografía por categor&iacute;a, una vez procesada
@@ -26,7 +27,7 @@
 				<?php $form=$this->beginWidget('CActiveForm', array(
 					'id'=>'categoria-form',
 					'enableAjaxValidation'=>false )); ?>
-
+					
 				<div class="form">
 
 					<?php $model=new Fotos; ?>
@@ -37,9 +38,30 @@
 					</div>
 
 				</div>
-
+				
 				<?php $this->endWidget(); ?>
 
+				<?php } else { ?>
+				
+				<script type="text/javascript">
+					$(document).ready(function(){
+
+						$.ajax({
+							method: "POST",
+							url: "<?php echo Yii::app()->request->baseUrl; ?>" + "/index.php/fotos/aws",
+							data: {adulto: "<?php echo $adulto; ?>"}
+						}).done(function( html ) {
+							$('#formulario_completo').append(html);
+						});
+					});
+				</script>
+
+				<h4><em>Primer paso</em>, selecciona una fotografía</h4>
+				<p class="text-warning">
+					(Debe ser un .jpg con 3000px como mínimo en su lado más grande)
+				</p>
+							
+				<?php } ?>
 
 				<div id='formulario_completo'></div>
 
