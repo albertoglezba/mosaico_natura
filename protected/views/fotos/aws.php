@@ -96,8 +96,10 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
 ?>
 <div class="containerAWS">
 
-<h4><em>Segundo paso</em>, selecciona una fotografía</h4>
-Debe ser un .jpg con 3000px como mínimo en su lado más grande
+<?php if ($adulto == "1") { ?>
+	<h4><em>Segundo paso</em>, selecciona una fotografía</h4>
+	Debe ser un .jpg con 3000px como mínimo en su lado más grande
+<?php } ?>
 
     <!-- Direct Upload to S3 Form -->
     <form action="<?php echo $s3FormDetails['url']; ?>"
@@ -247,7 +249,7 @@ Debe ser un .jpg con 3000px como mínimo en su lado más grande
                      method: "POST",
                      url: "<?php echo Yii::app()->request->baseUrl; ?>" + "/index.php/fotos/formulario_fotos",
                      data: {categoria_id: "<?php echo $categoria_id; ?>", ruta: filesUploaded.url, nombre_original: filesUploaded.original_name,
-                	     nombre: filesUploaded.s3_name, size: filesUploaded.size, type: filesUploaded.type}
+                	     nombre: filesUploaded.s3_name, size: filesUploaded.size, type: filesUploaded.type, adulto: adulto}
                 }).done(function( html ) {
                     $('#formulario_fotos').append(html);
                 });

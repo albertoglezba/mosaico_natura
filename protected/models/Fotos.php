@@ -73,10 +73,18 @@ class Fotos extends CActiveRecord
 			return parent::beforeSave();
 		
 		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
-		if (in_array($this->categoria->id, $usuario->usuarios_categorias()))
-		{
-			$this->addError($this->categoria_id, 'Solo se puede subir una fotografía por categoría.');
-			return false;
+		
+		if ($usuario->edad > 17)
+		{	
+			if (in_array($this->categoria->id, $usuario->usuarios_categorias()))
+			{
+				$this->addError($this->categoria_id, 'Solo se puede subir una fotografía por categoría.');
+				return false;
+			}
+		} else {
+			$this->categoria_id = NULL;
+			if (count($usuario->fotos) > 2)
+				return false;
 		}
 		
 		return parent::beforeSave();

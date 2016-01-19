@@ -15,10 +15,16 @@
 	),
 )); ?>
 
-	<h4><em>Tercer paso</em>, completa el registro</h4>
+	<h4><em>
+	<?php if ($_POST['adulto'] == "1") {
+		echo "Tercer";	
+	} else {
+		echo "Segundo";
+	} ?>
+	paso</em>, completa el registro</h4>
 	
 	<div class="errorMessage" id="formResult"></div>
-	<div id="AjaxLoader" style="display: none"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/aplicacion/loading.gif"></img></div>
+	<div id="AjaxLoader" style="display: none"><img src="<?php echo Yii::app()->request->baseUrl; ?>/img/aplicacion/loading.gif"></img></div>
 	
 	<p class="note">
 		Campos con <span class="required">*</span> son requeridos.
