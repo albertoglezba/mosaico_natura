@@ -188,6 +188,14 @@ class Fotos extends CActiveRecord
 	public static function conCategoriasDisponibles()
 	{
 		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+		if ($usuario->edad < 18)
+		{
+			if (count($usuario->fotos) >= 2)
+				return false;
+			else
+				return true;
+		}	
+		
 		$categorias_usuario = $usuario->usuarios_categorias();
 	
 		// Ya no puede subir mas fotografias
