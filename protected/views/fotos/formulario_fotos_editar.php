@@ -13,9 +13,12 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<p>
-		<?php echo "<b>Categoria: </b>".$model->categoria->nombre; ?>
-	</p>
+	<?php if (!empty($model->categoria_id)) { ?>
+		<p>
+			<?php echo "<b>Categoria: </b>".$model->categoria->nombre; ?>
+		</p>
+	<?php } ?>
+	
 	<?php echo CHtml::image($model->ruta, $model->nombre_original,
 			array("title"=>$model->titulo, "width"=>"300px")); ?>
 	

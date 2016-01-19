@@ -51,7 +51,7 @@ class Fotos extends CActiveRecord
 		// will receive user inputs.
 		
 		return array(
-				array('nombre_original, categoria_id, nombre, ruta, size, type, titulo, direccion, latitud, longitud', 'required'),
+				array('nombre_original, nombre, ruta, size, type, titulo, direccion, latitud, longitud', 'required'),
 				array('usuario_id, categoria_id', 'numerical', 'integerOnly'=>true),
 				array('nombre_original, nombre, type, ruta, latitud, longitud, marca, titulo', 'length', 'max'=>255),
 				array('direccion', 'length', 'max'=>500),
