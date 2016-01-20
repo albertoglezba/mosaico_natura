@@ -57,7 +57,7 @@
 				</script>
 
 				<h4><em>Primer paso</em>, selecciona una fotografía</h4>
-				<h5><i>(Para la categoria de jóvenes solo se permiten 2 fotografías por categoria)</i></h5>
+				<h5><i>(Para la categoria de jóvenes solo se permiten 2 fotografías)</i></h5>
 				<p class="text-warning">
 					(Debe ser un .jpg con 3000px como mínimo en su lado más grande)
 				</p>
