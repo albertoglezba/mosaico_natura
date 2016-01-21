@@ -83,8 +83,6 @@ class VideosController extends Controller
 			$puede_subir = Videos::soloUnVideo();
 			$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 			
-			if (isset($usuario->edad) && $usuario->edad > 17)
-			{
 				if ($puede_subir)
 				{
 					$adulto = $usuario->edad > 17 ? '1' : '0';
@@ -92,11 +90,7 @@ class VideosController extends Controller
     				'fecha' => date("Y-m-d_His_")));
 				
 				} else
-					throw new CHttpException(NULL,"Lo sentimos pero solo se permite subir un video");
-			
-			} else
-				throw new CHttpException(NULL,"Lo sentimos, esta opción solo es para participantes a partir de 18 años.");
-					
+					throw new CHttpException(NULL,"Lo sentimos pero solo se permite subir un video");								
 		} else
 			throw new CHttpException(NULL,"El tiempo para registrar tus videos ha terminado. Para más información consulta la convocatoria.");
 	}
