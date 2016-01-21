@@ -454,7 +454,7 @@ Sus fotografías han aparecido en revistas y libros en todo el mundo, incluyendo
 			<div class="row">
 				<div class="col-lg-4">
 					<h4>&iquest;C&oacute;mo puedo participar?</h4>
-					<img src="<?php echo $yii_path; ?>/img/faq-01.png"><p>&nbsp;</p>
+					<a href="http://www.mosaiconatura.net/index.php/site/terminos_condiciones" target="_blank"><img src="<?php echo $yii_path; ?>/img/faq-01.png"></a><p>&nbsp;</p>
 
 
 				</div>
@@ -544,7 +544,7 @@ Sus fotografías han aparecido en revistas y libros en todo el mundo, incluyendo
 			</div>
 
 			<div class="col-lg-12 col-xs-12">
-				<p>Revisa las bases completas <a href="#bases">aqu&iacute;</a></p>
+				<p>Revisa las bases completas <a href="http://www.mosaiconatura.net/index.php/site/terminos_condiciones" target="_blank">aqu&iacute;</a></p>
 			</div>
 
 		</div>
