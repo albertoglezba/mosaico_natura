@@ -257,7 +257,7 @@
 </footer>
 <footer id="copyright">
 	<div class="container text-center">
-		<p>Copyright &copy; Mosaico Natura <?php echo date('Y'); ?> | <a href="mailto:mosaiconatura@conabio.com">mosaiconatura@conabio.com</a></p>
+		<p>Copyright &copy; Mosaico Natura <?php echo date('Y'); ?> | <a href="mailto:mosaiconatura@conabio.gob.mx">mosaiconatura@conabio.gob.mx</a></p>
 	</div>
 </footer>
 
