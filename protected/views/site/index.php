@@ -544,7 +544,7 @@ Sus fotografías han aparecido en revistas y libros en todo el mundo, incluyendo
 			</div>
 
 			<div class="col-lg-12 col-xs-12">
-				<p>Revisa las bases completas <a href="http://www.mosaiconatura.net/index.php/site/terminos_condiciones" target="_blank">aqu&iacute;</a></p>
+				<h2>Revisa las bases completas <a href="http://www.mosaiconatura.net/index.php/site/terminos_condiciones" target="_blank">aqu&iacute;</a></h2>
 			</div>
 
 		</div>
