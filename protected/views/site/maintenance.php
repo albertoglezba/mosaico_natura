@@ -1,7 +1,7 @@
 <center>
 <?php
 
-echo CHtml::image(Yii::app()->request->baseUrl.'/imagenes/aplicacion/mantenimiento.jpg', 'mantenimiento', 
+echo CHtml::image(Yii::app()->request->baseUrl.'/img/aplicacion/mantenimiento.png', 'mantenimiento', 
 		array('width'=>'350px'));
 
 ?>

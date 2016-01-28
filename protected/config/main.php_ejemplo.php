@@ -23,6 +23,9 @@ return array(
 		// user language (for Locale)
 		'language'=>'es',
 
+		//'catchAllRequest'=>file_exists(dirname(__FILE__).'/.maintenance')
+                //? array('site/maintenance') : null,
+
 		//language for messages and views
 		'sourceLanguage'=>'es',
 
