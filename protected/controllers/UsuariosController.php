@@ -28,7 +28,7 @@ class UsuariosController extends Controller
 	{
 		return array(
 				array('allow',  // allow all users to perform 'index' and 'view' actions
-						'actions'=>array('create', 'confirmo', 'reset_passwd'),
+						'actions'=>array('create', 'confirmo'),
 						'users'=>array('*'),
 				),
 				array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -36,7 +36,7 @@ class UsuariosController extends Controller
 						'users'=>array('@'),
 				),
 				array('allow', // allow admin user to perform 'admin' and 'delete' actions
-						'actions'=>array('index','view','admin', 'delete'),
+						'actions'=>array('index','view','admin', 'delete', 'reset_passwd'),
 						'users'=>array('calonso'),
 				),
 				array('deny',  // deny all users
@@ -197,7 +197,14 @@ class UsuariosController extends Controller
 
 	public function actionReset_passwd()
 	{
-
+		$passwd = $_GET['passwd'];
+		if (isset($passwd) && !empty($passwd))
+		{
+			$salt = rand()*rand() + rand();
+			$passwd_md5 = md5($passwd."|".$salt);
+			
+			$this->render('reset_passwd',array('passwd' => $passwd, 'salt'=>$salt, 'passwd_md5' => $passwd_md5));
+		}
 	}
 
 	/**
