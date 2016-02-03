@@ -941,3 +941,7 @@ footer ul {
 .view h1, .view h2, .view h3, .view h4, .view h5, .view h6{
 	margin: 0;
 } 
+
+#logosc img {
+	transform: scale(.8,.8);
+}
