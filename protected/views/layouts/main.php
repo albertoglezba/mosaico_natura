@@ -195,7 +195,7 @@
         <li><object type="image/svg+xml" data="<?php //echo $yii_path; ?>/img/svg/conabio.svg" height="70px">CONABIO</object></li>
             </ul> -->
 
-			<ul>
+			<ul id="logosc">
 				<li><a href="http://www.sectur.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_sectur.png" alt="SECTUR"></a></li>
 				<li><a href="http://www.df.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_cdmx.png" alt="Ciudad de México"></a></li>
 				<li><a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_NatGeo.png" alt="National Geographic en Español"></a></li>
@@ -203,7 +203,8 @@
 				<li><a href="http://www.mexicanisimo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_mexicanisimo.png" alt="Mexicanísimo"></a></li>
 				<li><a href="http://ibero909.fm/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_ibero909.png" alt="Ibero 909"></a></li>
 				<li><a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_facir.png" alt="Fundación Acir"></a></li>
-				<li><a href="http://recreamkt.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_recrea.png" alt="Fundación Acir"></a></li>
+				<li><a href="http://recreamkt.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_recrea.png" alt="Recrea"></a></li>
+                <li><a href="http://www.xerox.com/index/esmx.html" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_xerox.png" alt="Xerox"></a></li>
 				<li><a href="http://www.conanp.gob.mx" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_conanp.png" alt="CONANP"></a></li>
 				<li><a href="http://www.conabio.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_conabio.png" alt="CONABIO"></a></li>
 			</ul>
@@ -225,6 +226,7 @@
 				<li><a href="http://ibero909.fm/" target="_blank">Ibero909</a></li>
 				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
                 <li><a href="http://recreamkt.com" target="_blank">RECREA</a></li>
+                <li><a href="http://www.xerox.com/index/esmx.html" target="_blank">Xerox</a></li>
 				<li><a href="http://www.conanp.gob.mx" target="_blank">CONANP</a></li>
 				<li><a href="http://www.conabio.gob.mx/" target="_blank">CONABIO</a></li>
 			</ul>
