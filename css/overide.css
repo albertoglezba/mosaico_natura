@@ -943,5 +943,12 @@ footer ul {
 } 
 
 #logosc img {
-	transform: scale(.8,.8);
+	/*transform: scale(.8,.8);*/
+}
+
+.entrevistas {
+	display: inline-block;
+    margin: 5px;
+	width: 47%;
+	height: auto;
 }

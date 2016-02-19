@@ -604,14 +604,34 @@ Sus fotografías han aparecido en revistas y libros en todo el mundo, incluyendo
                     <a href="<?php echo $yii_path; ?>/img/infografia_150.jpg" target="_blank"><img src="<?php echo $yii_path; ?>/img/infografia_150.jpg" width="100%" height="auto"></a>-->
 					<!--</div>-->
 				</div>
+                <br><br>
+                <div class="service-box">
+					<i class="fa fa-4x fa-file-image-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
+					<h3>Anuncios</h3>
+					<div class="list-group">
+						<a class="list-group-item sb" href="descargar/banner900x214.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> 900 x 214 px</a>
+						<a class="list-group-item sb" href="descargar/banner944x300.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> 944 x 300 px</a>
+						<a class="list-group-item sb" href="descargar/carta.pdf" target="_blank"><i class="fa fa-download fa-fw"></i> carta</a>
+						<a class="list-group-item sb" href="descargar/mediacarta.pdf" target="_blank"><i class="fa fa-download fa-fw"></i> media carta</a>
+					</div>
+				</div>
+                <br><br>
+                
+                
 			</div>
-			<div class="col-lg-3 col-md-6 col-xs-12 text-center">
+			<div class="col-lg-6 col-md-6 col-xs-12 text-center">
 				<div class="service-box">
 					<i class="fa fa-4x fa-file-video-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
 					<h3>Video</h3>
 					<div class="list-group">
 						<a class="list-group-item sb" href="descargar/spot_video.zip" target="_blank"><i class="fa fa-download fa-fw"></i> Spot</a>
 						<iframe width="100%" height="auto" src="https://www.youtube.com/embed/v2h8BHv8Rak?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        <br><br>
+                        <a class="list-group-item sb" href="descargar/spot_video.zip" target="_blank"><i class="fa fa-download fa-fw"></i> Entrevistas</a>
+                        <iframe class="entrevistas" src="https://www.youtube.com/embed/_6ido_8MwqQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> 
+                        <iframe class="entrevistas" src="https://www.youtube.com/embed/y7paCJzZMlk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="entrevistas" src="https://www.youtube.com/embed/2ChV-VNQiVE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="entrevistas" src="https://www.youtube.com/embed/AMyAXGuhbk0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -625,7 +645,7 @@ Sus fotografías han aparecido en revistas y libros en todo el mundo, incluyendo
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-xs-12 text-center">
+			<!--<div class="col-lg-3 col-md-6 col-xs-12 text-center">
 				<div class="service-box">
 					<i class="fa fa-4x fa-file-image-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
 					<h3>Anuncios</h3>
@@ -636,7 +656,7 @@ Sus fotografías han aparecido en revistas y libros en todo el mundo, incluyendo
 						<a class="list-group-item sb" href="descargar/mediacarta.pdf" target="_blank"><i class="fa fa-download fa-fw"></i> media carta</a>
 					</div>
 				</div>
-			</div>
+			</div>-->
 
 		</div>
 	</div>

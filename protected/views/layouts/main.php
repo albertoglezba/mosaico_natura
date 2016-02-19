@@ -197,6 +197,7 @@
 
 			<ul id="logosc">
 				<li><a href="http://www.sectur.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_sectur.png" alt="SECTUR"></a></li>
+                <li><a href="http://www.visitmexico.com/es" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_mexicoCPTM.png" alt="México"></a></li>
 				<li><a href="http://www.df.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_cdmx.png" alt="Ciudad de México"></a></li>
 				<li><a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_NatGeo.png" alt="National Geographic en Español"></a></li>
 				<li><a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_nikon.png" alt="Nikon"></a></li>
@@ -219,6 +220,7 @@
 			<p>NUESTROS COLABORADORES</p>
 			<ul>
 				<li><a href="http://www.sectur.gob.mx/" target="_blank">SECTUR</a></li>
+                <li><a href="http://www.visitmexico.com/es" target="_blank">VisitMexico</a></li>
 				<li><a href="http://www.df.gob.mx/" target="_blank">CDMX</a></li>
 				<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic</a></li>
 				<li><a href="http://www.nikon.com.mx/" target="_blank">NIKON</a></li>
