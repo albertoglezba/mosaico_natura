@@ -16,11 +16,7 @@
 	<?php $yii_path = Yii::app()->request->baseUrl; ?>
 
 	<!-- Start of the JavaScript -->
-    <script type="text/javascript">
-		$(document).ready(function () {
-			$('#myModal').modal('show');
-		});
-	</script>
+
     
 	<script type="text/javascript">
 		function MM_preloadImages() { //v3.0
@@ -321,6 +317,12 @@
 	})();
 </script>
 
+<script type="text/javascript">
+	$(document).ready(function () {
+		$('#myModal').modal('show');
+	});
+</script>
+    
 </body>
 <!-- InstanceEnd -->
 </html>
