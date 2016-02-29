@@ -80,7 +80,7 @@
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body">
-          <img src="<?php echo $yii_path; ?>/img/extension_convocatoria.jpg" width="800" height="600" alt=""/>
+          <img class="center-block" src="<?php echo $yii_path; ?>/img/extension_convocatoria.jpg" width="800" height="600" alt=""/>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
