@@ -16,6 +16,12 @@
 	<?php $yii_path = Yii::app()->request->baseUrl; ?>
 
 	<!-- Start of the JavaScript -->
+    <script type="text/javascript">
+		$(document).ready(function () {
+			$('#myModal').modal('show');
+		});
+	</script>
+    
 	<script type="text/javascript">
 		function MM_preloadImages() { //v3.0
 			var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
@@ -65,6 +71,30 @@
 
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+
+    <!-- Modal -->
+	<div id="myModal" class="modal fade bs-example-modal-lg" role="dialog">
+  	<div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+          <img src="<?php echo $yii_path; ?>/img/extension_convocatoria.jpg" width="800" height="600" alt=""/>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+        </div>
+  	</div>
+  
+
 <?php echo $yii_path ?>
 <!-- Navigation -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -106,6 +136,8 @@
 				<li>
 					<a class="page-scroll" href="<?php echo $yii_path; ?>/#medios">Medios</a>
 				</li>
+                <!-- Trigger the modal with a button 
+				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
 			</ul>
 		</div>
 		<!-- /.navbar-collapse -->
