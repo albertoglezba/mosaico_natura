@@ -395,8 +395,10 @@ Sus fotografías han aparecido en revistas y libros en todo el mundo, incluyendo
 			</div>
 
 			<div class="col-md-3">
-				<img src="<?php echo $yii_path; ?>/img/team/natgeonikon.jpg" class="img-responsive img-circle" alt="JURADO SORPRESA">
-				<h3>JURADO SORPRESA</h3>
+				<img src="<?php echo $yii_path; ?>/img/team/fulvioeccardi.jpg" class="img-responsive img-circle" alt="JURADO SORPRESA">
+				<h3>FULVIO ECCARDI</h3><br>
+                <p>Biólogo y fotógrafo nacido en Italia y naturalizado mexicano. Dedicado desde hace más de 35 años a documentar y difundir temas relacionados con la biodiversidad y el uso de los recursos naturales de México.<br><br>
+Ha participado como editor y fotógrafo en una treintena de libros de arte, su obra se ha exhibido en exposiciones individuales en México, EUA, Canadá e Italia. Director de videos y documentales; editor de Biodiversitas, boletín de la Conabio y miembro del Consejo Nacional de Áreas Naturales Protegidas.</p>
 			</div>
 
 
