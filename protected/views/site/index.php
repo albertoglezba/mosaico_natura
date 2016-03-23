@@ -421,26 +421,27 @@ Ha participado como editor y fotógrafo en una treintena de libros de arte, su o
 	<div class="expos-content">
 		<div class="container">
 			<div class="col-lg-12">
-				<p>Las exposiciones de Mosaico natura son:</p>
+				<!--<p>Las exposiciones de Mosaico natura son:</p>-->
 			</div>
 			<div class="col-md-4">
-				<h3>&quot;<a href="http://www.biodiversidad.gob.mx/Difusion/exposiciones.html?id=31" target="_blank">Visiones de nuestra naturaleza</a>&quot;</h3>
-				<p>Ganadores del Primer Concurso Nacional de fotograf&iacute;a de Naturaleza </p>
-
-				<p>Lugar: Reja perimetral del Bosque de San Juan de Arag&oacute;n<br>Av. Loreto Fabela, entre puertas 1 y 3</p><p>Inauguraci&oacute;n: Noviembre 2015</p>
+				<a href="http://bdi.conabio.gob.mx/fotoweb/Grid.fwx?archiveId=5078&position=1&search=" target="_blank"><img src="<?php echo $yii_path; ?>/img/banner_visiones_350.jpg" width="350" height="250" alt=""/></a><br><br>
+                <p>Ganadores del Segundo Concurso Nacional de Fotograf&iacute;a de Naturaleza</p>
 			</div>
 			<div class="col-md-4">
-				<h3>&quot;Tierra de Sol: Los paisajes de M&eacute;xico vistos por
+				<h3>&quot;<a href="http://www.biodiversidad.gob.mx/Difusion/exposiciones.html?id=31" target="_blank">Visiones de nuestra naturaleza I</a>&quot;</h3>
+				<p>Ganadores del Primer Concurso Nacional de Fotograf&iacute;a de Naturaleza</p>
+				
+                <h3>&quot;Tierra de Sol: Los paisajes de M&eacute;xico vistos por
 					j&oacute;venes fot&oacute;grafos y antiguos viajeros&quot;</h3>
-				<p>Exposici&oacute;n permanente</p>
-				<p>Lugar: Galer&iacute;a CasaCEM<br>Avenida Chapultepec Sur 376<br>Guadalajara, Jalisco<p>Inauguraci&oacute;n: 27 de junio 2014
-					19:30 hrs</p>
+				<p>Exposici&oacute;n permanente<br>
+				Lugar: Galer&iacute;a CasaCEM<br>Avenida Chapultepec Sur 376<br>Guadalajara, Jalisco</p>
 			</div>
 			<div class="col-md-4">
-				<h3>Anteriores</h3>
-				<p>&quot;25 Miradas al Bosque&quot;</p>
-				<p>&quot;Biodiversidad Mexicana&quot;</p>
+				<h3>ANTERIORES</h3>
+				<p><a href="http://bdi.conabio.gob.mx/fotoweb/Grid.fwx?archiveId=5041&position=1&search=" target="_blank">&quot;25 Miradas al Bosque&quot;</a></p>
+				<p><a href="http://bdi.conabio.gob.mx/fotoweb/Grid.fwx?archiveId=5046&columns=4&rows=8&search=BioDiversidad" target="_blank">&quot;Biodiversidad Mexicana&quot;</a></p>
 				<p>&quot;creArte conCiencia&quot;</p>
+                <hr>
 				<p><a href="http://www.biodiversidad.gob.mx/Difusion/exposiciones.html" target="_blank">Otras exposiciones</a></p>
 			</div>
 			<div class="col-lg-12 publi">
