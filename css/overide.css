@@ -10,6 +10,35 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+.ama {
+	color: #ffd400;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+dd {
+	text-align: left;
+}
+
+
+.dl-horizontal dt {
+    float: left;
+    width: 223px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dl-horizontal dd {
+    margin-left: 250px;
+	
+}
+
+
+
+
 .navbar-custom{
 	font-size:18px;
 	}

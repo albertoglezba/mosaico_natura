@@ -1,10 +1,10 @@
 <?php $yii_path = Yii::app()->request->baseUrl; ?>
 
-<!-- Modal -->
+<!-- Modal
 <div id="myModal" class="modal fade bs-example-modal-lg" role="dialog">
 <div class="modal-dialog modal-lg">
 
-    <!-- Modal content-->
+
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -18,7 +18,7 @@
     </div>
     
     </div>
-</div>
+</div> -->
   
 
 <!-- Intro Header -->
@@ -87,9 +87,122 @@
 	<div class="bases-content">
 		<div class="container">
 		<iframe width="100%" height="700" src="http://200.12.166.51/janium/Galerias/12546/index.html" frameborder="0"></iframe>
-		</div>
-	</div>
-
+	
+        <h2 class="text-center">GANADORES</h2>
+        
+        <div class="col-md-6 col-s-12 col-xs-12"> 
+        <dl class="dl-horizontal">
+            <dt>&nbsp;</dt>
+            <dd class="ama">FAUNA</dd>
+            <dt>1er lugar</dt>
+            <dd>Rodrigo	Friscione</dd>
+            <dt>2do lugar</dt>
+            <dd>Mario Chow</dd>
+            <dt>3er lugar</dt>
+            <dd>Alejandro Prieto</dd>
+            <dt>Mención Honorífica</dt>
+            <dd>Fernando Constantino Martínez Belmar</dd>
+            <dt>Mención Honorífica</dt>
+            <dd>Christian Vizl</dd>
+            <dt>&nbsp;</dt>
+            <dd>&nbsp;</dd>
+            
+            <dt>&nbsp;</dt>
+            <dd class="ama">FLORA Y HONGOS</dd>
+            <dt>1er lugar</dt>
+            <dd>Luis Roberto Lyons Suárez</dd>
+            <dt>2do lugar</dt>
+            <dd>Leopoldo Daniel Vazquez Reyes</dd>
+            <dt>3er lugar</dt>
+            <dd>David Mizrahi Shapiro</dd>
+            <dt>Mención Honorífica</dt>
+            <dd>César Cantú Quiroga</dd>
+            <dt>Mención Honorífica</dt>
+            <dd>Jorge Armando Zavala Solano</dd>
+            <dt>&nbsp;</dt>
+            <dd>&nbsp;</dd>
+            
+            <dt>&nbsp;</dt>
+            <dd class="ama">NATURALEZA Y SER HUMANO</dd>
+            <dt>1er lugar</dt>
+            <dd>Christian Vizl</dd>
+            <dt>2do lugar</dt>
+            <dd>Valeria	Mas</dd>
+            <dt>3er lugar</dt>
+            <dd>Sergio Armando Alanis Morales</dd>
+            <dt>Mención Honorífica</dt>
+            <dd>Gabriel	Bravo</dd>
+            <dt>Mención Honorífica</dt>
+            <dd>Elí	García-Padilla</dd>
+            <dt>&nbsp;</dt>
+            <dd>&nbsp;</dd>
+            
+            <dt>&nbsp;</dt>
+            <dd class="ama">PAISAJES Y ECOSISTEMAS</dd>
+            <dt>1er lugar</dt>
+            <dd>Hernando Alonso Rivera Cervantes</dd>
+            <dt>2do lugar</dt>
+            <dd>Rodolfo	Lara de la Fuente</dd>
+            <dt>3er lugar</dt>
+            <dd>Arturo	Alday</dd>
+            <dt>Mención Honorífica</dt>
+            <dd>Francisco Javier	Aguilar Chávez</dd>
+            <dt>Mención Honorífica</dt>
+            <dd>Fernando Constantino Martínez Belmar</dd>
+            <dt>&nbsp;</dt>
+            <dd>&nbsp;</dd>
+            
+            <dt>&nbsp;</dt>
+            <dd class="ama">UN SOLO MUNDO</dd>
+            <dt>1er lugar</dt>
+            <dd>Edgar Becerril</dd>
+            <dt>2do lugar</dt>
+            <dd>Fernando Constantino Martínez Belmar</dd>
+            <dt>3er lugar</dt>
+            <dd>Pablo Casacuevas</dd>
+            <dt>Mención Honorífica</dt>
+            <dd>Rodrigo	Friscione</dd>
+            <dt>Mención Honorífica</dt>
+            <dd>Jesús Erick	Higuera Rivas</dd>
+            <dt>&nbsp;</dt>
+            <dd>&nbsp;</dd>
+            
+            <dt>&nbsp;</dt>
+            <dd class="ama">JÓVENES</dd>
+            <dt>1er lugar</dt>
+            <dd>Pablo Méndez Farias</dd>
+            <dt>2do lugar</dt>
+            <dd>Andres Alfredo Youshimats Avella</dd>
+            <dt>3er lugar</dt>
+            <dd>Monserrat Hernandez Peña</dd>
+            <dt>Mención Honorífica</dt>
+            <dd>Amaury Hernandez</dd>
+            <dt>Mención Honorífica</dt>
+            <dd>Amitié de Jesús	Esquivel Blanco</dd>
+            
+        </dl>
+        </div>
+        
+        <div class="col-md-6 col-s-12 col-xs-6">
+        <dl class="dl-horizontal">
+            <dt>&nbsp;</dt>
+            <dd class="ama">VIDEO</dd>
+            <dt>1er lugar</dt>
+            <dd>Rodrigo	Friscione<br><br>
+			<iframe width="100%" height="auto" src="https://www.youtube.com/embed/Fg8CgLyCjWQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br><br>
+			</dd>
+            <dt>2do lugar</dt>
+            <dd>Mario Chow<br><br>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/9rijZ_6EjrQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br><br>
+			</dd>
+            <dt>3er lugar</dt>
+            <dd>Alejandro Prieto<br><br>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/_XKfbBeEzz8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br><br>
+			</dd>
+        </dl>
+        </div>
+        
+    </div>
 </section>
 
 
