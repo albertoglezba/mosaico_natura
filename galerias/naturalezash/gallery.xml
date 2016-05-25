@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/24_HUMANO1.jpg"
+	thumbURL="thumbs/24_HUMANO1.jpg"
+	linkURL="images/24_HUMANO1.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/65_HUMANO2.jpg"
+	thumbURL="thumbs/65_HUMANO2.jpg"
+	linkURL="images/65_HUMANO2.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/56_HUMANO3.jpg"
+	thumbURL="thumbs/56_HUMANO3.jpg"
+	linkURL="images/56_HUMANO3.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/10_HUMANO4.jpg"
+	thumbURL="thumbs/10_HUMANO4.jpg"
+	linkURL="images/10_HUMANO4.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/12_HUMANO5.jpg"
+	thumbURL="thumbs/12_HUMANO5.jpg"
+	linkURL="images/12_HUMANO5.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>

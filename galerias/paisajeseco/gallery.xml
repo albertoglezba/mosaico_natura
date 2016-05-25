@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/77_PAISA1.jpg"
+	thumbURL="thumbs/77_PAISA1.jpg"
+	linkURL="images/77_PAISA1.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/78_PAISA2.jpg"
+	thumbURL="thumbs/78_PAISA2.jpg"
+	linkURL="images/78_PAISA2.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/05_PAISA3.jpg"
+	thumbURL="thumbs/05_PAISA3.jpg"
+	linkURL="images/05_PAISA3.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/67_PAISA4.jpg"
+	thumbURL="thumbs/67_PAISA4.jpg"
+	linkURL="images/67_PAISA4.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/21_PAISA5.jpg"
+	thumbURL="thumbs/21_PAISA5.jpg"
+	linkURL="images/21_PAISA5.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>

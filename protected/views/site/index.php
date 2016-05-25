@@ -77,7 +77,7 @@
 	<div class="bases-section">
 		<div class="container">
 			<div class="col-lg-8 col-lg-offset-2">
-				<h2>FINALISTAS DEL CONCURSO<br>
+				<h2>CONCURSO<br>
 			</h2>
 
 			</div>
@@ -100,10 +100,11 @@
             <dd>Mario Chow</dd>
             <dt>3er lugar</dt>
             <dd>Alejandro Prieto</dd>
-            <dt>Mención Honorífica</dt>
+            <dt>Mención honorífica</dt>
             <dd>Fernando Constantino Martínez Belmar</dd>
-            <dt>Mención Honorífica</dt>
+            <dt>Mención honorífica</dt>
             <dd>Christian Vizl</dd>
+            <iframe width="100%" height="400" src="<?php echo $yii_path; ?>/galerias/fauna/index.html" frameborder="0"></iframe>
             <dt>&nbsp;</dt>
             <dd>&nbsp;</dd>
             
@@ -115,10 +116,11 @@
             <dd>Leopoldo Daniel Vazquez Reyes</dd>
             <dt>3er lugar</dt>
             <dd>David Mizrahi Shapiro</dd>
-            <dt>Mención Honorífica</dt>
+            <dt>Mención honorífica</dt>
             <dd>César Cantú Quiroga</dd>
-            <dt>Mención Honorífica</dt>
+            <dt>Mención honorífica</dt>
             <dd>Jorge Armando Zavala Solano</dd>
+            <iframe width="100%" height="400" src="<?php echo $yii_path; ?>/galerias/florah/index.html" frameborder="0"></iframe>
             <dt>&nbsp;</dt>
             <dd>&nbsp;</dd>
             
@@ -130,10 +132,11 @@
             <dd>Valeria	Mas</dd>
             <dt>3er lugar</dt>
             <dd>Sergio Armando Alanis Morales</dd>
-            <dt>Mención Honorífica</dt>
+            <dt>Mención honorífica</dt>
             <dd>Gabriel	Bravo</dd>
-            <dt>Mención Honorífica</dt>
+            <dt>Mención honorífica</dt>
             <dd>Elí	García-Padilla</dd>
+            <iframe width="100%" height="400" src="<?php echo $yii_path; ?>/galerias/naturalezash/index.html" frameborder="0"></iframe>
             <dt>&nbsp;</dt>
             <dd>&nbsp;</dd>
             
@@ -145,13 +148,21 @@
             <dd>Rodolfo	Lara de la Fuente</dd>
             <dt>3er lugar</dt>
             <dd>Arturo	Alday</dd>
-            <dt>Mención Honorífica</dt>
-            <dd>Francisco Javier	Aguilar Chávez</dd>
-            <dt>Mención Honorífica</dt>
+            <dt>Mención honorífica</dt>
             <dd>Fernando Constantino Martínez Belmar</dd>
+            <dt>Mención honorífica</dt>
+            <dd>Francisco Javier	Aguilar Chávez</dd>
+            <iframe width="100%" height="400" src="<?php echo $yii_path; ?>/galerias/paisajeseco/index.html" frameborder="0"></iframe>
             <dt>&nbsp;</dt>
             <dd>&nbsp;</dd>
             
+            
+            
+        </dl>
+        </div>
+        
+        <div class="col-md-6 col-s-12 col-xs-12">
+        <dl class="dl-horizontal">
             <dt>&nbsp;</dt>
             <dd class="ama">UN SOLO MUNDO</dd>
             <dt>1er lugar</dt>
@@ -160,10 +171,11 @@
             <dd>Fernando Constantino Martínez Belmar</dd>
             <dt>3er lugar</dt>
             <dd>Pablo Casacuevas</dd>
-            <dt>Mención Honorífica</dt>
-            <dd>Rodrigo	Friscione</dd>
-            <dt>Mención Honorífica</dt>
+            <dt>Mención honorífica</dt>
             <dd>Jesús Erick	Higuera Rivas</dd>
+            <dt>Mención honorífica</dt>
+            <dd>Rodrigo	Friscione</dd>
+            <iframe width="100%" height="400" src="<?php echo $yii_path; ?>/galerias/unsolom/index.html" frameborder="0"></iframe>
             <dt>&nbsp;</dt>
             <dd>&nbsp;</dd>
             
@@ -175,16 +187,14 @@
             <dd>Andres Alfredo Youshimats Avella</dd>
             <dt>3er lugar</dt>
             <dd>Monserrat Hernandez Peña</dd>
-            <dt>Mención Honorífica</dt>
-            <dd>Amaury Hernandez</dd>
-            <dt>Mención Honorífica</dt>
+            <dt>Mención honorífica</dt>
             <dd>Amitié de Jesús	Esquivel Blanco</dd>
+            <dt>Mención honorífica</dt>
+            <dd>Amaury Hernandez</dd>
+            <iframe width="100%" height="400" src="<?php echo $yii_path; ?>/galerias/jovenes/index.html" frameborder="0"></iframe>
+            <dt>&nbsp;</dt>
+            <dd>&nbsp;</dd>
             
-        </dl>
-        </div>
-        
-        <div class="col-md-6 col-s-12 col-xs-6">
-        <dl class="dl-horizontal">
             <dt>&nbsp;</dt>
             <dd class="ama">VIDEO</dd>
             <dt>1er lugar</dt>
