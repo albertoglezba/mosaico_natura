@@ -198,15 +198,18 @@
             <dt>&nbsp;</dt>
             <dd class="ama">VIDEO</dd>
             <dt>1er lugar</dt>
-            <dd>Rodrigo	Friscione<br><br>
+            <dd>Osiris Ocampo Hernández<br>
+            "Homenaje a la actividad volcánica en Colima"<br><br>
 			<iframe width="100%" height="auto" src="https://www.youtube.com/embed/Fg8CgLyCjWQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br><br>
 			</dd>
             <dt>2do lugar</dt>
-            <dd>Mario Chow<br><br>
+            <dd>Carlos Armando Pacheco Contreras<br>
+            "Los colibríes de la Sierra de Manantlán"<br><br>
             <iframe width="100%" height="auto" src="https://www.youtube.com/embed/9rijZ_6EjrQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br><br>
 			</dd>
             <dt>3er lugar</dt>
-            <dd>Alejandro Prieto<br><br>
+            <dd>Thor Edmundo Morales Vera<br>
+            "México, país Biodiverso"<br><br>
             <iframe width="100%" height="auto" src="https://www.youtube.com/embed/_XKfbBeEzz8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe><br><br>
 			</dd>
         </dl>
