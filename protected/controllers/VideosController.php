@@ -70,29 +70,25 @@ class VideosController extends Controller
 				'model'=>$this->loadModel($id),
 		));
 	}
-
+	
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
-	{
-		$fecha = date("YmdHis");
-		if ($fecha < Yii::app()->params->fecha_termino)
-		{	
-		$puede_subir = Videos::soloUnVideo();
-		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
-			
-			if ($puede_subir)
-			{
-				$adulto = $usuario->edad > 17 ? '1' : '0';
-				$this->render('create', array('material'=>'videos', 'usuario' => Yii::app()->user->id_usuario, 
-    			'fecha' => date("Y-m-d_His_")));
-				
-			} else
-				throw new CHttpException(NULL,"Lo sentimos pero solo se permite subir un video");								
+	public function actionCreate() {
+		$this->vigencia ();
+		$puede_subir = Videos::soloUnVideo ();
+		$usuario = Usuarios::model ()->findByPk ( Yii::app ()->user->id_usuario );
+		
+		if ($puede_subir) {
+			$adulto = $usuario->edad > 17 ? '1' : '0';
+			$this->render ( 'create', array (
+					'material' => 'videos',
+					'usuario' => Yii::app ()->user->id_usuario,
+					'fecha' => date ( "Y-m-d_His_" ) 
+			) );
 		} else
-			throw new CHttpException(NULL,"El tiempo para registrar tus videos ha terminado. Para más información consulta la convocatoria.");
+			throw new CHttpException ( NULL, "Lo sentimos pero solo se permite subir un video" );
 	}
 
 	/**
@@ -102,6 +98,7 @@ class VideosController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
+		$this->vigencia ();
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
@@ -126,6 +123,7 @@ class VideosController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+		$this->vigencia ();
 		$this->loadModel($id)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
@@ -138,6 +136,7 @@ class VideosController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$this->vigencia ();
 		$dataProvider=new CActiveDataProvider('Videos', array(
 				'criteria'=>array(
 						'condition'=>'usuario_id='.Yii::app()->user->id_usuario,
@@ -200,6 +199,7 @@ class VideosController extends Controller
      */
     public function actionFormulario_videos()
     {
+    	$this->vigencia ();
     	$this->layout = false;
     	$model=new Videos;
     	$this->performAjaxValidation($model);

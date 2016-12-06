@@ -78,6 +78,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
+		$this->vigencia ();
 		$model=new LoginForm;
 
 		// if it is ajax validation request
@@ -140,6 +141,7 @@ class SiteController extends Controller
 	 */
 	public function actionEnvia_correo()
 	{
+		$this->vigencia ();
 		$regex = '/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/';
 		$this->vigencia();
 		$this->layout = false;
@@ -233,6 +235,7 @@ class SiteController extends Controller
 
 	public function actionConfirma()
 	{
+		$this->vigencia ();
 		if (isset($_GET['id']) && !empty($_GET['id']) && isset($_GET['fec_alta']) && !empty($_GET['fec_alta']))
 		{
 			$usuario = Usuarios::model()->findByPk($_GET['id']);

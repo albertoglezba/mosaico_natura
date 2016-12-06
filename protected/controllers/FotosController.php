@@ -70,57 +70,45 @@ class FotosController extends Controller
 				'model'=>$this->loadModel($id),
 		));
 	}
-
+	
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
-	{
-		$fecha = date("YmdHis");
-		if ($fecha < Yii::app()->params->fecha_termino)
-		{
-			$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
-			$puede_subir = Fotos::conCategoriasDisponibles();
-					
-			if (isset($usuario->edad))
-			{
-				if ($puede_subir)
-				{
-					$adulto = $usuario->edad > 17 ? '1' : '0';
-					$this->render('create', array('adulto'=>$adulto));
-				
-				} else
-					throw new CHttpException(NULL,"Lo sentimos pero ya has subido el límite de fotografías permitidas. Para más información consulta la convocatoria.");
-			
+	public function actionCreate() {
+		$this->vigencia ();
+		$usuario = Usuarios::model ()->findByPk ( Yii::app ()->user->id_usuario );
+		$puede_subir = Fotos::conCategoriasDisponibles ();
+		
+		if (isset ( $usuario->edad )) {
+			if ($puede_subir) {
+				$adulto = $usuario->edad > 17 ? '1' : '0';
+				$this->render ( 'create', array (
+						'adulto' => $adulto 
+				) );
 			} else
-				throw new CHttpException(NULL,"Ocurrió un error, por favor inténtalo de nuevo.");
-					
+				throw new CHttpException ( NULL, "Lo sentimos pero ya has subido el límite de fotografías permitidas. Para más información consulta la convocatoria." );
 		} else
-			throw new CHttpException(NULL,"El tiempo para registrar tus fotografias/videos ha terminado. Para más información consulta la convocatoria.");
+			throw new CHttpException ( NULL, "Ocurrió un error, por favor inténtalo de nuevo." );
 	}
-
+	
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
-	 * @param integer $id the ID of the model to be updated
+	 * 
+	 * @param integer $id
+	 *        	the ID of the model to be updated
 	 */
-	public function actionUpdate($id)
-	{
-		$fecha = date("YmdHis");
-		if ($fecha < Yii::app()->params->fecha_termino)
-		{
-			$model=$this->loadModel($id);
-	    	 
-	    	if((Int) Yii::app()->user->id_usuario == $model->usuario_id)
-	    	{
-	    		$this->render('formulario_fotos_editar',array(
-	    				'model'=>$model,
-	    		));
-	    	} else 
-	    		throw new CHttpException(NULL,'Lo sentimos, no estás autorizado para realizar esta acción.');
-    	} else
-    		throw new CHttpException(NULL,"El tiempo para registrar tus fotografias/videos ha terminado. Para más información consulta la convocatoria.");
+	public function actionUpdate($id) {
+		$this->vigencia ();
+		$model = $this->loadModel ( $id );
+		
+		if (( int ) Yii::app ()->user->id_usuario == $model->usuario_id) {
+			$this->render ( 'formulario_fotos_editar', array (
+					'model' => $model 
+			) );
+		} else
+			throw new CHttpException ( NULL, 'Lo sentimos, no estás autorizado para realizar esta acción.' );
 	}
 
 	/**
@@ -130,6 +118,7 @@ class FotosController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+		$this->vigencia ();
 		$this->loadModel($id)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
@@ -142,6 +131,7 @@ class FotosController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$this->vigencia ();
 		$dataProvider=new CActiveDataProvider('Fotos', array(
 				'criteria'=>array(
 						'condition'=>'usuario_id='.Yii::app()->user->id_usuario,
@@ -198,129 +188,176 @@ class FotosController extends Controller
 					echo "No borro: $a";
         	}
     }
-    
-    /**
-     * Formulario de fotos llamado desde ajax
-     */
-    public function actionFormulario_fotos()
-    {
-    	$fecha = date("YmdHis");
-    	if ($fecha < Yii::app()->params->fecha_termino)
-    	{
-	    	$this->layout = false;
-	    	$model=new Fotos;
-	    	$this->performAjaxValidation($model);
-	    	
-	    	if(isset($_POST['Fotos']))
-	    	{
-	    		$model->attributes=$_POST['Fotos'];
-	    		$model->fec_alta=self::fechaAlta();
-	    		$model->usuario_id=Yii::app()->user->id_usuario;
-	    		
-	    		$valid=$model->validate();
-	    	
-	    		if ($valid)
-	    		{
-	    			if($model->save())
-	    			{
-	    				echo CJSON::encode(array(
-	    						'status'=>'success'
-	    				));
-	    				Yii::app()->end();
-	    			}	
-	    			
-	    		} else {
-	    			$error = CActiveForm::validate($model);
-	    			if($error!='[]')
-	    				echo $error;
-	    			Yii::app()->end();
-	    		}    			
-	    	}
-	    	
-	    	$this->render('formulario_fotos',array(
-	    			'model'=>$model,
-	    	));
-    	} else
-    		throw new CHttpException(NULL,"El tiempo para registrar tus fotografias/videos ha terminado. Para más información consulta la convocatoria.");
-    }
-    
-    /**
-     * Formulario de fotos llamado desde ajax
-     */
-    public function actionFormulario_fotos_editar($id)
-    {
-    	$fecha = date("YmdHis");
-    	if ($fecha < Yii::app()->params->fecha_termino)
-    	{
-	    	$model=$this->loadModel($id);
-	    	$this->performAjaxValidation($model);
-	    	 
-	    	if(isset($_POST['Fotos']))
-	    	{
-	    		$model->attributes=$_POST['Fotos'];
-	    		$valid=$model->validate();
-	    		 
-	    		if ($valid)
-	    		{
-	    			if($model->save())
-	    			{
-	    				echo CJSON::encode(array(
-	    						'status'=>'success'
-	    				));
-	    				Yii::app()->end();
-	    			}
-	    			 
-	    		} else {
-	    			$error = CActiveForm::validate($model);
-	    			if($error!='[]')
-	    				echo $error;
-	    			Yii::app()->end();
-	    		}
-	    	}
-    	} else
-    		throw new CHttpException(NULL,"El tiempo para registrar tus fotografias/videos ha terminado. Para más información consulta la convocatoria.");
-    }
-    
-    /**
-     * La vista del AWS
-     */
-    public function actionAws()
-    {
-    	$fecha = date("YmdHis");
-    	if ($fecha < Yii::app()->params->fecha_termino)
-    	{
-	    	$this->layout = false;
 	
-	    	if (isset($_POST['adulto']) && $_POST['adulto'] == '1' && isset($_POST['categoria']))
-	    	{
-	    		$categoria_obj = Categorias::model()->findByPk((Int)$_POST['categoria']);
-	    		
-	    		if (!empty($categoria_obj))
-	    		{	
-	    		$acentos = array('Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',
-	    				'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ñ'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U',
-	    				'Ú'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss', 'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a', 'æ'=>'a', 'ç'=>'c',
-	    				'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o',
-	    				'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y');
-	    		
-	    		$categoria = strtr($categoria_obj->nombre, $acentos);
-	    		$categoria = str_replace(" ", "_", $categoria);
-	    		$categoria = strtolower($categoria);
-	    		
-	    		$this->render('aws', array('categoria' => $categoria, 'categoria_id' => $_POST['categoria'], 'usuario' => Yii::app()->user->id_usuario, 
-	    				'fecha' => date("Y-m-d_His_"), 'material' => 'fotografias', 'adulto' => $_POST['adulto']));
-	    		
-	    		} else
-	    			throw new CHttpException(NULL,'Lo sentimos, no estás autorizado para realizar esta acción.');
-	    	
-	    	} else if (isset($_POST['adulto']) && $_POST['adulto'] == '0')
-	    		$this->render('aws', array('categoria' => "", 'categoria_id' => '0', 'usuario' => Yii::app()->user->id_usuario, 
-	    				'fecha' => date("Y-m-d_His_"), 'material' => 'fotografias', 'adulto' => $_POST['adulto']));
-	    	else
-	    		throw new CHttpException(NULL,'Lo sentimos, no estás autorizado para realizar esta acción.');
-    	} else
-    		throw new CHttpException(NULL,"El tiempo para registrar tus fotografias/videos ha terminado. Para más información consulta la convocatoria.");
-    }
+	/**
+	 * Formulario de fotos llamado desde ajax
+	 */
+	public function actionFormulario_fotos() {
+		$this->vigencia ();
+		$this->layout = false;
+		$model = new Fotos ();
+		$this->performAjaxValidation ( $model );
+		
+		if (isset ( $_POST ['Fotos'] )) {
+			$model->attributes = $_POST ['Fotos'];
+			$model->fec_alta = self::fechaAlta ();
+			$model->usuario_id = Yii::app ()->user->id_usuario;
+			
+			$valid = $model->validate ();
+			
+			if ($valid) {
+				if ($model->save ()) {
+					echo CJSON::encode ( array (
+							'status' => 'success' 
+					) );
+					Yii::app ()->end ();
+				}
+			} else {
+				$error = CActiveForm::validate ( $model );
+				if ($error != '[]')
+					echo $error;
+				Yii::app ()->end ();
+			}
+		}
+		
+		$this->render ( 'formulario_fotos', array (
+				'model' => $model 
+		) );
+	}
+	
+	/**
+	 * Formulario de fotos llamado desde ajax
+	 */
+	public function actionFormulario_fotos_editar($id) {
+		$this->vigencia ();
+		$model = $this->loadModel ( $id );
+		$this->performAjaxValidation ( $model );
+		
+		if (isset ( $_POST ['Fotos'] )) {
+			$model->attributes = $_POST ['Fotos'];
+			$valid = $model->validate ();
+			
+			if ($valid) {
+				if ($model->save ()) {
+					echo CJSON::encode ( array (
+							'status' => 'success' 
+					) );
+					Yii::app ()->end ();
+				}
+			} else {
+				$error = CActiveForm::validate ( $model );
+				if ($error != '[]')
+					echo $error;
+				Yii::app ()->end ();
+			}
+		}
+	}
+	
+	/**
+	 * La vista del AWS
+	 */
+	public function actionAws() {
+		$this->vigencia ();
+		$this->layout = false;
+		
+		if (isset ( $_POST ['adulto'] ) && $_POST ['adulto'] == '1' && isset ( $_POST ['categoria'] )) {
+			$categoria_obj = Categorias::model ()->findByPk ( ( int ) $_POST ['categoria'] );
+			
+			if (! empty ( $categoria_obj )) {
+				$acentos = array (
+						'Š' => 'S',
+						'š' => 's',
+						'Ž' => 'Z',
+						'ž' => 'z',
+						'À' => 'A',
+						'Á' => 'A',
+						'Â' => 'A',
+						'Ã' => 'A',
+						'Ä' => 'A',
+						'Å' => 'A',
+						'Æ' => 'A',
+						'Ç' => 'C',
+						'È' => 'E',
+						'É' => 'E',
+						'Ê' => 'E',
+						'Ë' => 'E',
+						'Ì' => 'I',
+						'Í' => 'I',
+						'Î' => 'I',
+						'Ï' => 'I',
+						'Ñ' => 'N',
+						'Ò' => 'O',
+						'Ó' => 'O',
+						'Ô' => 'O',
+						'Õ' => 'O',
+						'Ö' => 'O',
+						'Ø' => 'O',
+						'Ù' => 'U',
+						'Ú' => 'U',
+						'Û' => 'U',
+						'Ü' => 'U',
+						'Ý' => 'Y',
+						'Þ' => 'B',
+						'ß' => 'Ss',
+						'à' => 'a',
+						'á' => 'a',
+						'â' => 'a',
+						'ã' => 'a',
+						'ä' => 'a',
+						'å' => 'a',
+						'æ' => 'a',
+						'ç' => 'c',
+						'è' => 'e',
+						'é' => 'e',
+						'ê' => 'e',
+						'ë' => 'e',
+						'ì' => 'i',
+						'í' => 'i',
+						'î' => 'i',
+						'ï' => 'i',
+						'ð' => 'o',
+						'ñ' => 'n',
+						'ò' => 'o',
+						'ó' => 'o',
+						'ô' => 'o',
+						'õ' => 'o',
+						'ö' => 'o',
+						'ø' => 'o',
+						'ù' => 'u',
+						'ú' => 'u',
+						'û' => 'u',
+						'ý' => 'y',
+						'ý' => 'y',
+						'þ' => 'b',
+						'ÿ' => 'y' 
+				);
+				
+				$categoria = strtr ( $categoria_obj->nombre, $acentos );
+				$categoria = str_replace ( " ", "_", $categoria );
+				$categoria = strtolower ( $categoria );
+				
+				$this->render ( 'aws', array (
+						'categoria' => $categoria,
+						'categoria_id' => $_POST ['categoria'],
+						'usuario' => Yii::app ()->user->id_usuario,
+						'fecha' => date ( "Y-m-d_His_" ),
+						'material' => 'fotografias',
+						'adulto' => $_POST ['adulto'] 
+				) );
+			} else
+				throw new CHttpException ( NULL, 'Lo sentimos, no estás autorizado para realizar esta acción.' );
+		} else if (isset ( $_POST ['adulto'] ) && $_POST ['adulto'] == '0')
+			$this->render ( 'aws', array (
+					'categoria' => "",
+					'categoria_id' => '0',
+					'usuario' => Yii::app ()->user->id_usuario,
+					'fecha' => date ( "Y-m-d_His_" ),
+					'material' => 'fotografias',
+					'adulto' => $_POST ['adulto'] 
+			) );
+		else
+			throw new CHttpException ( NULL, 'Lo sentimos, no estás autorizado para realizar esta acción.' );
+	}
 	
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.

@@ -84,9 +84,9 @@ class Controller extends CController
 	public function vigencia()
 	{
 		$fecha = date("YmdHis");
-		if ($fecha < Yii::app()->params->fecha_termino)
+		if ($fecha < Yii::app()->params->fecha_termino && Yii::app()->params->fecha_inicio < $fecha)
 			return true;
 			else
-				throw new CHttpException(NULL,"El tiempo para publicar tus eventos ha terminado.");
+				throw new CHttpException(NULL,"El tiempo del consurso solo es del 06 de diciembre de 2016 a las 12:00 hrs al 28 de febrero de 2017 a las 23:59 hrs,");
 	}
 }
