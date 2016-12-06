@@ -66,6 +66,7 @@ class FotosController extends Controller
 	 */
 	public function actionView($id)
 	{
+		$this->vigencia ();
 		$this->render('view',array(
 				'model'=>$this->loadModel($id),
 		));
@@ -78,7 +79,7 @@ class FotosController extends Controller
 	public function actionCreate() {
 		$this->vigencia ();
 		$usuario = Usuarios::model ()->findByPk ( Yii::app ()->user->id_usuario );
-		$puede_subir = Fotos::conCategoriasDisponibles ();
+		$puede_subir = Fotos::conCategoriasDisponibles();
 		
 		if (isset ( $usuario->edad )) {
 			if ($puede_subir) {
