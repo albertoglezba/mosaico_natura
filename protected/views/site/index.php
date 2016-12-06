@@ -131,7 +131,7 @@
                 			<td valign="bottom"><img src="<?php echo $yii_path; ?>/img/bases-08.png">
                 				<table width="100%" border="3" cellpadding="0" cellspacing="0" style="border-color:#ffd400; border-style:solid; border-left-width:0">
   									<tr>
-    									<td bgcolor="#403d35" style="padding:5px 0;" >$15,000 pesos
+    									<td bgcolor="#403d35" style="padding:5px 0;" >$15,000 pesos en especie:
     									 <br>$5,666 en productos Nikon<br>
                                         Suscripci&oacute;n anual:<br>National Geographic en Espa&ntilde;ol<br> y Mexican&iacute;simo<br>
                                         2 m&oacute;dulos Nikon school</td>
@@ -541,7 +541,7 @@
                 </div>
                 
                 <div class="col-lg-12 col-xs-12">
-                    <p>Revisa las bases completas <a href="#bases">aqu&iacute;</a></p>
+                    <p>Revisa las bases completas <a href="http://www.mosaiconatura.net/index.php/site/terminos_condiciones" target="_blank">aqu&iacute;</a></p>
                 </div>
                 
             </div>
@@ -563,24 +563,9 @@
         <div class="registro-content">
             <div class="container">
                 <div class="col-md-12">
-                    <p>Crea una cuenta y participa en el concurso</p>
-                    
-                    <!--Aqui va a ir el formulario-->
-                    
-                    
-                <p>Si ya tienes una cuenta <a href="registro.html">ingresa</a></p>
-               <!--botones 
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-facebook-square fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-youtube-square fa-fw"></i> <span class="network-name">YouTube</span></a>
-                    </li>
-                </ul>-->
+                    <p><a href="/index.php/usuarios/create">Crea una cuenta</a> y participa en el concurso</p>
+					<p>Si ya tienes una cuenta <a href="/index.php/site/login">ingresa</a></p>
+               
                 </div>
             </div>
         </div>
