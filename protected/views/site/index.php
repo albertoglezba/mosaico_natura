@@ -219,7 +219,7 @@
                     
                     
                     <div id="video-wrapper">
-                    	<h3>VIDEO		<i class="fa fa-caret-right"></i>   <span class="pleca_ama">3 videos por participante</span></h3>
+                    	<h3>VIDEO		<i class="fa fa-caret-right"></i>   <span class="pleca_ama">3 videos por participante (solo categoría adultos)</span></h3>
                     </div>
                     <p><strong>Tema: Consumo responsable y biodiversidad</strong><br>Videos que representen el consumo responsable y el impacto en la biodiversidad, los h&aacute;bitos alimenticios, reproductivos, de propagaci&oacute;n, interacci&oacute;n entre especies, de migraci&oacute;n, y la belleza natural de alg&uacute;n lugar etc&eacute;tera  y su entorno en una narrativa visual. Los videos pueden editarse y musicalizarse. La musicalizaci&oacute;n, si es el caso, deber&aacute; ser m&uacute;sica original o bien audios libres de derechos de autor o con derechos de distribuci&oacute;n sin fines de lucro.</p>
                     

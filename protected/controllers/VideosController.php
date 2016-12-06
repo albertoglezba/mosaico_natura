@@ -79,16 +79,16 @@ class VideosController extends Controller
 		$this->vigencia ();
 		$puede_subir = Videos::soloUnVideo ();
 		$usuario = Usuarios::model ()->findByPk ( Yii::app ()->user->id_usuario );
+		$adulto = $usuario->edad > 17 ? '1' : '0';
 		
-		if ($puede_subir) {
-			$adulto = $usuario->edad > 17 ? '1' : '0';
+		if ($puede_subir && $adulto) {
 			$this->render ( 'create', array (
 					'material' => 'videos',
 					'usuario' => Yii::app ()->user->id_usuario,
 					'fecha' => date ( "Y-m-d_His_" ) 
 			) );
 		} else
-			throw new CHttpException ( NULL, "Lo sentimos pero solo se permite subir un video" );
+			throw new CHttpException ( NULL, "Lo sentimos pero no se pueden subir mas videos, el límite es ".Yii::app()->params['#_videos'] );
 	}
 
 	/**
@@ -137,14 +137,21 @@ class VideosController extends Controller
 	public function actionIndex()
 	{
 		$this->vigencia ();
-		$dataProvider=new CActiveDataProvider('Videos', array(
-				'criteria'=>array(
-						'condition'=>'usuario_id='.Yii::app()->user->id_usuario,
-						'order'=>'fec_alta DESC',
-				)));
-		$this->render('index',array(
-				'dataProvider'=>$dataProvider,
-		));
+		$usuario = Usuarios::model ()->findByPk ( Yii::app ()->user->id_usuario );
+		$adulto = $usuario->edad > 17 ? '1' : '0';
+		
+		if ($adulto)
+		{
+			$dataProvider=new CActiveDataProvider('Videos', array(
+					'criteria'=>array(
+							'condition'=>'usuario_id='.Yii::app()->user->id_usuario,
+							'order'=>'fec_alta DESC',
+					)));
+			$this->render('index',array(
+					'dataProvider'=>$dataProvider,
+			));
+			
+		} else throw new CHttpException ( NULL, "Lo sentimos pero solo se permiten subir videos en la categoria adulto (mayor de 17 años)" );
 	}
 
 	/**

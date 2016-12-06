@@ -118,7 +118,7 @@ class Videos extends CActiveRecord
 		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 		
 		// Ya no puede subir mas fotografias
-		if (count($usuario->videos) == 1)
+		if (count($usuario->videos) >= Yii::app()->params['#_videos'])
 			return false;
 		else
 			return true;

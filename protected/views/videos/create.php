@@ -127,7 +127,6 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
 </div>
 <script>
     $(document).ready(function () {
-
         // Assigned to variable for later use.
         var form = $('.direct-upload');
 
@@ -174,20 +173,42 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
                     return 'You have unsaved changes.';
                 };
 
-				if (file.type == 'video/quicktime' || file.type == 'video/mpeg')
-				{
-					if (file.size >= 1024*1024*19 && file.size <= 1024*1024*1024*5)
-					{
-						toAWS();
-					} else {
-						$('#label_file').removeClass('hidden').empty().html('El peso límite del video debe ser mínimo 19 MB y máximo 5 GB.');
-						return false;
-					}
-						
-				} else {
-					$('#label_file').removeClass('hidden').empty().html('Solo se admiten extensiones .mov y .mpg');
-					return false;
-				}	            
+                // Para la duracion del video
+                var video = document.createElement('video');
+                video.preload = 'metadata';
+                video.onloadedmetadata = function() {
+                  file.duration = video.duration;  
+
+               // Requisitos del video                
+  				if (file.type == 'video/quicktime' || file.type == 'video/mpeg')
+  				{
+  					if (file.size >= 1024*1024*19 && file.size <= 1024*1024*1024*5)
+  					{
+  						console.log(file);
+  						if (file.duration >= 70 && file.duration <= 120)
+  						{
+  							toAWS();
+  						} else {
+  							$('#label_file').removeClass('hidden').empty().html('La duración debe ser entre 60 y 120 segundos.');
+  							return false;
+  						}	
+  						
+  					} else {
+  						$('#label_file').removeClass('hidden').empty().html('El peso límite del video debe ser mínimo 19 MB y máximo 5 GB.');
+  						return false;
+  					}
+  						
+  				} else {
+  					$('#label_file').removeClass('hidden').empty().html('Solo se admiten extensiones .mov y .mpg');
+  					return false;
+  				}
+
+  				          
+                }
+                video.src = URL.createObjectURL(file);
+				
+                                                        
+             	            
             },
             progress: function (e, data) {
                 // This is what makes everything really cool, thanks to that callback
