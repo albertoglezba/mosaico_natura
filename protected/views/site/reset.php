@@ -10,8 +10,23 @@ function validatePasswd(passwd)
 	$(document).ready(function(){
 		$('#boton').on('click', function(){
 			if(!validatePasswd($('#passwd').val()))
-				$('#error').html('').html('La contraseña no debe ser vacia o menor a 4 caracteres.');
-			return false;
+				$('#error').html('La contraseña no debe ser vacia o menor a 4 caracteres.');
+
+			jQuery.ajax({
+				method: 'POST',
+		        url: $('#forma_recupera').attr('action'),
+		        data: $('#forma_recupera').serialize(),
+				success: function(res){
+					if (res.estatus == "1") $('#msj').css("color", "green").html(res.msj);
+					else $('#msj').css("color", "red").html(res.msj);
+		        	
+		        },
+		        fail: function(){
+		            $('#msj').css("color", "red").html('Hubo un error al enviar el correo, por favor intentalo de nuevo.');
+		        }
+		    });
+
+		    return false;
 		});
 	});	
 
@@ -22,11 +37,10 @@ Estiamdo <?php echo $usuario->nombre." ".$usuario->apellido.", "; ?>
 por favor escribe una nueva contrase&ntilde;a
 <br><br>
 <form method="get" action="<?php echo Yii::app()->request->baseUrl.'/index.php?r=site/nueva_contrasenia'; ?>">
-Contrase&ntilde;a: <input name="passwd" id="passwd" type="text"> <span style="color: red;" id="error"></span>
+Contrase&ntilde;a: <input name="passwd" id="passwd" type="password" class="form-control"> <span style="color: red;" id="error"></span>
 <br>
-	<input type="hidden" name="r" value="site/nueva_contrasenia">
 	<div class="buttons" align="right">
-		<input type="submit" value="Cambiar" id="boton">
+		<input type="submit" value="Cambiar" id="boton" class="class1 class2 btn btn-success">
 	</div >
 	<input name="id" type="hidden" value="<?php echo $usuario->id; ?>">
 	<input name="fec_alta" type="hidden" value="<?php echo $usuario->fec_alta; ?>">

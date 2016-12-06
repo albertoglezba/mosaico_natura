@@ -168,12 +168,13 @@ class SiteController extends Controller
 	 * Cuando le da click al enlace del correo
 	 */
 	public function actionReset()
-	{
+	{	
 		$this->vigencia();
-	
+		
 		if (isset($_GET['id']) && !empty($_GET['id']) && isset($_GET['fec_alta']) && !empty($_GET['fec_alta']))
 		{
 			$usuario = Usuarios::model()->findByPk($_GET['id']);
+			
 			if ($usuario == NULL)
 				throw new CHttpException(404,'Hubo un error en la petición.');
 			elseif ($usuario->fec_alta == urldecode($_GET['fec_alta']))
@@ -182,6 +183,38 @@ class SiteController extends Controller
 				throw new CHttpException(404,'Hubo un error en la petición.');
 		} else
 			throw new CHttpException(404,'Hubo un error en la petición.');
+	}
+	
+	/**
+	 * Cuando envio la nueva contrasenia
+	 */
+	public function actionNueva_contrasenia()
+	{
+		$this->vigencia();
+	
+		if (isset($_POST['id']) && !empty($_POST['id']) && isset($_POST['fec_alta']) && !empty($_POST['fec_alta']) && isset($_POST['passwd']) && !empty($_POST['passwd']))
+		{
+			$usuario = Usuarios::model()->findByPk($_GET['id']);
+			
+			if ($usuario == NULL)
+				echo json_encode(array('estatus' => '0', 'msj' => 'Hubo un error en la petición.'));
+			
+			elseif ($usuario->fec_alta == $_POST['fec_alta'])
+			{
+				$usuario->passwd = $_POST['passwd'];
+				$usuario->solo_passwd = true;
+				
+				if ($usuario->save())
+					echo json_encode(array('estatus' => '1', 'msj' => 'Tu contraseña se ha cambiado satisfactoriamente, trata de ingresar con tus nuevas credenciales.'));
+				else
+					echo json_encode(array('estatus' => '0', 'msj' => 'Hubo un error en la petición.'));
+	
+			} else
+				echo json_encode(array('estatus' => '0', 'msj' => 'Hubo un error en la petición.'));
+		} else
+			echo json_encode(array('estatus' => '0', 'msj' => 'Hubo un error en la petición.'));
+		
+		Yii::app()->end();
 	}
 
 	public function actionPage($alias)
