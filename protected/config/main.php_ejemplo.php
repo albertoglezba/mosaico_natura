@@ -7,10 +7,10 @@
 // CWebApplication properties can be configured here.
 return array(
 		'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-		'name'=>'Peces',
-		'defaultController'=>'peces/inicio',
+		'name'=>'# Concurso Nacional de Fotografía de Naturaleza',
+		'defaultController'=>'site/index',
 		//'defaultAction'=>'inicio',
-		'homeUrl'=>array('peces/inicio'),
+		'homeUrl'=>array('site/index'),
 		
 		//parte de recordar estado de cgridview
 		'import'=>array('application.components.ERememberFiltersBehavior'),
@@ -128,6 +128,12 @@ return array(
 		// this is used in contact page
 			'adminEmail'=>'calonso@conabio.gob.mx',
 			'fecha_termino'=>'20160101000000',
+			'fecha_inicio'=>'20151206120000',
+			'fecha_termino'=>'20170228235959',
+			'#_fotos_juvenil' => 5,
+			'#_fotos_adulto_x_categoria' => 5,
+			'#_categorias' => 5,
+			'#_videos' => 3,
 			
 			// Parte de AWS	
 			'aws_access_key'=>'AAAAAAAAAAAAAAAAAAA',
