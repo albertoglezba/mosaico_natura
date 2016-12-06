@@ -90,7 +90,7 @@ class Usuarios extends CActiveRecord
 		else {
 			$correo_existe = $this->model()->findByAttributes(array('correo'=>$this->correo));
 			if ($correo_existe != NULL)
-				$this->addError($this->correo, 'Ese correo ya fue registrado por alguien más, por favor intenta con otro.');
+				$this->addError($this->correo, 'Ese correo ya fue registrado por alguien más, por favor intenta con otro o recupera tu contraseña desde el inicio de sesión.');
 		}
 	}
 
@@ -103,7 +103,7 @@ class Usuarios extends CActiveRecord
 		else {
 			$usuario_existe = $this->model()->findByAttributes(array('usuario'=>$this->usuario));
 			if ($usuario_existe != NULL)
-				$this->addError($this->usuario, 'Este usuario ya fue registrado por alguien más, por favor intenta con otro.');
+				$this->addError($this->usuario, 'Este usuario ya fue registrado por alguien más, por favor intenta con otro o recupera tu contraseña desde el inicio de sesión.');
 		}
 	}
 
