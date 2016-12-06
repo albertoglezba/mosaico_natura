@@ -564,7 +564,7 @@
             <div class="container">
                 <div class="col-md-12">
                     <p><a href="<?php echo $yii_path; ?>/index.php/usuarios/create">Crea una cuenta</a> y participa en el concurso</p>
-					<p>Si ya tienes una cuenta <a href="<?php echo $yii_path; ?>/index.php/site/login">ingresa</a></p>
+					<p>Si ya tienes una cuenta o habías creado alguna en los anteriores concursos, <a href="<?php echo $yii_path; ?>/index.php/site/login">ingresa</a></p>
                
                 </div>
             </div>

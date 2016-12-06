@@ -191,10 +191,12 @@ class SiteController extends Controller
 	public function actionNueva_contrasenia()
 	{
 		$this->vigencia();
-	
+		$this->layout = false;
+		header('Content-type: application/json');
+
 		if (isset($_POST['id']) && !empty($_POST['id']) && isset($_POST['fec_alta']) && !empty($_POST['fec_alta']) && isset($_POST['passwd']) && !empty($_POST['passwd']))
 		{
-			$usuario = Usuarios::model()->findByPk($_GET['id']);
+			$usuario = Usuarios::model()->findByPk($_POST['id']);
 			
 			if ($usuario == NULL)
 				echo json_encode(array('estatus' => '0', 'msj' => 'Hubo un error en la petición.'));
@@ -202,10 +204,11 @@ class SiteController extends Controller
 			elseif ($usuario->fec_alta == $_POST['fec_alta'])
 			{
 				$usuario->passwd = $_POST['passwd'];
-				$usuario->solo_passwd = true;
+				$usuario->cambia_passwd = true;
 				
-				if ($usuario->save())
+				if ($usuario->save()){
 					echo json_encode(array('estatus' => '1', 'msj' => 'Tu contraseña se ha cambiado satisfactoriamente, trata de ingresar con tus nuevas credenciales.'));
+				}
 				else
 					echo json_encode(array('estatus' => '0', 'msj' => 'Hubo un error en la petición.'));
 	

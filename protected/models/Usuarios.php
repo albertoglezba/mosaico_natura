@@ -32,6 +32,7 @@ class Usuarios extends CActiveRecord
 	public $acepto_terminos = false;
 	public $confirma_passwd = "";
 	public $para_confirmar = false;
+	public $cambia_passwd = false;
 
 	/**
 	 * Returns the static model of the specified AR class.
@@ -122,7 +123,7 @@ class Usuarios extends CActiveRecord
 
 	public function valida_passwd()
 	{
-		if(empty($this->para_confirmar))  //Para evitar cuando se guarda confirmo y la fecha
+		if(empty($this->para_confirmar) && !$this->cambia_passwd)  //Para evitar cuando se guarda confirmo y la fecha
 		{
 			if ($this->passwd != $this->confirma_passwd)
 				$this->addError($this->passwd, 'La contraseña no coincide con la confirmación.');

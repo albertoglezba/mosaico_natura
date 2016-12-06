@@ -6,7 +6,7 @@
 					?>
 					</span>
 
-					<h1>Ingresa tus datos</h1>
+					<h3>Ingresa tus datos, si ya habías creado una cuenta en anteriores concursos puedes ingresar con esas credenciales</h3>
 
 					<div class="form">
 						<?php $form=$this->beginWidget('CActiveForm', array(
@@ -44,9 +44,9 @@
 
 						<div class="buttons">
 							<?php echo CHtml::submitButton('Entra', array('class'=>'form-control btn btn-primary')); ?>
-							<?php //echo CHtml::resetButton('Limpia'); ?>
 						</div>
 
+						<p>¿No recuerdas tu contraseña? Sigue este <?php echo CHtml::link("enlace", Yii::app()->request->baseUrl."/index.php/site/recupera"); ?></p>
 						<?php $this->endWidget(); ?>
 					</div><!-- form -->
 			
