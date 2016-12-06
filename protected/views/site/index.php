@@ -30,7 +30,7 @@
                     </div> -->
                    
                     	<div class="col-md-8 col-md-offset-2">
-                        	<h2 class="mosaico-titulo">Segundo Concurso Nacional</h2>
+                        	<h2 class="mosaico-titulo">Tercer Concurso Nacional</h2>
                         </div>
                         <div class="col-md-8 col-md-offset-4">
                         	<h3 class="mosaico-titulo">de Fotograf&iacute;a de la Naturaleza</h3>
@@ -283,7 +283,7 @@
                 <div id="reconocimiento-md" class="col-lg-12">
                 	<table class="recxestado" width="100%" height="56px" border="0">
   						<tr>
-                            <td width="10%" bgcolor="#403d35" ><img src="<?php echo $yii_path; ?>/img/bases-15.png" alt="méxico"></td>
+                            <td width="10%" bgcolor="#403d35" ><img src="<?php echo $yii_path; ?>/img/bases-15.png" alt="mï¿½xico"></td>
                             <td width="30%" bgcolor="#403d35" style="font-weight:bold;">Reconocimiento especial por estado</td>
                             <td bgcolor="#595448" style="text-align:left; padding:0;"><img src="<?php echo $yii_path; ?>/img/bases-16.png"></td>
                             <td bgcolor="#595448" style="text-align:left; padding-left:5px;">Ser&aacute; seleccionada la mejor foto de cada estado (32 seleccionadas) y participar&aacute; en la exposici&oacute;n Visiones de nuestra naturaleza. </td>
@@ -455,10 +455,10 @@
               
                 </div>
                 <div class="col-lg-8 col-xs-12 caractsm">
-                <h4>&iquest;C&oacute;mo me registro en la p&aacute;gina del Segundo concurso de Fotograf&iacute;a de Naturaleza Mosaico Natura M&eacute;xico?</h4>
+                <h4>&iquest;C&oacute;mo me registro en la p&aacute;gina del Tercer concurso de Fotograf&iacute;a de Naturaleza Mosaico Natura M&eacute;xico?</h4>
                 	<div class="faqdiv">
                     <img src="<?php echo $yii_path; ?>/img/faq-02.png">
-                    <p>1. Entra al sitio <a href="http://www.mosaiconatura.net/">mosaiconatura.net</a></p>
+                    <p>1. Entra al sitio <a href="<?php echo $yii_path; ?>">mosaiconatura.net</a></p>
                     </div>
                     <div class="faqdiv">
                     <img src="<?php echo $yii_path; ?>/img/faq-03.png">
@@ -541,7 +541,7 @@
                 </div>
                 
                 <div class="col-lg-12 col-xs-12">
-                    <p>Revisa las bases completas <a href="http://www.mosaiconatura.net/index.php/site/terminos_condiciones" target="_blank">aqu&iacute;</a></p>
+                    <p>Revisa las bases completas <a href="<?php echo $yii_path; ?>/index.php/site/terminos_condiciones" target="_blank">aqu&iacute;</a></p>
                 </div>
                 
             </div>
@@ -563,8 +563,8 @@
         <div class="registro-content">
             <div class="container">
                 <div class="col-md-12">
-                    <p><a href="/index.php/usuarios/create">Crea una cuenta</a> y participa en el concurso</p>
-					<p>Si ya tienes una cuenta <a href="/index.php/site/login">ingresa</a></p>
+                    <p><a href="<?php echo $yii_path; ?>/index.php/usuarios/create">Crea una cuenta</a> y participa en el concurso</p>
+					<p>Si ya tienes una cuenta <a href="<?php echo $yii_path; ?>/index.php/site/login">ingresa</a></p>
                
                 </div>
             </div>
@@ -593,7 +593,7 @@
                         <h3>Noticias</h3>
                         <div class="list-group">
                         <!--<a class="list-group-item sb" href="http://www.conabio.gob.mx/web/medios/index.php/noticias-2015/388-bios-naturaleza-y-sociedad" target="_blank"><i class="fa fa-eye"></i> Nota 103</a>-->
-                        <a class="list-group-item sb" href="http://www.gob.mx/conabio/archivo/prensa" target="_blank"><i class="fa fa-eye"></i> Sección de medios</a>
+                        <a class="list-group-item sb" href="http://www.gob.mx/conabio/archivo/prensa" target="_blank"><i class="fa fa-eye"></i> Secciï¿½n de medios</a>
                         </div>
                         <!--<h3>x</h3>
                         <div class="list-group">-->
