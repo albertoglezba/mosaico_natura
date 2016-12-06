@@ -184,7 +184,6 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
   				{
   					if (file.size >= 1024*1024*19 && file.size <= 1024*1024*1024*5)
   					{
-  						console.log(file);
   						if (file.duration >= 70 && file.duration <= 120)
   						{
   							toAWS();
@@ -204,7 +203,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
   				}
 
   				          
-                }
+                }  //Cierra onloadmetadata
                 video.src = URL.createObjectURL(file);
 				
                                                         
