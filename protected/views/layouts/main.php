@@ -188,32 +188,18 @@
 <div id="colaboradores">
 	<div class="container">
 		<div class="col-lg-12">
-			<!-- <ul>
-        <li><object type="image/svg+xml" data="<?php //echo $yii_path; ?>/img/svg/NatGeobco.svg" height="70px">National Geographic</object></li>
-        <li><object type="image/svg+xml" data="<?php //echo $yii_path; ?>/img/svg/cdmx.svg" height="70px">CDMX</object></li>
-        <li><object type="image/svg+xml" data="<?php //echo $yii_path; ?>/img/svg/mxcnsm.svg" height="60px">mexican&iacute;simo</object></li>
-        <li><object type="image/svg+xml" data="<?php //echo $yii_path; ?>/img/svg/Nikon.svg" height="70px">Nikon</object></li>
-        <li><object type="image/svg+xml" data="<?php //echo $yii_path; ?>/img/svg/Ibero.svg" height="70px">Ibero909</object></li>
-        <li><object type="image/svg+xml" data="<?php //echo $yii_path; ?>/img/svg/Facir.svg" height="70px">Fundaci&oacute;n ACIR</object></li>
-        <li><object type="image/svg+xml" data="<?php //echo $yii_path; ?>/img/svg/conanp.svg" height="70px">CONANP</object></li>
-        <li><object type="image/svg+xml" data="<?php //echo $yii_path; ?>/img/svg/sectur.svg" height="70px">SECTUR</object></li>
-        <li><object type="image/svg+xml" data="<?php //echo $yii_path; ?>/img/svg/conabio.svg" height="70px">CONABIO</object></li>
-            </ul> -->
 
 			<ul id="logosc">
-				<li><a href="http://www.sectur.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_sectur.png" alt="SECTUR"></a></li>
-                <li><a href="http://www.visitmexico.com/es" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_mexicoCPTM.png" alt="México"></a></li>
-				<li><a href="http://www.df.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_cdmx.png" alt="Ciudad de México"></a></li>
-				<li><a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_NatGeo.png" alt="National Geographic en Español"></a></li>
-				<li><a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_nikon.png" alt="Nikon"></a></li>
-				<li><a href="http://www.mexicanisimo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_mexicanisimo.png" alt="Mexicanísimo"></a></li>
-				<li><a href="http://ibero909.fm/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_ibero909.png" alt="Ibero 909"></a></li>
-				<li><a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_facir.png" alt="Fundación Acir"></a></li>
-				<li><a href="http://recreamkt.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_recrea.png" alt="Recrea"></a></li>
-                <li><a href="http://aeromexico.com/es/mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_aeromex.png" alt="AeroMéxico"></a></li>
-                <li><a href="http://www.xerox.com/index/esmx.html" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_xerox.png" alt="Xerox"></a></li>
-				<li><a href="http://www.conanp.gob.mx" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_conanp.png" alt="CONANP"></a></li>
-				<li><a href="http://www.conabio.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_conabio.png" alt="CONABIO"></a></li>
+				<li><a href="http://www.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_cdmx.png" alt="Ciudad de México"></a></li>
+                <li><a href="http://sustentur.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_sustentur.png" alt="Sustentur"></a></li>
+                <li><a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_NatGeo.png" alt="National Geographic en Espanol"></a></li>
+                <li><a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_nikon.png" alt="Nikon"></a></li>
+                <li><a href="http://www.mexicanisimo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_mexicanisimo.png" alt="Mexicanísimo"></a></li>
+                <li><a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_facir.png" alt="Fundación Acir"></a></li>
+                <li><a href="http://www.latam.discovery.com/mexico/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_discovery.png" alt="Discovery"></a></li>
+                <li><a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_epson.png" alt="Epson"></a></li>
+                <li><a href="http://www.lg.com/mx" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_lg.png" alt="LG"></a></li>
+                <li><a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_conabio.png" alt="Conabio"></a></li>
 			</ul>
 		</div>
 	</div>
@@ -225,26 +211,23 @@
 		<div class="col-md-3">
 			<p>NUESTROS COLABORADORES</p>
 			<ul>
-				<li><a href="http://www.sectur.gob.mx/" target="_blank">SECTUR</a></li>
-                <li><a href="http://www.visitmexico.com/es" target="_blank">VisitMexico</a></li>
-				<li><a href="http://www.df.gob.mx/" target="_blank">CDMX</a></li>
-				<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic</a></li>
-				<li><a href="http://www.nikon.com.mx/" target="_blank">NIKON</a></li>
-				<li><a href="http://www.mexicanisimo.com.mx/" target="_blank">Mexican&iacute;simo</a></li>
-				<li><a href="http://ibero909.fm/" target="_blank">Ibero909</a></li>
-				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
-                <li><a href="http://recreamkt.com" target="_blank">RECREA</a></li>
-                <li><a href="http://aeromexico.com/es/mx/" target="_blank">AeroMéxico</a></li>
-                <li><a href="http://www.xerox.com/index/esmx.html" target="_blank">Xerox</a></li>
-				<li><a href="http://www.conanp.gob.mx" target="_blank">CONANP</a></li>
-				<li><a href="http://www.conabio.gob.mx/" target="_blank">CONABIO</a></li>
-			</ul>
+            	<li><a href="http://www.cdmx.gob.mx/" target="_blank">CDMX</a></li>
+            	<li><a href="http://sustentur.com.mx/" target="_blank">SustenTur</a></li>
+                <li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic</a></li>
+                <li><a href="http://www.nikon.com.mx/" target="_blank">Nikon</a></li>
+                <li><a href="http://www.mexicanisimo.com.mx/" target="_blank">Mexican&iacute;simo</a></li>
+                <li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
+                <li><a href="http://www.latam.discovery.com/mexico/" target="_blank">Discovery</a></li>
+                <li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
+                <li><a href="http://www.lg.com/mx" target="_blank">LG</a></li>
+                <li><a href="http://www.gob.mx/conabio/" target="_blank">Conabio</a></li>
 		</div>
 		<div class="col-md-3">
 			<p>S&Iacute;GUENOS</p>
 			<ul>
 				<li><a href="https://www.facebook.com/conabio/">Facebook</a></li>
 				<li><a href="https://twitter.com/conabio">Twitter</a></li>
+                <li><a href="https://www.instagram.com/biodiversidad_mexicana/">Instagram</a></li>
 				<li><a href="https://www.youtube.com/user/biodiversidadmexico">YouTube</a></li>
 				<li><a href="https://www.vimeo.com/conabio">Vimeo</a></li>
 				<li><a href="https://soundcloud.com/conabio">SoundCloud</a></li>
@@ -256,6 +239,7 @@
 			<ul>
 				<li><a href="http://www.naturalista.mx/">Naturalista</a></li>
 				<li><a href="http://biodiversidad.gob.mx/">Biodiversidad Mexicana</a></li>
+                <li><a href="http://www.enciclovida.mx/">EncicloVida</a></li>
 			</ul>
 		</div>
 		<div class="col-md-3">
