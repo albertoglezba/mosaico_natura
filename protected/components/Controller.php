@@ -80,4 +80,13 @@ class Controller extends CController
 			}
 		}
 	}
+	
+	public function vigencia()
+	{
+		$fecha = date("YmdHis");
+		if ($fecha < Yii::app()->params->fecha_termino)
+			return true;
+			else
+				throw new CHttpException(NULL,"El tiempo para publicar tus eventos ha terminado.");
+	}
 }

@@ -137,7 +137,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
         {
         	// Place any uploads within the descending folders
             var folders = ["<?php echo $material; ?>", "<?php echo $categoria; ?>"];
-            folders.push("adulto");
+            //folders.push("adulto");
         } else {
         	// Place any uploads within the descending folders
             var folders = ["<?php echo $material; ?>"];

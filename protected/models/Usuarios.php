@@ -296,6 +296,26 @@ class Usuarios extends CActiveRecord
 		$cabeceras.= "From: noreply@conabio.gob.mx"."\r\n";
 		mail($para, $titulo, $mensaje, $cabeceras);
 	}
+	
+	public function send_mail_recupera()
+	{
+		ini_set("SMTP", "xolo.conabio.gob.mx");
+		ini_set("sendmail_from", "noreply@conabio.gob.mx");
+		
+		$imagen = "<table border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\">";
+		$imagen.= "<tbody><tr><td align=\"center\" bgcolor=\"#333333\">";
+		$imagen.= "<div style=\"background:url('http://www.mosaiconatura.net/img/bg-registro.jpg') no-repeat center center scroll;\"><img src=\"http://www.mosaiconatura.net/img/logo-mosaiconatura.png\" border=\"0\"></div>";
+		$imagen.= "</td></tr></tbody></table>";
+		$para = $this->correo.", mosaiconatura@conabio.gob.mx";
+		$titulo = 'Recuperar contrase&ntilde;a '.Yii::app()->name;
+		$mensaje = $imagen."<br><br>".$this->nombre.' '.$this->apellido.",";
+		$mensaje.= "<br><br>Para poder poner una nueva contrase&ntilde;a sigue el siguiente ";
+		$mensaje.= "<a href=\"".Yii::app()->createAbsoluteUrl('site/reset')."&id=".$this->id."&fec_alta=".urlencode($this->fec_alta)."\" target=\"_blank\">enlace</a>.";
+		
+		$cabeceras = "Content-type: text/html; charset=utf-8"."\r\n";
+		$cabeceras.= "From: noreply@conabio.gob.mx"."\r\n";
+		mail($para, $titulo, $mensaje, $cabeceras);
+	}
 
 	/**
 	 * Da las categorias que ya no puede tomar (una foto por categoria)

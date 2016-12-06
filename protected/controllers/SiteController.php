@@ -125,6 +125,64 @@ class SiteController extends Controller
 	{
 		$this->render('maintenance');
 	}
+	
+	/**
+	 * Para recuperar la contrasenia
+	 */
+	public function actionRecupera()
+	{
+		$this->vigencia();
+		$this->render('recupera');
+	}
+	
+	/**
+	 * Para mandar el correo a la direccion que anoto
+	 */
+	public function actionEnvia_correo()
+	{
+		$regex = '/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/';
+		$this->vigencia();
+		$this->layout = false;
+		header('Content-type: application/json');
+			
+		// Validacion en el modelo para mayor seguridad
+		if(isset($_POST['correo']) && preg_match($regex, $_POST['correo']))
+		{
+			$usuario = Usuarios::model()->findByAttributes(array('correo'=>$_POST['correo']));
+			
+			if (isset($usuario->id))
+			{
+				$usuario->send_mail_recupera();
+				echo json_encode(array('estatus' => '1', 'msj' => 'El correo esta en proceso de enviarse, ¡gracias!'));
+			}
+			else
+				echo json_encode(array('estatus' => '0', 'msj' => 'El correo proporcionado no se encuentra registrado, por favor verifica.'));
+		
+		} else
+			echo json_encode(array('estatus' => '0', 'msj' => 'El correo no puede ser vacio.'));
+		
+		Yii::app()->end();
+	}
+	
+	/**
+	 * Cuando le da click al enlace del correo
+	 */
+	public function actionReset()
+	{
+		$this->vigencia();
+	
+		if (isset($_GET['id']) && !empty($_GET['id']) && isset($_GET['fec_alta']) && !empty($_GET['fec_alta']))
+		{
+			$usuario = Usuarios::model()->findByPk($_GET['id']);
+			if ($usuario == NULL)
+				throw new CHttpException(404,'Hubo un error en la petición.');
+			elseif ($usuario->fec_alta == urldecode($_GET['fec_alta']))
+				$this->render('reset', array('usuario'=>$usuario));
+			else
+				throw new CHttpException(404,'Hubo un error en la petición.');
+		} else
+			throw new CHttpException(404,'Hubo un error en la petición.');
+	}
 
 	public function actionPage($alias)
 	{
