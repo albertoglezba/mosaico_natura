@@ -118,7 +118,7 @@
                         });
                         }       
                     }',                    
-                     'beforeSend'=>'function(){                        
+                     'beforeSend'=>'function(){      
                            $("#AjaxLoader").show();
                       }'
                      ),array('id'=>'mybtn','class'=>'class1 class2 btn btn-success')); 

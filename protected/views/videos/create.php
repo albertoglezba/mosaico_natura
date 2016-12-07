@@ -184,7 +184,7 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
   				{
   					if (file.size >= 1024*1024*19 && file.size <= 1024*1024*1024*5)
   					{
-  						if (file.duration >= 70 && file.duration <= 120)
+  						if (file.duration >= 60 && file.duration <= 120)
   						{
   							toAWS();
   						} else {

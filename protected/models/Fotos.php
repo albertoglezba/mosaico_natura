@@ -73,17 +73,18 @@ class Fotos extends CActiveRecord
 			return parent::beforeSave();
 		
 		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+		$categoria = $usuario->fotos(array("condition"=>"categoria_id=".$this->categoria_id));
 		
 		if ($usuario->edad > 17)
 		{	
-			if (in_array($this->categoria->id, $usuario->usuarios_categorias()))
+			if (count($categoria) >= Yii::app()->params['#_fotos_adulto_x_categoria'])
 			{
-				$this->addError($this->categoria_id, 'Solo se puede subir una fotografía por categoría.');
+				$this->addError($this->categoria_id, "Solo se pueden subir ".Yii::app()->params['#_fotos_adulto_x_categoria']." fotografías por categoría.");
 				return false;
 			}
 		} else {
 			$this->categoria_id = NULL;
-			if (count($usuario->fotos) > 2)
+			if (count($usuario->fotos) >= Yii::app()->params['#_fotos_juvenil'])
 				return false;
 		}
 		
@@ -199,7 +200,7 @@ class Fotos extends CActiveRecord
 		$categorias_usuario = $usuario->usuarios_categorias();
 	
 		// Ya no puede subir mas fotografias
-		if (count($categorias_usuario) == Yii::app()->params['#_fotos_adulto_x_categoria']*Yii::app()->params['#_categorias'])
+		if (count($categorias_usuario) >= Yii::app()->params['#_fotos_adulto_x_categoria']*Yii::app()->params['#_categorias'])
 			return false;	
 		else			
 			return true;

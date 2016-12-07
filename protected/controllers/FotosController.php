@@ -78,7 +78,7 @@ class FotosController extends Controller
 	 */
 	public function actionCreate() {
 		$this->vigencia ();
-		$usuario = Usuarios::model ()->findByPk ( Yii::app ()->user->id_usuario );
+		$usuario = Usuarios::model()->findByPk( Yii::app()->user->id_usuario );
 		$puede_subir = Fotos::conCategoriasDisponibles();
 		
 		if (isset ( $usuario->edad )) {
@@ -205,7 +205,7 @@ class FotosController extends Controller
 			$model->usuario_id = Yii::app ()->user->id_usuario;
 			
 			$valid = $model->validate ();
-			
+
 			if ($valid) {
 				if ($model->save ()) {
 					echo CJSON::encode ( array (
