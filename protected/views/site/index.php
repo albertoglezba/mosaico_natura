@@ -53,7 +53,7 @@
                 <h2>QUI&Eacute;NES SOMOS</h2>
               <p><img src="<?php echo $yii_path; ?>/img/logo-mosaiconaturav.png" width="163" height="90" alt="" class="media-bottom"/> tiene como objetivos: ser una ventana para dar a conocer la riqueza natural de M&eacute;xico captada en im&aacute;genes y un sitio de promoci&oacute;n de fot&oacute;grafos de naturaleza mexicana.</p>
 
-<p>En esta segunda etapa, Mosaico Natura M&eacute;xico se transforma en un concurso anual de fotograf&iacute;a de naturaleza que est&aacute; abierto a fot&oacute;grafos aficionados y profesionales, menores y mayores de 18 a&ntilde;os.</p>
+<p>En esta tercera etapa, Mosaico Natura M&eacute;xico se transforma en un concurso anual de fotograf&iacute;a de naturaleza que est&aacute; abierto a fot&oacute;grafos aficionados y profesionales, menores y mayores de 18 a&ntilde;os.</p>
                   
               <p>Si te interesa participar, inscr&iacute;bete al concurso y sube tus fotos o videos. Grandes premios te esperan. Los ganadores participaran en exposiciones en gran formato y publicaciones en revistas de distribuci&oacute;n nacional y mucho m&aacute;s.</p>
                   
@@ -353,22 +353,27 @@
             <div class="container">
                 
                 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <img src="<?php echo $yii_path; ?>/img/team/mn.jpg" class="img-responsive img-circle" alt="persona1">
                     <h3>JURADO SORPRESA</h3>
               </div>
                 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <img src="<?php echo $yii_path; ?>/img/team/natgeo.jpg" class="img-responsive img-circle" alt="persona1">
                     <h3>JURADO SORPRESA</h3>
                    
 </div> 
                 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <img src="<?php echo $yii_path; ?>/img/team/nikon.jpg" class="img-responsive img-circle" alt="persona1">
                     <h3>JURADO SORPRESA</h3>
                         </div> 
-                               
+
+                <div class="col-md-3">
+                    <img src="<?php echo $yii_path; ?>/img/team/dc.jpg" class="img-responsive img-circle" alt="persona1">
+                    <h3>JURADO SORPRESA</h3>
+                        </div> 
+
                 
             </div>
         </div>
