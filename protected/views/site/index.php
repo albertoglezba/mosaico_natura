@@ -65,7 +65,7 @@
             </div>
             
             <div class="col-lg-5">
-                <iframe class="video-mosaico" src="https://player.vimeo.com/video/146709536" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe class="video-mosaico" src="https://player.vimeo.com/video/194435138" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
         </div>
     </section>
