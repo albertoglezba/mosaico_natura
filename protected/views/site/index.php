@@ -34,6 +34,7 @@
                         </div>
                         <div class="col-md-8 col-md-offset-4">
                         	<h3 class="mosaico-titulo">de Fotograf&iacute;a de la Naturaleza</h3>
+				<h4 class="mosaico-titulo">del 6 de diciembre de 2016 al 28 de febrero de 2017</h4>
                         </div>
 
                     </div>
