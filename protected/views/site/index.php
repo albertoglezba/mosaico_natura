@@ -593,7 +593,7 @@
                         <h3>Noticias</h3>
                         <div class="list-group">
                         <!--<a class="list-group-item sb" href="http://www.conabio.gob.mx/web/medios/index.php/noticias-2015/388-bios-naturaleza-y-sociedad" target="_blank"><i class="fa fa-eye"></i> Nota 103</a>-->
-                        <a class="list-group-item sb" href="http://www.gob.mx/conabio/archivo/prensa" target="_blank"><i class="fa fa-eye"></i> Secci�n de medios</a>
+                        <a class="list-group-item sb" href="http://www.gob.mx/conabio/archivo/prensa" target="_blank"><i class="fa fa-eye"></i> Secci&oacute;n de medios</a>
                         </div>
                         <!--<h3>x</h3>
                         <div class="list-group">-->
