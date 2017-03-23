@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/fauna-1.JPG"
+	thumbURL="thumbs/fauna-1.JPG"
+	linkURL="images/fauna-1.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/fauna-2.JPG"
+	thumbURL="thumbs/fauna-2.JPG"
+	linkURL="images/fauna-2.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/fauna-3.jpg"
+	thumbURL="thumbs/fauna-3.jpg"
+	linkURL="images/fauna-3.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/fauna-mh1.JPG"
+	thumbURL="thumbs/fauna-mh1.JPG"
+	linkURL="images/fauna-mh1.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/fauna-mh2.jpg"
+	thumbURL="thumbs/fauna-mh2.jpg"
+	linkURL="images/fauna-mh2.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>

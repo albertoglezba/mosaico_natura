@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/natdestinos-1.JPG"
+	thumbURL="thumbs/natdestinos-1.JPG"
+	linkURL="images/natdestinos-1.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/natdestinos-2.JPG"
+	thumbURL="thumbs/natdestinos-2.JPG"
+	linkURL="images/natdestinos-2.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/natdestinos-3.jpg"
+	thumbURL="thumbs/natdestinos-3.jpg"
+	linkURL="images/natdestinos-3.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/natdestinos-mh1.jpg"
+	thumbURL="thumbs/natdestinos-mh1.jpg"
+	linkURL="images/natdestinos-mh1.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/natdestinos-mh2.jpg"
+	thumbURL="thumbs/natdestinos-mh2.jpg"
+	linkURL="images/natdestinos-mh2.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/11_FLOR1.jpg"
+	thumbURL="thumbs/11_FLOR1.jpg"
+	linkURL="images/11_FLOR1.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/04_FLOR2.jpg"
+	thumbURL="thumbs/04_FLOR2.jpg"
+	linkURL="images/04_FLOR2.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/13_FLOR3.jpg"
+	thumbURL="thumbs/13_FLOR3.jpg"
+	linkURL="images/13_FLOR3.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/53_FLOR4.jpg"
+	thumbURL="thumbs/53_FLOR4.jpg"
+	linkURL="images/53_FLOR4.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/15_FLOR5.jpg"
+	thumbURL="thumbs/15_FLOR5.jpg"
+	linkURL="images/15_FLOR5.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>

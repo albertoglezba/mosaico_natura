@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/naturalezash-1.jpg"
+	thumbURL="thumbs/naturalezash-1.jpg"
+	linkURL="images/naturalezash-1.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/naturalezash-2.jpg"
+	thumbURL="thumbs/naturalezash-2.jpg"
+	linkURL="images/naturalezash-2.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/naturalezash-3.jpg"
+	thumbURL="thumbs/naturalezash-3.jpg"
+	linkURL="images/naturalezash-3.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/naturalezash-mh1.jpg"
+	thumbURL="thumbs/naturalezash-mh1.jpg"
+	linkURL="images/naturalezash-mh1.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/naturalezash-mh2.JPG"
+	thumbURL="thumbs/naturalezash-mh2.JPG"
+	linkURL="images/naturalezash-mh2.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/34_FAU1.jpg"
+	thumbURL="thumbs/34_FAU1.jpg"
+	linkURL="images/34_FAU1.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/71_FAU2.jpg"
+	thumbURL="thumbs/71_FAU2.jpg"
+	linkURL="images/71_FAU2.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/49_FAU3.jpg"
+	thumbURL="thumbs/49_FAU3.jpg"
+	linkURL="images/49_FAU3.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/43_FAU4.jpg"
+	thumbURL="thumbs/43_FAU4.jpg"
+	linkURL="images/43_FAU4.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/55_FAU5.jpg"
+	thumbURL="thumbs/55_FAU5.jpg"
+	linkURL="images/55_FAU5.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>
