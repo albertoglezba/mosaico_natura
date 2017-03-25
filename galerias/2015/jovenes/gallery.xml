@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/jovenes-fauna-1.JPG"
+	thumbURL="thumbs/jovenes-fauna-1.JPG"
+	linkURL="images/jovenes-fauna-1.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/jovenes-florah-1.JPG"
+	thumbURL="thumbs/jovenes-florah-1.JPG"
+	linkURL="images/jovenes-florah-1.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/jovenes-natdestinos-1.jpg"
+	thumbURL="thumbs/jovenes-natdestinos-1.jpg"
+	linkURL="images/jovenes-natdestinos-1.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/jovenes-paisajeseco-1.jpg"
+	thumbURL="thumbs/jovenes-paisajeseco-1.jpg"
+	linkURL="images/jovenes-paisajeseco-1.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>
