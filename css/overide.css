@@ -36,15 +36,21 @@ dd {
 
 .dl-horizontal dd {
     margin-left: 250px;
-	
 }
 
-
-
-
 .navbar-custom{
-	font-size:18px;
+	font-size:16px;
 	}
+
+.navbar .dropdown-menu {
+	background-color:#2d2c27;
+	text-align:center;
+	font-size:14px;
+}
+
+.navbar .dropdown-menu a {
+	color:#fff;
+}
 	
 a.navbar-brand img{
 	display:none;
@@ -63,7 +69,6 @@ a.navbar-brand h2{
     vertical-align: top;
     line-height: 33px;
 }
-		
 
 .mosaico-titulo{
 	text-shadow:2px 2px 5px #000000;
@@ -88,7 +93,7 @@ h3.mosaico-titulo{
 	line-height:1;
 	}		
 	
-	#about{
+#about{
 	padding-top:20px;
 	}
 
@@ -466,6 +471,14 @@ table.como-participar td{
 	margin:0;
 	text-shadow: 2px 2px 5px #000;
 	}
+
+.ganadores-content {
+	margin-top:60px;
+}
+
+.ganadores-content h2{
+	margin:60px 0;
+}
 		
 .registro-header {
     width: 100%;
@@ -631,7 +644,9 @@ footer ul {
 	.nav li a{
 		padding:15px 15px;
 		}
-		
+}
+
+@media(min-width:768px){
 	a.navbar-brand img{
 		display:block;
 	}	
@@ -642,12 +657,23 @@ footer ul {
 	
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+	.nav li a {
+		padding:15px 10px;
+	}
+	
+	.navbar-custom .nav li a {
+		font-size:14px;
+		padding-right:10px;
+	}
+
+}
 
 #participar-xs{
 	display: none;
 	}
 	
-@media(max-width:768px){
+@media(max-width:767px){
 	
 	/* PARTCIPA Muestra y esconde el div */
 	#participar-md{
@@ -670,11 +696,11 @@ footer ul {
 @media(min-width:768px){
 	
 	.navbar-custom{
-		font-size:20px;
+		font-size:18px;
 	}	
 	
 	.nav li a{
-		padding:15px 5px;
+		padding:15px 7px;
 	}
 
 	h1.mosaico-titulo{
