@@ -62,7 +62,7 @@
                   
                <p>Posteriormente se publicar&aacute;n las mejores fotos en las revistas National Geographic en Espa&ntilde;ol, Mexican&iacute;simo y Biodiversitas, adem&aacute;s se organizar&aacute;n exposiciones de fotograf&iacute;a de naturaleza y se invitar&aacute; a los mejores fot&oacute;grafos a participar en productos realizados por National Geographic en espa&ntilde;ol y la Conabio.</p>
                   
-            <p> <a href="ganadores_anteriores.html">Conoce a nuestros ganadores del a&ntilde;o pasado</a></p>
+            <p> <a href="<?php echo $yii_path; ?>ganadores_anteriores.html">Conoce a nuestros ganadores del a&ntilde;o pasado</a></p>
             </div>
             
             <div class="col-lg-5">
@@ -158,7 +158,7 @@
                            <li>Tama&ntilde;o m&aacute;ximo: 4,500 pixeles por lado m&aacute;s grande</li>
 							<li>Sin marcas de agua</li>
 							<li>Sin alteraciones digitales</li>
-                            <li><a href="descargar/tutorial_foto.pdf"><i class="fa fa-caret-right"></i> Ver tutorial</a></li>
+                            <li><a href="<?php echo $yii_path; ?>descargar/tutorial_foto.pdf" target="_blank"><i class="fa fa-caret-right"></i> Ver tutorial</a></li>
                         </ul>
                     </div>
                     </div>
@@ -490,7 +490,7 @@
                 <div class="col-md-3 col-xs-6">
                 	<h4>&iquest;D&oacute;nde debo de subir mis fotos?</h4>
                 	<img src="<?php echo $yii_path; ?>/img/faq-07.png" alt="subir fotos" style="margin:20px auto 2px auto;">
-                	<p>Una vez registrado y confirmado tu registro por correo electr&oacute;nico sube tus fotos <a href="#">aqu&iacute;.</a></p>
+                	<p>Una vez registrado y confirmado tu registro por correo electr&oacute;nico sube tus fotos <a href="<?php echo $yii_path; ?>/index.php/usuarios/create">aqu&iacute;.</a></p>
                 </div>
                 <div class="col-md-3 col-xs-6 caractsm">
                 	<h4>Olvid&eacute; poner la descripci&oacute;n y locaci&oacute;n de mis fotos.</h4>
@@ -520,7 +520,7 @@
                     <li>Tama&ntilde;o m&aacute;ximo: 4,500 pixeles por lado m&aacute;s grande</li>
 					<li>Sin marcas de agua</li>
 					<li>Sin alteraciones digitales</li>
-                    <li><a href="#"><i class="fa fa-caret-right"></i>  Ver tutorial</a></li>
+                    <li><a href="<?php echo $yii_path; ?>descargar/tutorial_foto.pdf" target="_blank"><i class="fa fa-caret-right"></i>  Ver tutorial</a></li>
 
                 </ul>
                 </div>
