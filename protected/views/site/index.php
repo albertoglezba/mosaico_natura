@@ -62,7 +62,7 @@
                   
                <p>Posteriormente se publicar&aacute;n las mejores fotos en las revistas National Geographic en Espa&ntilde;ol, Mexican&iacute;simo y Biodiversitas, adem&aacute;s se organizar&aacute;n exposiciones de fotograf&iacute;a de naturaleza y se invitar&aacute; a los mejores fot&oacute;grafos a participar en productos realizados por National Geographic en espa&ntilde;ol y la Conabio.</p>
                   
-            <p> <a href="<?php echo $yii_path; ?>ganadores_anteriores.html">Conoce a nuestros ganadores del a&ntilde;o pasado</a></p>
+            <p> <a href="<?php echo $yii_path; ?>/ganadores_anteriores.html">Conoce a nuestros ganadores del a&ntilde;o pasado</a></p>
             </div>
             
             <div class="col-lg-5">
