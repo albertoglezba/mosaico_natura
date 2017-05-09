@@ -30,10 +30,11 @@
                     </div> -->
                    
                     	<div class="col-md-8 col-md-offset-2">
-                        	<h2 class="mosaico-titulo">Tercer Concurso Nacional</h2>
+                        	<h2 class="mosaico-titulo">Exposici&oacute;n del Tercer Concurso Nacional</h2>
                         </div>
                         <div class="col-md-8 col-md-offset-4">
                         	<h3 class="mosaico-titulo">de Fotograf&iacute;a de la Naturaleza</h3>
+				<h4 class="mosaico-titulo">Rejas del Bosque de Chapultepec del 12 de mayo al 3 de julio de 2017</h4>
                         </div>
 
                     </div>
@@ -53,7 +54,7 @@
                 <h2>QUI&Eacute;NES SOMOS</h2>
               <p><img src="<?php echo $yii_path; ?>/img/logo-mosaiconaturav.png" width="163" height="90" alt="" class="media-bottom"/> tiene como objetivos: ser una ventana para dar a conocer la riqueza natural de M&eacute;xico captada en im&aacute;genes y un sitio de promoci&oacute;n de fot&oacute;grafos de naturaleza mexicana.</p>
 
-<p>En esta segunda etapa, Mosaico Natura M&eacute;xico se transforma en un concurso anual de fotograf&iacute;a de naturaleza que est&aacute; abierto a fot&oacute;grafos aficionados y profesionales, menores y mayores de 18 a&ntilde;os.</p>
+<p>En esta tercera etapa, Mosaico Natura M&eacute;xico se transforma en un concurso anual de fotograf&iacute;a de naturaleza que est&aacute; abierto a fot&oacute;grafos aficionados y profesionales, menores y mayores de 18 a&ntilde;os.</p>
                   
               <p>Si te interesa participar, inscr&iacute;bete al concurso y sube tus fotos o videos. Grandes premios te esperan. Los ganadores participaran en exposiciones en gran formato y publicaciones en revistas de distribuci&oacute;n nacional y mucho m&aacute;s.</p>
                   
@@ -61,11 +62,11 @@
                   
                <p>Posteriormente se publicar&aacute;n las mejores fotos en las revistas National Geographic en Espa&ntilde;ol, Mexican&iacute;simo y Biodiversitas, adem&aacute;s se organizar&aacute;n exposiciones de fotograf&iacute;a de naturaleza y se invitar&aacute; a los mejores fot&oacute;grafos a participar en productos realizados por National Geographic en espa&ntilde;ol y la Conabio.</p>
                   
-            <p> <a href="<?php echo $yii_path; ?>ganadores_anteriores.html">Conoce a nuestros ganadores del a&ntilde;o pasado</a></p>
+            <p> <a href="<?php echo $yii_path; ?>/ganadores_anteriores.html">Conoce a nuestros ganadores del a&ntilde;o pasado</a></p>
             </div>
             
             <div class="col-lg-5">
-                <iframe class="video-mosaico" src="https://player.vimeo.com/video/146709536" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe class="video-mosaico" src="https://player.vimeo.com/video/194435138" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -219,7 +220,7 @@
                     
                     
                     <div id="video-wrapper">
-                    	<h3>VIDEO		<i class="fa fa-caret-right"></i>   <span class="pleca_ama">3 videos por participante</span></h3>
+                    	<h3>VIDEO		<i class="fa fa-caret-right"></i>   <span class="pleca_ama">3 videos por participante (solo categoría adultos)</span></h3>
                     </div>
                     <p><strong>Tema: Consumo responsable y biodiversidad</strong><br>Videos que representen el consumo responsable y el impacto en la biodiversidad, los h&aacute;bitos alimenticios, reproductivos, de propagaci&oacute;n, interacci&oacute;n entre especies, de migraci&oacute;n, y la belleza natural de alg&uacute;n lugar etc&eacute;tera  y su entorno en una narrativa visual. Los videos pueden editarse y musicalizarse. La musicalizaci&oacute;n, si es el caso, deber&aacute; ser m&uacute;sica original o bien audios libres de derechos de autor o con derechos de distribuci&oacute;n sin fines de lucro.</p>
                     
@@ -353,22 +354,27 @@
             <div class="container">
                 
                 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <img src="<?php echo $yii_path; ?>/img/team/mn.jpg" class="img-responsive img-circle" alt="persona1">
                     <h3>JURADO SORPRESA</h3>
               </div>
                 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <img src="<?php echo $yii_path; ?>/img/team/natgeo.jpg" class="img-responsive img-circle" alt="persona1">
                     <h3>JURADO SORPRESA</h3>
                    
 </div> 
                 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <img src="<?php echo $yii_path; ?>/img/team/nikon.jpg" class="img-responsive img-circle" alt="persona1">
                     <h3>JURADO SORPRESA</h3>
                         </div> 
-                               
+
+                <div class="col-md-3">
+                    <img src="<?php echo $yii_path; ?>/img/team/dc.jpg" class="img-responsive img-circle" alt="persona1">
+                    <h3>JURADO SORPRESA</h3>
+                        </div> 
+
                 
             </div>
         </div>
@@ -564,7 +570,7 @@
             <div class="container">
                 <div class="col-md-12">
                     <p><a href="<?php echo $yii_path; ?>/index.php/usuarios/create">Crea una cuenta</a> y participa en el concurso</p>
-					<p>Si ya tienes una cuenta <a href="<?php echo $yii_path; ?>/index.php/site/login">ingresa</a></p>
+					<p>Si ya tienes una cuenta o habías creado alguna en los anteriores concursos, <a href="<?php echo $yii_path; ?>/index.php/site/login">ingresa</a></p>
                
                 </div>
             </div>
