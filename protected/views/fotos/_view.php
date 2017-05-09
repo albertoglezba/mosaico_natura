@@ -15,7 +15,7 @@
 	<?php } ?>
 	
 	<div>
-	<?php echo CHtml::image($data->ruta, '', array("title"=>$data->titulo, "width"=>"900px")) ?>
+	<?php echo CHtml::image($data->ruta, '', array("title"=>$data->titulo, "width"=>"400px")) ?>
 	</div>	
 	
 	<?php echo "<h5>Ubicación:".$data->direccion." (".$data->latitud.",".$data->longitud.")</h5>";?>

@@ -20,7 +20,7 @@
 				
 				<h4><em>Primer paso</em>, elige una categoría</h4>
 				<p class="text-warning">
-					(Recuerda que solo puedes subir una fotografía por categor&iacute;a, una vez procesada
+					(Recuerda que solo puedes subir hasta <?php echo Yii::app()->params['#_fotos_adulto_x_categoria']; ?> fotografías por categor&iacute;a, una vez procesada
 					no se permiten hacer cambios)
 				</p>
 
@@ -57,7 +57,7 @@
 				</script>
 
 				<h4><em>Primer paso</em>, selecciona una fotografía</h4>
-				<h5><i>(Para la categoria de jóvenes solo se permiten 2 fotografías)</i></h5>
+				<h5><i>(Para la categoria de jóvenes se permiten hasta <?php echo Yii::app()->params['#_fotos_juvenil']; ?> fotografías)</i></h5>
 				<p class="text-warning">
 					(Debe ser un .jpg con 3000px como mínimo en su lado más grande)
 				</p>

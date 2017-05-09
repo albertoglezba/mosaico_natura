@@ -51,6 +51,7 @@ class UsuariosController extends Controller
 	 */
 	public function actionView($id)
 	{
+		$this->vigencia ();
 		if (Yii::app()->user->id_usuario==$id)
 		{
 			$this->render('view',array(
@@ -60,38 +61,33 @@ class UsuariosController extends Controller
 			throw new CHttpException(404,'No tienes permisos para realizar esa acción.');
 		}
 	}
-
+	
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
-	{
-		$fecha = date("YmdHis");
-		if ($fecha < Yii::app()->params->fecha_termino)
-		{
-			$model=new Usuarios;
-
-			// Uncomment the following line if AJAX validation is needed
-			// $this->performAjaxValidation($model);
-
-			if(isset($_POST['Usuarios']))
-			{
-				$model->attributes=$_POST['Usuarios'];
-				$model->fec_alta=self::fechaAlta();
-
-				if($model->save())
-				{
-					$model->send_mail();
-					$this->redirect(array('/site/confirma'));
-				}
+	public function actionCreate() {
+		$this->vigencia ();
+		$model = new Usuarios ();
+		
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+		
+		if (isset ( $_POST ['Usuarios'] )) {
+			$model->attributes = $_POST ['Usuarios'];
+			$model->fec_alta = self::fechaAlta ();
+			
+			if ($model->save ()) {
+				$model->send_mail ();
+				$this->redirect ( array (
+						'/site/confirma' 
+				) );
 			}
-
-			$this->render('create',array(
-					'model'=>$model,
-			));
-		} else
-			throw new CHttpException(404,"El tiempo para registrar tus fotografias ha terminado. Para más información consulta la convocatoria.");
+		}
+		
+		$this->render ( 'create', array (
+				'model' => $model 
+		) );
 	}
 
 	/**
@@ -101,6 +97,8 @@ class UsuariosController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
+		$this->vigencia();
+		
 		if (Yii::app()->user->id_usuario==$id)
 		{
 			$model=$this->loadModel($id);
@@ -130,6 +128,7 @@ class UsuariosController extends Controller
 	 */
 	public function actionDelete()
 	{
+		$this->vigencia ();
 		if (Yii::app()->user->id_usuario==$_POST["id"])
 		{
 			Yii::app()->user->logout();
@@ -170,6 +169,8 @@ class UsuariosController extends Controller
 
 	public function actionConfirmo()
 	{
+		$this->vigencia ();
+		
 		if (isset($_GET['id']) && !empty($_GET['id']) && isset($_GET['fec_alta']) && !empty($_GET['fec_alta']))
 		{
 			$usuario = Usuarios::model()->findByPk($_GET['id']);
@@ -197,6 +198,8 @@ class UsuariosController extends Controller
 
 	public function actionReset_passwd()
 	{
+		$this->vigencia ();
+		
 		$passwd = $_GET['passwd'];
 		if (isset($passwd) && !empty($passwd))
 		{

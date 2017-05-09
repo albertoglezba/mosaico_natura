@@ -113,12 +113,38 @@ class Videos extends CActiveRecord
 		));
 	}
 	
+	/**
+	 * (non-PHPdoc)
+	 * @see CActiveRecord::beforeSave()
+	 */
+	public function beforeSave()
+	{
+		if (!$this->isNewRecord)
+			return parent::beforeSave();
+	
+			$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+	
+			if ($usuario->edad > 17)
+			{
+				if (count($usuario->videos) >= Yii::app()->params['#_videos'])
+				{
+					$this->addError($this->titulo, "Solo se pueden subir ".Yii::app()->params['#_videos']." videos por participante.");
+					return false;
+				}
+			} else {
+				$this->addError($this->titulo, "Lo sentimos solo la categoría adultos puede subir videos.");
+				return false;
+			}
+	
+		return parent::beforeSave();
+	}
+	
 	public static function soloUnVideo()
 	{
 		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 		
 		// Ya no puede subir mas fotografias
-		if (count($usuario->videos) == 1)
+		if (count($usuario->videos) >= Yii::app()->params['#_videos'])
 			return false;
 		else
 			return true;

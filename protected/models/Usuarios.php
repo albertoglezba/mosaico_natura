@@ -32,6 +32,7 @@ class Usuarios extends CActiveRecord
 	public $acepto_terminos = false;
 	public $confirma_passwd = "";
 	public $para_confirmar = false;
+	public $cambia_passwd = false;
 
 	/**
 	 * Returns the static model of the specified AR class.
@@ -89,7 +90,7 @@ class Usuarios extends CActiveRecord
 		else {
 			$correo_existe = $this->model()->findByAttributes(array('correo'=>$this->correo));
 			if ($correo_existe != NULL)
-				$this->addError($this->correo, 'Ese correo ya fue registrado por alguien más, por favor intenta con otro.');
+				$this->addError($this->correo, 'Ese correo ya fue registrado por alguien más, por favor intenta con otro o recupera tu contraseña desde el inicio de sesión.');
 		}
 	}
 
@@ -102,7 +103,7 @@ class Usuarios extends CActiveRecord
 		else {
 			$usuario_existe = $this->model()->findByAttributes(array('usuario'=>$this->usuario));
 			if ($usuario_existe != NULL)
-				$this->addError($this->usuario, 'Este usuario ya fue registrado por alguien más, por favor intenta con otro.');
+				$this->addError($this->usuario, 'Este usuario ya fue registrado por alguien más, por favor intenta con otro o recupera tu contraseña desde el inicio de sesión.');
 		}
 	}
 
@@ -122,7 +123,7 @@ class Usuarios extends CActiveRecord
 
 	public function valida_passwd()
 	{
-		if(empty($this->para_confirmar))  //Para evitar cuando se guarda confirmo y la fecha
+		if(empty($this->para_confirmar) && !$this->cambia_passwd)  //Para evitar cuando se guarda confirmo y la fecha
 		{
 			if ($this->passwd != $this->confirma_passwd)
 				$this->addError($this->passwd, 'La contraseña no coincide con la confirmación.');
@@ -307,10 +308,10 @@ class Usuarios extends CActiveRecord
 		$imagen.= "<div style=\"background:url('http://www.mosaiconatura.net/img/bg-registro.jpg') no-repeat center center scroll;\"><img src=\"http://www.mosaiconatura.net/img/logo-mosaiconatura.png\" border=\"0\"></div>";
 		$imagen.= "</td></tr></tbody></table>";
 		$para = $this->correo.", mosaiconatura@conabio.gob.mx";
-		$titulo = 'Recuperar contrase&ntilde;a '.Yii::app()->name;
+		$titulo = 'Recuperar contraseña '.Yii::app()->name;
 		$mensaje = $imagen."<br><br>".$this->nombre.' '.$this->apellido.",";
 		$mensaje.= "<br><br>Para poder poner una nueva contrase&ntilde;a sigue el siguiente ";
-		$mensaje.= "<a href=\"".Yii::app()->createAbsoluteUrl('site/reset')."&id=".$this->id."&fec_alta=".urlencode($this->fec_alta)."\" target=\"_blank\">enlace</a>.";
+		$mensaje.= "<a href=\"".Yii::app()->createAbsoluteUrl('site/reset')."?id=".$this->id."&fec_alta=".urlencode($this->fec_alta)."\" target=\"_blank\">enlace</a>.";
 		
 		$cabeceras = "Content-type: text/html; charset=utf-8"."\r\n";
 		$cabeceras.= "From: noreply@conabio.gob.mx"."\r\n";

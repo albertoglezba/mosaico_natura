@@ -68,8 +68,9 @@
                     }',                    
                      'beforeSend'=>'function(){                        
                            $("#AjaxLoader").show();
+			   				$("#mybtn").prop("disabled", true);
                       }'
-                     ),array('id'=>'mybtn','class'=>'class1 class2')); 
+                     ),array('id'=>'mybtn','class'=>'class1 class2', 'onclick'=>"this.disabled=true;")); 
 	?>
                      
 	<?php $this->endWidget(); ?>

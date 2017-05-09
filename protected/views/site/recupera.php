@@ -24,7 +24,7 @@
 		        	
 		        },
 		        fail: function(){
-		            $('#msj').css("color", "red").html('Hubo un error al enviar el correo, por favor intentalo de nuevo.');
+		            $('#msj').css("color", "red").html('Hubo un error al enviar el correo, por favor inténtalo de nuevo.');
 		        }
 		    });
 
