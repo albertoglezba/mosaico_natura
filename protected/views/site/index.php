@@ -34,7 +34,7 @@
                         </div>
                         <div class="col-md-8 col-md-offset-4">
                         	<h3 class="mosaico-titulo">de Fotograf&iacute;a de la Naturaleza</h3>
-				<h4 class="mosaico-titulo">Rejas del Bosque de Chapultepec<br>del 12 de mayo al 3 de julio de 2017</h4>
+				<h4 class="mosaico-titulo">Rejas del Bosque de Chapultepec<br>del 18 de mayo al 3 de julio de 2017</h4>
 
                         </div>
 
