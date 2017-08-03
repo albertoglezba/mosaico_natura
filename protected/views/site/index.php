@@ -396,27 +396,34 @@
         <div class="expos-content">
             <div class="container">
             	
-                <div class="col-md-4">
-				<a href="http://bdi.conabio.gob.mx/fotoweb/Grid.fwx?archiveId=5078&position=1&search=" target="_blank"><img src="<?php echo $yii_path; ?>/img/banner_visiones_350.jpg" class="img-responsive center-block" alt=""/></a><br><br>
-                <p>Ganadores del Segundo Concurso Nacional de Fotograf&iacute;a de Naturaleza</p>
-			</div>
-			<div class="col-md-4">
-				<h3>&quot;<a href="http://www.biodiversidad.gob.mx/Difusion/exposiciones.html?id=31" target="_blank">Visiones de nuestra naturaleza I</a>&quot;</h3>
-				<p>Ganadores del Primer Concurso Nacional de Fotograf&iacute;a de Naturaleza</p>
-				
-                <h3>&quot;Tierra de Sol: Los paisajes de M&eacute;xico vistos por
-					j&oacute;venes fot&oacute;grafos y antiguos viajeros&quot;</h3>
-				<p>Exposici&oacute;n permanente<br>
-				Lugar: Galer&iacute;a CasaCEM<br>Avenida Chapultepec Sur 376<br>Guadalajara, Jalisco</p>
-			</div>
-			<div class="col-md-4">
-				<h3>ANTERIORES</h3>
-				<p><a href="http://bdi.conabio.gob.mx/fotoweb/Grid.fwx?archiveId=5041&position=1&search=" target="_blank">&quot;25 Miradas al Bosque&quot;</a></p>
-				<p><a href="http://bdi.conabio.gob.mx/fotoweb/Grid.fwx?archiveId=5046&columns=4&rows=8&search=BioDiversidad" target="_blank">&quot;Biodiversidad Mexicana&quot;</a></p>
-				<p>&quot;creArte conCiencia&quot;</p>
+              <div class="col-md-4">
+                <h3>&quot;<a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/7796/index.html" target="_blank">Visiones de nuestra naturaleza I</a>&quot;</h3>
+                <p>Ganadores del Primer Concurso Nacional de Fotograf&iacute;a de Naturaleza</p>
                 <hr>
-				<p><a href="http://www.biodiversidad.gob.mx/Difusion/exposiciones.html" target="_blank">Otras exposiciones</a></p>
-			</div>
+                <h3>&quot;Tierra de Sol: Los paisajes de M&eacute;xico vistos por j&oacute;venes fot&oacute;grafos y antiguos viajeros&quot;</h3>
+                <p>Exposici&oacute;n permanente<br>
+                Lugar: Galer&iacute;a CasaCEM<br>Avenida Chapultepec Sur 376<br>Guadalajara, Jalisco</p>
+				
+			        </div>
+
+
+        			<div class="col-md-4">
+        				<h3>&quot;<a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/12546/index.html" target="_blank">Visiones de nuestra naturaleza II</a>&quot;</h3>
+        				<p>Ganadores del Segundo Concurso Nacional de Fotograf&iacute;a de Naturaleza</p>
+        				<hr>
+                <h3>ANTERIORES</h3>
+                <p><a href="http://bdi.conabio.gob.mx/fotoweb/archives/5032-Exposiciones/Exposiciones/25%20Miradas%20al%20Bosque/" target="_blank">&quot;25 Miradas al Bosque&quot;</a></p>
+                <p><a href="http://bdi.conabio.gob.mx/fotoweb/archives/5032-Exposiciones/Exposiciones/Biodiversidad%20mexicana%20riqueza%20natural%20de%20M%C3%A9xico%20MuseoHN/" target="_blank">&quot;Biodiversidad Mexicana&quot;</a></p>
+                <p>&quot;creArte conCiencia&quot;</p>
+        			</div>
+
+
+        			<div class="col-md-4">
+                <h3>&quot;<a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/13010/index.html" target="_blank">Visiones de nuestra naturaleza III</a>&quot;</h3>
+                <p>Ganadores del Tercer Concurso Nacional de Fotograf&iacute;a de Naturaleza</p>
+                <hr>
+        				<p><a href="http://www.biodiversidad.gob.mx/Difusion/exposiciones.html" target="_blank">Otras exposiciones</a></p>
+        			</div>
             
             <div class="row">
 			<div class="col-md-12 publi">
