@@ -2,7 +2,7 @@
 		<div class="col-md-12">
 					<p>La Comisi&oacute;n Nacional para el Conocimiento y uso de la Biodiversidad, <strong>CONABIO </strong>a trav&eacute;s de <strong>Mosaico Natura M&eacute;xico</strong>,<strong> </strong>convoca al&nbsp;<strong>&ldquo;Tercer Concurso Nacional de Fotograf&iacute;a de la Naturaleza&rdquo;</strong>&nbsp;en el cual podr&aacute;n participar todas las personas, nacionales o extranjeras radicadas en M&eacute;xico, aficionados o profesionales de la fotograf&iacute;a.</p>
                      <p> La(s) fotograf&iacute;a(s) y video (s) debe(n) representar la&nbsp;<strong>riqueza natural en M&eacute;xico,&nbsp;</strong>es decir especies de plantas, hongos y animales nativos del pa&iacute;s en vida silvestre, ecosistemas, usos de la biodiversidad, naturaleza en destinos tur&iacute;sticos y procesos o actividades que degradan la naturaleza, &nbsp;No se aceptan fotograf&iacute;as o videos que previamente hayan ganado en otro concurso.</p>
-                      <p>De las fotograf&iacute;as recibidas, el jurado seleccionar&aacute; *<strong>28</strong>&nbsp;fotograf&iacute;as,&nbsp;<strong>5 de cada tema en la categor&iacute;a de adultos (25) y 3 para la de j&oacute;venes</strong>, que formar&aacute;n parte de la exposici&oacute;n &ldquo;Mosaico Natura M&eacute;xico a exponerse en las rejas de la Av. Reforma en el Bosque de Chapultepec, Distrito Federal y de una exposici&oacute;n itinerante en la rep&uacute;blica mexicana</p>
+                      <p>De las fotograf&iacute;as recibidas, el jurado seleccionar&aacute; *<strong>28</strong>&nbsp;fotograf&iacute;as,&nbsp;<strong>5 de cada tema en la categor&iacute;a de adultos (25) y 3 para la de j&oacute;venes</strong>, que formar&aacute;n parte de la exposici&oacute;n &ldquo;Visiones de Nuestra Naturaleza III&ldquo; a exponerse en las rejas de la Av. Reforma en el Bosque de Chapultepec, Distrito Federal y de una exposici&oacute;n itinerante en la rep&uacute;blica mexicana</p>
                       <p><strong>Nota:</strong>&nbsp;Los primeros lugares de cada categor&iacute;a seleccionados en el&nbsp;<strong>Segundo Concurso de Fotograf&iacute;a de Naturaleza Mosaico Natura M&eacute;xico</strong>&nbsp;no podr&aacute;n participar en este certamen. Su participaci&oacute;n se aceptar&aacute; nuevamente en el pr&oacute;ximo concurso.</p>
 					
                     <h4><strong>CATEGOR&Iacute;AS</strong></h4>
@@ -101,7 +101,9 @@
                     
                     
 					<h4>ENTREGA DE LOS PREMIOS Y RECONOCIMIENTOS</h4>
-                    <p><strong><em>Los premios y reconocimientos se entregar&aacute;n en el mes de Junio de 2017. La fecha, lugar y hora exacta ser&aacute;n informados oportunamente por el &ldquo;Comit&eacute; Organizador&rdquo; en www.mosaiconatura.net</em></strong></p>
+                    <p><strong><em>Los premios y reconocimientos se entregar&aacute;n en el mes de Septiembre de 2017. La fecha, lugar y hora exacta ser&aacute;n informados oportunamente por el &ldquo;Comit&eacute; Organizador&rdquo; en www.mosaiconatura.net</em></strong></p>
+
+                    <p>Ning&uacute;n participante podr&aacute; ser acreedor a dos premios, por lo que &uacute;nicamente se tomar&aacute; como premio el lugar m&aacute;s alto que haya obtenido dentro de este certamen.</p>
                      
                      <p><strong>REQUISITOS PARA LA ENTREGA DE PREMIOS Y RECONOCIMIENTOS</strong></p>
                      <p>Para entregar el(los) premio(s) y reconocimiento(s) al(los) ganador(es) ser&aacute; necesario que el d&iacute;a de la entrega el (los) participante(s) ganador(es) otorgue(n) la documentaci&oacute;n siguiente:</p>
