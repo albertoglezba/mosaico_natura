@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/62_MUNDO_1_2017-02-23_201532_10899.jpg"
+	thumbURL="thumbs/62_MUNDO_1_2017-02-23_201532_10899.jpg"
+	linkURL="images/62_MUNDO_1_2017-02-23_201532_10899.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/63_MUNDO_2_2017-02-27_222314_10307.jpg"
+	thumbURL="thumbs/63_MUNDO_2_2017-02-27_222314_10307.jpg"
+	linkURL="images/63_MUNDO_2_2017-02-27_222314_10307.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/64_MUNDO_3_2017-02-28_112825_9621.jpg"
+	thumbURL="thumbs/64_MUNDO_3_2017-02-28_112825_9621.jpg"
+	linkURL="images/64_MUNDO_3_2017-02-28_112825_9621.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/68_MUNDO_MENCION_2017-02-27_231448_11020.jpg"
+	thumbURL="thumbs/68_MUNDO_MENCION_2017-02-27_231448_11020.jpg"
+	linkURL="images/68_MUNDO_MENCION_2017-02-27_231448_11020.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/61_MUNDO_MENCION_2016-12-13_203053_7445.jpg"
+	thumbURL="thumbs/61_MUNDO_MENCION_2016-12-13_203053_7445.jpg"
+	linkURL="images/61_MUNDO_MENCION_2016-12-13_203053_7445.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>

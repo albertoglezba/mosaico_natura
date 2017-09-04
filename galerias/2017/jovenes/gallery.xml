@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/77_JOVENES_1_2017-02-25_190903_11061.jpg"
+	thumbURL="thumbs/77_JOVENES_1_2017-02-25_190903_11061.jpg"
+	linkURL="images/77_JOVENES_1_2017-02-25_190903_11061.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/80_JOVENES_2_2017-01-30_193551_9860.jpg"
+	thumbURL="thumbs/80_JOVENES_2_2017-01-30_193551_9860.jpg"
+	linkURL="images/80_JOVENES_2_2017-01-30_193551_9860.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/79_JOVENES_3_2017-01-03_165417_6807.jpg"
+	thumbURL="thumbs/79_JOVENES_3_2017-01-03_165417_6807.jpg"
+	linkURL="images/79_JOVENES_3_2017-01-03_165417_6807.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/81_JOVENES_MENCION_2017-02-28_201634_9165.jpg"
+	thumbURL="thumbs/81_JOVENES_MENCION_2017-02-28_201634_9165.jpg"
+	linkURL="images/81_JOVENES_MENCION_2017-02-28_201634_9165.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>
