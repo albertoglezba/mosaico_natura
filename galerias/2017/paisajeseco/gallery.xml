@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/18_PAISA_1_2017-02-28_134407_7384.jpg"
+	thumbURL="thumbs/18_PAISA_1_2017-02-28_134407_7384.jpg"
+	linkURL="images/18_PAISA_1_2017-02-28_134407_7384.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/22_PAISA_2_2017-02-27_210705_11395.jpg"
+	thumbURL="thumbs/22_PAISA_2_2017-02-27_210705_11395.jpg"
+	linkURL="images/22_PAISA_2_2017-02-27_210705_11395.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/21_PAISA_3_2017-02-27_192951_11296.jpg"
+	thumbURL="thumbs/21_PAISA_3_2017-02-27_192951_11296.jpg"
+	linkURL="images/21_PAISA_3_2017-02-27_192951_11296.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/20_PAISA_MENCION_2017-02-26_203711_10947.jpg"
+	thumbURL="thumbs/20_PAISA_MENCION_2017-02-26_203711_10947.jpg"
+	linkURL="images/20_PAISA_MENCION_2017-02-26_203711_10947.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/24_PAISA_MENCION_2017-02-28_111718_9621.jpg"
+	thumbURL="thumbs/24_PAISA_MENCION_2017-02-28_111718_9621.jpg"
+	linkURL="images/24_PAISA_MENCION_2017-02-28_111718_9621.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>

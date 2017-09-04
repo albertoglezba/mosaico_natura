@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/33_PLANTAS_2_2017-01-26_230448_154.jpg"
+	thumbURL="thumbs/33_PLANTAS_2_2017-01-26_230448_154.jpg"
+	linkURL="images/33_PLANTAS_2_2017-01-26_230448_154.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/34_PLANTAS_3_2017-02-27_161020_10807.jpg"
+	thumbURL="thumbs/34_PLANTAS_3_2017-02-27_161020_10807.jpg"
+	linkURL="images/34_PLANTAS_3_2017-02-27_161020_10807.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/41_PLANTAS_MENCION_2017-02-27_232924_10301.jpg"
+	thumbURL="thumbs/41_PLANTAS_MENCION_2017-02-27_232924_10301.jpg"
+	linkURL="images/41_PLANTAS_MENCION_2017-02-27_232924_10301.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/35_PLANTAS_MENCION_2017-02-27_224811_9621.jpg"
+	thumbURL="thumbs/35_PLANTAS_MENCION_2017-02-27_224811_9621.jpg"
+	linkURL="images/35_PLANTAS_MENCION_2017-02-27_224811_9621.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/32_PLANTAS_1_2017-02-16_135536_10486.jpg"
+	thumbURL="thumbs/32_PLANTAS_1_2017-02-16_135536_10486.jpg"
+	linkURL="images/32_PLANTAS_1_2017-02-16_135536_10486.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>

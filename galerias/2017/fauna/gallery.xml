@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/03_FAUNA_1_2017-02-25_202739_5026.jpg"
+	thumbURL="thumbs/03_FAUNA_1_2017-02-25_202739_5026.jpg"
+	linkURL="images/03_FAUNA_1_2017-02-25_202739_5026.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/04_FAUNA_2_2017-02-11_232507_2210.jpg"
+	thumbURL="thumbs/04_FAUNA_2_2017-02-11_232507_2210.jpg"
+	linkURL="images/04_FAUNA_2_2017-02-11_232507_2210.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/05_FAUNA_3_2017-02-02_103517_9968.jpg"
+	thumbURL="thumbs/05_FAUNA_3_2017-02-02_103517_9968.jpg"
+	linkURL="images/05_FAUNA_3_2017-02-02_103517_9968.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/09_FAUNA_MENCION_2017-02-16_144349_586.jpg"
+	thumbURL="thumbs/09_FAUNA_MENCION_2017-02-16_144349_586.jpg"
+	linkURL="images/09_FAUNA_MENCION_2017-02-16_144349_586.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/08_FAUNA_MENCION_2017-02-10_145512_3497.jpg"
+	thumbURL="thumbs/08_FAUNA_MENCION_2017-02-10_145512_3497.jpg"
+	linkURL="images/08_FAUNA_MENCION_2017-02-10_145512_3497.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>
