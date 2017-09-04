@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/48_HUMANO_1_2017-02-28_230413_7888.jpg"
+	thumbURL="thumbs/48_HUMANO_1_2017-02-28_230413_7888.jpg"
+	linkURL="images/48_HUMANO_1_2017-02-28_230413_7888.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/49_HUMANO_2_2017-02-27_130214_10381.jpg"
+	thumbURL="thumbs/49_HUMANO_2_2017-02-27_130214_10381.jpg"
+	linkURL="images/49_HUMANO_2_2017-02-27_130214_10381.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/50_HUMANO_3_2017-02-13_001446_10314.jpg"
+	thumbURL="thumbs/50_HUMANO_3_2017-02-13_001446_10314.jpg"
+	linkURL="images/50_HUMANO_3_2017-02-13_001446_10314.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/52_HUMANO_MENCION_2016-12-13_201802_7445.jpg"
+	thumbURL="thumbs/52_HUMANO_MENCION_2016-12-13_201802_7445.jpg"
+	linkURL="images/52_HUMANO_MENCION_2016-12-13_201802_7445.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/51_HUMANO_MENCION_2017-02-28_121719_11536.jpg"
+	thumbURL="thumbs/51_HUMANO_MENCION_2017-02-28_121719_11536.jpg"
+	linkURL="images/51_HUMANO_MENCION_2017-02-28_121719_11536.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>

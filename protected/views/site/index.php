@@ -1,7 +1,7 @@
 <?php $yii_path = Yii::app()->request->baseUrl; ?>
 
 <!-- Modal -->
-<div id="myModal" class="modal fade bs-example-modal-lg" role="dialog">
+<!-- <div id="myModal" class="modal fade bs-example-modal-lg" role="dialog">
 <div class="modal-dialog modal-lg">
 
 
@@ -18,7 +18,7 @@
     </div>
     
     </div>
-</div> 
+</div> -->
 
     <!-- Intro Header -->
     <header class="intro">
@@ -29,12 +29,12 @@
                         <h1 class="mosaico-titulo">MOSAICO NATURA</h1>
                     </div> -->
                    
-                    	<div class="col-md-8 col-md-offset-2">
-                        	<h2 class="mosaico-titulo">Exposici&oacute;n del Tercer Concurso Nacional</h2>
+                    	<div class="col-md-8 col-md-offset-3">
+                        	<h2 class="mosaico-titulo">Tercer Concurso Nacional</h2>
                         </div>
                         <div class="col-md-8 col-md-offset-4">
                         	<h3 class="mosaico-titulo">de Fotograf&iacute;a de la Naturaleza</h3>
-				<h4 class="mosaico-titulo">Rejas del Bosque de Chapultepec<br>del 18 de mayo al 3 de julio de 2017</h4>
+				<!--<h4 class="mosaico-titulo">Rejas del Bosque de Chapultepec<br>del 18 de mayo al 3 de julio de 2017</h4>-->
 
                         </div>
 
@@ -67,7 +67,7 @@
             </div>
             
             <div class="col-lg-5">
-                <iframe class="video-mosaico" src="https://player.vimeo.com/video/194435138" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe class="video-mosaico" src="https://www.youtube.com/embed/seKzZRY7L7Q" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
         </div>
     </section>
