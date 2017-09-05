@@ -816,6 +816,14 @@ footer ul {
 		margin:5px 0 0 0;
 	}				
 	
+	h2.header-ganadores {
+		font-size:42px;
+		margin-bottom:30px;
+	}
+	div.spacer-ganadores {
+		height:160px;
+	}
+
 	.categorias-adultos dl{
 		font-size:20px;
 		margin-top:0px;
@@ -1042,3 +1050,7 @@ footer ul {
 	height: auto;
 }
 
+.media-bottom {
+	margin-right: 12px;
+	margin-bottom:4px;
+}
