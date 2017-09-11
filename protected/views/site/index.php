@@ -30,11 +30,11 @@
                     </div> -->
                    
                     	<div class="col-md-8 col-md-offset-3">
-                        	<h2 class="mosaico-titulo">Tercer Concurso Nacional</h2>
+                        	<h2 class="mosaico-titulo">Cuarto Concurso Nacional</h2>
                         </div>
                         <div class="col-md-8 col-md-offset-4">
                         	<h3 class="mosaico-titulo">de Fotograf&iacute;a de Naturaleza</h3>
-				<!--<h4 class="mosaico-titulo">Rejas del Bosque de Chapultepec<br>del 18 de mayo al 3 de julio de 2017</h4>-->
+				<h4 class="mosaico-titulo"><i>Próximamente</i></h4>
 
                         </div>
 
