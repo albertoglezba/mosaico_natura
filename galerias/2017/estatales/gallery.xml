@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	backgroundTransparent="true"
+	imageFrameStyle="NONE"
+	imageCornerRadius="5"
+	imageClickMode="NAVIGATE"
+	imageDropShadow="true"
+	showOverlay="NEVER"
+	thumbFrameColor="FFFFFF"
+	thumbFrameHoverColor="FFD400"
+	thumbNavStyle="TRIANGLE"
+
+>
+  <image imageURL="images/03_FAUNA_1_2017-02-25_202739_5026.jpg"
+	thumbURL="thumbs/03_FAUNA_1_2017-02-25_202739_5026.jpg"
+	linkURL="images/03_FAUNA_1_2017-02-25_202739_5026.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/04_FAUNA_2_2017-02-11_232507_2210.jpg"
+	thumbURL="thumbs/04_FAUNA_2_2017-02-11_232507_2210.jpg"
+	linkURL="images/04_FAUNA_2_2017-02-11_232507_2210.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/06_FAUNA_EXPO_2017-02-06_130607_9837.jpg"
+	thumbURL="thumbs/06_FAUNA_EXPO_2017-02-06_130607_9837.jpg"
+	linkURL="images/06_FAUNA_EXPO_2017-02-06_130607_9837.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/11_FAUNA_EXPO_2017-02-01_182650_4038.jpg"
+	thumbURL="thumbs/11_FAUNA_EXPO_2017-02-01_182650_4038.jpg"
+	linkURL="images/11_FAUNA_EXPO_2017-02-01_182650_4038.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/18_PAISA_1_2017-02-28_134407_7384.jpg"
+	thumbURL="thumbs/18_PAISA_1_2017-02-28_134407_7384.jpg"
+	linkURL="images/18_PAISA_1_2017-02-28_134407_7384.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/22_PAISA_2_2017-02-27_210705_11395.jpg"
+	thumbURL="thumbs/22_PAISA_2_2017-02-27_210705_11395.jpg"
+	linkURL="images/22_PAISA_2_2017-02-27_210705_11395.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/30_PAISA_EXPO_2017-02-28_134526_3847.jpg"
+	thumbURL="thumbs/30_PAISA_EXPO_2017-02-28_134526_3847.jpg"
+	linkURL="images/30_PAISA_EXPO_2017-02-28_134526_3847.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/32_PLANTAS_1_2017-02-16_135536_10486.jpg"
+	thumbURL="thumbs/32_PLANTAS_1_2017-02-16_135536_10486.jpg"
+	linkURL="images/32_PLANTAS_1_2017-02-16_135536_10486.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/33_PLANTAS_2_2017-01-26_230448_154.jpg"
+	thumbURL="thumbs/33_PLANTAS_2_2017-01-26_230448_154.jpg"
+	linkURL="images/33_PLANTAS_2_2017-01-26_230448_154.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/35_PLANTAS_MENCION_2017-02-27_224811_9621.jpg"
+	thumbURL="thumbs/35_PLANTAS_MENCION_2017-02-27_224811_9621.jpg"
+	linkURL="images/35_PLANTAS_MENCION_2017-02-27_224811_9621.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/39_PLANTAS_EXPO_2017-02-27_224159_9621.jpg"
+	thumbURL="thumbs/39_PLANTAS_EXPO_2017-02-27_224159_9621.jpg"
+	linkURL="images/39_PLANTAS_EXPO_2017-02-27_224159_9621.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/42_PLANTAS_EXPO_2017-01-15_105636_310.jpg"
+	thumbURL="thumbs/42_PLANTAS_EXPO_2017-01-15_105636_310.jpg"
+	linkURL="images/42_PLANTAS_EXPO_2017-01-15_105636_310.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/43_PLANTAS_EXPO_2017-01-26_140736_5180.jpg"
+	thumbURL="thumbs/43_PLANTAS_EXPO_2017-01-26_140736_5180.jpg"
+	linkURL="images/43_PLANTAS_EXPO_2017-01-26_140736_5180.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/44_PLANTAS_EXPO_2017-02-27_155446_11296.jpg"
+	thumbURL="thumbs/44_PLANTAS_EXPO_2017-02-27_155446_11296.jpg"
+	linkURL="images/44_PLANTAS_EXPO_2017-02-27_155446_11296.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/48_HUMANO_1_2017-02-28_230413_7888.jpg"
+	thumbURL="thumbs/48_HUMANO_1_2017-02-28_230413_7888.jpg"
+	linkURL="images/48_HUMANO_1_2017-02-28_230413_7888.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/49_HUMANO_3_2017-02-27_130214_10381.jpg"
+	thumbURL="thumbs/49_HUMANO_3_2017-02-27_130214_10381.jpg"
+	linkURL="images/49_HUMANO_3_2017-02-27_130214_10381.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/51_HUMANO_MENCION_2017-02-28_121719_11536.jpg"
+	thumbURL="thumbs/51_HUMANO_MENCION_2017-02-28_121719_11536.jpg"
+	linkURL="images/51_HUMANO_MENCION_2017-02-28_121719_11536.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/61_MUNDO_MENCION_2016-12-13_203053_7445.jpg"
+	thumbURL="thumbs/61_MUNDO_MENCION_2016-12-13_203053_7445.jpg"
+	linkURL="images/61_MUNDO_MENCION_2016-12-13_203053_7445.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/62_MUNDO_1_2017-02-23_201532_10899.jpg"
+	thumbURL="thumbs/62_MUNDO_1_2017-02-23_201532_10899.jpg"
+	linkURL="images/62_MUNDO_1_2017-02-23_201532_10899.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/63_MUNDO_2_2017-02-27_222314_10307.jpg"
+	thumbURL="thumbs/63_MUNDO_2_2017-02-27_222314_10307.jpg"
+	linkURL="images/63_MUNDO_2_2017-02-27_222314_10307.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/77_JOVENES_1_2017-02-25_190903_11061.jpg"
+	thumbURL="thumbs/77_JOVENES_1_2017-02-25_190903_11061.jpg"
+	linkURL="images/77_JOVENES_1_2017-02-25_190903_11061.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/80_JOVENES_3_2017-01-30_193551_9860.jpg"
+	thumbURL="thumbs/80_JOVENES_3_2017-01-30_193551_9860.jpg"
+	linkURL="images/80_JOVENES_3_2017-01-30_193551_9860.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/81_JOVENES_MENCION_2017-02-28_201634_9165.jpg"
+	thumbURL="thumbs/81_JOVENES_MENCION_2017-02-28_201634_9165.jpg"
+	linkURL="images/81_JOVENES_MENCION_2017-02-28_201634_9165.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>
