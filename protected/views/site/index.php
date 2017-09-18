@@ -621,8 +621,8 @@
                         <i class="fa fa-4x fa-file-video-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
                         <h3>Video</h3>
                         <div class="list-group">
-                        <a class="list-group-item sb" href="descargar/spot_video.zip" target="_blank"><i class="fa fa-download fa-fw"></i> Spot</a>
-                       <iframe width="100%" height="auto" src="https://www.youtube.com/embed/v2h8BHv8Rak?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        
+                       <iframe width="100%" height="167" src="https://www.youtube.com/embed/yQB81iE-a4Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
