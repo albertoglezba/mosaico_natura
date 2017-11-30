@@ -1,5 +1,4 @@
-Inscripcion al Concurso de Mosaico Natura 201x
-
+Inscripcion al Concurso de Mosaico Natura 
 <strong>INSTALACIÓN</strong>
 
 Copiar el archivo protected/config/main.php_ejemplo.php a protected/config/main.php y configurar la base
