@@ -61,6 +61,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,800" rel="stylesheet">
 
 	<link rel="icon" type="images/ico"	href="http://www.mosaiconatura.net/favicon.ico">
 </head>
@@ -193,7 +194,7 @@
 
 <!-- Footer -->
 
-<div id="colaboradores">
+<!-- <div id="colaboradores">
 	<div class="container">
 		<div class="col-lg-12">
 
@@ -214,12 +215,12 @@
 			</ul>
 		</div>
 	</div>
-</div>
+</div> -->
 
 
 <footer id="enlaces">
 	<div class="container">
-		<div class="col-md-3">
+		<!-- <div class="col-md-3">
 			<p>NUESTROS COLABORADORES</p>
 			<ul>
                			<li><a href="http://www.cdmx.gob.mx/" target="_blank">CDMX</a></li>
@@ -235,9 +236,9 @@
                     		<li><a href="http://www.lg.com/mx" target="_blank">LG</a></li>
                     		<li><a href="http://www.palaceresorts.com/es" target="_blank">Palace Resorts</a></li>
                     		<li><a href="http://www.gob.mx/conabio/" target="_blank">Conabio</a></li>
-                	</ul>
-		</div>
-		<div class="col-md-3">
+                	</ul> 
+		</div>-->
+		<div class="col-md-4">
 			<p>S&Iacute;GUENOS</p>
 			<ul>
 				<li><a href="https://www.facebook.com/conabio/">Facebook</a></li>
@@ -249,7 +250,7 @@
 			</ul>
 
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-4">
 			<p>CONOCE</p>
 			<ul>
 				<li><a href="http://www.naturalista.mx/">Naturalista</a></li>
@@ -257,7 +258,7 @@
                 <li><a href="http://www.enciclovida.mx/">EncicloVida</a></li>
 			</ul>
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-4">
 			<p>LEGAL</p>
 			<ul>
 				<li><a href="<?php echo Yii::app()->baseUrl;?>/index.php/site/terminos_condiciones">T&eacute;rminos y condiciones</a></li>
