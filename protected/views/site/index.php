@@ -34,7 +34,7 @@
                         </div>
                         <div class="col-md-8 col-md-offset-4">
                         	<h3 class="mosaico-titulo">de Fotograf&iacute;a de Naturaleza</h3>
-				<h4 class="mosaico-titulo"><i>Próximamente</i></h4>
+				<h4 class="mosaico-titulo"><i>del 6 de diciembre 2017 al 28 de febrero 2018</i></h4>
 
                         </div>
 
@@ -55,13 +55,13 @@
                 <h2>QUI&Eacute;NES SOMOS</h2>
               <p><img src="<?php echo $yii_path; ?>/img/logo-mosaiconaturav.png" width="163" height="90" alt="" class="media-bottom"/> tiene como objetivos: ser una ventana para dar a conocer la riqueza natural de M&eacute;xico captada en im&aacute;genes y un sitio de promoci&oacute;n de fot&oacute;grafos de naturaleza mexicana.</p>
 
-<p>En esta tercera etapa, Mosaico Natura M&eacute;xico se transforma en un concurso anual de fotograf&iacute;a de naturaleza que est&aacute; abierto a fot&oacute;grafos aficionados y profesionales, menores y mayores de 18 a&ntilde;os.</p>
+<p>En esta cuarta etapa, Mosaico Natura M&eacute;xico se transforma en un concurso anual de fotograf&iacute;a de naturaleza que est&aacute; abierto a fot&oacute;grafos aficionados y profesionales, menores y mayores de 18 a&ntilde;os.</p>
                   
               <p>Si te interesa participar, inscr&iacute;bete al concurso y sube tus fotos o videos. Grandes premios te esperan. Los ganadores participaran en exposiciones en gran formato y publicaciones en revistas de distribuci&oacute;n nacional y mucho m&aacute;s.</p>
                   
                <p>Todas las fotograf&iacute;as participantes ser&aacute;n integradas al Banco de Im&aacute;genes de la Conabio y estar&aacute;n a disposici&oacute;n del p&uacute;blico (para trabajos escolares) en baja resoluci&oacute;n, con el requisito de incluir el cr&eacute;dito del autor y de la Conabio. As&iacute; mismo, si se requiere la fotograf&iacute;a en alta resoluci&oacute;n, se deber&aacute; hacer una solicitud bajo las condiciones del Banco de Im&aacute;genes.</p>
                   
-               <p>Posteriormente se publicar&aacute;n las mejores fotos en las revistas National Geographic en Espa&ntilde;ol, Mexican&iacute;simo y Biodiversitas, adem&aacute;s se organizar&aacute;n exposiciones de fotograf&iacute;a de naturaleza y se invitar&aacute; a los mejores fot&oacute;grafos a participar en productos realizados por National Geographic en espa&ntilde;ol y la Conabio.</p>
+               <p>Posteriormente se publicar&aacute;n las mejores fotos en distintos medios, adem&aacute;s se organizar&aacute;n exposiciones de fotograf&iacute;a de naturaleza y se invitar&aacute; a los mejores fot&oacute;grafos a participar en productos realizados por la Conabio.</p>
                   
             <p> <a href="<?php echo $yii_path; ?>/ganadores_anteriores.html">Conoce a nuestros ganadores del a&ntilde;o pasado</a></p>
             </div>
@@ -96,16 +96,22 @@
                     <h4 class="bases-izq">Temas</h4>
                 <div class="categorias-adultos">
                     	<dl class="dl-horizontal">
-                        	<dt><img src="<?php echo $yii_path; ?>/img/bases-01.png" alt="Fauna"></dt>
-                            <dd><span style="color:#ffd400; font-weight:bold;">Fauna</span><br/>Fotos de animales en vida silvestre. No se aceptan fotos en cautiverio, ni animales dom&eacute;sticos o mascotas.</dd>
+                        	<dt><img src="<?php echo $yii_path; ?>/img/bases-01.png" alt="Fauna silvestre"></dt>
+                            <dd><span style="color:#ffd400; font-weight:bold;">Fauna Silvestre</span><br/>Fotos de animales en vida silvestre. No se aceptan fotos en cautiverio, ni animales dom&eacute;sticos o mascotas.</dd>
                             <dt><img src="<?php echo $yii_path; ?>/img/bases-02.png" alt="Plantas y Hongos"></dt>
                             <dd><span style="color:#ffd400; font-weight:bold;">Plantas y Hongos</span><br/>Fotos de plantas y hongos en vida silvestre. No se aceptan fotos de plantas cultivadas de maceta o jard&iacute;n.</dd>
-                            <dt><img src="<?php echo $yii_path; ?>/img/bases-03.png" alt="Paisajes"></dt>
-                            <dd><span style="color:#ffd400; font-weight:bold;">Paisajes</span><br/>Vistas a&eacute;reas, terrestres, acu&aacute;ticas y subacu&aacute;ticas, donde se enfatizan elementos naturales.</dd>
+                            <dt><img src="<?php echo $yii_path; ?>/img/bases-03.png" alt="Paisajes y ecosistemas"></dt>
+                            <dd><span style="color:#ffd400; font-weight:bold;">Paisajes y ecosistemas</span><br/>Vistas a&eacute;reas, terrestres, acu&aacute;ticas y subacu&aacute;ticas, donde se enfatizan elementos naturales.</dd>
                             <dt><img src="<?php echo $yii_path; ?>/img/bases-04.png" alt="Naturaleza y ser humano"></dt>
                             <dd><span style="color:#ffd400; font-weight:bold;">Naturaleza y ser humano</span><br/>Usos y costumbres relacionados con el entorno natural: actividades agr&iacute;colas, artesanales, gastron&oacute;micas, medicinales, espirituales, recreativas, ceremoniales. Escenas de manejo sustentable.</dd>
                             <dt><img src="<?php echo $yii_path; ?>/img/bases-05.png" alt="Solo un mundo"></dt>
                             <dd><span style="color:#ffd400; font-weight:bold;">Solo un mundo</span><br/>Im&aacute;genes de paisajes, y/o flora y fauna deteriorados o impactados directa o indirectamente por actividades humanas.</dd>
+							<dt><img src="<?php echo $yii_path; ?>/img/bases-18.png" alt="Subacuática"></dt>
+							<dd><span style="color:#ffd400; font-weight:bold;">Subacu&aacute;tica</span><br/>Animales, plantas o paisajes subacu&aacute;ticos, ya sea en un entorno marino o dulceacu&iacute;cola.</dd>
+							<dt><img src="<?php echo $yii_path; ?>/img/bases-19.png" alt="Macro"></dt>
+                            <dd><span style="color:#ffd400; font-weight:bold;">Macro</span><br/>Captura en una imagen los peque&ntilde;os detalles de la naturaleza. Se aceptar&aacute;n im&aacute;genes tomadas con microscopio. </dd>
+							<dt><img src="<?php echo $yii_path; ?>/img/bases-20.png" alt="Reportaje"></dt>
+                            <dd><span style="color:#ffd400; font-weight:bold;">Foto reportaje al natural</span><br/>Cuenta una historia en una secuencia de im&aacute;genes (m&aacute;ximo 5) con enfoque al comportamiento de las especies de animales y plantas de M&eacute;xico, acciones de conservaci&oacute;n o impacto a la naturaleza a trav&eacute;s del tiempo.</dd>
                         </dl>
                     
                 </div>
@@ -115,8 +121,7 @@
                 			<td valign="bottom"><img src="<?php echo $yii_path; ?>/img/bases-06.png">
                 			  <table width="100%" border="3" cellpadding="0" cellspacing="0" style="border-color:#ffd400; border-style:solid; border-right-width:0">
 								  <tr>
-    									<td bgcolor="#403d35" style="padding:10px 0;">$20,000 pesos en especie:<br>Celular LG Modelo G5<br>2 m&oacute;dulos Nikon school<br>
-    									  Suscripci&oacute;n anual:<br>National Geographic en Espa&ntilde;ol<br> y Mexican&iacute;simo<br><br>
+    									<td bgcolor="#403d35" style="padding:10px 3px;"><br><span style="font-size:30px;">$20,000</span><br>pesos en especie o en efectivo<br>Suscripci&oacute;n anual: Cuarto oscuro<br><br>
                                         </td>
 								</tr>
 							  </table>
@@ -124,19 +129,16 @@
                 			<td valign="bottom"><img src="<?php echo $yii_path; ?>/img/bases-07.png">
                 				<table width="100%" border="3" cellpadding="0" cellspacing="0" style="border-color:#ffd400; border-style:solid;">
   									<tr>
-    									<td bgcolor="#403d35" style="padding:15px 0;">$25,000 pesos en especie:<br>$16,999 en productos Nikon<br>
-                                        Suscripci&oacute;n anual:<br>National Geographic en Espa&ntilde;ol<br> y Mexican&iacute;simo<br>
-                                        Publicaci&oacute;n en medios<br><br><br></td>
+    									<td bgcolor="#403d35" style="padding:15px 2px;"><span style="font-size:30px;">$25,000</span><br>pesos en especie o en efectivo<br>C&aacute;mara fotogr&aacute;fica<br>Nikon D5500<br>Publicaci&oacute;n en diversos medios<br>
+                                        Suscripci&oacute;n anual:<br>Cuarto oscuro<br></td>
   									</tr>
   								</table>
 						  </td>
                 			<td valign="bottom"><img src="<?php echo $yii_path; ?>/img/bases-08.png">
                 				<table width="100%" border="3" cellpadding="0" cellspacing="0" style="border-color:#ffd400; border-style:solid; border-left-width:0">
   									<tr>
-    									<td bgcolor="#403d35" style="padding:5px 0;" >$15,000 pesos en especie:
-    									 <br>$5,666 en productos Nikon<br>
-                                        Suscripci&oacute;n anual:<br>National Geographic en Espa&ntilde;ol<br> y Mexican&iacute;simo<br>
-                                        2 m&oacute;dulos Nikon school</td>
+    									<td bgcolor="#403d35" style="padding:10px 3px;"><span style="font-size:30px;">$15,000</span><br>pesos en especie o en efectivo<br>Suscripci&oacute;n anual: Cuarto oscuro<br>
+                                        </td>
   									</tr>
   								</table>
 						  </td>
@@ -144,7 +146,7 @@
 					</table>
                     
                     <div class="cintillo-adultos">
-                    	<p><strong>2 Menciones honor&iacute;ficas</strong><br/>Suscripci&oacute;n anual: National Geographic en Espa&ntilde;ol, Mexican&iacute;simo</p>
+                    	<p><strong>2 Menciones honor&iacute;ficas</strong><br/>Suscripci&oacute;n anual: Cuarto oscuro</p>
                     </div>
                     <h4 class="bases-izq">Formatos</h4>
                     
@@ -178,8 +180,8 @@
                 
                 <div class="col-md-6 col-xs-12">
                     <h3>J&Oacute;VENES		<i class="fa fa-caret-right"></i>   <span class="pleca_ama">5 fotos por participante, tema libre</span></h3>
-                    <p>Fotos en M&eacute;xico de animales o plantas en su ambiente natural, paisajes naturales, actividades relacionadas con el ser humano y la naturaleza. No se aceptan fotos de plantas cultivadas, animales en cautiverio o en ambientes controlados.</p>
-                    <img src="<?php echo $yii_path; ?>/img/bases-11.png">
+                    <p>Fotograf&iacute;as relacionadas con la riqueza natural de M&eacute;xico, es decir, animales o plantas en su ambiente natural, paisajes naturales, actividades relacionadas con el ser humano y la naturaleza. No se aceptan fotos de plantas cultivadas, animales en cautiverio o en ambientes controlados.</p>
+                    <img src="<?php echo $yii_path; ?>/img/bases-11.png" class="jov-circle">
                     <h4 class="bases-izq">Premios</h4>
                     
                     <table class="tabla-premios-jovenes" width="100%" border="0">
@@ -188,8 +190,8 @@
                             	<table width="100%" border="0">
   									<tr>
     									<td width="10%" bgcolor="#99141b" style="text-align:right; padding:8px 5px;"><img src="<?php echo $yii_path; ?>/img/bases-07.png" alt="primer lugar"></td>
-    									<td bgcolor="#42423d" style="padding:5px;">$20,000 en especie: $5,666 en productos Nikon<br>Suscripci&oacute;n anual: National Geographic en Espa&ntilde;ol, Mexican&iacute;simo<br>2 m&oacute;dulos Nikon school; publicaci&oacute;n en medios
-</td>
+    									<td bgcolor="#42423d" style="padding:5px;"><br>$20,000 pesos en especie o en efectivo<br>C&aacute;mara fotogr&aacute;fica Nikon D5500<br>Publicaci&oacute;n en diversos medios<br>
+                                        Suscripci&oacute;n anual: Cuarto oscuro<br><br></td>
   									</tr>
 								</table>
 
@@ -200,7 +202,8 @@
                             	<table width="100%" border="0">
   									<tr>
     									<td width="20%" bgcolor="#99141b" style="text-align:right; padding:8px 5px;"><img src="<?php echo $yii_path; ?>/img/bases-06.png" alt="primer lugar"></td>
-    									<td bgcolor="#575652" style="padding:5px;">$15,000 en especie: $5,666 en productos Nikon<br>Suscripci&oacute;n anual: National Geographic en Espa&ntilde;ol, Mexican&iacute;simo<br>2 m&oacute;dulos Nikon school</td>
+    									<td bgcolor="#575652" style="padding:5px;"><br>$15,000 pesos en especie o en efectivo<br>C&aacute;mara compacta Nikon<br>Dos m&oacute;dulos Nikon School<br>
+                                        Suscripci&oacute;n anual: Cuarto oscuro<br><br></td>
   									</tr>
 								</table>
                             
@@ -211,8 +214,8 @@
                             	<table width="100%" border="0">
   									<tr>
     									<td width="30%" bgcolor="#99141b" style="text-align:right; padding:8px 5px;"><img src="<?php echo $yii_path; ?>/img/bases-08.png" alt="primer lugar"></td>
-    									<td bgcolor="#6c6c68" style="padding:5px;">$10,000 en especie: $5,666 en productos Nikon<br>Suscripci&oacute;n anual: National Geographic en Espa&ntilde;ol, Mexican&iacute;simo
-</td>
+    									<td bgcolor="#6c6c68" style="padding:5px;"><br>$10,000 pesos en especie o en efectivo<br>Dos m&oacute;dulos Nikon School<br>
+                                        Suscripci&oacute;n anual: Cuarto oscuro<br><br></td>
   									</tr>
 								</table>
                             </td>
@@ -223,7 +226,7 @@
                     <div id="video-wrapper">
                     	<h3>VIDEO		<i class="fa fa-caret-right"></i>   <span class="pleca_ama">3 videos por participante (solo categoría adultos)</span></h3>
                     </div>
-                    <p><strong>Tema: Consumo responsable y biodiversidad</strong><br>Videos que representen el consumo responsable y el impacto en la biodiversidad, los h&aacute;bitos alimenticios, reproductivos, de propagaci&oacute;n, interacci&oacute;n entre especies, de migraci&oacute;n, y la belleza natural de alg&uacute;n lugar etc&eacute;tera  y su entorno en una narrativa visual. Los videos pueden editarse y musicalizarse. La musicalizaci&oacute;n, si es el caso, deber&aacute; ser m&uacute;sica original o bien audios libres de derechos de autor o con derechos de distribuci&oacute;n sin fines de lucro.</p>
+                    <p><strong>Tema libre</strong><br>Videos que representen la belleza natural de alg&uacute;n lugar, el consumo responsable y el impacto en la biodiversidad, los h&aacute;bitos alimenticios, reproductivos, de propagaci&oacute;n, interacci&oacute;n entre especies, de migraci&oacute;n, etc, en una narrativa visual. Los videos pueden editarse y musicalizarse. La musicalizaci&oacute;n, si es el caso, deber&aacute; hacerse con m&uacute;sica original o bien, audios libres de derechos de autor o con derechos de distribuci&oacute;n sin fines de lucro.</p>
                     
                     <h4 class="bases-izq">Formato</h4>
                     
@@ -244,36 +247,36 @@
                     
                     <h4 class="bases-der">Premios</h4>
                     
-                    <table width="100%" border="0" cellspacing="10">
+                    <table width="100%" border="0" cellspacing="10" class="premios-video">
   						<tr>
-                            <td>
+                            <td valign="top">
                             	<table width="100%" border="0">
                                 	<tr>
                                     	<td><img src="<?php echo $yii_path; ?>/img/bases-07.png"></td>
                                   	</tr>
                                   	<tr>
-                                    	<td>$25,000 pesos en especie:<br/>$5,666 en productos Nikon<br/>Suscripci&oacute;n anual:<br/>National Geographic en Espa&ntilde;ol<br/>Mexican&iacute;simo<br>publicaci&oacute;n en Discovery Channel</td>
+                                    	<td>$25,000 pesos<br>en especie o en efectivo<br>C&aacute;mara fotogr&aacute;fica Nikon D5500<br>Publicaci&oacute;n en diversos medios<br>Suscripci&oacute;n anual:<br> Cuarto oscuro</td>
                                   	</tr>
                                 </table>
 
                             </td>
-                              <td >
+                            <td valign="top" >
                             <table width="100%" border="0">
                                 	<tr>
                                     	<td><img src="<?php echo $yii_path; ?>/img/bases-06.png"></td>
                                   	</tr>
                                   	<tr>
-                                    	<td>$20,000 pesos en especie:<br>$5,666 en productos Nikon<br/>Suscripci&oacute;n anual:<br/>National Geographic en Espa&ntilde;ol<br/>Mexican&iacute;simo</td>
+                                    	<td>$20,000 pesos<br>en especie o en efectivo<br>Publicaci&oacute;n en diversos medios<br>Suscripci&oacute;n anual:<br> Cuarto oscuro</td>
                                   	</tr>
                                 </table>
                             </td>
-                            <td>
+                            <td valign="top">
                             <table width="100%" border="0">
                                 	<tr>
                                     	<td><img src="<?php echo $yii_path; ?>/img/bases-08.png"></td>
                                   	</tr>
                                   	<tr>
-                                    	<td>$15,000 pesos en especie:<br/>2 m&oacute;dulos Nikon school<br>Suscripci&oacute;n anual:<br/>National Geographic en Espa&ntilde;ol<br/>Mexican&iacute;simo</td>
+                                    	<td>$15,000 pesos<br>en especie o en efectivo<br>Publicaci&oacute;n en diversos medios<br>Suscripci&oacute;n anual:<br> Cuarto oscuro</td>
                                   	</tr>
                               </table>
                             </td>
@@ -288,7 +291,7 @@
                             <td width="10%" bgcolor="#403d35" ><img src="<?php echo $yii_path; ?>/img/bases-15.png" alt="m�xico"></td>
                             <td width="30%" bgcolor="#403d35" style="font-weight:bold;">Reconocimiento especial por estado</td>
                             <td bgcolor="#595448" style="text-align:left; padding:0;"><img src="<?php echo $yii_path; ?>/img/bases-16.png"></td>
-                            <td bgcolor="#595448" style="text-align:left; padding-left:5px;">Ser&aacute; seleccionada la mejor foto de cada estado (32 seleccionadas) y participar&aacute; en la exposici&oacute;n Visiones de nuestra naturaleza. </td>
+                            <td bgcolor="#595448" style="text-align:left; padding-left:5px;">Ser&aacute;n seleccionadas las 2 mejores foto de cada estado (64 seleccionadas) y se les dar&aacute;n menciones honor&iacute;ficas. </td>
   						</tr>
 					</table>
 
@@ -297,7 +300,7 @@
                 <div id="reconocimiento-xs" class="col-xs-12">
                 <img src="<?php echo $yii_path; ?>/img/bases-15.png">
                 <h4>Reconocimiento especial por estado</h4>
-                <p>Ser&aacute; seleccionada la mejor foto de cada estado (32 seleccionadas) y participar&aacute; en la exposici&oacute;n Visiones de nuestra naturaleza. </p>
+                <p>Ser&aacute;n seleccionadas las 2 mejores foto de cada estado (64 seleccionadas) y se les dar&aacute;n menciones honor&iacute;ficas. </p>
                 
                 </div>
                 
@@ -331,8 +334,8 @@
                     <p>Sube tus fotos y llena el formulario con la informaci&oacute;n de cada una</p>
                 </div>
                 
-                	<div class="col-xs-12 col-md-6 col-md-offset-3 fechas-concurso">
-                    <p>La recepci&oacute;n de fotograf&iacute;as ser&aacute; del 6 de diciembre al 28 de febrero</p>
+                	<div class="col-xs-12 col-md-8 col-md-offset-2 fechas-concurso">
+                    <p>La recepci&oacute;n de fotograf&iacute;as ser&aacute; del 6 de diciembre al 28 de febrero<br><br></p><p>Todos los participantes tendr&aacute;n derecho a una suscripci&oacute;n anual a la revista digital: Espacio Profundo</p>
                     </div>
                     
             </div>
