@@ -24,7 +24,7 @@
                     
                     <p><strong>J&Oacute;VENES - menores de 18 a&ntilde;os</strong></p>
                     <p>Esta categor&iacute;a est&aacute; dedicada a j&oacute;venes talentos de la fotograf&iacute;a de 17 a&ntilde;os de edad y menores. Tiene como finalidad incentivar a los j&oacute;venes a tomar conciencia de su entorno a trav&eacute;s de la fotograf&iacute;a de naturaleza.</p>
-                    <p>Podr&aacute;n participar todos los j&oacute;venes nacionales o extranjeros radicados en M&eacute;xico, menores de 18 a&ntilde;os. Cada participante puede enviar hasta&nbsp;<strong>5</strong>&nbsp;(cinco) fotograf&iacute;as en este tema.</p>
+                    <p>Podr&aacute;n participar todos los j&oacute;venes nacionales o extranjeros radicados en M&eacute;xico, menores de 18 a&ntilde;os a la fecha del cierre del concurso. Cada participante puede enviar hasta&nbsp;<strong>5</strong>&nbsp;(cinco) fotograf&iacute;as en este tema.</p>
                     <p><strong>Tema libre j&oacute;venes menores de 18 a&ntilde;os.</strong>&nbsp;Se puede enviar cualquier fotograf&iacute;a relacionada con la riqueza natural de M&eacute;xico, es decir, animales o plantas en su ambiente natural, paisajes naturales, actividades relacionadas con el hombre y la naturaleza. No se aceptar&aacute;n fotograf&iacute;as de plantas cultivadas, animales en cautiverio o cualquier otro ambiente controlado.</p>
                     
                     <p><strong>VIDEO - 18 a&ntilde;os en adelante Tema: Consumo responsable y biodiversidad (Cine minuto)</strong></p>

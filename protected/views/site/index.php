@@ -364,7 +364,7 @@
               </div>
                 
                 <div class="col-md-3">
-                    <img src="<?php echo $yii_path; ?>/img/team/natgeo.jpg" class="img-responsive img-circle" alt="persona1">
+                    <img src="<?php echo $yii_path; ?>/img/team/natgeo-int.jpg" class="img-responsive img-circle" alt="persona1">
                     <h3>JURADO SORPRESA</h3>
                    
 </div> 
@@ -375,7 +375,7 @@
                         </div> 
 
                 <div class="col-md-3">
-                    <img src="<?php echo $yii_path; ?>/img/team/dc.jpg" class="img-responsive img-circle" alt="persona1">
+                    <img src="<?php echo $yii_path; ?>/img/team/espacio-profundo.jpg" class="img-responsive img-circle" alt="persona1">
                     <h3>JURADO SORPRESA</h3>
                         </div> 
 
