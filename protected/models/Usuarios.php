@@ -60,19 +60,19 @@ class Usuarios extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-				array('usuario, nombre, apellido, edad, correo, municipio, estado, compromiso, difusion', 'required'),
+				array('usuario, nombre, apellido, correo, municipio, estado, compromiso, difusion, fecha_nac','required'),
 				array('acepto_terminos, passwd, confirma_passwd', 'required', 'on'=>'insert'),
-				array('confirmo, edad', 'numerical', 'integerOnly'=>true),
-				array('usuario, nombre, apellido, correo, telefonos, passwd, confirma_passwd, salt, municipio, estado', 'length', 'max'=>255),
+				array('confirmo', 'numerical', 'integerOnly'=>true),
+				array('usuario, nombre, apellido, fecha_nac correo, telefonos, passwd, confirma_passwd, salt, municipio, estado', 'length', 'max'=>255),
 				array('compromiso', 'safe'),
 				array('acepto_terminos', 'acepto_terminos_rule', 'on'=>'insert'),
 				array('correo', 'valida_correo', 'on'=>'insert'),
 				array('usuario', 'valida_usuario', 'on'=>'insert'),
-				array('edad', 'valida_edad', 'on'=>'insert'),
+				array('fecha_nac', 'valida_fecha_nac', 'on'=>'insert'),
 				array('confirma_passwd', 'valida_passwd'),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.
-				array('id, usuario, nombre, apellido, edad, correo, telefonos, municipio, estado, confirmo, fec_alta, fec_act', 'safe', 'on'=>'search'),
+				array('id, usuario, nombre, apellido, fecha_nac, correo, telefonos, municipio, estado, confirmo, fec_alta, fec_act', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -106,6 +106,27 @@ class Usuarios extends CActiveRecord
 				$this->addError($this->usuario, 'Este usuario ya fue registrado por alguien más, por favor intenta con otro o recupera tu contraseña desde el inicio de sesión.');
 		}
 	}
+	public function valida_fecha_nac(){
+        $regex = '/^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$/';
+        if (!preg_match($regex, $this->fecha_nac)) {
+            return false;
+        }
+        $d1 = new DateTime('2018-02-28');
+        $d2 = new DateTime($this->fecha_nac);
+
+        $diff = $d1->diff($d2);
+
+        if ($diff < 6)
+		{
+			$this->addError($this->fecha_nac, 'Lo sentimos, la edad mínima para participar es 6 años.');
+			return false;
+		}
+		if ($diff > 130)
+		{
+			$this->addError($this->fecha_nac, 'Lo sentimos, la edad máxima para participar es 130 años.');
+			return false;
+		}
+    }
 
 	public function valida_edad()
 	{
@@ -178,10 +199,10 @@ class Usuarios extends CActiveRecord
 				'id' => 'ID',
 				'usuario' => 'Usuario',
 				'nombre' => 'Nombre(s)',
-				'apellido' => 'Apellido',
-				'eadad' => 'Edad',
-				'correo' => 'Correo',
-				'telefonos' => 'Teléfonos',
+				'apellido' => 'Apellido(s)',
+				'fecha_nac' => 'Fecha de nacimiento',
+				'correo' => 'Correo electrónico',
+				'telefonos' => 'Teléfono(s)',
 				'passwd' => 'Contraseña',
 				'salt' => 'Salt',
 				'municipio' => 'Delegación / Municipio',
@@ -211,7 +232,7 @@ class Usuarios extends CActiveRecord
 		$criteria->compare('usuario',$this->usuario,true);
 		$criteria->compare('nombre',$this->nombre,true);
 		$criteria->compare('apellido',$this->apellido,true);
-		$criteria->compare('edad',$this->edad);
+		$criteria->compare('fecha_nac',$this->fecha_nac);
 		$criteria->compare('correo',$this->correo,true);
 		$criteria->compare('telefonos',$this->telefonos,true);
 		$criteria->compare('passwd',$this->passwd,true);
@@ -239,7 +260,7 @@ class Usuarios extends CActiveRecord
 				'Chihuahua' => 'Chihuahua',
 				'Coahuila' => 'Coahuila',
 				'Colima' => 'Colima',
-				'Distrito Federal' => 'Distrito Federal',
+				'Ciudad de México' => 'Ciudad de México',
 				'Durango' => 'Durango',
 				'Estado de México' => 'Estado de México',
 				'Guanajuato' => 'Guanajuato',
