@@ -201,7 +201,7 @@ class Usuarios extends CActiveRecord
             'municipio' => 'Delegación / Municipio',
             'estado' => 'Estado',
             'confirmo' => 'Confirmo',
-            'distribucion' => 'Acepta suscripción a revista digital ',
+            'distribucion' => 'Acepto suscripción anual a la revista digital "Espacio Profundo"',
             'fec_alta' => 'Fecha de alta',
             'fec_act' => 'Fecha de última actualización',
             'acepto_terminos' => 'Acepto términos y condiciones',

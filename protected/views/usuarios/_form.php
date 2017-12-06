@@ -117,14 +117,14 @@
         </div>
 
         <div class="form-group">
-            <?php echo $form->labelEx($model,'acepto_terminos', array('class'=>'col-sm-3 ')); ?>
+            <?php echo $form->labelEx($model,'acepto_terminos', array('class'=>'col-sm-11 text-right')); ?>
             <div class="col-sm-1">
                 <?php echo $form->checkBox($model,'acepto_terminos'); ?>
             </div>
         </div>
 
         <div class="form-group">
-            <?php echo $form->labelEx($model,'distribucion', array('class'=>'col-sm-3 ')); ?>
+            <?php echo $form->labelEx($model,'distribucion', array('class'=>'col-sm-11 text-right')); ?>
             <div class="col-sm-1">
                 <?php echo $form->checkBox($model,'distribucion'); ?>
             </div>
