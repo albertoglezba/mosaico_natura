@@ -2,7 +2,9 @@
 /* @var $this FotosController */
 /* @var $dataProvider CActiveDataProvider */
 $usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
-$categoria = $usuario->edad > 17 ? 'Adultos' : 'Jóvenes';
+//$categoria = $usuario->edad > 17 ? 'Adultos' : 'Jóvenes';
+//$edad = Usuarios::dame_edad($usuario->fecha_nac);
+$categoria = Usuarios::dameEdad($usuario->fecha_nac) > 17 ? 'Adultos' : 'Jóvenes';
 ?>
 
 <?php 

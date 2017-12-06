@@ -78,9 +78,9 @@ class Fotos extends CActiveRecord
 		$d1 = new DateTime('2018-02-28');
 		$d2 = new DateTime($usuario->fecha_nac);
 
-		$diff = $d1->diff($d2);
+		$diff = $d2->diff($d1);
 
-		if ($diff > 17)
+		if ($diff->y > 17)
 		{	
 			if (count($categoria) >= Yii::app()->params['#_fotos_adulto_x_categoria'])
 			{
@@ -194,12 +194,11 @@ class Fotos extends CActiveRecord
 	public static function conCategoriasDisponibles()
 	{
 		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
-		$d1 = new DateTime('2018-02-28');
-		$d2 = new DateTime($usuario->fecha_nac);
 
-		$diff = $d1->diff($d2);
+		$edad = Usuarios::dameEdad($usuario->fecha_nac);
 
-		if ($diff < 18)
+
+		if ($edad < 18)
 		{
 			if (count($usuario->fotos) >= Yii::app()->params['#_fotos_juvenil'])
 				return false;

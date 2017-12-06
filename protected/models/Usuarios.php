@@ -108,39 +108,31 @@ class Usuarios extends CActiveRecord
         }
     }
     public function valida_fecha_nac(){
-        $regex = '/^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$/';
+        $regex = '/^[0-9]{4}-[0-1][0-9]-[0-3][0-9]$/';
         if (!preg_match($regex, $this->fecha_nac)) {
+            $this->addError($this->fecha_nac, 'Lo sentimos, la fecha no es válida'.$this->fecha_nac);
             return false;
         }
-        $d1 = new DateTime('2018-02-28');
-        $d2 = new DateTime($this->fecha_nac);
 
-        $diff = $d1->diff($d2);
+        $edad = $this::dameEdad($this->fecha_nac);
 
-        if ($diff < 6)
+        if ($edad < 6)
         {
             $this->addError($this->fecha_nac, 'Lo sentimos, la edad mínima para participar es 6 años.');
             return false;
         }
-        if ($diff > 130)
+        if ($edad > 130)
         {
             $this->addError($this->fecha_nac, 'Lo sentimos, la edad máxima para participar es 130 años.');
             return false;
         }
     }
 
-    public function valida_edad()
-    {
-        if ($this->edad < 6)
-        {
-            $this->addError($this->edad, 'Lo sentimos, la edad mínima para participar es 6 años.');
-            return false;
-        }
-        if ($this->edad > 130)
-        {
-            $this->addError($this->edad, 'Lo sentimos, la edad máxima para participar es 130 años.');
-            return false;
-        }
+    public static function dameEdad($fecha_nac){
+        $d1 = new DateTime(Yii::app()->params->fecha_termino);
+        $d2 = new DateTime($fecha_nac);
+        $diff = $d2->diff($d1);
+        return $diff->y;
     }
 
     public function valida_passwd()
