@@ -509,6 +509,11 @@ table.como-participar td{
 .registro-content{
 	padding-top:60px;
 	}
+
+span.required {
+	font-size:2em;
+	vertical-align: middle;
+}
 	
 .medios-header {
     width: 100%;
