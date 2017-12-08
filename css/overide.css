@@ -509,6 +509,11 @@ table.como-participar td{
 .registro-content{
 	padding-top:60px;
 	}
+
+span.required {
+	font-size:2em;
+	vertical-align: middle;
+}
 	
 .medios-header {
     width: 100%;
@@ -1075,7 +1080,7 @@ footer ul {
 } 
 
 #logosc img {
-	/*transform: scale(.8,.8);*/
+	margin:20px 10px;
 }
 
 .entrevistas {

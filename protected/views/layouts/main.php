@@ -194,51 +194,46 @@
 
 <!-- Footer -->
 
-<!-- <div id="colaboradores">
+<div id="colaboradores">
 	<div class="container">
 		<div class="col-lg-12">
 
 			<ul id="logosc">
-				<li><a href="http://www.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_cdmx.png" alt="Ciudad de México"></a></li>
-                		<li><a href="http://sustentur.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_sustentur.png" alt="Sustentur"></a></li>
-                		<li><a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_NatGeo.png" alt="National Geographic en Espanol"></a></li>
-                		<li><a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_nikon.png" alt="Nikon"></a></li>
-                		<li><a href="http://www.mexicanisimo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_mexicanisimo.png" alt="Mexicanísimo"></a></li>
-                		<li><a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_facir.png" alt="Fundación Acir"></a></li>
-                		<li><a href="http://www.latam.discovery.com/mexico/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_discovery.png" alt="Discovery"></a></li>
-				<li><a href="http://www.alemania-mexico.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_alemex.png" alt="Alianza Alemania México"></a></li>
-				<li><a href="http://www.mexicotravelchannel.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_mextravel.png" alt="México Travel Channel"></a></li>
-                		<li><a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_epson.png" alt="Epson"></a></li>
-                		<li><a href="http://www.lg.com/mx" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_lg.png" alt="LG"></a></li>
-				<li><a href="http://www.palaceresorts.com/es" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_palace.png" alt="Palace Resorts"></a></li>
-                		<li><a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo64_conabio.png" alt="Conabio"></a></li>
+				<li><a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conabio.png" alt="Conabio" width="14%"></a></li>
+				<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-sedema.png" alt="SEDEMA" width="14%"></a></li>
+                <li><a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" alt="National Geographic" width="12%"></a></li>
+                <li><a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-nikon.png" alt="Nikon" width="8%"></a></li>
+                <li><a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-epson.png" alt="Epson" width="10%"></a></li>
+				<li><a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-acir.png" alt="Fundación Acir" width="8%"></a></li><br>
+				<li><a href="http://http://cuartoscuro.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cuartoscuro.png" alt="Cuartoscuro" width="12%"></a></li>
+				<li><a href="http://http://buceoxtabay.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-xtabay.png" alt="Xtabay" width="10%"></a></li>
+				<li><a href="http://http://www.espacioprofundo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-espacio-profundo.png" alt="Espacio Profundo" width="10%"></a></li>
+				<li><a href="http://http://www.lemusunderwaterschool.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-lemus.png" alt="Lemus" width="10%"></a></li>
+                
 			</ul>
 		</div>
 	</div>
-</div> -->
+</div>
 
 
 <footer id="enlaces">
 	<div class="container">
-		<!-- <div class="col-md-3">
+		<div class="col-md-3">
 			<p>NUESTROS COLABORADORES</p>
 			<ul>
-               			<li><a href="http://www.cdmx.gob.mx/" target="_blank">CDMX</a></li>
-                		<li><a href="http://sustentur.com.mx/" target="_blank">SustenTur</a></li>
-                        	<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic</a></li>
-                    		<li><a href="http://www.nikon.com.mx/" target="_blank">Nikon</a></li>
-                		<li><a href="http://www.mexicanisimo.com.mx/" target="_blank">Mexican&iacute;simo</a></li>
-                		<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
-                    		<li><a href="http://www.latam.discovery.com/mexico/" target="_blank">Discovery</a></li>
-                    		<li><a href="http://www.alemania-mexico.com/" target="_blank">Alianza Alemania México</a></li>
-                    		<li><a href="http://www.mexicotravelchannel.com.mx/" target="_blank">M&eacute;xico Travel Channel</a></li>
-                    		<li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
-                    		<li><a href="http://www.lg.com/mx" target="_blank">LG</a></li>
-                    		<li><a href="http://www.palaceresorts.com/es" target="_blank">Palace Resorts</a></li>
-                    		<li><a href="http://www.gob.mx/conabio/" target="_blank">Conabio</a></li>
-                	</ul> 
-		</div>-->
-		<div class="col-md-4">
+            	<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank">CDMX</a></li>
+                <li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic</a></li>
+                <li><a href="http://www.nikon.com.mx/" target="_blank">Nikon</a></li>
+				<li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
+                <li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
+				<li><a href="http://http://cuartoscuro.com.mx/" target="_blank">Cuartoscuro</a></li>
+				<li><a href="http://http://buceoxtabay.com/" target="_blank">Buceo Xtabay</a></li>
+				<li><a href="http://http://www.espacioprofundo.com.mx/" target="_blank">Espacio Profundo</a></li>
+				<li><a href="http://http://www.lemusunderwaterschool.com/" target="_blank">Lemus Underwater School</a></li>
+                <li><a href="http://www.gob.mx/conabio/" target="_blank">Conabio</a></li>
+        	</ul> 
+		</div>
+		<div class="col-md-3">
 			<p>S&Iacute;GUENOS</p>
 			<ul>
 				<li><a href="https://www.facebook.com/conabio/">Facebook</a></li>
@@ -250,7 +245,7 @@
 			</ul>
 
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<p>CONOCE</p>
 			<ul>
 				<li><a href="http://www.naturalista.mx/">Naturalista</a></li>
@@ -258,7 +253,7 @@
                 <li><a href="http://www.enciclovida.mx/">EncicloVida</a></li>
 			</ul>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<p>LEGAL</p>
 			<ul>
 				<li><a href="<?php echo Yii::app()->baseUrl;?>/index.php/site/terminos_condiciones">T&eacute;rminos y condiciones</a></li>

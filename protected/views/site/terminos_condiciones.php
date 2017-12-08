@@ -24,10 +24,10 @@
                     
                     <p><strong>J&Oacute;VENES - menores de 18 a&ntilde;os</strong></p>
                     <p>Esta categor&iacute;a est&aacute; dedicada a j&oacute;venes talentos de la fotograf&iacute;a de 17 a&ntilde;os de edad y menores. Tiene como finalidad incentivar a los j&oacute;venes a tomar conciencia de su entorno a trav&eacute;s de la fotograf&iacute;a de naturaleza.</p>
-                    <p>Podr&aacute;n participar todos los j&oacute;venes nacionales o extranjeros radicados en M&eacute;xico, menores de 18 a&ntilde;os. Cada participante puede enviar hasta&nbsp;<strong>5</strong>&nbsp;(cinco) fotograf&iacute;as en este tema.</p>
+                    <p>Podr&aacute;n participar todos los j&oacute;venes nacionales o extranjeros radicados en M&eacute;xico, menores de 18 a&ntilde;os a la fecha del cierre del concurso. Cada participante puede enviar hasta&nbsp;<strong>5</strong>&nbsp;(cinco) fotograf&iacute;as en este tema.</p>
                     <p><strong>Tema libre j&oacute;venes menores de 18 a&ntilde;os.</strong>&nbsp;Se puede enviar cualquier fotograf&iacute;a relacionada con la riqueza natural de M&eacute;xico, es decir, animales o plantas en su ambiente natural, paisajes naturales, actividades relacionadas con el hombre y la naturaleza. No se aceptar&aacute;n fotograf&iacute;as de plantas cultivadas, animales en cautiverio o cualquier otro ambiente controlado.</p>
                     
-                    <p><strong>VIDEO - 18 a&ntilde;os en adelante Tema: Consumo responsable y biodiversidad (Cine minuto)</strong></p>
+                    <p><strong>VIDEO - 18 a&ntilde;os en adelante Tema libre (Cine minuto)</strong></p>
                       <p>En esta categor&iacute;a se podr&aacute;n enviar videos que representen la belleza natural de alg&uacute;n lugar, el consumo responsable y el impacto en la biodiversidad, los h&aacute;bitos alimenticios, reproductivos, de propagaci&oacute;n, la interacci&oacute;n entre especies, migraci&oacute;n y el entorno en una narrativa visual.</p>
                       <p>Se aceptar&aacute; el uso de cualquier programa para edici&oacute;n de videos con la finalidad de editar y musicalizar los videos. La musicalizaci&oacute;n, si es el caso, deber&aacute; ser m&uacute;sica original o bien pistas de audio libres de copyright o con derechos de distribuci&oacute;n sin fines de lucro.</p>
                       <p>La categor&iacute;a de video, est&aacute; limitada a <strong>3</strong> (tres) videos por participante con duraci&oacute;n m&iacute;nima de un minuto hasta m&aacute;ximo dos minutos.</p>
@@ -63,8 +63,8 @@
                         <p>&Uacute;nicamente en la p&aacute;gina oficial del concurso Mosaico Natura M&eacute;xico:&nbsp;<strong>www.mosaiconatura.net</strong></p>
                         
                         <h4>&iquest;HASTA CU&Aacute;NDO SE PUEDE PARTICIPAR?</h4>
-                        <p>El periodo de registro y participaci&oacute;n ser&aacute; a partir de las 12:00 horas del <strong>mi&eacute;rcoles 6 de diciembre de 2016</strong> <strong>hasta las 23:00 horas del mi&eacute;rcoles 28 de febrero de 2017,</strong> que ser&aacute; la fecha y hora l&iacute;mite para registrar la(s) fotograf&iacute;a(s) y videos. </p>
-                        <p><strong><em>La vigencia del concurso es del mi&eacute;rcoles 6 de Diciembre de 2016&nbsp; hasta&nbsp; la fecha de premiaci&oacute;n a los ganadores, misma que se llevar&aacute; a cabo entre los meses de junio y julio del 2018.</em></strong></p>
+                        <p>El periodo de registro y participaci&oacute;n ser&aacute; a partir de las 12:00 horas del <strong>lunes 11 de diciembre de 2016</strong> <strong>hasta las 23:00 horas del domingo 11 de marzo de 2018,</strong> que ser&aacute; la fecha y hora l&iacute;mite para registrar la(s) fotograf&iacute;a(s) y videos. </p>
+                        <p><strong><em>La vigencia del concurso es del lunes 11 de diciembre de 2016&nbsp; hasta&nbsp; la fecha de premiaci&oacute;n a los ganadores, misma que se llevar&aacute; a cabo entre los meses de junio y julio del 2018.</em></strong></p>
                         
                     <h4>RESPONSABILIDADES </h4>
                         

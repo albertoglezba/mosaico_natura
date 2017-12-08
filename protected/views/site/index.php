@@ -34,7 +34,7 @@
                         </div>
                         <div class="col-md-8 col-md-offset-4">
                         	<h3 class="mosaico-titulo">de Fotograf&iacute;a de Naturaleza</h3>
-				<h4 class="mosaico-titulo"><i>del 6 de diciembre 2017 al 28 de febrero 2018</i></h4>
+				<h4 class="mosaico-titulo"><i>del 11 de diciembre 2017 al 11 de marzo 2018</i></h4>
 
                         </div>
 
@@ -319,7 +319,7 @@
                             <td><img src="<?php echo $yii_path; ?>/img/bases-17.png"></td>
                             <td>Sube tus fotos y llena el formulario con la informaci&oacute;n de cada una</td>
                             <td><img src="<?php echo $yii_path; ?>/img/bases-17.png"></td>
-                            <td>Los resultados ser&aacute;n publicados en&#x3; <a href="#">www.mosaiconatura.net</a> </td>
+                            <td>Los resultados ser&aacute;n publicados en<br> <a href="#">www.mosaiconatura.net</a> </td>
   						</tr>
 					</table>
                 </div>
@@ -335,7 +335,7 @@
                 </div>
                 
                 	<div class="col-xs-12 col-md-8 col-md-offset-2 fechas-concurso">
-                    <p>La recepci&oacute;n de fotograf&iacute;as ser&aacute; del 6 de diciembre al 28 de febrero<br><br></p><p>Todos los participantes tendr&aacute;n derecho a una suscripci&oacute;n anual a la revista digital: Espacio Profundo</p>
+                    <p>La recepci&oacute;n de fotograf&iacute;as ser&aacute; del 11 de diciembre 2017 al 11 de marzo 2018<br><br></p><p>Todos los participantes tendr&aacute;n derecho a una suscripci&oacute;n anual a la revista digital: Espacio Profundo</p>
                     </div>
                     
             </div>
@@ -360,23 +360,23 @@
                 
                 <div class="col-md-3">
                     <img src="<?php echo $yii_path; ?>/img/team/mn.jpg" class="img-responsive img-circle" alt="persona1">
-                    <h3>JURADO SORPRESA</h3>
+                    <h3>JURADO</h3>
               </div>
                 
                 <div class="col-md-3">
-                    <img src="<?php echo $yii_path; ?>/img/team/natgeo.jpg" class="img-responsive img-circle" alt="persona1">
-                    <h3>JURADO SORPRESA</h3>
+                    <img src="<?php echo $yii_path; ?>/img/team/natgeo-int.jpg" class="img-responsive img-circle" alt="persona1">
+                    <h3>JURADO</h3>
                    
 </div> 
                 
                 <div class="col-md-3">
                     <img src="<?php echo $yii_path; ?>/img/team/nikon.jpg" class="img-responsive img-circle" alt="persona1">
-                    <h3>JURADO SORPRESA</h3>
+                    <h3>JURADO</h3>
                         </div> 
 
                 <div class="col-md-3">
-                    <img src="<?php echo $yii_path; ?>/img/team/dc.jpg" class="img-responsive img-circle" alt="persona1">
-                    <h3>JURADO SORPRESA</h3>
+                    <img src="<?php echo $yii_path; ?>/img/team/espacio-profundo.jpg" class="img-responsive img-circle" alt="persona1">
+                    <h3>JURADO</h3>
                         </div> 
 
                 
@@ -437,12 +437,12 @@
             	<img src="<?php echo $yii_path; ?>/img/svg/Biodiversitas.svg">
 			</div>
 			<div class="col-md-4">
-				<img src="<?php echo $yii_path; ?>/img/svg/NatGeo.svg">
+				<img src="<?php echo $yii_path; ?>/img/svg/NatGeo.svg" width="80%">
 			</div>
-			<div class="col-md-4">
-				<img src="<?php echo $yii_path; ?>/img/svg/Mexicanisimo.svg">
-
+				<div class="col-md-4">
+				<img src="<?php echo $yii_path; ?>/img/svg/espacio-profundo.svg" width="65%">
 			</div>
+			
                 
                
             </div>
