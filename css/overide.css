@@ -1080,7 +1080,7 @@ footer ul {
 } 
 
 #logosc img {
-	/*transform: scale(.8,.8);*/
+	margin:20px 10px;
 }
 
 .entrevistas {
