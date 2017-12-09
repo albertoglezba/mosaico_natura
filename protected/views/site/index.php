@@ -335,7 +335,7 @@
                 </div>
                 
                 	<div class="col-xs-12 col-md-8 col-md-offset-2 fechas-concurso">
-                    <p>La recepci&oacute;n de fotograf&iacute;as ser&aacute; del 11 de diciembre 2017 al 11 de marzo 2018<br><br></p><p>Todos los participantes tendr&aacute;n derecho a una suscripci&oacute;n anual a la revista digital: Espacio Profundo</p>
+                    <p>La recepci&oacute;n de fotograf&iacute;as ser&aacute; del 11 de diciembre 2017 (12:00hrs) al 11 de marzo 2018 (23:00hrs)<br><br></p><p>Todos los participantes tendr&aacute;n derecho a una suscripci&oacute;n anual a la revista digital: Espacio Profundo</p>
                     </div>
                     
             </div>
