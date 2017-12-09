@@ -9,8 +9,8 @@ $this->breadcrumbs=array(
 );*/
 ?>
 
-<h2>Error <?php echo $code; ?></h2>
+<h2>Ha habido un error <?php echo $code; ?></h2>
 
-<div class="error" style="color: #FF0000;">
+<h3 class="error text-danger">
 <?php echo CHtml::encode($message); ?>
-</div>
+</h3>
