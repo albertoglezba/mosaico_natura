@@ -63,8 +63,8 @@
                         <p>&Uacute;nicamente en la p&aacute;gina oficial del concurso Mosaico Natura M&eacute;xico:&nbsp;<strong>www.mosaiconatura.net</strong></p>
                         
                         <h4>&iquest;HASTA CU&Aacute;NDO SE PUEDE PARTICIPAR?</h4>
-                        <p>El periodo de registro y participaci&oacute;n ser&aacute; a partir de las 12:00 horas del <strong>lunes 11 de diciembre de 2016</strong> <strong>hasta las 23:00 horas del domingo 11 de marzo de 2018,</strong> que ser&aacute; la fecha y hora l&iacute;mite para registrar la(s) fotograf&iacute;a(s) y videos. </p>
-                        <p><strong><em>La vigencia del concurso es del lunes 11 de diciembre de 2016&nbsp; hasta&nbsp; la fecha de premiaci&oacute;n a los ganadores, misma que se llevar&aacute; a cabo entre los meses de junio y julio del 2018.</em></strong></p>
+                        <p>El periodo de registro y participaci&oacute;n ser&aacute; a partir de las 12:00 horas del <strong>lunes 11 de diciembre de 2017</strong> <strong>hasta las 23:00 horas del domingo 11 de marzo de 2018,</strong> que ser&aacute; la fecha y hora l&iacute;mite para registrar la(s) fotograf&iacute;a(s) y videos. </p>
+                        <p><strong><em>La vigencia del concurso es del lunes 11 de diciembre de 2017&nbsp; hasta&nbsp; la fecha de premiaci&oacute;n a los ganadores, misma que se llevar&aacute; a cabo entre los meses de junio y julio del 2018.</em></strong></p>
                         
                     <h4>RESPONSABILIDADES </h4>
                         
