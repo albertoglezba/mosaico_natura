@@ -17,7 +17,7 @@
 
 	<!-- Start of the JavaScript -->
 
-    
+
 	<script type="text/javascript">
 		function MM_preloadImages() { //v3.0
 			var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
@@ -52,15 +52,16 @@
 	<!-- Start of the Cascading Style Sheets -->
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/style_aws.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/bootstrap-theme.min.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/grayscale.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/overide.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/jquery.qtip.min.css" />
 
 
 	<!-- Custom Fonts -->
-    <link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
 	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,800" rel="stylesheet">
 
 	<link rel="icon" type="images/ico"	href="http://www.mosaiconatura.net/favicon.ico">
@@ -102,13 +103,13 @@
 					<a class="page-scroll" href="<?php echo $yii_path; ?>/#expos">Exposiciones</a>
 				</li>
 				<li class="dropdown">
-                	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ganadores</a>
-                    <ul class="dropdown-menu">
-                    	<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2017">Ganadores del III concurso</a></li>
-                        <li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2016">Ganadores del II concurso</a></li>
-                        <li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2015">Ganadores del I concurso</a></li>
-                     </ul>
-                </li>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ganadores</a>
+					<ul class="dropdown-menu">
+						<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2017">Ganadores del III concurso</a></li>
+						<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2016">Ganadores del II concurso</a></li>
+						<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2015">Ganadores del I concurso</a></li>
+					</ul>
+				</li>
 				<li>
 					<a class="page-scroll" href="<?php echo $yii_path; ?>/#preguntas">Preguntas Frecuentes</a>
 				</li>
@@ -118,8 +119,8 @@
 				<li>
 					<a class="page-scroll" href="<?php echo $yii_path; ?>/#medios">Medios</a>
 				</li>
-                <!-- Trigger the modal with a button 
-				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+				<!-- Trigger the modal with a button
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
 			</ul>
 		</div>
 		<!-- /.navbar-collapse -->
@@ -129,66 +130,66 @@
 
 <?php if (Yii::app()->request->pathInfo != '' && Yii::app()->request->pathInfo != 'site/index'){ ?>
 
-<section id="registro" class="content-section text-center">
-	<div class="registro-header">
-		<div class="container">
-			<div class="col-lg-8 col-lg-offset-2">
-			
-			<?php $ruta = explode('/', Yii::app()->request->pathInfo) ?>
-			<?php if($ruta[0] == 'fotos' || $ruta[0] == 'videos') { ?>
-			<h2><?php echo strtoupper($ruta[0]); ?></h2>
-			<?php } else if($ruta[0] == 'usuarios' && (Int)$ruta[1] !== 0) { ?>
-			<h2>CUENTA</h2>
-			<?php } else if($ruta[1] == 'terminos_condiciones'){ ?>
-			<h2>TÉRMINOS Y CONDICIONES</h2>
-			<?php } else { ?>
-			<h2>REGISTRO</h2>
-			<?php } ?>
+	<section id="registro" class="content-section text-center">
+		<div class="registro-header">
+			<div class="container">
+				<div class="col-lg-8 col-lg-offset-2">
+
+					<?php $ruta = explode('/', Yii::app()->request->pathInfo) ?>
+					<?php if($ruta[0] == 'fotos' || $ruta[0] == 'videos') { ?>
+						<h2><?php echo strtoupper($ruta[0]); ?></h2>
+					<?php } else if($ruta[0] == 'usuarios' && (Int)$ruta[1] !== 0) { ?>
+						<h2>CUENTA</h2>
+					<?php } else if($ruta[1] == 'terminos_condiciones'){ ?>
+						<h2>TÉRMINOS Y CONDICIONES</h2>
+					<?php } else { ?>
+						<h2>REGISTRO</h2>
+					<?php } ?>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="registro-content">
-		<div class="container">
-			<div class="col-md-12">
-				<p>
-					<?php
-					if (!Yii::app()->user->isGuest)
-					{
-						if (!isset(Yii::app()->user->id_usuario) || empty(Yii::app()->user->id_usuario))
+		<div class="registro-content">
+			<div class="container">
+				<div class="col-md-12">
+					<p>
+						<?php
+						if (!Yii::app()->user->isGuest)
 						{
-							if (!isset(Yii::app()->user->id) || empty(Yii::app()->user->id))
+							if (!isset(Yii::app()->user->id_usuario) || empty(Yii::app()->user->id_usuario))
 							{
-								Yii::app()->user->logout();
-								echo CHtml::link('Inicia sesión', array('site/login'));
+								if (!isset(Yii::app()->user->id) || empty(Yii::app()->user->id))
+								{
+									Yii::app()->user->logout();
+									echo CHtml::link('Inicia sesión', array('site/login'));
+								} else {
+									$this->setIdUsuario(Yii::app()->user->id);
+									$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+									echo CHtml::link('Tus fotografías', array('fotos/index'));
+									echo " | ".CHtml::link('Tus videos', array('videos/index'));
+									echo " | ".CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id));
+									echo " | ".CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'));
+								}
 							} else {
-								$this->setIdUsuario(Yii::app()->user->id);
 								$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 								echo CHtml::link('Tus fotografías', array('fotos/index'));
 								echo " | ".CHtml::link('Tus videos', array('videos/index'));
 								echo " | ".CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id));
 								echo " | ".CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'));
 							}
-						} else {
-							$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
-							echo CHtml::link('Tus fotografías', array('fotos/index'));
-							echo " | ".CHtml::link('Tus videos', array('videos/index'));
-							echo " | ".CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id));
-							echo " | ".CHtml::link('Cerrar sesión('.Yii::app()->user->name.')', array('site/logout'));
-						}
-					} else{?>
-					
-					<?php }?>
-				</p>
+						} else{?>
+
+						<?php }?>
+					</p>
 
 
-<?php echo $content; ?>
+					<?php echo $content; ?>
 
+				</div>
 			</div>
 		</div>
-	</div>
 
-</section>
+	</section>
 <?php } else { echo $content; } ?>
 
 
@@ -201,15 +202,15 @@
 			<ul id="logosc">
 				<li><a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conabio.png" alt="Conabio" width="14%"></a></li>
 				<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-sedema.png" alt="SEDEMA" width="14%"></a></li>
-                <li><a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" alt="National Geographic" width="12%"></a></li>
-                <li><a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-nikon.png" alt="Nikon" width="8%"></a></li>
-                <li><a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-epson.png" alt="Epson" width="10%"></a></li>
+				<li><a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" alt="National Geographic" width="12%"></a></li>
+				<li><a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-nikon.png" alt="Nikon" width="8%"></a></li>
+				<li><a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-epson.png" alt="Epson" width="10%"></a></li>
 				<li><a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-acir.png" alt="Fundación Acir" width="8%"></a></li><br>
 				<li><a href="http://http://cuartoscuro.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cuartoscuro.png" alt="Cuartoscuro" width="12%"></a></li>
 				<li><a href="http://http://buceoxtabay.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-xtabay.png" alt="Xtabay" width="10%"></a></li>
 				<li><a href="http://http://www.espacioprofundo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-espacio-profundo.png" alt="Espacio Profundo" width="10%"></a></li>
 				<li><a href="http://http://www.lemusunderwaterschool.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-lemus.png" alt="Lemus" width="10%"></a></li>
-                
+
 			</ul>
 		</div>
 	</div>
@@ -221,24 +222,24 @@
 		<div class="col-md-3">
 			<p>NUESTROS COLABORADORES</p>
 			<ul>
-            	<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank">CDMX</a></li>
-                <li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic</a></li>
-                <li><a href="http://www.nikon.com.mx/" target="_blank">Nikon</a></li>
+				<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank">CDMX</a></li>
+				<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic</a></li>
+				<li><a href="http://www.nikon.com.mx/" target="_blank">Nikon</a></li>
 				<li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
-                <li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
+				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
 				<li><a href="http://http://cuartoscuro.com.mx/" target="_blank">Cuartoscuro</a></li>
 				<li><a href="http://http://buceoxtabay.com/" target="_blank">Buceo Xtabay</a></li>
 				<li><a href="http://http://www.espacioprofundo.com.mx/" target="_blank">Espacio Profundo</a></li>
 				<li><a href="http://http://www.lemusunderwaterschool.com/" target="_blank">Lemus Underwater School</a></li>
-                <li><a href="http://www.gob.mx/conabio/" target="_blank">Conabio</a></li>
-        	</ul> 
+				<li><a href="http://www.gob.mx/conabio/" target="_blank">Conabio</a></li>
+			</ul>
 		</div>
 		<div class="col-md-3">
 			<p>S&Iacute;GUENOS</p>
 			<ul>
 				<li><a href="https://www.facebook.com/conabio/">Facebook</a></li>
 				<li><a href="https://twitter.com/conabio">Twitter</a></li>
-                <li><a href="https://www.instagram.com/biodiversidad_mexicana/">Instagram</a></li>
+				<li><a href="https://www.instagram.com/biodiversidad_mexicana/">Instagram</a></li>
 				<li><a href="https://www.youtube.com/user/biodiversidadmexico">YouTube</a></li>
 				<li><a href="https://www.vimeo.com/conabio">Vimeo</a></li>
 				<li><a href="https://soundcloud.com/conabio">SoundCloud</a></li>
@@ -250,7 +251,7 @@
 			<ul>
 				<li><a href="http://www.naturalista.mx/">Naturalista</a></li>
 				<li><a href="http://biodiversidad.gob.mx/">Biodiversidad Mexicana</a></li>
-                <li><a href="http://www.enciclovida.mx/">EncicloVida</a></li>
+				<li><a href="http://www.enciclovida.mx/">EncicloVida</a></li>
 			</ul>
 		</div>
 		<div class="col-md-3">
@@ -292,7 +293,7 @@
 </script>
 
 
-    
+
 </body>
 <!-- InstanceEnd -->
 </html>

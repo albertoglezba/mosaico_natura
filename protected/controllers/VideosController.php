@@ -2,6 +2,14 @@
 
 class VideosController extends Controller
 {
+	protected function beforeAction($event){
+		$usuario = Usuarios::model()->findByPk( Yii::app()->user->id_usuario );
+		$edad_actualizada = $usuario->fecha_nac == '9999-01-01' ? false : true;
+		if(!$edad_actualizada){
+			$this->redirect(Yii::app()->baseUrl."/index.php/usuarios/update/".$usuario->id);
+		}
+		return true;
+	}
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
