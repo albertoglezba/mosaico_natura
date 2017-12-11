@@ -70,7 +70,7 @@
                            $("#AjaxLoader").show();
 			   				$("#mybtn").prop("disabled", true);
                       }'
-                     ),array('id'=>'mybtn','class'=>'class1 class2', 'onclick'=>"this.disabled=true;")); 
+                     ),array('id'=>'mybtn','class'=>'class1 class2 btn btn-success', 'onclick'=>"this.disabled=true;"));
 	?>
                      
 	<?php $this->endWidget(); ?>

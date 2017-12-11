@@ -124,7 +124,7 @@ class Videos extends CActiveRecord
 	
 			$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 	
-			if ($usuario->edad > 17)
+			if (Usuarios::dameEdad($usuario->fecha_nac) > 17)
 			{
 				if (count($usuario->videos) >= Yii::app()->params['#_videos'])
 				{

@@ -87,7 +87,7 @@ class VideosController extends Controller
 		$this->vigencia ();
 		$puede_subir = Videos::soloUnVideo ();
 		$usuario = Usuarios::model ()->findByPk ( Yii::app ()->user->id_usuario );
-		$adulto = $usuario->edad > 17 ? '1' : '0';
+		$adulto = Usuarios::dameEdad($usuario->fecha_nac) > 17 ? '1' : '0';
 		
 		if ($puede_subir && $adulto) {
 			$this->render ( 'create', array (
@@ -146,7 +146,7 @@ class VideosController extends Controller
 	{
 		$this->vigencia ();
 		$usuario = Usuarios::model ()->findByPk ( Yii::app ()->user->id_usuario );
-		$adulto = $usuario->edad > 17 ? '1' : '0';
+		$adulto = Usuarios::dameEdad($usuario->fecha_nac) > 17 ? '1' : '0';
 		
 		if ($adulto)
 		{

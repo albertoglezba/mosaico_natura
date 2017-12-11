@@ -91,9 +91,9 @@ class FotosController extends Controller
 		$usuario = Usuarios::model()->findByPk( Yii::app()->user->id_usuario );
 		$puede_subir = Fotos::conCategoriasDisponibles();
 		
-		if (isset ( $usuario->edad )) {
+		if (!Usuarios::deboActualizarFechaNac($usuario->fecha_nac)) {
 			if ($puede_subir) {
-				$adulto = $usuario->edad > 17 ? '1' : '0';
+				$adulto = Usuarios::dameEdad($usuario->fecha_nac) > 17 ? '1' : '0';
 				$this->render ( 'create', array (
 						'adulto' => $adulto 
 				) );
