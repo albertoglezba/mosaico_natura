@@ -114,7 +114,7 @@ class Usuarios extends CActiveRecord
             return false;
         }
 
-        $edad = $this::dameEdad($this->fecha_nac);
+        $edad = Usuarios::dameEdad($this->fecha_nac);
 
         if ($edad < 6)
         {
