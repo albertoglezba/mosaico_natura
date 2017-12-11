@@ -139,10 +139,17 @@ class Usuarios extends CActiveRecord
     }
 
     public static function dameEdad($fecha_nac){
-        $d1 = new DateTime(Yii::app()->params->fecha_termino);
-        $d2 = new DateTime($fecha_nac);
-        $diff = $d2->diff($d1);
-        return $diff->y;
+
+        //Para más allá de php5.3 (te odio ixmati)
+        //$d1 = new DateTime(Yii::app()->params->fecha_termino);
+        //$d2 = new DateTime($fecha_nac);
+        //$diff = $d2->diff($d1);
+
+        $d1 = Yii::app()->params->fecha_termino;
+        $d2 = $fecha_nac;
+        $diff = abs((strtotime($d1)-345600) - strtotime($d2));
+        $years = floor($diff / (365*60*60*24));
+        return $years;
     }
 
     public function valida_passwd()

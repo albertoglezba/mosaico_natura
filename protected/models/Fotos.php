@@ -75,12 +75,7 @@ class Fotos extends CActiveRecord
 		$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 		$categoria = $usuario->fotos(array("condition"=>"categoria_id=".$this->categoria_id));
 
-		$d1 = new DateTime('2018-02-28');
-		$d2 = new DateTime($usuario->fecha_nac);
-
-		$diff = $d2->diff($d1);
-
-		if ($diff->y > 17)
+		if (Usuarios::dameEdad($usuario->fecha_nac) > 17)
 		{	
 			if (count($categoria) >= Yii::app()->params['#_fotos_adulto_x_categoria'])
 			{

@@ -76,11 +76,11 @@ class Controller extends CController
 			if ($dameId)
 				return $this->verificaLogin(true);
 			} else {
-				
+
 			}
 		}
 	}
-	
+
 	public function vigencia()
 	{
 		$fecha = date("YmdHis");
