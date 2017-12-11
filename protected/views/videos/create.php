@@ -112,8 +112,8 @@ function getS3Details($s3Bucket, $region, $acl = 'public-read') {
         <!-- Key is the file's name on S3 and will be filled in with JS -->
         <input type="hidden" name="key" value="">
         <div id="label_file" class="alert alert-warning hidden" role="alert"></div>
-        <div class="fileUpload btn btn-success">
-            <span>Sube tu video</span>
+        <div class="fileUpload btn btn-lg btn-info">
+            <span>Elige tu video</span>
             <input type="file" name="file" id="file_to_upload" class="upload">
         </div>
 
