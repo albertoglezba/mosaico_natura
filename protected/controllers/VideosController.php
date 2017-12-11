@@ -4,7 +4,8 @@ class VideosController extends Controller
 {
 	protected function beforeAction($event){
 		$usuario = Usuarios::model()->findByPk( Yii::app()->user->id_usuario );
-		$edad_actualizada = $usuario->fecha_nac == '9999-01-01' ? false : true;
+		//$edad_actualizada = $usuario->fecha_nac == '9999-01-01' ? false : true;
+		$edad_actualizada = ((Usuarios::dameEdad($usuario->fecha_nac) > 6 ) && (Usuarios::dameEdad($usuario->fecha_nac) < 130 ));
 		if(!$edad_actualizada){
 			$this->redirect(Yii::app()->baseUrl."/index.php/usuarios/update/".$usuario->id);
 		}

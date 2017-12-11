@@ -129,7 +129,9 @@ class Usuarios extends CActiveRecord
     }
 
     public static function deboActualizarFechaNac($fecha_nac){
-        if($fecha_nac=='9999-01-01'){
+        $edad_actualizada = ((Usuarios::dameEdad($fecha_nac) < 6 ) || (Usuarios::dameEdad($fecha_nac) > 130 ));
+
+        if($edad_actualizada){
             return true;
         }else{
             return false;
