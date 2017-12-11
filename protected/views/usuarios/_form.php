@@ -14,9 +14,24 @@
         ),
     )); ?>
 
-        <h3 class="text-info note">Campos con <strong>* son requeridos</strong>.</h3>
+    <h3 class="text-info note">Campos con <strong>* son requeridos</strong>.</h3>
 
     <?php echo $form->errorSummary($model); ?>
+
+    <?php if(Usuarios::deboActualizarFechaNac($model->fecha_nac) && !$model->isNewRecord) { ?>
+        <hr />
+        <div class="form-group">
+            <?php echo $form->labelEx($model,'fecha_nac', array('class'=>'col-sm-3 control-label ')); ?>
+            <div class="col-sm-8">
+                <?php echo $form->dateField($model,'fecha_nac',array('class' => 'form-control')); ?>
+            </div>
+            <div class="col-sm-12">
+                <h2 class="text-danger">Actualiza tu fecha de nacimiento para poder determinar tu categoría correctamente, recuerda que una vez ingresada, este campo sera inamovible</h2>
+            </div>
+            <?php //echo $form->error($model,'apellido'); ?>
+        </div>
+        <hr />
+    <?php } ?>
 
     <div class="form-group">
         <?php echo $form->labelEx($model,'nombre', array('class'=>'col-sm-2 control-label ')); ?>

@@ -128,6 +128,14 @@ class Usuarios extends CActiveRecord
         }
     }
 
+    public static function deboActualizarFechaNac($fecha_nac){
+        if($fecha_nac=='9999-01-01'){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     public static function dameEdad($fecha_nac){
         $d1 = new DateTime(Yii::app()->params->fecha_termino);
         $d2 = new DateTime($fecha_nac);

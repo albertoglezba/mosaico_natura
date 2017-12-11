@@ -2,12 +2,11 @@
 
 class FotosController extends Controller
 {
-	protected function beforeAction($event)
-	{
+	protected function beforeAction($event){
 		$usuario = Usuarios::model()->findByPk( Yii::app()->user->id_usuario );
 		$edad_actualizada = $usuario->fecha_nac == '9999-01-01' ? false : true;
 		if(!$edad_actualizada){
-			$this->redirect('/index.php');
+			$this->redirect(Yii::app()->baseUrl."/index.php/usuarios/update/".$usuario->id);
 		}
 		return true;
 	}
