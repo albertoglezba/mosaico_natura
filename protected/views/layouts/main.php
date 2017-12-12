@@ -202,42 +202,43 @@
 <div id="colaboradores">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 sponsers">
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conabio.png" class="img-responsive" alt="Conabio"> </a>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-sedema.png" class="img-responsive" alt="SEDEMA"> </a>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-sedema.png" class="img-responsive img-ch" alt="SEDEMA"> </a>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 sponsers">
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" class="img-responsive" alt="National Geographic" > </a>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-nikon.png" class="img-responsive" alt="Nikon" > </a>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-nikon.png" class="img-responsive img-gde" alt="Nikon" > </a>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 sponsers">
-				<a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-epson.png" class="img-responsive" alt="Epson" > </a>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-epson.png" class="img-responsive img-ch" alt="Epson" > </a>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-acir.png" class="img-responsive" alt="Fundación Acir" > </a>
-			</div><br>
-			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 sponsers">
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-acir.png" class="img-responsive img-gde" alt="Fundación Acir" > </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://http://cuartoscuro.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cuartoscuro.png" class="img-responsive" alt="Cuartoscuro" > </a>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://http://buceoxtabay.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-xtabay.png" class="img-responsive" alt="Xtabay" > </a>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://http://buceoxtabay.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-xtabay.png" class="img-responsive img-gde" alt="Xtabay" > </a>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 sponsers">
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://www.doradobuceo.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-dorado-buceo.png" class="img-responsive" alt="Dorado Buceo"> </a>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://www.mexicanisimo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-mexicanisimo.png" class="img-responsive" alt="Mexicanísimo"> </a>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.mexicanisimo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-mexicanisimo.png" class="img-responsive img-ch" alt="Mexicanísimo"> </a>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://http://www.espacioprofundo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-espacio-profundo.png" class="img-responsive" alt="Espacio Profundo" > </a>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://http://www.espacioprofundo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-espacio-profundo.png" class="img-responsive img-gde" alt="Espacio Profundo" > </a>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 sponsers">
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://http://www.lemusunderwaterschool.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-lemus.png" class="img-responsive" alt="Lemus" > </a>
 			</div>
+			
 
 		</div>
 	</div>

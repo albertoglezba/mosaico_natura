@@ -1078,10 +1078,27 @@ footer ul {
 .view h1, .view h2, .view h3, .view h4, .view h5, .view h6{
 	margin: 0;
 }
-.sponsers{
-	margin: 15px auto;
-	min-height: 115px;
+.sponsers {
+	margin:20px auto;
 }
+
+.sponsers img{
+	max-height:64px;
+	margin:10px auto 0 auto;
+}
+
+img.img-gde{
+	max-height:80px;
+	margin-top:0!important;
+}
+
+img.img-ch{
+	max-height:56px;
+	margin-top:16px;
+}
+
+
+
 .entrevistas {
 	display: inline-block;
     margin: 5px;
