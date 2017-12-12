@@ -2,6 +2,17 @@
 
 class FotosController extends Controller
 {
+	protected function beforeAction($event){
+		$usuario = Usuarios::model()->findByPk( Yii::app()->user->id_usuario );
+		//$edad_actualizada = $usuario->fecha_nac == '9999-01-01' ? false : true;
+		$edad_actualizada = ((Usuarios::dameEdad($usuario->fecha_nac) > 6 ) && (Usuarios::dameEdad($usuario->fecha_nac) < 130 ));
+		if(!$edad_actualizada){
+			$this->redirect(Yii::app()->baseUrl."/index.php/usuarios/update/".$usuario->id);
+		}
+		return true;
+	}
+
+
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -81,9 +92,9 @@ class FotosController extends Controller
 		$usuario = Usuarios::model()->findByPk( Yii::app()->user->id_usuario );
 		$puede_subir = Fotos::conCategoriasDisponibles();
 		
-		if (isset ( $usuario->edad )) {
+		if (!Usuarios::deboActualizarFechaNac($usuario->fecha_nac)) {
 			if ($puede_subir) {
-				$adulto = $usuario->edad > 17 ? '1' : '0';
+				$adulto = Usuarios::dameEdad($usuario->fecha_nac) > 17 ? '1' : '0';
 				$this->render ( 'create', array (
 						'adulto' => $adulto 
 				) );

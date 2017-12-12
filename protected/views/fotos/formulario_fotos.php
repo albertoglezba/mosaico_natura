@@ -101,7 +101,7 @@
 		
 	<br>
 
-	<?php echo CHtml::ajaxSubmitButton('Enviar fotografía',CHtml::normalizeUrl(array('fotos/formulario_fotos','render'=>true)),
+	<?php echo CHtml::ajaxSubmitButton("Enviar fotografía",CHtml::normalizeUrl(array('fotos/formulario_fotos','render'=>true)),
                  array(
                      'dataType'=>'json',
                      'type'=>'post',
@@ -122,7 +122,7 @@
                            $("#AjaxLoader").show();
                            $("#mybtn").prop("disabled", true);
                       }'
-                     ),array('id'=>'mybtn','class'=>'class1 class2 btn btn-success', 'onclick'=>"this.disabled=true;")); 
+                     ),array('id'=>'mybtn','class'=>'class1 class2 btn btn-lg btn-success', 'onclick'=>"this.disabled=true;"));
 	?>
                      
 	<?php $this->endWidget(); ?>

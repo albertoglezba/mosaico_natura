@@ -1,9 +1,9 @@
 <div class="tyc-content">
 		<div class="col-md-12">
-					<p>La Comisi&oacute;n Nacional para el Conocimiento y uso de la Biodiversidad, <strong>CONABIO </strong>a trav&eacute;s de <strong>Mosaico Natura M&eacute;xico</strong>,<strong> </strong>convoca al&nbsp;<strong>&ldquo;Tercer Concurso Nacional de Fotograf&iacute;a de la Naturaleza&rdquo;</strong>&nbsp;en el cual podr&aacute;n participar todas las personas, nacionales o extranjeras radicadas en M&eacute;xico, aficionados o profesionales de la fotograf&iacute;a.</p>
+					<p>La Comisi&oacute;n Nacional para el Conocimiento y uso de la Biodiversidad, <strong>CONABIO </strong>a trav&eacute;s de <strong>Mosaico Natura M&eacute;xico</strong>,<strong> </strong>convoca al&nbsp;<strong>&ldquo;Cuarto Concurso Nacional de Fotograf&iacute;a de la Naturaleza&rdquo;</strong>&nbsp;en el cual podr&aacute;n participar todas las personas, nacionales o extranjeras radicadas en M&eacute;xico, aficionados o profesionales de la fotograf&iacute;a.</p>
                      <p> La(s) fotograf&iacute;a(s) y video (s) debe(n) representar la&nbsp;<strong>riqueza natural en M&eacute;xico,&nbsp;</strong>es decir especies de plantas, hongos y animales nativos del pa&iacute;s en vida silvestre, ecosistemas, usos de la biodiversidad, naturaleza en destinos tur&iacute;sticos y procesos o actividades que degradan la naturaleza, &nbsp;No se aceptan fotograf&iacute;as o videos que previamente hayan ganado en otro concurso.</p>
-                      <p>De las fotograf&iacute;as recibidas, el jurado seleccionar&aacute; *<strong>28</strong>&nbsp;fotograf&iacute;as,&nbsp;<strong>5 de cada tema en la categor&iacute;a de adultos (25) y 3 para la de j&oacute;venes</strong>, que formar&aacute;n parte de la exposici&oacute;n &ldquo;Visiones de Nuestra Naturaleza III&ldquo; a exponerse en las rejas de la Av. Reforma en el Bosque de Chapultepec, Distrito Federal y de una exposici&oacute;n itinerante en la rep&uacute;blica mexicana</p>
-                      <p><strong>Nota:</strong>&nbsp;Los primeros lugares de cada categor&iacute;a seleccionados en el&nbsp;<strong>Segundo Concurso de Fotograf&iacute;a de Naturaleza Mosaico Natura M&eacute;xico</strong>&nbsp;no podr&aacute;n participar en este certamen. Su participaci&oacute;n se aceptar&aacute; nuevamente en el pr&oacute;ximo concurso.</p>
+                      <p>De las fotograf&iacute;as recibidas, el jurado seleccionar&aacute; *<strong>43</strong>&nbsp;fotograf&iacute;as,&nbsp;<strong>5 de cada tema en la categor&iacute;a de adultos (40) y 3 para la de j&oacute;venes</strong>, que formar&aacute;n parte de la exposici&oacute;n &ldquo;Visiones de Nuestra Naturaleza III&ldquo; a exponerse en las rejas de la Av. Reforma en el Bosque de Chapultepec, Ciudad de M&eacute;xico del 9 de mayo al 9 de julio del 2018 y en el bosque de Aragón del 10 de julio al 3 de octubre del mismo año, adem&aacute;s de una exposici&oacute;n itinerante en la Rep&uacute;blica Mexicana</p>
+                      <p><strong>Nota:</strong>&nbsp;Los primeros lugares de cada categor&iacute;a seleccionados en el&nbsp;<strong>Tercer Concurso de Fotograf&iacute;a de Naturaleza Mosaico Natura M&eacute;xico</strong>&nbsp;no podr&aacute;n participar en este certamen. Su participaci&oacute;n se aceptar&aacute; nuevamente en el pr&oacute;ximo concurso.</p>
 					
                     <h4><strong>CATEGOR&Iacute;AS</strong></h4>
                     
@@ -12,20 +12,23 @@
                     <p>Fotograf&iacute;a J&oacute;venes menores de 18 a&ntilde;os</p>
 					<p>Categor&iacute;a Video de 18 a&ntilde;os en adelante</p>
 					<p><strong>ADULTOS</strong></p>
-					<p>Cada participante puede enviar hasta un l&iacute;mite de&nbsp;<strong>25 fotograf&iacute;as, 5 por tema,</strong>para ser incluidas en los siguientes temas:</p>
+					<p>Cada participante puede enviar hasta un l&iacute;mite de&nbsp;<strong>40 fotograf&iacute;as, 5 por cada uno de los siguientes temas:</strong></p>
                     <p><strong>Fauna:</strong>&nbsp;Se podr&aacute;n tomar toda clase de animales en vida silvestre, desde peque&ntilde;os insectos hasta grandes mam&iacute;feros, siempre que &eacute;stos, no est&eacute;n en cautiverio o sean animales dom&eacute;sticos y/o mascotas.</p>
                      <p><strong>Plantas y hongos:&nbsp;</strong>Se podr&aacute;n tomar toda clase de plantas y hongos en vida silvestre, No se aceptar&aacute;n fotograf&iacute;as de plantas cultivadas de maceta o jard&iacute;n.</p>
                      <p><strong>Naturaleza y ser humano:</strong>&nbsp;Usos y costumbres relacionados con el entorno natural (actividades agr&iacute;colas, artesanales, gastron&oacute;micas, medicinales, espirituales, recreativas, ceremoniales). Escenas de manejo sustentable y relaci&oacute;n positiva entre humano y naturaleza.</p>
                      <p><strong>Paisajes con ecosistemas:&nbsp;</strong>Vistas a&eacute;reas, terrestres, acu&aacute;ticas y subacu&aacute;ticas, donde se enfatiza los elementos de la naturaleza.</p>
                      <p><strong>Solo un mundo:&nbsp;</strong>Im&aacute;genes de paisajes, flora y fauna deteriorados o impactados directa o indirectamente por actividades humanas.</p>
+					<p><strong>Fotograf&iacute;a subacu&aacute;tica:&nbsp;</strong>Im&aacute;genes de animales, plantas o paisajes subacu&aacute;ticos, ya sea en un entorno marino o dulceacu&iacute;cola.</p>
+					<p><strong>Fotograf&iacute;a macro:&nbsp;</strong>Captura en una imagen los peque&ntilde;os detalles de la naturaleza; organismos microsc&oacute;picos o parte de ellos. Adem&aacute;s de fotograf&iacute;as con c&aacute;maras convencionales, se aceptar&aacute;n im&aacute;genes tomadas con microscopio.</p>
+					<p><strong>Foto reportaje al natural:&nbsp;</strong>Cu&eacute;ntanos una historia mediante una secuencia de im&aacute;genes (m&aacute;ximo 5). Esta categor&iacute;a tiene un tema enfocado al comportamiento de las especies de animales y plantas de M&eacute;xico, acciones de conservaci&oacute;n o impacto a la naturaleza o eventos naturales a trav&eacute;s del tiempo.</p>
                     
                     <p><strong>J&Oacute;VENES - menores de 18 a&ntilde;os</strong></p>
                     <p>Esta categor&iacute;a est&aacute; dedicada a j&oacute;venes talentos de la fotograf&iacute;a de 17 a&ntilde;os de edad y menores. Tiene como finalidad incentivar a los j&oacute;venes a tomar conciencia de su entorno a trav&eacute;s de la fotograf&iacute;a de naturaleza.</p>
-                    <p>Podr&aacute;n participar todos los j&oacute;venes nacionales o extranjeros radicados en M&eacute;xico, menores de 18 a&ntilde;os. Cada participante puede enviar hasta&nbsp;<strong>5</strong>&nbsp;(cinco) fotograf&iacute;as en este tema.</p>
+                    <p>Podr&aacute;n participar todos los j&oacute;venes nacionales o extranjeros radicados en M&eacute;xico, menores de 18 a&ntilde;os a la fecha del cierre del concurso. Cada participante puede enviar hasta&nbsp;<strong>5</strong>&nbsp;(cinco) fotograf&iacute;as en este tema.</p>
                     <p><strong>Tema libre j&oacute;venes menores de 18 a&ntilde;os.</strong>&nbsp;Se puede enviar cualquier fotograf&iacute;a relacionada con la riqueza natural de M&eacute;xico, es decir, animales o plantas en su ambiente natural, paisajes naturales, actividades relacionadas con el hombre y la naturaleza. No se aceptar&aacute;n fotograf&iacute;as de plantas cultivadas, animales en cautiverio o cualquier otro ambiente controlado.</p>
                     
-                    <p><strong>VIDEO - 18 a&ntilde;os en adelante Tema: Consumo responsable y biodiversidad (Cine minuto)</strong></p>
-                      <p>En esta categor&iacute;a se podr&aacute;n enviar videos que representen el consumo responsable y el impacto en la biodiversidad, los h&aacute;bitos alimenticios, reproductivos, de propagaci&oacute;n, interacci&oacute;n entre especies, de migraci&oacute;n, y la belleza natural de alg&uacute;n lugar etc&eacute;tera &nbsp;y su entorno en una narrativa visual.</p>
+                    <p><strong>VIDEO - 18 a&ntilde;os en adelante Tema libre (Cine minuto)</strong></p>
+                      <p>En esta categor&iacute;a se podr&aacute;n enviar videos que representen la belleza natural de alg&uacute;n lugar, el consumo responsable y el impacto en la biodiversidad, los h&aacute;bitos alimenticios, reproductivos, de propagaci&oacute;n, la interacci&oacute;n entre especies, migraci&oacute;n y el entorno en una narrativa visual.</p>
                       <p>Se aceptar&aacute; el uso de cualquier programa para edici&oacute;n de videos con la finalidad de editar y musicalizar los videos. La musicalizaci&oacute;n, si es el caso, deber&aacute; ser m&uacute;sica original o bien pistas de audio libres de copyright o con derechos de distribuci&oacute;n sin fines de lucro.</p>
                       <p>La categor&iacute;a de video, est&aacute; limitada a <strong>3</strong> (tres) videos por participante con duraci&oacute;n m&iacute;nima de un minuto hasta m&aacute;ximo dos minutos.</p>
                     
@@ -60,8 +63,8 @@
                         <p>&Uacute;nicamente en la p&aacute;gina oficial del concurso Mosaico Natura M&eacute;xico:&nbsp;<strong>www.mosaiconatura.net</strong></p>
                         
                         <h4>&iquest;HASTA CU&Aacute;NDO SE PUEDE PARTICIPAR?</h4>
-                        <p>El periodo de registro y participaci&oacute;n ser&aacute; a partir de las 12:00 horas del <strong>martes 6 de diciembre de 2016</strong> <strong>hasta las 23:00 horas del martes 28 de febrero de 2017,</strong> que ser&aacute; la fecha y hora l&iacute;mite para registrar la(s) fotograf&iacute;a(s) y videos. </p>
-                        <p><strong><em>La vigencia del concurso es del martes 6 de Diciembre de 2016&nbsp; hasta&nbsp; la fecha de premiaci&oacute;n a los ganadores, misma que se llevar&aacute; a cabo en el mes de Junio de 2017.</em></strong></p>
+                        <p>El periodo de registro y participaci&oacute;n ser&aacute; a partir de las 12:00 horas del <strong>lunes 11 de diciembre de 2017</strong> <strong>hasta las 23:00 horas del domingo 11 de marzo de 2018,</strong> que ser&aacute; la fecha y hora l&iacute;mite para registrar la(s) fotograf&iacute;a(s) y videos. </p>
+                        <p><strong><em>La vigencia del concurso es del lunes 11 de diciembre de 2017&nbsp; hasta&nbsp; la fecha de premiaci&oacute;n a los ganadores, misma que se llevar&aacute; a cabo entre los meses de junio y julio del 2018.</em></strong></p>
                         
                     <h4>RESPONSABILIDADES </h4>
                         
@@ -124,7 +127,7 @@
                       
                       <table class="table table-bordered" border="0" cellspacing="1" cellpadding="0" width="100%">
                         <tr>
-                          <th colspan="6"><p align="center">Categor&iacute;a Adulto</p></th>
+                          <th colspan="9"><p align="center">Categor&iacute;a Adulto</p></th>
                         </tr>
                         <tr>
                           <td></td>
@@ -133,14 +136,20 @@
                           <td><p align="center"><strong>Naturaleza y ser humano</strong></p></td>
                           <td><p align="center"><strong>Paisajes y ecosistemas</strong></p></td>
                           <td><p align="center"><strong>Solo un Mundo</strong></p></td>
+						  <td><p align="center"><strong>Fotograf&iacute;a subacu&aacute;tica</strong></p></td>
+                          <td><p align="center"><strong>Fotograf&iacute;a macro</strong></p></td>
+                          <td><p align="center"><strong>Foto reportaje al natural</strong></p></td>
                         </tr>
                         <tr>
                           <td rowspan="4"><p align="center"><strong>1er Lugar</strong></p></td>
-                          <td><p align="center">$25,000 en especie:</p></td>
-                          <td><p align="center">$25,000 en especie:</p></td>
-                          <td><p align="center">$25,000 en especie:</p></td>
-                          <td><p align="center">$25,000 en especie:</p></td>
-                          <td><p align="center">$25,000 en especie:</p></td>
+                          <td><p align="center">$25,000 en especie o dinero en efectivo</p></td>
+                          <td><p align="center">$25,000 en especie o dinero en efectivo</p></td>
+                          <td><p align="center">$25,000 en especie o dinero en efectivo</p></td>
+                          <td><p align="center">$25,000 en especie o dinero en efectivo</p></td>
+                          <td><p align="center">$25,000 en especie o dinero en efectivo</p></td>
+						  <td><p align="center">$25,000 en especie o dinero en efectivo</p></td>
+                          <td><p align="center">$25,000 en especie o dinero en efectivo</p></td>
+                          <td><p align="center">$25,000 en especie o dinero en efectivo</p></td>
                         </tr>
                         <tr>
                           <td><p align="center">Publicaci&oacute;n en diversos medios</p></td>
@@ -148,37 +157,52 @@
                           <td><p align="center">Publicaci&oacute;n en diversos medios</p></td>
                           <td><p align="center">Publicaci&oacute;n en diversos medios</p></td>
                           <td><p align="center">Publicaci&oacute;n en diversos medios</p></td>
+						  <td><p align="center">Publicaci&oacute;n en diversos medios</p></td>
+                          <td><p align="center">Publicaci&oacute;n en diversos medios</p></td>
+                          <td><p align="center">Publicaci&oacute;n en diversos medios</p></td>
                         </tr>
                         <tr>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+						  <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
                         </tr>
                         <tr>
-                          <td><p align="center">Vale por $16,999 en productos Nikon</p></td>
-                          <td><p align="center">Vale por $16,999 en productos Nikon</p></td>
-                          <td><p align="center">Vale por $16,999 en productos Nikon</p></td>
-                          <td><p align="center">Vale por $16,999 en productos Nikon</p></td>
-                          <td><p align="center">Vale por $16,999 en productos Nikon</p></td>
+                          <td><p align="center">C&aacute;mara fotogr&aacute;fica Nikon Reflex D5500</p></td>
+                          <td><p align="center">C&aacute;mara fotogr&aacute;fica Nikon Reflex D5500</p></td>
+						  <td><p align="center">C&aacute;mara fotogr&aacute;fica Nikon Reflex D5500</p></td>
+						  <td><p align="center">C&aacute;mara fotogr&aacute;fica Nikon Reflex D5500</p></td>
+						  <td><p align="center">C&aacute;mara fotogr&aacute;fica Nikon Reflex D5500</p></td>
+						  <td><p align="center">C&aacute;mara fotogr&aacute;fica Nikon Reflex D5500</p></td>
+						  <td><p align="center">C&aacute;mara fotogr&aacute;fica Nikon Reflex D5500</p></td>
+						  <td><p align="center">C&aacute;mara fotogr&aacute;fica Nikon Reflex D5500</p></td>
                         </tr>
                         <tr>
-                          <td rowspan="4"><p align="center"><strong>2do Lugar</strong></p></td>
+                          <td rowspan="2"><p align="center"><strong>2do Lugar</strong></p></td>
                           <td><p align="center">$20,000 en especie:</p></td>
                           <td><p align="center">$20,000 en especie:</p></td>
                           <td><p align="center">$20,000 en especie:</p></td>
                           <td><p align="center">$20,000 en especie:</p></td>
                           <td><p align="center">$20,000 en especie:</p></td>
+						  <td><p align="center">$20,000 en especie:</p></td>
+                          <td><p align="center">$20,000 en especie:</p></td>
+                          <td><p align="center">$20,000 en especie:</p></td>
                         </tr>
                         <tr>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+						  <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                           <td><p align="center">Celular LG Modelo G5, valor $12,000</p></td>
                           <td><p align="center">Celular LG Modelo G5, valor $12,000</p></td>
                           <td><p align="center">Celular LG Modelo G5, valor $12,000</p></td>
@@ -191,91 +215,100 @@
                           <td><p align="center">Dos m&oacute;dulos  Nikon School</p></td>
                           <td><p align="center">Dos m&oacute;dulos  Nikon School</p></td>
                           <td><p align="center">Dos m&oacute;dulos  Nikon School</p></td>
+                        </tr> -->
+                        <tr>
+                          <td rowspan="2"><p align="center"><strong>3er Lugar</strong></p></td>
+                          <td><p align="center">$15,000 en especie:</p></td>
+                          <td><p align="center">$15,000 en especie:</p></td>
+                          <td><p align="center">$15,000 en especie:</p></td>
+                          <td><p align="center">$15,000 en especie:</p></td>
+                          <td><p align="center">$15,000 en especie:</p></td>
+						  <td><p align="center">$15,000 en especie:</p></td>
+                          <td><p align="center">$15,000 en especie:</p></td>
+                          <td><p align="center">$15,000 en especie:</p></td>
                         </tr>
                         <tr>
-                          <td rowspan="3"><p align="center"><strong>3er Lugar</strong></p></td>
-                          <td><p align="center">$15,000 en especie:</p></td>
-                          <td><p align="center">$15,000 en especie:</p></td>
-                          <td><p align="center">$15,000 en especie:</p></td>
-                          <td><p align="center">$15,000 en especie:</p></td>
-                          <td><p align="center">$15,000 en especie:</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+						  <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+						  <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
                         </tr>
-                        <tr>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                        </tr>
-                        <tr>
+                        <!-- <tr>
                           <td><p align="center">Vale por $5,666 en productos Nikon</p></td>
                           <td><p align="center">Vale por $5,666 en productos Nikon</p></td>
                           <td><p align="center">Vale por $5,666 en productos Nikon</p></td>
                           <td><p align="center">Vale por $5,666 en productos Nikon</p></td>
                           <td><p align="center">Vale por $5,666 en productos Nikon</p></td>
-                        </tr>
+                        </tr> -->
                         
                         <tr>
                           <td><p align="center"><strong>4to. Menci&oacute;n Honor&iacute;fica</strong></p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+						  <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+						  <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
                         </tr>
                         <tr>
                           <td><p align="center"><strong>5to. Menci&oacute;n Honor&iacute;fica</strong></p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
-                          <td><p align="center">Suscripci&oacute;n anual NG / Mexican&iacute;simo</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+						  <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+                          <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
+						  <td><p align="center">Suscripci&oacute;n anual Cuarto Oscuro</p></td>
                         </tr>
                       </table>
                       
                   <table class="table table-bordered" border="0" cellspacing="1" cellpadding="0" width="100%">
                         <tr>
-                          <th colspan="2"><p align="center"><strong>Categor&iacute;a    j&oacute;venes</strong></p></th>
+                          <th colspan="2"><p align="center"><strong>Categor&iacute;a j&oacute;venes</strong></p></th>
                         </tr>
                         <tr>
                           <td><p align="center"><strong>1er Lugar</strong></p></td>
-                          <td><p align="center">$20,000 en especie:<br>Suscripci&oacute;n anual NG / Mexican&iacute;simo<br>
-                           	 Vale por $5,666 en productos Nikon<br>
-                            Publicaci&oacute;n en diversos medios<br>
-                            Dos m&oacute;dulos  Nikon School</p></td>
+                          <td><p align="center">$20,000 pesos en especie o dinero en efectivo<br>Suscripci&oacute;n anual Cuarto Oscuro<br>
+                           	 C&aacute;mara fotogr&aacute;fica Nikon D5500<br>Publicaci&oacute;n en diversos medios<br>
                         </tr>
                         <tr>
                           <td><p align="center"><strong>2do Lugar</strong></p></td>
-                          <td><p align="center">$15,000 en especie:<br>Suscripci&oacute;n anual NG / Mexican&iacute;simo<br>
-                           Vale por $5,666 en productos Nikon<br>
-                            Dos m&oacute;dulos  Nikon School</p></td>
+                          <td><p align="center">$15,000 pesos en especie o dinero en efectivo<br>Suscripci&oacute;n anual Cuarto Oscuro<br>
+                           C&aacute;mara compacta Nikon<br>Dos m&oacute;dulos  Nikon School</p></td>
                         </tr>
                         <tr>
                           <td><p align="center"><strong>3er lugar</strong></p></td>
-                          <td><p align="center">$10,000 en especie:<br>Suscripci&oacute;n anual NG / Mexican&iacute;simo<br>
-                            Dos m&oacute;dulos  Nikon School</p></td>
+                          <td><p align="center">$10,000 pesos en especie o dinero en efectivo<br>Suscripci&oacute;n anual Cuarto Oscuro<br>
+                            Dos m&oacute;dulos Nikon School</p></td>
                         </tr>
 </table>
                        
                        <table class="table table-bordered" border="0" cellspacing="1" cellpadding="0" width="100%">
                         <tr>
                         
-                          <th colspan="2"><p align="center"><strong>Categor&iacute;a    Video</strong></p></th>
+                          <th colspan="2"><p align="center"><strong>Categor&iacute;a Video</strong></p></th>
                         </tr>
                         <tr>
                           <td><p align="center"><strong>1er Lugar</strong></p></td>
-                          <td><p align="center">$25,000 en especie:<br>
-                            Suscripci&oacute;n anual NG / Mexican&iacute;simo<br>publicación en DIscovery Channel<br>Vale por $5,666 en productos Nikon</p></td>
+                          <td><p align="center">$25,000 pesos en especie o dinero en efectivo<br>
+                            Suscripci&oacute;n anual Cuarto Oscuro<br>C&aacute;mara fotogr&aacute;fica Nikon D5500<br>Publicación en diversos medios</p></td>
                         </tr>
                         <tr>
                           <td><p align="center"><strong>2do Lugar</strong></p></td>
-                          <td><p align="center">$20,000 en especie:<br>
-                            Suscripci&oacute;n anual NG / Mexican&iacute;simo<br>Vale por $5,666 en productos Nikon</p></td>
+                          <td><p align="center">$20,000 pesos en especie o dinero en efectivo<br>
+                            Suscripci&oacute;n anual Cuarto Oscuro<br>Publicación en diversos medios</p></td>
                         </tr>
                         <tr>
                           <td><p align="center"><strong>3er Lugar</strong></p></td>
-                          <td><p align="center">$15,000 en especie:<br>
-                            Suscripci&oacute;n anual NG / Mexican&iacute;simo<br>Vale por $5,666 en productos Nikon</p></td>
+                          <td><p align="center">$15,000 pesos en especie o dinero en efectivo<br>
+                            Suscripci&oacute;n anual Cuarto Oscuro<br>Publicación en diversos medios</p></td>
                         </tr>
                   </table>  
                       

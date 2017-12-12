@@ -102,6 +102,7 @@ class UsuariosController extends Controller
 		if (Yii::app()->user->id_usuario==$id)
 		{
 			$model=$this->loadModel($id);
+			//$actualizar = true;
 
 			// Uncomment the following line if AJAX validation is needed
 			// $this->performAjaxValidation($model);
@@ -113,9 +114,10 @@ class UsuariosController extends Controller
 					$this->redirect(array('view','id'=>$model->id));
 			}
 
-			$this->render('update',array(
-					'model'=>$model,
-			));
+			//if($model->fecha_nac == '9999-01-01'){
+			//	$this->render('update',array('model'=>$model, 'actualizar'=>true));				
+			//}
+			$this->render('update',array('model'=>$model));
 		} else {
 			throw new CHttpException(404,'No tienes permisos para realizar esa acción.');
 		}
@@ -194,6 +196,10 @@ class UsuariosController extends Controller
 				throw new CHttpException(404,'Hubo un error en la petición.');
 		} else
 			throw new CHttpException(404,'Hubo un error en la petición.');
+	}
+
+	public function actionActualizaFechaNac(){
+
 	}
 
 	public function actionReset_passwd()

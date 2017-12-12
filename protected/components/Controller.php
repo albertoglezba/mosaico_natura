@@ -76,17 +76,20 @@ class Controller extends CController
 			if ($dameId)
 				return $this->verificaLogin(true);
 			} else {
-				
+
 			}
 		}
 	}
-	
+
 	public function vigencia()
 	{
 		$fecha = date("YmdHis");
-		if ($fecha < Yii::app()->params->fecha_termino && Yii::app()->params->fecha_inicio < $fecha)
+		if ($fecha < Yii::app()->params->fecha_termino && Yii::app()->params->fecha_inicio < $fecha) {
 			return true;
-			else
-				throw new CHttpException(NULL,"El tiempo del consurso solo es del 06 de diciembre de 2016 a las 12:00 hrs al 28 de febrero de 2017 a las 23:59 hrs,");
+		}else {
+			$fec_inicio = new DateTime(Yii::app()->params->fecha_inicio);
+			$fec_termino = new DateTime(Yii::app()->params->fecha_termino);
+			throw new CHttpException(NULL, "El tiempo del consurso es del ".$fec_inicio->format('d-M-Y H:i')." al ".$fec_termino->format('d-M-Y H:i'));
+		}
 	}
 }
