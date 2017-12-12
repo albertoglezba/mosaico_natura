@@ -212,6 +212,8 @@
 				<li><a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-acir.png" alt="Fundación Acir" width="8%"></a></li><br>
 				<li><a href="http://http://cuartoscuro.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cuartoscuro.png" alt="Cuartoscuro" width="12%"></a></li>
 				<li><a href="http://http://buceoxtabay.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-xtabay.png" alt="Xtabay" width="10%"></a></li>
+				<li><a href="http://www.doradobuceo.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-dorado-buceo.png" alt="Dorado Buceo" width="14%"></a></li>
+				<li><a href="http://www.mexicanisimo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-mexicanisimo.png" alt="Mexicanísimo" width="14%"></a></li>
 				<li><a href="http://http://www.espacioprofundo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-espacio-profundo.png" alt="Espacio Profundo" width="10%"></a></li>
 				<li><a href="http://http://www.lemusunderwaterschool.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-lemus.png" alt="Lemus" width="10%"></a></li>
 
@@ -233,6 +235,8 @@
 				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
 				<li><a href="http://http://cuartoscuro.com.mx/" target="_blank">Cuartoscuro</a></li>
 				<li><a href="http://http://buceoxtabay.com/" target="_blank">Buceo Xtabay</a></li>
+				<li><a href="http://www.doradobuceo.com/" target="_blank">Dorado Buceo</a></li>
+				<li><a href="http://www.mexicanisimo.com.mx/" target="_blank">Mexican&iacute;simo</a></li>
 				<li><a href="http://http://www.espacioprofundo.com.mx/" target="_blank">Espacio Profundo</a></li>
 				<li><a href="http://http://www.lemusunderwaterschool.com/" target="_blank">Lemus Underwater School</a></li>
 				<li><a href="http://www.gob.mx/conabio/" target="_blank">Conabio</a></li>
