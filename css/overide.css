@@ -1080,6 +1080,7 @@ footer ul {
 }
 .sponsers {
 	margin:20px auto;
+	min-height: 80px;
 }
 
 .sponsers img{
