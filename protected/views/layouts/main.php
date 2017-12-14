@@ -209,7 +209,10 @@
 				<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-sedema.png" class="img-responsive img-ch" alt="SEDEMA"> </a>
 			</div>
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" class="img-responsive" alt="National Geographic" > </a>
+				<a href="https://www.nationalgeographic.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" class="img-responsive" alt="National Geographic" > </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo-esp.png" class="img-responsive" alt="National Geographic en español" > </a>
 			</div>
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-nikon.png" class="img-responsive img-gde" alt="Nikon" > </a>
@@ -235,9 +238,10 @@
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://http://www.espacioprofundo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-espacio-profundo.png" class="img-responsive img-gde" alt="Espacio Profundo" > </a>
 			</div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+			<div class="col-xs-12 col-md-12 col-lg-12 sponsers">
 				<a href="http://http://www.lemusunderwaterschool.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-lemus.png" class="img-responsive" alt="Lemus" > </a>
 			</div>
+			
 			
 
 		</div>
