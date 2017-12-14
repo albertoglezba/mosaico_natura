@@ -255,7 +255,8 @@
 			<p>NUESTROS COLABORADORES</p>
 			<ul>
 				<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank">CDMX</a></li>
-				<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic</a></li>
+				<li><a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a> </li>
+				<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic en Espa&ntilde;ol</a></li>
 				<li><a href="http://www.nikon.com.mx/" target="_blank">Nikon</a></li>
 				<li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
 				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
