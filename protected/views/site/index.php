@@ -67,7 +67,7 @@
         </div>
 
         <div class="col-lg-5">
-            <iframe class="video-mosaico" src="https://www.youtube.com/embed/seKzZRY7L7Q" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe class="video-mosaico" src="https://www.youtube.com/embed/3V0MofuaC24?rel=0&amp;showinfo=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
     </div>
 </section>
@@ -622,10 +622,13 @@
             <div class="col-lg-4 col-md-6 col-xs-12 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-file-video-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
-                    <h3>Video</h3>
+                    <h3>Videos</h3>
                     <div class="list-group">
-
-                        <iframe width="100%" height="167" src="https://www.youtube.com/embed/yQB81iE-a4Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="100%" height="167" src="https://www.youtube.com/embed/3V0MofuaC24?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						<p>Mosaico Natura 2018</p>
+						<hr>
+						<iframe width="100%" height="170" src="https://www.youtube.com/embed/nmxhpGzc5gk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						<p>Mosaico Natura 2018: Milpas</p>
                     </div>
                 </div>
             </div>
