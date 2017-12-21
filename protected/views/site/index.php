@@ -67,7 +67,7 @@
         </div>
 
         <div class="col-lg-5">
-            <iframe class="video-mosaico" src="https://www.youtube.com/embed/seKzZRY7L7Q" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe class="video-mosaico" src="https://www.youtube.com/embed/3V0MofuaC24?rel=0&amp;showinfo=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
     </div>
 </section>
@@ -103,7 +103,7 @@
                         <dt><img src="<?php echo $yii_path; ?>/img/bases-03.png" alt="Paisajes y ecosistemas"></dt>
                         <dd><span style="color:#ffd400; font-weight:bold;">Paisajes y ecosistemas</span><br/>Vistas a&eacute;reas, terrestres, acu&aacute;ticas y subacu&aacute;ticas, donde se enfatizan elementos naturales.</dd>
                         <dt><img src="<?php echo $yii_path; ?>/img/bases-04.png" alt="Naturaleza y ser humano"></dt>
-                        <dd><span style="color:#ffd400; font-weight:bold;">Naturaleza y ser humano</span><br/>Usos y costumbres relacionados con el entorno natural: actividades agr&iacute;colas, artesanales, gastron&oacute;micas, medicinales, espirituales, recreativas, ceremoniales. Escenas de manejo sustentable.</dd>
+                        <dd><span style="color:#ffd400; font-weight:bold;">Naturaleza y ser humano</span><br/>Usos y costumbres relacionados con el entorno natural: actividades agr&iacute;colas, artesanales, gastron&oacute;micas, medicinales, espirituales, recreativas, ceremoniales. Escenas de manejo sustentable.<br/>Este a&ntilde;o damos especial &eacute;nfasis a <a href="http://www.biodiversidad.gob.mx/usos/alimentacion/milpa.html" target="_blank">Milpas y su diversidad</a>. Fotograf&iacute;as que muestren la diversidad biol&oacute;gica y cultural de las milpas en M&eacute;xico que deber&aacute;n estar acompa&ntilde;adas de un texto que explique el significado de la milpa para el fot&oacute;grafo o  el agricultor y su familia (250 caracteres).<br/></dd>
                         <dt><img src="<?php echo $yii_path; ?>/img/bases-05.png" alt="Solo un mundo"></dt>
                         <dd><span style="color:#ffd400; font-weight:bold;">Solo un mundo</span><br/>Im&aacute;genes de paisajes, y/o flora y fauna deteriorados o impactados directa o indirectamente por actividades humanas.</dd>
                         <dt><img src="<?php echo $yii_path; ?>/img/bases-18.png" alt="Subacuática"></dt>
@@ -622,10 +622,13 @@
             <div class="col-lg-4 col-md-6 col-xs-12 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-file-video-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
-                    <h3>Video</h3>
+                    <h3>Videos</h3>
                     <div class="list-group">
-
-                        <iframe width="100%" height="167" src="https://www.youtube.com/embed/yQB81iE-a4Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="100%" height="167" src="https://www.youtube.com/embed/3V0MofuaC24?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						<p>Mosaico Natura 2018</p>
+						<hr>
+						<iframe width="100%" height="170" src="https://www.youtube.com/embed/nmxhpGzc5gk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						<p>Mosaico Natura 2018: Milpas</p>
                     </div>
                 </div>
             </div>

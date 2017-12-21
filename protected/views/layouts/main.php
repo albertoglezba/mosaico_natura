@@ -201,21 +201,49 @@
 
 <div id="colaboradores">
 	<div class="container">
-		<div class="col-lg-12">
+		<div class="row">
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conabio.png" class="img-responsive" alt="Conabio"> </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-sedema.png" class="img-responsive img-ch" alt="SEDEMA"> </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="https://www.nationalgeographic.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" class="img-responsive" alt="National Geographic" > </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo-esp.png" class="img-responsive" alt="National Geographic en español" > </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-nikon.png" class="img-responsive img-gde" alt="Nikon" > </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-epson.png" class="img-responsive img-ch" alt="Epson" > </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-acir.png" class="img-responsive img-gde" alt="Fundación Acir" > </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://http://cuartoscuro.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cuartoscuro.png" class="img-responsive" alt="Cuartoscuro" > </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://http://buceoxtabay.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-xtabay.png" class="img-responsive img-gde" alt="Xtabay" > </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.doradobuceo.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-dorado-buceo.png" class="img-responsive" alt="Dorado Buceo"> </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.mexicanisimo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-mexicanisimo.png" class="img-responsive img-ch" alt="Mexicanísimo"> </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://http://www.espacioprofundo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-espacio-profundo.png" class="img-responsive img-gde" alt="Espacio Profundo" > </a>
+			</div>
+			<div class="col-xs-12 col-md-12 col-lg-12 sponsers">
+				<a href="http://http://www.lemusunderwaterschool.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-lemus.png" class="img-responsive" alt="Lemus" > </a>
+			</div>
+			
+			
 
-			<ul id="logosc">
-				<li><a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conabio.png" alt="Conabio" width="14%"></a></li>
-				<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-sedema.png" alt="SEDEMA" width="14%"></a></li>
-				<li><a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" alt="National Geographic" width="12%"></a></li>
-				<li><a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-nikon.png" alt="Nikon" width="8%"></a></li>
-				<li><a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-epson.png" alt="Epson" width="10%"></a></li>
-				<li><a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-acir.png" alt="Fundación Acir" width="8%"></a></li><br>
-				<li><a href="http://http://cuartoscuro.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cuartoscuro.png" alt="Cuartoscuro" width="12%"></a></li>
-				<li><a href="http://http://buceoxtabay.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-xtabay.png" alt="Xtabay" width="10%"></a></li>
-				<li><a href="http://http://www.espacioprofundo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-espacio-profundo.png" alt="Espacio Profundo" width="10%"></a></li>
-				<li><a href="http://http://www.lemusunderwaterschool.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-lemus.png" alt="Lemus" width="10%"></a></li>
-
-			</ul>
 		</div>
 	</div>
 </div>
@@ -227,12 +255,15 @@
 			<p>NUESTROS COLABORADORES</p>
 			<ul>
 				<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank">CDMX</a></li>
-				<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic</a></li>
+				<li><a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a> </li>
+				<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic en Espa&ntilde;ol</a></li>
 				<li><a href="http://www.nikon.com.mx/" target="_blank">Nikon</a></li>
 				<li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
 				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
 				<li><a href="http://http://cuartoscuro.com.mx/" target="_blank">Cuartoscuro</a></li>
 				<li><a href="http://http://buceoxtabay.com/" target="_blank">Buceo Xtabay</a></li>
+				<li><a href="http://www.doradobuceo.com/" target="_blank">Dorado Buceo</a></li>
+				<li><a href="http://www.mexicanisimo.com.mx/" target="_blank">Mexican&iacute;simo</a></li>
 				<li><a href="http://http://www.espacioprofundo.com.mx/" target="_blank">Espacio Profundo</a></li>
 				<li><a href="http://http://www.lemusunderwaterschool.com/" target="_blank">Lemus Underwater School</a></li>
 				<li><a href="http://www.gob.mx/conabio/" target="_blank">Conabio</a></li>
