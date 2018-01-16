@@ -34,7 +34,8 @@
                 </div>
                 <div class="col-md-8 col-md-offset-4">
                     <h3 class="mosaico-titulo">de Fotograf&iacute;a de Naturaleza</h3>
-                    <h4 class="mosaico-titulo"><i>del 11 de diciembre 2017 al 11 de marzo 2018</i></h4>
+                    <h4 class="mosaico-titulo"><i>del 11 de diciembre 2017 al 11 de marzo 2018*</i></h4>
+					<p><span style="color:#ffd400; font-weight:bold;">*Se recibir&aacute;n videos hasta el viernes 11 de mayo 2018</span></p>
 
                 </div>
 
@@ -226,6 +227,7 @@
                 <div id="video-wrapper">
                     <h3>VIDEO		<i class="fa fa-caret-right"></i>   <span class="pleca_ama">3 videos por participante (solo categoría adultos)</span></h3>
                 </div>
+				<p><span style="color:#ffd400; font-weight:bold;">*Se recibir&aacute;n videos hasta el viernes 11 de mayo</span></p>
                 <p><strong>Tema libre</strong><br>Videos que representen la belleza natural de alg&uacute;n lugar, el consumo responsable y el impacto en la biodiversidad, los h&aacute;bitos alimenticios, reproductivos, de propagaci&oacute;n, interacci&oacute;n entre especies, de migraci&oacute;n, etc, en una narrativa visual. Los videos pueden editarse y musicalizarse. La musicalizaci&oacute;n, si es el caso, deber&aacute; hacerse con m&uacute;sica original o bien, audios libres de derechos de autor o con derechos de distribuci&oacute;n sin fines de lucro.</p>
 
                 <h4 class="bases-izq">Formato</h4>

@@ -206,9 +206,6 @@
 				<a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conabio.png" class="img-responsive" alt="Conabio"> </a>
 			</div>
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-sedema.png" class="img-responsive img-ch" alt="SEDEMA"> </a>
-			</div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="https://www.nationalgeographic.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" class="img-responsive" alt="National Geographic" > </a>
 			</div>
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
@@ -223,8 +220,12 @@
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-acir.png" class="img-responsive img-gde" alt="Fundación Acir" > </a>
 			</div>
+			
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://http://cuartoscuro.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cuartoscuro.png" class="img-responsive" alt="Cuartoscuro" > </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.mexicanisimo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-mexicanisimo.png" class="img-responsive img-ch" alt="Mexicanísimo"> </a>
 			</div>
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://http://buceoxtabay.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-xtabay.png" class="img-responsive img-gde" alt="Xtabay" > </a>
@@ -233,14 +234,27 @@
 				<a href="http://www.doradobuceo.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-dorado-buceo.png" class="img-responsive" alt="Dorado Buceo"> </a>
 			</div>
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://www.mexicanisimo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-mexicanisimo.png" class="img-responsive img-ch" alt="Mexicanísimo"> </a>
+				<a href="http://www.espacioprofundo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-espacio-profundo.png" class="img-responsive img-gde" alt="Espacio Profundo" > </a>
 			</div>
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://http://www.espacioprofundo.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-espacio-profundo.png" class="img-responsive img-gde" alt="Espacio Profundo" > </a>
+				<a href="http://www.lemusunderwaterschool.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-lemus.png" class="img-responsive" alt="Lemus" > </a>
 			</div>
-			<div class="col-xs-12 col-md-12 col-lg-12 sponsers">
-				<a href="http://http://www.lemusunderwaterschool.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-lemus.png" class="img-responsive" alt="Lemus" > </a>
+			
+			
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
+				<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-sedema.png" class="img-responsive img-xch" alt="SEDEMA"> </a>
 			</div>
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
+				<a href="https://www.gob.mx/cultura" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cultura.png" class="img-responsive img-ch" alt="Secretaría de cultura" > </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
+				<a href="http://www.cenart.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cenart.png" class="img-responsive img-xch" alt="CENART" > </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
+				<a href="https://www.gob.mx/conanp" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conanp.png" class="img-responsive img-ch" alt="CONANP" > </a>
+			</div>
+			
+			
 			
 			
 
@@ -264,6 +278,9 @@
 				<li><a href="http://http://buceoxtabay.com/" target="_blank">Buceo Xtabay</a></li>
 				<li><a href="http://www.doradobuceo.com/" target="_blank">Dorado Buceo</a></li>
 				<li><a href="http://www.mexicanisimo.com.mx/" target="_blank">Mexican&iacute;simo</a></li>
+				<li><a href="http://www.cenart.gob.mx/" target="_blank">CENART</a></li>
+				<li><a href="https://www.gob.mx/conanp" target="_blank">CONANP</a></li>
+				<li><a href="https://www.gob.mx/cultura" target="_blank">Secretar&iacute;a de cultura</a></li>
 				<li><a href="http://http://www.espacioprofundo.com.mx/" target="_blank">Espacio Profundo</a></li>
 				<li><a href="http://http://www.lemusunderwaterschool.com/" target="_blank">Lemus Underwater School</a></li>
 				<li><a href="http://www.gob.mx/conabio/" target="_blank">Conabio</a></li>
