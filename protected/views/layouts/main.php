@@ -244,11 +244,8 @@
 			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
 				<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-sedema.png" class="img-responsive img-xch" alt="SEDEMA"> </a>
 			</div>
-			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
-				<a href="https://www.gob.mx/cultura" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cultura.png" class="img-responsive img-ch" alt="Secretaría de cultura" > </a>
-			</div>
-			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
-				<a href="http://www.cenart.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cenart.png" class="img-responsive img-xch" alt="CENART" > </a>
+			<div class="col-xs-4 col-md-6 col-lg-6 sponsers">
+				<a href="http://www.cenart.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cultura-cenart.png" class="img-responsive img-ch" alt="CENART" > </a>
 			</div>
 			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
 				<a href="https://www.gob.mx/conanp" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conanp.png" class="img-responsive img-ch" alt="CONANP" > </a>
