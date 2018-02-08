@@ -63,8 +63,8 @@
                         <p>&Uacute;nicamente en la p&aacute;gina oficial del concurso Mosaico Natura M&eacute;xico:&nbsp;<strong>www.mosaiconatura.net</strong></p>
                         
                         <h4>&iquest;HASTA CU&Aacute;NDO SE PUEDE PARTICIPAR?</h4>
-                        <p>El periodo de registro y participaci&oacute;n ser&aacute; a partir de las 12:00 horas del <strong>lunes 11 de diciembre de 2017</strong> <strong>hasta las 23:00 horas del domingo 11 de marzo de 2018,</strong> que ser&aacute; la fecha y hora l&iacute;mite para registrar la(s) fotograf&iacute;a(s). Para videos el cierre es hasta el 11 de mayo a las 23:00 horas.</p>
-                        <p><strong><em>La vigencia del concurso es del lunes 11 de diciembre de 2017&nbsp; hasta&nbsp; la fecha de premiaci&oacute;n a los ganadores, misma que se llevar&aacute; a cabo entre los meses de junio y julio del 2018.</em></strong></p>
+                        <p>El periodo de registro y participaci&oacute;n ser&aacute; a partir de las 12:00 horas del <strong>lunes 11 de diciembre de 2017</strong> <strong>hasta las 23:00 horas del domingo 11 de marzo de 2018,</strong> que ser&aacute; la fecha y hora l&iacute;mite para registrar la(s) fotograf&iacute;a(s). Para videos el cierre es hasta el <strong>11 de mayo a las 23:00 horas</strong>.</p>
+                        <p><strong><em>La vigencia del concurso es del lunes 11 de diciembre de 2017&nbsp; hasta&nbsp; la fecha de premiaci&oacute;n a los ganadores, misma que se llevar&aacute; a cabo en junio de 2018.</em></strong></p>
                         
                     <h4>RESPONSABILIDADES </h4>
                         
@@ -104,7 +104,7 @@
                     
                     
 					<h4>ENTREGA DE LOS PREMIOS Y RECONOCIMIENTOS</h4>
-                    <p><strong><em>Los premios y reconocimientos se entregar&aacute;n en el mes de septiembre de 2018. La fecha, lugar y hora exacta ser&aacute;n informados oportunamente por el &ldquo;Comit&eacute; Organizador&rdquo; en www.mosaiconatura.net</em></strong></p>
+                    <p><strong><em>Los premios y reconocimientos se entregar&aacute;n en el mes de junio de 2018. La fecha, lugar y hora exacta ser&aacute;n informados oportunamente por el &ldquo;Comit&eacute; Organizador&rdquo; en www.mosaiconatura.net</em></strong></p>
 
                     <p>Ning&uacute;n participante podr&aacute; ser acreedor a dos premios, por lo que &uacute;nicamente se tomar&aacute; como premio el lugar m&aacute;s alto que haya obtenido dentro de este certamen.</p>
                      
