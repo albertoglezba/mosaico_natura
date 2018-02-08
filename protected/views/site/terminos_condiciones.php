@@ -104,7 +104,7 @@
                     
                     
 					<h4>ENTREGA DE LOS PREMIOS Y RECONOCIMIENTOS</h4>
-                    <p><strong><em>Los premios y reconocimientos se entregar&aacute;n en el mes de Septiembre de 2017. La fecha, lugar y hora exacta ser&aacute;n informados oportunamente por el &ldquo;Comit&eacute; Organizador&rdquo; en www.mosaiconatura.net</em></strong></p>
+                    <p><strong><em>Los premios y reconocimientos se entregar&aacute;n en el mes de septiembre de 2018. La fecha, lugar y hora exacta ser&aacute;n informados oportunamente por el &ldquo;Comit&eacute; Organizador&rdquo; en www.mosaiconatura.net</em></strong></p>
 
                     <p>Ning&uacute;n participante podr&aacute; ser acreedor a dos premios, por lo que &uacute;nicamente se tomar&aacute; como premio el lugar m&aacute;s alto que haya obtenido dentro de este certamen.</p>
                      
