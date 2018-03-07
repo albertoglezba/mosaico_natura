@@ -77,7 +77,7 @@ class FotosController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->vigencia ();
+		$this->vigencia('foto');
 		$this->render('view',array(
 				'model'=>$this->loadModel($id),
 		));
@@ -88,7 +88,7 @@ class FotosController extends Controller
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
 	public function actionCreate() {
-		$this->vigencia ();
+		$this->vigencia('foto');
 		$usuario = Usuarios::model()->findByPk( Yii::app()->user->id_usuario );
 		$puede_subir = Fotos::conCategoriasDisponibles();
 		
@@ -112,7 +112,7 @@ class FotosController extends Controller
 	 *        	the ID of the model to be updated
 	 */
 	public function actionUpdate($id) {
-		$this->vigencia ();
+		$this->vigencia('foto');
 		$model = $this->loadModel ( $id );
 		
 		if (( int ) Yii::app ()->user->id_usuario == $model->usuario_id) {
@@ -130,7 +130,7 @@ class FotosController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->vigencia ();
+		$this->vigencia('foto');
 		$this->loadModel($id)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
@@ -143,7 +143,7 @@ class FotosController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$this->vigencia ();
+		$this->vigencia('foto');
 		$dataProvider=new CActiveDataProvider('Fotos', array(
 				'criteria'=>array(
 						'condition'=>'usuario_id='.Yii::app()->user->id_usuario,
@@ -205,7 +205,7 @@ class FotosController extends Controller
 	 * Formulario de fotos llamado desde ajax
 	 */
 	public function actionFormulario_fotos() {
-		$this->vigencia ();
+		$this->vigencia('foto');
 		$this->layout = false;
 		$model = new Fotos ();
 		$this->performAjaxValidation ( $model );
@@ -241,7 +241,7 @@ class FotosController extends Controller
 	 * Formulario de fotos llamado desde ajax
 	 */
 	public function actionFormulario_fotos_editar($id) {
-		$this->vigencia ();
+		$this->vigencia('foto');
 		$model = $this->loadModel ( $id );
 		$this->performAjaxValidation ( $model );
 		
@@ -269,7 +269,7 @@ class FotosController extends Controller
 	 * La vista del AWS
 	 */
 	public function actionAws() {
-		$this->vigencia ();
+		$this->vigencia('foto');
 		$this->layout = false;
 		
 		if (isset ( $_POST ['adulto'] ) && $_POST ['adulto'] == '1' && isset ( $_POST ['categoria'] )) {
