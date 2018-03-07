@@ -85,7 +85,7 @@ class VideosController extends Controller
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
 	public function actionCreate() {
-		$this->vigencia ();
+		$this->vigencia('video');
 		$puede_subir = Videos::soloUnVideo ();
 		$usuario = Usuarios::model ()->findByPk ( Yii::app ()->user->id_usuario );
 		$adulto = Usuarios::dameEdad($usuario->fecha_nac) > 17 ? '1' : '0';
@@ -107,7 +107,7 @@ class VideosController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
-		$this->vigencia ();
+		$this->vigencia('video');
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
@@ -132,7 +132,7 @@ class VideosController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->vigencia ();
+		$this->vigencia('video');
 		$this->loadModel($id)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
@@ -145,7 +145,7 @@ class VideosController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$this->vigencia ();
+		$this->vigencia('video');
 		$usuario = Usuarios::model ()->findByPk ( Yii::app ()->user->id_usuario );
 		$adulto = Usuarios::dameEdad($usuario->fecha_nac) > 17 ? '1' : '0';
 		
@@ -215,7 +215,7 @@ class VideosController extends Controller
      */
     public function actionFormulario_videos()
     {
-    	$this->vigencia ();
+    	$this->vigencia('video');
     	$this->layout = false;
     	$model=new Videos;
     	$this->performAjaxValidation($model);

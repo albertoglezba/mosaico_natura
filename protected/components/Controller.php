@@ -81,14 +81,31 @@ class Controller extends CController
 		}
 	}
 
-	public function vigencia()
+	public function vigencia($tipo=null)
 	{
 		$fecha = date("YmdHis");
-		if ($fecha < Yii::app()->params->fecha_termino && Yii::app()->params->fecha_inicio < $fecha) {
+
+		/*Cuando se le ocurra pedir q niños abra a diferente fecha, generar dinamicamente la variable de params*/
+		switch($tipo){
+			case 'video':
+				$fecha_inicio =  Yii::app()->params->fecha_inicio_video;
+				$fecha_termino =  Yii::app()->params->fecha_termino_video;
+				break;
+			case 'foto':
+				$fecha_inicio =  Yii::app()->params->fecha_inicio_foto;
+				$fecha_termino =  Yii::app()->params->fecha_termino_foto;
+				break;
+			default:
+				$fecha_inicio =  Yii::app()->params->fecha_inicio;
+				$fecha_termino =  Yii::app()->params->fecha_termino;
+				break;
+		}
+
+		if ($fecha < $fecha_termino && $fecha_inicio < $fecha) {
 			return true;
 		}else {
-			$fec_inicio = new DateTime(Yii::app()->params->fecha_inicio);
-			$fec_termino = new DateTime(Yii::app()->params->fecha_termino);
+			$fec_inicio = new DateTime($fecha_inicio);
+			$fec_termino = new DateTime($fecha_termino);
 			throw new CHttpException(NULL, "El tiempo del consurso es del ".$fec_inicio->format('d-M-Y H:i')." al ".$fec_termino->format('d-M-Y H:i'));
 		}
 	}
