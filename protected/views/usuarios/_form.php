@@ -16,18 +16,19 @@
 
     <h3 class="text-info note">Campos con <strong>* son requeridos</strong>.</h3>
 
-    <?php echo $form->errorSummary($model); ?>
+    <?php echo $form->errorSummary($model, "", "", array('class' => "alert alert-danger btn-lg text-left")); ?>
 
     <?php if(Usuarios::deboActualizarFechaNac($model->fecha_nac) && !$model->isNewRecord) { ?>
         <hr />
         <div class="form-group">
+            <div class="col-sm-12">
+                <h4 class="alert alert-warning">Actualiza tu fecha de nacimiento para poder determinar tu categoría correctamente, recuerda que una vez ingresada, este campo sera inamovible</h4>
+            </div>
             <?php echo $form->labelEx($model,'fecha_nac', array('class'=>'col-sm-3 control-label ')); ?>
             <div class="col-sm-8">
                 <?php echo $form->dateField($model,'fecha_nac',array('class' => 'form-control')); ?>
             </div>
-            <div class="col-sm-12">
-                <h2 class="text-danger">Actualiza tu fecha de nacimiento para poder determinar tu categoría correctamente, recuerda que una vez ingresada, este campo sera inamovible</h2>
-            </div>
+
             <?php //echo $form->error($model,'apellido'); ?>
         </div>
         <hr />

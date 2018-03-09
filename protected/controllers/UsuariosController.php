@@ -102,16 +102,23 @@ class UsuariosController extends Controller
 		if (Yii::app()->user->id_usuario==$id)
 		{
 			$model=$this->loadModel($id);
+			$notice = '';
 			//$actualizar = true;
 
 			// Uncomment the following line if AJAX validation is needed
 			// $this->performAjaxValidation($model);
 
-			if(isset($_POST['Usuarios']))
-			{
+			if(isset($_POST['Usuarios'])){
 				$model->attributes=$_POST['Usuarios'];
-				if($model->save())
-					$this->redirect(array('view','id'=>$model->id));
+				//Hubo un cambio en la fecha de nacimiento ¿Que será xD?
+				if(isset($_POST['Usuarios']['fecha_nac'])){
+					$notice = Usuarios::dameEdad($_POST['Usuarios']['fecha_nac']) < 18 ? 'Si ya tenías fotos subidas pero resulta que perteneces a la categoría juvenil, por favor vuelve a subir tus fotos' : 'Por favor revisa que tus fotos esten correctamente subidas';
+				}
+				if($model->save()){
+					//$this->redirect(array('view','id'=>$model->id,'cR'=>$cambioRama));
+					$this->render('view',array('model'=>$model,'notice'=>$notice));
+				}
+
 			}
 
 			//if($model->fecha_nac == '9999-01-01'){

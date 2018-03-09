@@ -4,14 +4,11 @@ class FotosController extends Controller
 {
 	protected function beforeAction($event){
 		$usuario = Usuarios::model()->findByPk( Yii::app()->user->id_usuario );
-		//$edad_actualizada = $usuario->fecha_nac == '9999-01-01' ? false : true;
-		$edad_actualizada = ((Usuarios::dameEdad($usuario->fecha_nac) > 6 ) && (Usuarios::dameEdad($usuario->fecha_nac) < 130 ));
-		if(!$edad_actualizada){
+		if(Usuarios::deboActualizarFechaNac($usuario->fecha_nac)){
 			$this->redirect(Yii::app()->baseUrl."/index.php/usuarios/update/".$usuario->id);
 		}
 		return true;
 	}
-
 
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -93,13 +90,13 @@ class FotosController extends Controller
 		$puede_subir = Fotos::conCategoriasDisponibles();
 		
 		if (!Usuarios::deboActualizarFechaNac($usuario->fecha_nac)) {
-			if ($puede_subir) {
+			if ($puede_subir){
 				$adulto = Usuarios::dameEdad($usuario->fecha_nac) > 17 ? '1' : '0';
 				$this->render ( 'create', array (
 						'adulto' => $adulto 
 				) );
-			} else
-				throw new CHttpException ( NULL, "Lo sentimos pero ya has subido el límite de fotografías permitidas. Para más información consulta la convocatoria." );
+			}else
+				throw new CHttpException ( NULL, "Lo sentimos pero ya has subido el límite de fotografías permitidas. Para más información consulta la convocatoria.");
 		} else
 			throw new CHttpException ( NULL, "Ocurrió un error, por favor inténtalo de nuevo." );
 	}
@@ -144,9 +141,12 @@ class FotosController extends Controller
 	public function actionIndex()
 	{
 		$this->vigencia('foto');
+		$usuario = Usuarios::model ()->findByPk ( Yii::app ()->user->id_usuario );
+		$adulto = Usuarios::dameEdad($usuario->fecha_nac) > 17 ? '' : ' and categoria_id is null ';
+
 		$dataProvider=new CActiveDataProvider('Fotos', array(
 				'criteria'=>array(
-						'condition'=>'usuario_id='.Yii::app()->user->id_usuario,
+						'condition'=>'usuario_id='.Yii::app()->user->id_usuario.$adulto,
 						'order'=>'fec_alta DESC',
 				)));
 		$this->render('index',array(
