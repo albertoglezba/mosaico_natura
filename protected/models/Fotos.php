@@ -192,21 +192,13 @@ class Fotos extends CActiveRecord
 
 		$edad = Usuarios::dameEdad($usuario->fecha_nac);
 
-
-		if ($edad < 18)
-		{
-			if (count($usuario->fotos) >= Yii::app()->params['#_fotos_juvenil'])
-				return false;
-			else
-				return true;
+		if ($edad < 18){
+			return (count($usuario->fotos_jovenes) < Yii::app()->params['#_fotos_juvenil']);
 		}	
 		
 		$categorias_usuario = $usuario->usuarios_categorias();
 	
 		// Ya no puede subir mas fotografias
-		if (count($categorias_usuario) >= Yii::app()->params['#_fotos_adulto_x_categoria']*Yii::app()->params['#_categorias'])
-			return false;	
-		else			
-			return true;
+		return (count($categorias_usuario) >= Yii::app()->params['#_fotos_adulto_x_categoria']*Yii::app()->params['#_categorias']);
 	}
 }
