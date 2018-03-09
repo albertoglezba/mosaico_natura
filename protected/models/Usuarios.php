@@ -130,7 +130,7 @@ class Usuarios extends CActiveRecord
 
     public static function dameEdad($fecha_nac){
 
-        $d1 = Yii::app()->params->fecha_termino;
+        $d1 = Yii::app()->params->fecha_termino_foto;
         $d2 = str_replace('-', '', $fecha_nac);
 
         //Para más allá de php5.3 (te odio ixmati)
