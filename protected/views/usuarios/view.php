@@ -21,7 +21,7 @@
 			'data' => $model,
 			'htmlOptions'=>array(
 				'class'=>'table-responsive text-right text-primary',
-				'style'=>'margin: 20px auto; font-size: 2em; width: auto;'
+				'style'=>'margin: 20px auto; font-size: 1.5em; width: auto;'
 			),
 			'attributes' => array (
 				'usuario',
