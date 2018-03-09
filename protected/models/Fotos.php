@@ -199,6 +199,6 @@ class Fotos extends CActiveRecord
 		$categorias_usuario = $usuario->usuarios_categorias();
 	
 		// Ya no puede subir mas fotografias
-		return (count($categorias_usuario) >= Yii::app()->params['#_fotos_adulto_x_categoria']*Yii::app()->params['#_categorias']);
+		return (count($categorias_usuario) < Yii::app()->params['#_fotos_adulto_x_categoria']*Yii::app()->params['#_categorias']);
 	}
 }

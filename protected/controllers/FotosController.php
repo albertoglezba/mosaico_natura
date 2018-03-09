@@ -90,13 +90,13 @@ class FotosController extends Controller
 		$puede_subir = Fotos::conCategoriasDisponibles();
 		
 		if (!Usuarios::deboActualizarFechaNac($usuario->fecha_nac)) {
-			if ($puede_subir) {
+			if ($puede_subir){
 				$adulto = Usuarios::dameEdad($usuario->fecha_nac) > 17 ? '1' : '0';
 				$this->render ( 'create', array (
 						'adulto' => $adulto 
 				) );
-			} else
-				throw new CHttpException ( NULL, "Lo sentimos pero ya has subido el límite de fotografías permitidas. Para más información consulta la convocatoria." );
+			}else
+				throw new CHttpException ( NULL, "Lo sentimos pero ya has subido el límite de fotografías permitidas. Para más información consulta la convocatoria.");
 		} else
 			throw new CHttpException ( NULL, "Ocurrió un error, por favor inténtalo de nuevo." );
 	}
@@ -141,9 +141,12 @@ class FotosController extends Controller
 	public function actionIndex()
 	{
 		$this->vigencia('foto');
+		$usuario = Usuarios::model ()->findByPk ( Yii::app ()->user->id_usuario );
+		$adulto = Usuarios::dameEdad($usuario->fecha_nac) > 17 ? '' : ' and categoria_id is null ';
+
 		$dataProvider=new CActiveDataProvider('Fotos', array(
 				'criteria'=>array(
-						'condition'=>'usuario_id='.Yii::app()->user->id_usuario,
+						'condition'=>'usuario_id='.Yii::app()->user->id_usuario.$adulto,
 						'order'=>'fec_alta DESC',
 				)));
 		$this->render('index',array(
