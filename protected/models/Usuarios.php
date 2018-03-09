@@ -143,7 +143,7 @@ class Usuarios extends CActiveRecord
         //$years = floor($diff / (365*60*60*24));
 
         $diff = substr($d1,0,4)-substr($d2,0,4);
-        $years = (substr($d1,4,4) > substr($d2,4,4)) ? $diff-1 : $diff;
+        $years = (substr($d1,4,4) < substr($d2,4,4)) ? $diff-1 : $diff;
 
         return $years;
     }
