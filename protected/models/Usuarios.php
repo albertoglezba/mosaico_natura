@@ -109,46 +109,42 @@ class Usuarios extends CActiveRecord
     }
     public function valida_fecha_nac(){
         $regex = '/^[0-9]{4}-[0-1][0-9]-[0-3][0-9]$/';
-        if (!preg_match($regex, $this->fecha_nac)) {
+        if(!preg_match($regex, $this->fecha_nac)){
             $this->addError($this->fecha_nac, 'Lo sentimos, la fecha no es válida'.$this->fecha_nac);
             return false;
         }
 
         $edad = Usuarios::dameEdad($this->fecha_nac);
 
-        if ($edad < 6)
-        {
-            $this->addError($this->fecha_nac, 'Lo sentimos, la edad mínima para participar es 6 años.');
-            return false;
-        }
-        if ($edad > 130)
-        {
-            $this->addError($this->fecha_nac, 'Lo sentimos, la edad máxima para participar es 130 años.');
+        if($edad < 6 || $edad > 130){
+            $this->addError($this->fecha_nac, 'Lo sentimos, para participar poder participar debes tener entre 6 y 130 años a la fecha del cierre del concurso.');
             return false;
         }
     }
 
     public static function deboActualizarFechaNac($fecha_nac){
-        $edad_actualizada = ((Usuarios::dameEdad($fecha_nac) < 6 ) || (Usuarios::dameEdad($fecha_nac) > 130 ));
+        $edad = Usuarios::dameEdad($fecha_nac);
 
-        if($edad_actualizada){
-            return true;
-        }else{
-            return false;
-        }
+        return (($edad < 6) || ($edad > 130));
     }
 
     public static function dameEdad($fecha_nac){
+
+        $d1 = Yii::app()->params->fecha_termino;
+        $d2 = str_replace('-', '', $fecha_nac);
 
         //Para más allá de php5.3 (te odio ixmati)
         //$d1 = new DateTime(Yii::app()->params->fecha_termino);
         //$d2 = new DateTime($fecha_nac);
         //$diff = $d2->diff($d1);
 
-        $d1 = Yii::app()->params->fecha_termino;
-        $d2 = $fecha_nac;
-        $diff = abs((strtotime($d1)-345600) - strtotime($d2));
-        $years = floor($diff / (365*60*60*24));
+        //El PHP de Ixmati es de 32 putos bits, no soporta arriba de 2mil millones (por eso devolvia '' cuando ponian fechas muy altas, TE ODIO PUTO IXMATI!!!)
+        //$diff = abs((strtotime($d1)-345600) - strtotime($d2));
+        //$years = floor($diff / (365*60*60*24));
+
+        $diff = substr($d1,0,4)-substr($d2,0,4);
+        $years = (substr($d1,4,4) > substr($d2,4,4)) ? $diff-1 : $diff;
+
         return $years;
     }
 
