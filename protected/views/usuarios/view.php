@@ -1,11 +1,16 @@
 <?php
-/* @var $this UsuariosController */
-/* @var $model Usuarios */
+/* @var $this FotosController */
+/* @var $dataProvider CActiveDataProvider */
+$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+$categoria = Usuarios::dameEdad($usuario->fecha_nac) > 17 ? 'Adultos' : 'Juvenil';
 ?>
+
+
+
 <div class="row">
 	<div class="col-sm-12">
 		<h1>Informaci&oacute;n de tu cuenta</h1>
-
+		<h3>Te encuentras participando en la categor&iacute;a "<?php echo $categoria; ?>"</h3>
 		<?php if(isset($notice)){ ?>
 			<h4 class="alert alert-info"><?php echo $notice ?></h4>
 		<?php } ?>
