@@ -68,7 +68,7 @@ class Usuarios extends CActiveRecord
             array('acepto_terminos', 'acepto_terminos_rule', 'on'=>'insert'),
             array('correo', 'valida_correo', 'on'=>'insert'),
             array('usuario', 'valida_usuario', 'on'=>'insert'),
-            array('fecha_nac', 'valida_fecha_nac', 'on'=>'insert'),
+            array('fecha_nac', 'valida_fecha_nac', 'on'=>'insert, update'),
             array('confirma_passwd', 'valida_passwd'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
