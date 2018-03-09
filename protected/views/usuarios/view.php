@@ -7,15 +7,13 @@
 	<h1>Informaci&oacute;n de tu cuenta</h1>
 
 	<?php if(isset($notice)){ ?>
-		<h2 class="text-danger"><?php echo $notice ?></h2>
+		<h4 class="alert alert-info"><?php echo $notice ?></h4>
 	<?php } ?>
 
 	<hr />
 	<?php echo CHtml::link('<span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Configurar tus datos', Yii::app()->baseUrl."/index.php/usuarios/update/".$model->id, array('class'=>"btn btn-lg btn-info")); ?>
 </div>
 
-<?php echo $this->uniqueid ?><br>
-<?php echo $this->action->id ?><br>
 <?php
 
 $this->widget ( 'zii.widgets.CDetailView', array (
