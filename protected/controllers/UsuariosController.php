@@ -111,8 +111,10 @@ class UsuariosController extends Controller
 			if(isset($_POST['Usuarios'])){
 				$model->attributes=$_POST['Usuarios'];
 				//Hubo un cambio en la fecha de nacimiento ¿Que será xD?
+				// Parche necesario SÓLO en MN2017
+				//El resto de los concursos no debería cumplirse al siguiente condicion NUNCA (q hagan update a la fecha de nacimiento)
 				if(isset($_POST['Usuarios']['fecha_nac'])){
-					$notice = Usuarios::dameEdad($_POST['Usuarios']['fecha_nac']) < 18 ? 'Si ya tenías fotos subidas pero resulta que perteneces a la categoría juvenil, por favor vuelve a subir tus fotos' : 'Por favor revisa que tus fotos esten correctamente subidas';
+					$notice = Usuarios::dameEdad($_POST['Usuarios']['fecha_nac']) < 18 ? 'Si ya tenías fotos subidas pero resulta que perteneces a la categoría juvenil, por favor comunicate con nosotros para poder recuperar tus fotos' : 'Por favor revisa que tus datos estén correctos';
 				}
 				if($model->save()){
 					//$this->redirect(array('view','id'=>$model->id,'cR'=>$cambioRama));

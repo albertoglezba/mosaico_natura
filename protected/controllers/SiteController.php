@@ -117,11 +117,11 @@ class SiteController extends Controller
 	public function actionLogged()
 	{
 		$usuario = Usuarios::model()->findByPk( Yii::app()->user->id_usuario );
-		$edad_actualizada = $usuario->fecha_nac == '9999-01-01' ? false : true;
-		if(!$edad_actualizada){
-			$this->redirect('/index.php');
+		if(Usuarios::deboActualizarFechaNac($usuario->fecha_nac)){
+			$this->redirect(Yii::app()->baseUrl."/index.php/usuarios/update/".$usuario->id);
 		}else{
-			$this->render('logged');
+			$this->redirect(Yii::app()->baseUrl."/index.php/usuarios/".$usuario->id);
+
 		}
 
 	}
