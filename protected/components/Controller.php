@@ -90,14 +90,17 @@ class Controller extends CController
 			case 'video':
 				$fecha_inicio =  Yii::app()->params->fecha_inicio_video;
 				$fecha_termino =  Yii::app()->params->fecha_termino_video;
+				$msg = ' para VIDEOS ';
 				break;
 			case 'foto':
 				$fecha_inicio =  Yii::app()->params->fecha_inicio_foto;
 				$fecha_termino =  Yii::app()->params->fecha_termino_foto;
+				$msg = ' para FOTOS ';
 				break;
 			default:
 				$fecha_inicio =  Yii::app()->params->fecha_inicio;
 				$fecha_termino =  Yii::app()->params->fecha_termino;
+				$msg = ' ';
 				break;
 		}
 
@@ -106,7 +109,7 @@ class Controller extends CController
 		}else {
 			$fec_inicio = new DateTime($fecha_inicio);
 			$fec_termino = new DateTime($fecha_termino);
-			throw new CHttpException(NULL, "El tiempo del consurso es del ".$fec_inicio->format('d-M-Y H:i')." al ".$fec_termino->format('d-M-Y H:i'));
+			throw new CHttpException(NULL, "El tiempo del consurso".$msg."ha terminado: (".$fec_inicio->format('d-M-Y H:i')."hrs. al ".$fec_termino->format('d-M-Y H:i')."hrs.)");
 		}
 	}
 }

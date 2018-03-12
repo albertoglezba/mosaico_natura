@@ -166,19 +166,19 @@
 									$this->setIdUsuario(Yii::app()->user->id);
 									$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 									echo "<div class='btn-group' role='group' aria-label='...'>";
-									echo CHtml::link(' <button type="button" class="btn btn-primary">Tus fotografías</button>', array('fotos/index'));
-									echo CHtml::link('<button type="button" class="btn btn-primary">Tus videos</button>', array('videos/index'));
-									echo CHtml::link('<button type="button" class="btn btn-warning">Propiedades de tu cuenta</button>', array('usuarios/'.$usuario->id));
-									echo CHtml::link('<button type="button" class="btn btn-danger">Cerrar sesión ('.Yii::app()->user->name.')</button>', array('site/logout'));
+									echo CHtml::link('Tus fotografías', array('fotos/index'), array('class'=>'btn btn-primary disabled'));
+									echo CHtml::link('Tus videos', array('videos/index'), array('class'=>'btn btn-primary'));
+									echo CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('class'=>'btn btn-warning'));
+									echo CHtml::link('Cerrar sesión ('.Yii::app()->user->name.')', array('site/logout'), array('class'=>'btn btn-danger'));
 									echo "</div>";
 								}
 							} else {
 								$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 								echo "<div class='btn-group' role='group' aria-label='...'>";
-								echo CHtml::link(' <button type="button" class="btn btn-primary">Tus fotografías</button>', array('fotos/index'));
-								echo CHtml::link('<button type="button" class="btn btn-primary">Tus videos</button>', array('videos/index'));
-								echo CHtml::link('<button type="button" class="btn btn-warning">Propiedades de tu cuenta</button>', array('usuarios/'.$usuario->id));
-								echo CHtml::link('<button type="button" class="btn btn-danger">Cerrar sesión ('.Yii::app()->user->name.')</button>', array('site/logout'));
+								echo CHtml::link('Tus fotografías', array('fotos/index'), array('class'=>'btn btn-primary disabled'));
+								echo CHtml::link('Tus videos', array('videos/index'), array('class'=>'btn btn-primary'));
+								echo CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('class'=>'btn btn-warning'));
+								echo CHtml::link('Cerrar sesión ('.Yii::app()->user->name.')', array('site/logout'), array('class'=>'btn btn-danger'));
 								echo "</div>";
 							}
 						} else{?>
