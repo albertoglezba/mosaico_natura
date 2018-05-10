@@ -108,6 +108,8 @@ class Usuarios extends CActiveRecord
         }
     }
     public function valida_fecha_nac(){
+        if($this->cambia_passwd) return true;
+
         $regex = '/^[0-9]{4}-[0-1][0-9]-[0-3][0-9]$/';
         if(!preg_match($regex, $this->fecha_nac)){
             $this->addError($this->fecha_nac, 'Lo sentimos, la fecha no es válida'.$this->fecha_nac);
