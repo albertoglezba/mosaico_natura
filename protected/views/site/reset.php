@@ -36,7 +36,7 @@ function validatePasswd(passwd)
 
 </script>
 
-Estiamdo <?php echo $usuario->nombre." ".$usuario->apellido.", "; ?>
+Estimado <?php echo $usuario->nombre." ".$usuario->apellido.", "; ?>
 <br>
 por favor escribe una nueva contrase&ntilde;a
 <br><br>
