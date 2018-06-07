@@ -1,7 +1,7 @@
 <?php $yii_path = Yii::app()->request->baseUrl; ?>
 
 <!-- Modal -->
-<!-- <div id="myModal" class="modal fade bs-example-modal-lg" role="dialog">
+<div id="myModal" class="modal fade bs-example-modal-lg" role="dialog">
 <div class="modal-dialog modal-lg">
 
 
@@ -10,7 +10,7 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
-      <img class="center-block img-responsive" src="<?php echo $yii_path; ?>/img/invitacion_premiacion_participantes_2017.jpg" width="800" height="600" alt=""/>
+      <img class="center-block img-responsive" src="<?php echo $yii_path; ?>/img/invita_premiacion.jpg" width="800" height="600" alt=""/>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
@@ -18,7 +18,7 @@
     </div>
     
     </div>
-</div> -->
+</div>
 
 <!-- Intro Header -->
 <header class="intro">
@@ -34,8 +34,8 @@
                 </div>
                 <div class="col-md-8 col-md-offset-4">
                     <h3 class="mosaico-titulo">de Fotograf&iacute;a de Naturaleza</h3>
-                    <h4 class="mosaico-titulo"><i>del 11 de diciembre 2017 al 11 de marzo 2018*</i></h4>
-					<p><span style="color:#ffd400; font-weight:bold;">*Se recibir&aacute;n videos hasta el viernes 11 de mayo 2018</span></p>
+                    <h4 class="mosaico-titulo"><i>del 11 de diciembre 2017 al 11 de marzo 2018</i></h4>
+					<a href="http://www.mosaiconatura.net/ganadores_anteriores.html#ganadores_2018"><p><span style="color:#ffd400; font-weight:bold;">Conoce a los finalistas</span></p></a>
 
                 </div>
 
