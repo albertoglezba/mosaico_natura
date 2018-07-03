@@ -1,6 +1,6 @@
 <?php $yii_path = Yii::app()->request->baseUrl; ?>
 
-<!-- Modal -->
+<!-- Modal 
 <div id="myModal" class="modal fade bs-example-modal-lg" role="dialog">
 <div class="modal-dialog modal-lg">
 
@@ -18,7 +18,7 @@
     </div>
     
     </div>
-</div>
+</div-->
 
 <!-- Intro Header -->
 <header class="intro">
