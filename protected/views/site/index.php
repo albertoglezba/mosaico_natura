@@ -35,7 +35,7 @@
                 <div class="col-md-8 col-md-offset-4">
                     <h3 class="mosaico-titulo">de Fotograf&iacute;a de Naturaleza</h3>
                     <h4 class="mosaico-titulo"><i>del 11 de diciembre 2017 al 11 de marzo 2018</i></h4>
-					<a href="http://www.mosaiconatura.net/ganadores_anteriores.html#ganadores_2018"><p><span style="color:#ffd400; font-weight:bold;">Conoce a los finalistas</span></p></a>
+					<a href="http://www.mosaiconatura.net/ganadores_anteriores.html#ganadores_2018"><p><span style="color:#ffd400; font-weight:bold;">Conoce a los ganadores</span></p></a>
 
                 </div>
 
