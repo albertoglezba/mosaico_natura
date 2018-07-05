@@ -105,7 +105,7 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ganadores</a>
 					<ul class="dropdown-menu">
-						<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2018">Finalistas del IV concurso</a></li>
+						<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2018">Ganadores del IV concurso</a></li>
 						<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2017">Ganadores del III concurso</a></li>
 						<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2016">Ganadores del II concurso</a></li>
 						<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2015">Ganadores del I concurso</a></li>
@@ -279,7 +279,7 @@
 				<li><a href="http://www.nikon.com.mx/" target="_blank">Nikon</a></li>
 				<li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
 				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
-				<li><a href="http://http://cuartoscuro.com.mx/" target="_blank">Cuartoscuro</a></li>
+				<li><a href="http://http://cuartoscuro.com.mx/" target="_blank">CUARTOSCURO</a></li>
 				<li><a href="http://www.mexicanisimo.com.mx/" target="_blank">Mexican&iacute;simo</a></li>
 				<li><a href="http://http://buceoxtabay.com/" target="_blank">Buceo Xtabay</a></li>
 				<li><a href="http://www.doradobuceo.com/" target="_blank">Dorado Buceo</a></li>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	cropToFit="false"
+	watermarkPath="/Volumes/disk2/Documents/01_Desarrollo/00_CONABIO/ma_conabio.png"
+	thumbFrameColor="rgba(255,212,0,1)"
+	showOpenButton="true"
+	useThumbDots="false"
+	useFullscreenExpand="false"
+	backgroundColor="rgba(45,44,39,1)"
+	showExpandButton="true"
+	screenMode="AUTO"
+	galleryTitlePosition="NONE"
+	showThumbsButton="true"
+	expandInNewPage="AUTO"
+	captionPosition="NONE"
+	showInfoButton="false"
+	showNavButtons="false"
+	useWatermark="true"
+	watermarkHAlign="LEFT"
+	watermarkVAlign="TOP"
+	buttonBarPosition="TOP"
+	showSplashPage="AUTO"
+	flickrShowTitle="false"
+
+>
+  <image imageURL="images/20_23705.jpg"
+	thumbURL="thumbs/20_23705.jpg"
+	linkURL="images/20_23705.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/USUARIOS/COMUNICACION/3. Mosaico-NaturaMexico/4. CONCURSO ANUAL/Exposicion/_Baja con pleca/20_23705.jpg">
+    <title><![CDATA[20_23705]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/21_25113.jpg"
+	thumbURL="thumbs/21_25113.jpg"
+	linkURL="images/21_25113.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/USUARIOS/COMUNICACION/3. Mosaico-NaturaMexico/4. CONCURSO ANUAL/Exposicion/_Baja con pleca/21_25113.jpg">
+    <title><![CDATA[21_25113]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/27_23862.jpg"
+	thumbURL="thumbs/27_23862.jpg"
+	linkURL="images/27_23862.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/USUARIOS/COMUNICACION/3. Mosaico-NaturaMexico/4. CONCURSO ANUAL/Exposicion/_Baja con pleca/27_23862.jpg">
+    <title><![CDATA[27_23862]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/22_19530.jpg"
+	thumbURL="thumbs/22_19530.jpg"
+	linkURL="images/22_19530.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/USUARIOS/COMUNICACION/3. Mosaico-NaturaMexico/4. CONCURSO ANUAL/Exposicion/_Baja con pleca/22_19530.jpg">
+    <title><![CDATA[22_19530]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/23_23700.jpg"
+	thumbURL="thumbs/23_23700.jpg"
+	linkURL="images/23_23700.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/USUARIOS/COMUNICACION/3. Mosaico-NaturaMexico/4. CONCURSO ANUAL/Exposicion/_Baja con pleca/23_23700.jpg">
+    <title><![CDATA[23_23700]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

@@ -35,7 +35,7 @@
                 <div class="col-md-8 col-md-offset-4">
                     <h3 class="mosaico-titulo">de Fotograf&iacute;a de Naturaleza</h3>
                     <h4 class="mosaico-titulo"><i>del 11 de diciembre 2017 al 11 de marzo 2018</i></h4>
-					<a href="http://www.mosaiconatura.net/ganadores_anteriores.html#ganadores_2018"><p><span style="color:#ffd400; font-weight:bold;">Conoce a los finalistas</span></p></a>
+					<a href="http://www.mosaiconatura.net/ganadores_anteriores.html#ganadores_2018"><p><span style="color:#ffd400; font-weight:bold;">Conoce a los ganadores</span></p></a>
 
                 </div>
 
@@ -122,7 +122,7 @@
                         <td valign="bottom"><img src="<?php echo $yii_path; ?>/img/bases-06.png">
                             <table width="100%" border="3" cellpadding="0" cellspacing="0" style="border-color:#ffd400; border-style:solid; border-right-width:0">
                                 <tr>
-                                    <td bgcolor="#403d35" style="padding:10px 3px;"><br><span style="font-size:30px;">$20,000</span><br>pesos en especie o en efectivo<br>Suscripci&oacute;n anual: Cuarto oscuro<br><br>
+                                    <td bgcolor="#403d35" style="padding:10px 3px;"><br><span style="font-size:30px;">$20,000</span><br>pesos en especie o en efectivo<br>Suscripci&oacute;n anual: CUARTOSCURO<br><br>
                                     </td>
                                 </tr>
                             </table>
@@ -131,14 +131,14 @@
                             <table width="100%" border="3" cellpadding="0" cellspacing="0" style="border-color:#ffd400; border-style:solid;">
                                 <tr>
                                     <td bgcolor="#403d35" style="padding:15px 2px;"><span style="font-size:30px;">$25,000</span><br>pesos en especie o en efectivo<br>C&aacute;mara fotogr&aacute;fica<br>Nikon D5500<br>Publicaci&oacute;n en diversos medios<br>
-                                        Suscripci&oacute;n anual:<br>Cuarto oscuro<br></td>
+                                        Suscripci&oacute;n anual:<br>CUARTOSCURO<br></td>
                                 </tr>
                             </table>
                         </td>
                         <td valign="bottom"><img src="<?php echo $yii_path; ?>/img/bases-08.png">
                             <table width="100%" border="3" cellpadding="0" cellspacing="0" style="border-color:#ffd400; border-style:solid; border-left-width:0">
                                 <tr>
-                                    <td bgcolor="#403d35" style="padding:10px 3px;"><span style="font-size:30px;">$15,000</span><br>pesos en especie o en efectivo<br>Suscripci&oacute;n anual: Cuarto oscuro<br>
+                                    <td bgcolor="#403d35" style="padding:10px 3px;"><span style="font-size:30px;">$15,000</span><br>pesos en especie o en efectivo<br>Suscripci&oacute;n anual: CUARTOSCURO<br>
                                     </td>
                                 </tr>
                             </table>
@@ -147,7 +147,7 @@
                 </table>
 
                 <div class="cintillo-adultos">
-                    <p><strong>2 Menciones honor&iacute;ficas</strong><br/>Suscripci&oacute;n anual: Cuarto oscuro</p>
+                    <p><strong>2 Menciones honor&iacute;ficas</strong><br/>Suscripci&oacute;n anual: CUARTOSCURO</p>
                 </div>
                 <h4 class="bases-izq">Formatos</h4>
 
@@ -192,7 +192,7 @@
                                 <tr>
                                     <td width="10%" bgcolor="#99141b" style="text-align:right; padding:8px 5px;"><img src="<?php echo $yii_path; ?>/img/bases-07.png" alt="primer lugar"></td>
                                     <td bgcolor="#42423d" style="padding:5px;"><br>$20,000 pesos en especie o en efectivo<br>C&aacute;mara fotogr&aacute;fica Nikon D5500<br>Publicaci&oacute;n en diversos medios<br>
-                                        Suscripci&oacute;n anual: Cuarto oscuro<br><br></td>
+                                        Suscripci&oacute;n anual: CUARTOSCURO<br><br></td>
                                 </tr>
                             </table>
 
@@ -204,7 +204,7 @@
                                 <tr>
                                     <td width="20%" bgcolor="#99141b" style="text-align:right; padding:8px 5px;"><img src="<?php echo $yii_path; ?>/img/bases-06.png" alt="primer lugar"></td>
                                     <td bgcolor="#575652" style="padding:5px;"><br>$15,000 pesos en especie o en efectivo<br>C&aacute;mara compacta Nikon<br>Dos m&oacute;dulos Nikon School<br>
-                                        Suscripci&oacute;n anual: Cuarto oscuro<br><br></td>
+                                        Suscripci&oacute;n anual: CUARTOSCURO<br><br></td>
                                 </tr>
                             </table>
 
@@ -216,7 +216,7 @@
                                 <tr>
                                     <td width="30%" bgcolor="#99141b" style="text-align:right; padding:8px 5px;"><img src="<?php echo $yii_path; ?>/img/bases-08.png" alt="primer lugar"></td>
                                     <td bgcolor="#6c6c68" style="padding:5px;"><br>$10,000 pesos en especie o en efectivo<br>Dos m&oacute;dulos Nikon School<br>
-                                        Suscripci&oacute;n anual: Cuarto oscuro<br><br></td>
+                                        Suscripci&oacute;n anual: CUARTOSCURO<br><br></td>
                                 </tr>
                             </table>
                         </td>
@@ -257,7 +257,7 @@
                                     <td><img src="<?php echo $yii_path; ?>/img/bases-07.png"></td>
                                 </tr>
                                 <tr>
-                                    <td>$25,000 pesos<br>en especie o en efectivo<br>C&aacute;mara fotogr&aacute;fica Nikon D5500<br>Publicaci&oacute;n en diversos medios<br>Suscripci&oacute;n anual:<br> Cuarto oscuro</td>
+                                    <td>$25,000 pesos<br>en especie o en efectivo<br>C&aacute;mara fotogr&aacute;fica Nikon D5500<br>Publicaci&oacute;n en diversos medios<br>Suscripci&oacute;n anual:<br> CUARTOSCURO</td>
                                 </tr>
                             </table>
 
@@ -268,7 +268,7 @@
                                     <td><img src="<?php echo $yii_path; ?>/img/bases-06.png"></td>
                                 </tr>
                                 <tr>
-                                    <td>$20,000 pesos<br>en especie o en efectivo<br>Publicaci&oacute;n en diversos medios<br>Suscripci&oacute;n anual:<br> Cuarto oscuro</td>
+                                    <td>$20,000 pesos<br>en especie o en efectivo<br>Publicaci&oacute;n en diversos medios<br>Suscripci&oacute;n anual:<br> CUARTOSCURO</td>
                                 </tr>
                             </table>
                         </td>
@@ -278,7 +278,7 @@
                                     <td><img src="<?php echo $yii_path; ?>/img/bases-08.png"></td>
                                 </tr>
                                 <tr>
-                                    <td>$15,000 pesos<br>en especie o en efectivo<br>Publicaci&oacute;n en diversos medios<br>Suscripci&oacute;n anual:<br> Cuarto oscuro</td>
+                                    <td>$15,000 pesos<br>en especie o en efectivo<br>Publicaci&oacute;n en diversos medios<br>Suscripci&oacute;n anual:<br> CUARTOSCURO</td>
                                 </tr>
                             </table>
                         </td>
