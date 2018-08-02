@@ -78,13 +78,14 @@
     <div class="bases-section">
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>BASES DEL CONCURSO</h2>
+                <h2>CONVOCATORIA 2019</h2>
 
             </div>
         </div>
     </div>
+	<br><br><br><br><br><br>
 
-    <div class="bases-content">
+    <div class="bases-content" style="display: none">
         <div class="container">
 
             <div class="col-lg-12 col-xs-12 bases-titulo">
@@ -342,11 +343,13 @@
 
         </div>
     </div>
+	
+	
 
 </section>
 
 <!-- Jurado Section -->
-<section id="jurado" class="content-section text-center">
+<section id="jurado" class="content-section text-center" style="display: none">
     <div class="jurado-header">
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
@@ -405,9 +408,10 @@
                 <h3>&quot;<a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/7796/index.html" target="_blank">Visiones de nuestra naturaleza I</a>&quot;</h3>
                 <p>Ganadores del Primer Concurso Nacional de Fotograf&iacute;a de Naturaleza</p>
                 <hr>
-                <h3>&quot;Tierra de Sol: Los paisajes de M&eacute;xico vistos por j&oacute;venes fot&oacute;grafos y antiguos viajeros&quot;</h3>
-                <p>Exposici&oacute;n permanente<br>
-                    Lugar: Galer&iacute;a CasaCEM<br>Avenida Chapultepec Sur 376<br>Guadalajara, Jalisco</p>
+				<h3>&quot;<a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/14172/index.html" target="_blank">Visiones de nuestra naturaleza IV</a>&quot;</h3>
+                <p>Ganadores del Cuarto Concurso Nacional de Fotograf&iacute;a de Naturaleza</p>
+				
+                
 
             </div>
 
@@ -416,10 +420,10 @@
                 <h3>&quot;<a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/12546/index.html" target="_blank">Visiones de nuestra naturaleza II</a>&quot;</h3>
                 <p>Ganadores del Segundo Concurso Nacional de Fotograf&iacute;a de Naturaleza</p>
                 <hr>
-                <h3>ANTERIORES</h3>
-                <p><a href="http://bdi.conabio.gob.mx/fotoweb/archives/5032-Exposiciones/Exposiciones/25%20Miradas%20al%20Bosque/" target="_blank">&quot;25 Miradas al Bosque&quot;</a></p>
-                <p><a href="http://bdi.conabio.gob.mx/fotoweb/archives/5032-Exposiciones/Exposiciones/Biodiversidad%20mexicana%20riqueza%20natural%20de%20M%C3%A9xico%20MuseoHN/" target="_blank">&quot;Biodiversidad Mexicana&quot;</a></p>
-                <p>&quot;creArte conCiencia&quot;</p>
+				<h3>&quot;Tierra de Sol: Los paisajes de M&eacute;xico vistos por j&oacute;venes fot&oacute;grafos y antiguos viajeros&quot;</h3>
+                <p>Exposici&oacute;n permanente<br>
+                    Lugar: Galer&iacute;a CasaCEM<br>Avenida Chapultepec Sur 376<br>Guadalajara, Jalisco</p>
+                
             </div>
 
 
@@ -427,6 +431,11 @@
                 <h3>&quot;<a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/13010/index.html" target="_blank">Visiones de nuestra naturaleza III</a>&quot;</h3>
                 <p>Ganadores del Tercer Concurso Nacional de Fotograf&iacute;a de Naturaleza</p>
                 <hr>
+				<h3>ANTERIORES</h3>
+                <p><a href="http://bdi.conabio.gob.mx/fotoweb/archives/5032-Exposiciones/Exposiciones/25%20Miradas%20al%20Bosque/" target="_blank">&quot;25 Miradas al Bosque&quot;</a></p>
+                <p><a href="http://bdi.conabio.gob.mx/fotoweb/archives/5032-Exposiciones/Exposiciones/Biodiversidad%20mexicana%20riqueza%20natural%20de%20M%C3%A9xico%20MuseoHN/" target="_blank">&quot;Biodiversidad Mexicana&quot;</a></p>
+                <p>&quot;creArte conCiencia&quot;</p>
+				<hr>
                 <p><a href="http://www.biodiversidad.gob.mx/Difusion/exposiciones.html" target="_blank">Otras exposiciones</a></p>
             </div>
 
@@ -454,7 +463,7 @@
 
 
 <!-- Faq Section -->
-<section id="preguntas" class="content-section text-center">
+<section id="preguntas" class="content-section text-center" style="display: none">
     <div class="preguntas-header">
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
@@ -570,7 +579,7 @@
 
 
 <!-- Contact Section -->
-<section id="registro" class="content-section text-center">
+<section id="registro" class="content-section text-center" style="display: none">
     <div class="registro-header">
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
