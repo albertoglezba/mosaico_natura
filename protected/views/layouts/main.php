@@ -96,7 +96,7 @@
 				<li>
 					<a class="page-scroll" href="<?php echo $yii_path; ?>/#bases">Concurso</a>
 				</li>
-				<li>
+				<li style="display: none">
 					<a class="page-scroll" href="<?php echo $yii_path; ?>/#jurado">Jurado</a>
 				</li>
 				<li>
@@ -111,10 +111,10 @@
 						<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2015">Ganadores del I concurso</a></li>
 					</ul>
 				</li>
-				<li>
+				<li style="display: none">
 					<a class="page-scroll" href="<?php echo $yii_path; ?>/#preguntas">Preguntas Frecuentes</a>
 				</li>
-				<li>
+				<li style="display: none">
 					<a class="page-scroll" href="<?php echo $yii_path; ?>/#registro">Registro</a>
 				</li>
 				<li>
