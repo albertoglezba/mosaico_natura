@@ -203,15 +203,18 @@
 <div id="colaboradores">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conabio.png" class="img-responsive" alt="Conabio"> </a>
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
+				<a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conabio_2019.png" class="img-responsive" alt="Conabio"> </a>
 			</div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
-				<a href="https://www.nationalgeographic.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" class="img-responsive" alt="National Geographic" > </a>
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers"><a href="https://fmcn.org/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-fmcn-web-4.png" alt="Fondo Mexicano para la Conservación" class="img-responsive"> </a>
 			</div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo-esp.png" class="img-responsive" alt="National Geographic en español" > </a>
+			<div class="col-xs-4 col-md-2 col-lg-3 sponsers">
+				<a href="https://www.nationalgeographic.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" alt="National Geographic" class="img-responsive" > </a>
 			</div>
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
+				<a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo-esp.png" alt="National Geographic en español" class="img-responsive" > </a>
+			</div>
+			<!--
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-nikon.png" class="img-responsive img-gde" alt="Nikon" > </a>
 			</div>
@@ -247,8 +250,6 @@
 				<a href="https://www.rci.com" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-rci.png" class="img-responsive" alt="RCI" > </a>
 			</div>
 			
-			
-			
 			<div class="col-xs-4 col-md-6 col-lg-6 sponsers">
 				<a href="http://www.cenart.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cultura-cenart.png" class="img-responsive img-ch" alt="CENART" > </a>
 			</div>
@@ -258,7 +259,7 @@
 			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
 				<a href="https://www.gob.mx/conanp" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conanp.png" class="img-responsive img-ch" alt="CONANP" > </a>
 			</div>
-			
+			-->
 			
 			
 			
@@ -276,6 +277,7 @@
 				<li><a href="http://www.gob.mx/conabio/" target="_blank">Conabio</a></li>
 				<li><a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a> </li>
 				<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic en Espa&ntilde;ol</a></li>
+				<!--
 				<li><a href="http://www.nikon.com.mx/" target="_blank">Nikon</a></li>
 				<li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
 				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
@@ -291,11 +293,7 @@
 				<li><a href="https://www.gob.mx/cultura" target="_blank">Secretar&iacute;a de cultura</a></li>
 				<li><a href="http://www.cenart.gob.mx/" target="_blank">CENART</a></li>
 				<li><a href="https://www.gob.mx/conanp" target="_blank">CONANP</a></li>
-				
-				
-				
-				
-				
+				-->
 			</ul>
 		</div>
 		<div class="col-md-3">
