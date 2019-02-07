@@ -114,7 +114,7 @@
 				<li style="display: none">
 					<a class="page-scroll" href="<?php echo $yii_path; ?>/#preguntas">Preguntas Frecuentes</a>
 				</li>
-				<li style="display: none">
+				<li>
 					<a class="page-scroll" href="<?php echo $yii_path; ?>/#registro">Registro</a>
 				</li>
 				<li>
@@ -208,11 +208,14 @@
 			</div>
 			<div class="col-xs-4 col-md-3 col-lg-3 sponsers"><a href="https://fmcn.org/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-fmcn-web-4.png" alt="Fondo Mexicano para la Conservación" class="img-responsive"> </a>
 			</div>
-			<div class="col-xs-4 col-md-2 col-lg-3 sponsers">
+			<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
 				<a href="https://www.nationalgeographic.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" alt="National Geographic" class="img-responsive" > </a>
 			</div>
-			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
+			<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
 				<a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo-esp.png" alt="National Geographic en español" class="img-responsive" > </a>
+			</div>
+			<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
+				<a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-acir.png" class="img-responsive img-gde" alt="Fundación Acir" > </a>
 			</div>
 			<!--
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
@@ -221,9 +224,7 @@
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-epson.png" class="img-responsive img-ch" alt="Epson" > </a>
 			</div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-acir.png" class="img-responsive img-gde" alt="Fundación Acir" > </a>
-			</div>
+
 			
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://http://cuartoscuro.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cuartoscuro.png" class="img-responsive" alt="Cuartoscuro" > </a>
@@ -274,13 +275,14 @@
 		<div class="col-md-3">
 			<p>NUESTROS COLABORADORES</p>
 			<ul>
-				<li><a href="http://www.gob.mx/conabio/" target="_blank">Conabio</a></li>
+				<li><a href="http://www.gob.mx/conabio/" target="_blank"><span class="conabio">Conabio</span></a></li>
+				<li><a href="https://fmcn.org/" target="_blank">Fondo Mexicano para la Conservación de la Naturaleza</a></li>
 				<li><a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a> </li>
 				<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic en Espa&ntilde;ol</a></li>
+				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
 				<!--
 				<li><a href="http://www.nikon.com.mx/" target="_blank">Nikon</a></li>
 				<li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
-				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
 				<li><a href="http://http://cuartoscuro.com.mx/" target="_blank">CUARTOSCURO</a></li>
 				<li><a href="http://www.mexicanisimo.com.mx/" target="_blank">Mexican&iacute;simo</a></li>
 				<li><a href="http://http://buceoxtabay.com/" target="_blank">Buceo Xtabay</a></li>

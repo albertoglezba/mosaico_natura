@@ -1,26 +1,27 @@
 <div class="tyc-content">
 		<div class="col-md-12">
-			<p>La Comisión  Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO) a través de <span style="color:#ffd400;">Mosaico  Natura México</span>, convoca al <span style="color:#ffd400;">&ldquo;Quinto  Concurso Nacional de Fotografía de la Naturaleza&rdquo;</span> en el cual podrán  participar todas las personas, nacionales o extranjeras radicadas en México.</p>
+			<p>La Comisión  Nacional para el Conocimiento y Uso de la Biodiversidad (<span class="conabio">Conabio</span>) a través de <strong>Mosaico  Natura México</strong>, convoca al <strong>&ldquo;5o.  Concurso Nacional de Fotografía de la Naturaleza&rdquo; </strong>en el cual podrán  participar todas las personas, nacionales o extranjeras radicadas en México.</p>
 		  <p>La(s)  fotografía(s) debe(n) representar la <strong>riqueza natural en México, </strong>es decir  especies de plantas, hongos y animales nativos del país en vida silvestre, así  como ecosistemas, usos de la biodiversidad, naturaleza en destinos turísticos y/o  actividades humanas que tengan un impacto en la naturaleza.</p>
 			
-			<h4><strong><br>QUIÉNES PUEDEN PARTICIPAR</strong></h4>
+			<h4 style="color: darkred"><strong><br>QUIÉNES PUEDEN PARTICIPAR</strong></h4>
 			<p>El concurso está abierto a aficionados o profesionales de la fotografía.</p>
 			
-		  <h4><strong><br>CATEGOR&Iacute;AS</strong> Y TEMAS</h4>
+		  <h4 style="color: darkred"><strong><br>
+	      CATEGOR&Iacute;AS Y TEMAS</strong></h4>
 			<h3>- Adultos</h3>
-				<p>De 18 años en adelante. Cada participante puede enviar hasta <span style="color:#ffd400;">dos fotografías por cada tema.</span></p>
+				<p>De 18 años en adelante. Cada participante puede enviar hasta <strong>2 fotografías por cada tema.</strong></p>
 			
-		  <p><span style="color:#ffd400;">Fauna:</span> Incluye animales nativos de México en vida silvestre; desde pequeños insectos hasta grandes mamíferos, siempre que éstos, no estén en cautiverio o sean animales domésticos y/o mascotas.</p>
-			<p><span style="color:#ffd400;">Plantas y hongos:&nbsp;</span>Incluye toda clase de especies vegetales y hongos nativos de Mexico, en vida silvestre. No se aceptarán fotografías de plantas cultivadas, de maceta o jardín.</p>
-			<p><span style="color:#ffd400;">Naturaleza y ser humano: </span>Refiere a usos y costumbres relacionadas con el entorno natural (actividades agrícolas, artesanales, gastronómicas, medicinales, espirituales, recreativas, ceremoniales), manejo sustentable, conservación y/o restauración, también se considera en esta categoría,  actividades que impacten de manera negativa, directa o indirectamente la biodiversidad.</p>
-			<p><span style="color:#ffd400;">Paisajes con ecosistemas:&nbsp;</span>Vistas aéreas y terrestres de ecosistemas no perturbados de México, desde las costas hasta las altas montañas.</p>
-			<p><span style="color:#ffd400;">Fotograf&iacute;a subacu&aacute;tica:&nbsp;</span> Imágenes de animales, plantas o hábitats subacuáticos, ya sea en un entorno marino o dulceacuícola. No se aceptarán fotografías de acuario.</p>
-		  <p><span style="color:#ffd400;">Pequeños gigantes:&nbsp;</span>Fotografías macro de especies o detalles que comúnmente no son percibidos a simple vista. Incluyen imágenes tomadas con microscopio.</p>
+		  <p><span style="color:darkred; font-weight:bold;">Fauna:</span> Incluye animales nativos de México en vida silvestre; desde pequeños insectos hasta grandes mamíferos, siempre que éstos, no estén en cautiverio o sean animales domésticos y/o mascotas.</p>
+			<p><span style="color:darkred; font-weight:bold;">Plantas y hongos:&nbsp;</span>Incluye toda clase de especies vegetales y hongos nativos de Mexico, en vida silvestre. No se aceptarán fotografías de plantas cultivadas, de maceta o jardín.</p>
+			<p><span style="color:darkred; font-weight:bold;">Naturaleza y ser humano: </span>Refiere a usos y costumbres relacionadas con el entorno natural (actividades agrícolas, artesanales, gastronómicas, medicinales, espirituales, recreativas, ceremoniales), manejo sustentable, conservación y/o restauración, también se considera en esta categoría,  actividades que impacten de manera negativa, directa o indirectamente la biodiversidad.</p>
+			<p><span style="color:darkred; font-weight:bold;">Paisajes con ecosistemas:&nbsp;</span>Vistas aéreas y terrestres de ecosistemas no perturbados de México, desde las costas hasta las altas montañas.</p>
+			<p><span style="color:darkred; font-weight:bold;">Fotograf&iacute;a subacu&aacute;tica:&nbsp;</span> Imágenes de animales, plantas o hábitats subacuáticos, ya sea en un entorno marino o dulceacuícola. No se aceptarán fotografías de acuario.</p>
+		  <p><span style="color:darkred; font-weight:bold;">Pequeños gigantes:&nbsp;</span>Fotografías macro de especies o detalles que comúnmente no son percibidos a simple vista. Incluyen imágenes tomadas con microscopio.</p>
 			<br>
 			
 			<h3>- Jóvenes  menores</h3>
-			<p>Hasta 17 años al cierre del concurso. Cada  participante puede enviar hasta <span style="color:#ffd400;">3 fotografías.</span></p>
-		  <p><span style="color:#ffd400;">Tema libre:&nbsp;</span> Incluye cualquier fotografía relacionada con la riqueza natural de México, es decir, animales o plantas en su ambiente natural, paisajes naturales, actividades relacionadas con el hombre y la naturaleza. No se aceptarán fotografías de plantas cultivadas, animales en cautiverio o cualquier otro ambiente controlado.</p>
+			<p>Hasta 17 años al cierre del concurso. Cada  participante puede enviar hasta <strong>3 fotografías.</strong></p>
+		  <p><span style="color:darkred; font-weight:bold;">Tema libre:&nbsp;</span> Incluye cualquier fotografía relacionada con la riqueza natural de México, es decir, animales o plantas en su ambiente natural, paisajes naturales, actividades relacionadas con el hombre y la naturaleza. No se aceptarán fotografías de plantas cultivadas, animales en cautiverio o cualquier otro ambiente controlado.</p>
 			<br>
 			
 		 <!--
@@ -45,34 +46,38 @@
                       <p>&Uacute;nicamente se aceptar&aacute; el env&iacute;o electr&oacute;nico de fotograf&iacute;as en formato jpg, debiendo enviar los archivos tal cual salen de la c&aacute;mara. Los menores deber&aacute;n contar con el consentimiento de sus padres o tutores para poder participar en este concurso y se sujetar&aacute;n a los puntos 2.2, 2.4 y 2.5 de esta convocatoria.</p> -->
                       
           
-		  <h4>CARACTERÍSTICAS DE LAS FOTOGRAFÍAS</h4>
+		  <h4 style="color:darkred";>CARACTERÍSTICAS DE LAS FOTOGRAFÍAS</h4>
                       <p>Las  fotografías deben de haber sido tomadas en alta resolución: 3,000 pixeles como  mínimo en el lado más largo en formato jpg o tif.</p>
-                      <p>Los  participantes podrán utilizar ajustes generales (exposición, saturación,  contraste, etcétera). <span style="color:#ffd400;">No se aceptarán  fotografías que hayan sido manipuladas digitalmente eliminando partes de la  imagen o sustituirlas con otros elementos diferentes a la imagen original</span></p>
+                      <p>Los  participantes podrán utilizar ajustes generales (exposición, saturación,  contraste, etcétera). <strong>No se aceptarán  fotografías que hayan sido manipuladas digitalmente eliminando partes de la  imagen o sustituirlas con otros elementos diferentes a la imagen original.</strong></p>
                       <p>Las  fotografías participantes deberán cumplir con lo siguiente: </p>
                       <p>Ser inéditas  y originales:</p>
 		  <ul>
                         <li><p>No haber participado en concursos similares</p></li>
                         <li><p>No haber ganado en otro concurso</p> </li>
                         <li><p>No haber sido expuestas en exposiciones públicas o privadas</p></li>
-                        <li><p>No yener una temporalidad mayor a dos años</p></li>
+                        <li>
+                          <p>No tener una temporalidad mayor a dos años</p></li>
                         <li><p>No haber sido utilizadas con fines comerciales</p></li>
                         <li><p>No tener firma, sello o alguna otra marca de identificación</p></li>
           </ul><br>
 			
                         
-          			<h4>VIGENCIA DEL  CONCURSO y FECHAS IMPORTANTES</h4>
-                        <p>La  participación de este concurso estará disponible a partir del lunes 14 de enero  de 2019 hasta las 23:00 horas del domingo 14 de marzo de 2019, que será la  fecha y hora límite para registrar la(s) fotografía(s).</p>
-                        <p><span style="color:#ffd400;">Nota:</span> Con el propósito de promover  nuevos valores, ningún participante podrá ganar en certámenes concecutivos  Mosaico Natura México, por lo que los ganadores del certamen anterior (Mosaico  Natura México IV - 2018) no podrán participar en este. Su participación se  aceptará nuevamente en el próximo concurso.</p>
+          			<h4 style="color:darkred";>VIGENCIA DEL  CONCURSO Y FECHAS IMPORTANTES</h4>
+                        <p>La  participación de este concurso estará disponible a partir del jueves 7 febrero  hasta el domingo 10 de marzo de 2019 a las 23:00 h., que será la  fecha y hora límite para registrar la(s) fotografía(s).</p>
+                        <p><strong>Nota:</strong> Con el propósito de promover  nuevos valores, <strong>ningún participante podrá ganar en certámenes concecutivos  Mosaico Natura México,</strong> por lo que los ganadores del certamen anterior (<strong>Mosaico  Natura México IV - 2018</strong>) no podrán participar en este. Su participación se  aceptará nuevamente en el próximo concurso.</p>
 						<ul>
-						<li><p>Resultados  de la selección de finalistas: 14 de abril de 2019</p></li>
-						<li><p>Exposición  de finalistas: 14 de abril al 14 de julio de 2019</p></li>
-						<li><p>Anuncio  de ganadores y menciones honoríficas: 14 de mayo de 2019 en el sitio Mosaico  Natura México <a href="http://www.mosaiconatura.net">www.mosaiconatura.net</a></p></li>     
+						<li>
+						  <p><strong>Resultados  de la selección de finalistas:</strong> abril de 2019</p></li>
+						<li>
+						  <p><strong>Exposición  de finalistas:</strong> abril a julio de 2019</p></li>
+						<li>
+						  <p><strong>Anuncio  de ganadores: </strong>julio  de 2019 en el sitio Mosaico  Natura México <a style="color:darkred"; href="http://www.mosaiconatura.net">www.mosaiconatura.net</a></p></li>     
 						</ul><p>&nbsp;</p>
 			
 			
-                    <h4>¿CÓMO PARTICIPAR?</h4>
+                    <h4 style="color:darkred";>¿CÓMO PARTICIPAR?</h4>
                         <p>Antes de  registrarse, el participante deberá de haber leído, entendido y aceptado las  Bases del Concurso.</p>
-                        <p>El registro  oficial de participación y el envío de imágenes se realizará en línea a través  del sitio <a href="http://www.mosaiconatura.net">www.mosaiconatura.net</a>. </strong>Todos los registros oficiales serán  confirmados vía correo electrónico.</p>
+                        <p>El registro  oficial de participación y el envío de imágenes se realizará en línea a través  del sitio <a href="http://www.mosaiconatura.net" style="color:darkred";>www.mosaiconatura.net</a>. </strong>Todos los registros oficiales serán  confirmados vía correo electrónico.</p>
                         <p>En caso de  contar con un registro previo, el participante podrá ingresar con sus mismas  credenciales.</p>
                         <p>Únicamente  se aceptará el envío electrónico de fotografías en formato jpg, con dimensiones  mínimas de 3,000 pixeles del lado más largo de la imagen y una resolución de  300 DPI´s (pixeles por pulgada).</p>
                         <p>Las  fotografías concursantes únicamente se aceptarán por vía electrónica.</p>
@@ -89,15 +94,15 @@
 							</ul>
                        
 			
-		  <h4>RESPONSABILIDADES </h4>
-          <p>Los participantes conservarán los  derechos sobre sus fotografías, pero al concursar, aceptan que las  instituciones patrocinadoras puedan hacer uso de las mismas de manera ilimitada  para su utilización por sí o por terceros en México y otros países, para su  reproducción, publicación, edición, comunicación pública, con fines  promocionales o de difusión relacionados con el concurso o para fijarlas por  medios impresos, digitales, electrónicos u otros, sin límite alguno, sin que se  requiera notificar ni tampoco compensar al participante, en la consideración de  que cada vez que se usen, deberá darse al suscrito el crédito correspondiente, desde el registro de sus  imágenes. Además de indicar que toda la  información proporcionada será de confidencialidad únicamente para el personal  autorizado a acceder a dicha información.</p>
-                        <p>Mosaico  Natura México y CONABIO, no se hacen responsables por denuncias de derechos de  autor, siendo éstos, responsabilidad de cada participante.</p>
-						<p><span style="color:#ffd400;">Categoría de Jóvenes</span></p>
+		  <h4 style="color:darkred";>RESPONSABILIDADES </h4>
+          <p>Los participantes conservarán los  derechos sobre sus fotografías, pero al concursar, aceptan que la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (<span class="conabio">Conabio</span>), pueda hacer uso de las mismas de manera ilimitada  para su utilización por sí o por terceros en México y otros países, para su  reproducción, publicación, edición, comunicación pública, con fines  promocionales o de difusión relacionados con el concurso o para fijarlas por  medios impresos, digitales, electrónicos u otros, sin límite alguno, sin que se  requiera notificar ni tampoco compensar al participante, en la consideración de  que cada vez que se usen, deberá darse al suscrito el crédito correspondiente, desde el registro de sus  imágenes. Además de indicar que toda la  información proporcionada será de confidencialidad únicamente para el personal  autorizado a acceder a dicha información.</p>
+                        <p>Mosaico Natura México y <span class="conabio">Conabio</span>, no se hacen responsables por denuncias de derechos de  autor, siendo éstos, responsabilidad de cada participante.</p>
+						<p><strong>Categoría de Jóvenes</strong></p>
                         <p>Los menores  deberán contar con el consentimiento de sus padres o tutores para poder  participar en este concurso. Así mismo, las fotografías en esta categoría se  sujetan a la concesión de derechos de uso no exclusivo de sus imágenes, mismas  que la categoría de Adultos.</p>
 						 <p>&nbsp;</p>
 
 
-		  <h4>MOTIVOS DE DESCALIFICACI&Oacute;N</h4>
+		  <h4 style="color:darkred";>MOTIVOS DE DESCALIFICACI&Oacute;N</h4>
                       <p>Los motivos  de descalificación inmediata del participante son los siguientes:</p>
                       <ul>
                         <li><p>Fotografías, en lo sucesivo denominado el &ldquo;material&rdquo;, que no cumplan con  cualquiera de los requisitos de participación.</p></li>
@@ -112,17 +117,17 @@
           <p>&nbsp;</p>
 
 
-          <h4>CRITERIOS DE EVALUACIÓN POR PARTE DEL JURADO</h4>
+          <h4 style="color:darkred";>CRITERIOS DE EVALUACIÓN POR PARTE DEL JURADO</h4>
 		  <ul>
 					<li><p>Mérito  artístico</p></li>
 					<li><p>Originalidad</p></li>
 					<li><p>Técnica</p></li>
 					<li><p>Dificultad  inherente a la especie o ecosistema</p></li>
           </ul>
-              <p>De las  fotografías recibidas, el jurado seleccionará <span style="color:#ffd400;">3 fotografías de cada tema en  la categoría de adultos y 3 para la de jóvenes</span>, que formarán parte de la exposición &ldquo;Visiones de nuestra naturaleza V&rdquo; a exponerse en las rejas de la  Av. Reforma en el Bosque de Chapultepec, Ciudad de México del 14 de abril al 14 de julio  del 2019. </p>
+              <p>De las  fotografías recibidas, el jurado seleccionará <strong>3 fotografías de cada tema en  la categoría de adultos y 3 para la de jóvenes</strong>, que formarán parte de la exposición &ldquo;Visiones de nuestra naturaleza V&rdquo; a exponerse en las rejas de la  Av. Reforma en el Bosque de Chapultepec, Ciudad de México durante el periodo de abril a julio  del 2019. </p>
           <p>&nbsp;</p>
        	
-                   <h4>EL JURADO</h4>
+                   <h4 style="color:darkred";>EL JURADO</h4>
                     	<ul>
                         	<li><p>El jurado  estará integrado por profesionales en el campo de la fotografía.</p></li>
                         	 <li><p>&ldquo;El Comité  Organizador&rdquo; del concurso podrá hacer modificaciones en la selección de los  miembros del jurado, sujeto a la disponibilidad de los mismos.</p></li>
@@ -134,9 +139,9 @@
 		  </ul>
                     
                     
-					<h4>ENTREGA DE LOS PREMIOS Y RECONOCIMIENTOS</h4>
-                    <p>Los premios  y reconocimientos se entregarán en el mes de junio o julio de 2019. La fecha, lugar y hora  exacta serán informados oportunamente por el &ldquo;Comité Organizador&rdquo; en  <a href="http://www.mosaiconatura.net">www.mosaiconatura.net</a>.</p>
-						<p><span style="color:#ffd400;">Requisistos</span></p>
+					<h4 style="color:darkred";>ENTREGA DE LOS PREMIOS Y RECONOCIMIENTOS</h4>
+                    <p>Los premios   se entregarán en el mes de  julio de 2019. La fecha, lugar y hora  exacta serán informados oportunamente por el &ldquo;Comité Organizador&rdquo; en  <a href="http://www.mosaiconatura.net" style="color:darkred";>www.mosaiconatura.net</a>.</p>
+						<p><strong>Requisistos</strong></p>
 						<p>Para la entrega de premios y reconocimientos, los participantes deberán presentar los siguientes documentos: </p>
           <ul>
                      	<li><p>Original y copia de una identificaci&oacute;n oficial vigente con fotograf&iacute;a y firma.
@@ -152,49 +157,49 @@
                         </li>
                      </ul>   
                         
-          <h4>LOS PREMIOS Y RECONOCIMIENTOS </h4>
+          <h4 style="color:darkred";>LOS PREMIOS Y RECONOCIMIENTOS </h4>
                       <table style="color: black" class="table table-bordered" border="0" cellspacing="1" cellpadding="0" width="100%">
                         <tr>
-                          <th colspan="9"><h4 align="center" style="color: aliceblue">Categor&iacute;a Adultos</h4></th>
+                          <th colspan="9" class="bases-content"><h3>Categor&iacute;a Adultos</h3></th>
                         </tr>
                         <tr>
-                          <td bgcolor="#E8E7E7"></td>
-                          <td bgcolor="#E8E7E7"><p align="center"><strong>Fauna silvestre</strong></p></td>
-                          <td bgcolor="#E8E7E7"><p align="center"><strong>Plantas y hongos</strong></p></td>
-                          <td bgcolor="#E8E7E7"><p align="center"><strong>Naturaleza y ser humano</strong></p></td>
-                          <td bgcolor="#E8E7E7"><p align="center"><strong>Paisajes y ecosistemas</strong></p></td>
-                          <td bgcolor="#E8E7E7"><p align="center"><strong>Pequeños gigantes</strong></p></td>
-                          <td bgcolor="#E8E7E7"><p align="center"><strong>Fotograf&iacute;a subacuática</strong></p></td>
+                          <td bgcolor="#ededed"></td>
+                          <td bgcolor="#ededed"><p align="center"><strong>Fauna silvestre</strong></p></td>
+                          <td bgcolor="#ededed"><p align="center"><strong>Plantas y hongos</strong></p></td>
+                          <td bgcolor="#ededed"><p align="center"><strong>Naturaleza y ser humano</strong></p></td>
+                          <td bgcolor="#ededed"><p align="center"><strong>Paisajes y ecosistemas</strong></p></td>
+                          <td bgcolor="#ededed"><p align="center"><strong>Pequeños gigantes</strong></p></td>
+                          <td bgcolor="#ededed"><p align="center"><strong>Fotograf&iacute;a subacuática</strong></p></td>
                         </tr>
                         <tr>
-                          <td bgcolor="#E8E7E7"><p align="center"><strong>1er Lugar</strong></p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$25,000  pesos<br>
+                          <td bgcolor="#ededed"><p align="center"><strong>1er Lugar</strong></p></td>
+                          <td bgcolor="#f6f6f6"><p align="center">$25,000  pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$25,000  pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$25,000  pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$25,000  pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$25,000  pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$25,000  pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$25,000  pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$25,000  pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$25,000  pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$25,000  pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$25,000  pesos<br>
 en efectivo</p></td>
                           
                         </tr>
                         <tr>
-                          <td bgcolor="#E8E7E7"><p align="center"><strong>2do Lugar</strong></p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$20,000 pesos<br>
+                          <td bgcolor="#ededed"><p align="center"><strong>2do Lugar</strong></p></td>
+                          <td bgcolor="#f6f6f6"><p align="center">$20,000 pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$20,000 pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$20,000 pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$20,000 pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$20,000 pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$20,000 pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$20,000 pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$20,000 pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$20,000 pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$20,000 pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$20,000 pesos<br>
 en efectivo</p></td>
                           
                         </tr>
@@ -213,18 +218,18 @@ en efectivo</p></td>
                           <td><p align="center">Dos m&oacute;dulos  Nikon School</p></td>
                         </tr> -->
                         <tr>
-                          <td bgcolor="#E8E7E7"><p align="center"><strong>3er Lugar</strong></p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$15,000 pesos<br>
+                          <td bgcolor="#ededed"><p align="center"><strong>3er Lugar</strong></p></td>
+                          <td bgcolor="#f6f6f6"><p align="center">$15,000 pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$15,000 pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$15,000 pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$15,000 pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$15,000 pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$15,000 pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$15,000 pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$15,000 pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$15,000 pesos<br>
 en efectivo</p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$15,000 pesos<br>
+                          <td bgcolor="#f6f6f6"><p align="center">$15,000 pesos<br>
 en efectivo</p></td>
                           
                         </tr>
@@ -239,19 +244,19 @@ en efectivo</p></td>
                       
                   <table style="color: black" class="table table-bordered" border="0" cellspacing="1" cellpadding="0" width="100%">
                         <tr>
-                          <th colspan="2"><h4 align="center" style="color: aliceblue">Categor&iacute;a j&oacute;venes</h4></th>
+                          <th colspan="2" class="bases-content"><h3>Categor&iacute;a J&oacute;venes</h3></th>
                     </tr>
                         <tr>
-                          <td bgcolor="#E8E7E7"><p align="center"><strong>1er Lugar</strong></p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$20,000 pesos en efectivo<br>
+                          <td bgcolor="#ededed"><p align="center"><strong>1er Lugar</strong></p></td>
+                          <td bgcolor="#f6f6f6"><p align="center">$20,000 pesos en efectivo<br>
                     </tr>
                         <tr>
-                          <td bgcolor="#E8E7E7"><p align="center"><strong>2do Lugar</strong></p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$15,000 pesos en efectivo</p></td>
+                          <td bgcolor="#ededed"><p align="center"><strong>2do Lugar</strong></p></td>
+                          <td bgcolor="#f6f6f6"><p align="center">$15,000 pesos en efectivo</p></td>
                     </tr>
                         <tr>
-                          <td bgcolor="#E8E7E7"><p align="center"><strong>3er lugar</strong></p></td>
-                          <td bgcolor="#E8E7E7"><p align="center">$10,000 pesos en efectivo<br>
+                          <td bgcolor="#ededed"><p align="center"><strong>3er lugar</strong></p></td>
+                          <td bgcolor="#f6f6f6"><p align="center">$10,000 pesos en efectivo<br>
                           </p></td>
                     </tr>
 		  </table>
@@ -298,7 +303,7 @@ en efectivo</p></td>
                       
 
           <p>&nbsp;</p>
-                    <h4>PRIVACIDAD Y PROTECCI&Oacute;N DE INFORMACI&Oacute;N</h4>
+                    <h4 style="color:darkred";>PRIVACIDAD Y PROTECCI&Oacute;N DE INFORMACI&Oacute;N</h4>
                      <p>El &ldquo;Comit&eacute;  Organizador&rdquo; manifiesta que cuenta con las medidas necesarias para proteger la  informaci&oacute;n y los datos personales que sean proporcionados por los  participantes.</p>
         
 			

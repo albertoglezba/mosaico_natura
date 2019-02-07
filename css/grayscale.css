@@ -65,7 +65,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: "myriad-pro-condensed", 'Barlow Condensed', Helvetica, Arial, sans-serif;
-    background-color:#595448;
+    background-color:#2e2d28 !important;
 }
 
 .navbar-custom .navbar-brand {
