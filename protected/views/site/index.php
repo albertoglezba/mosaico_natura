@@ -602,12 +602,12 @@ y ubicación,
                 <div class="service-box">
                     <i class="fa fa-4x fa-file-image-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
                     <h3>Anuncios</h3>
-                    <div class="list-group">
+                   <!-- <div class="list-group">
 						<a class="list-group-item sb" href="descargar/banner900x214.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> 900 x 214 px</a>
                         <a class="list-group-item sb" href="descargar/banner944x300.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> 944 x 300 px</a>
-                        <!-- <a class="list-group-item sb" href="descargar/carta.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> carta</a> -->
+                         <a class="list-group-item sb" href="descargar/carta.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> carta</a>
                         <a class="list-group-item sb" href="descargar/mediacarta.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> media carta</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
