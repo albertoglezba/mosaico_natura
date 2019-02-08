@@ -130,24 +130,13 @@ class Usuarios extends CActiveRecord
         return (($edad < 6) || ($edad > 130));
     }
 
-    public static function dameEdad($fecha_nac){
-
-        $d1 = Yii::app()->params->fecha_termino_foto;
-        $d2 = str_replace('-', '', $fecha_nac);
-
+    public static function dameEdad($fecha_nac)
+    {
         //Para más allá de php5.3 (te odio ixmati)
-        //$d1 = new DateTime(Yii::app()->params->fecha_termino);
-        //$d2 = new DateTime($fecha_nac);
-        //$diff = $d2->diff($d1);
-
-        //El PHP de Ixmati es de 32 putos bits, no soporta arriba de 2mil millones (por eso devolvia '' cuando ponian fechas muy altas, TE ODIO PUTO IXMATI!!!)
-        //$diff = abs((strtotime($d1)-345600) - strtotime($d2));
-        //$years = floor($diff / (365*60*60*24));
-
-        $diff = substr($d1,0,4)-substr($d2,0,4);
-        $years = (substr($d1,4,4) < substr($d2,4,4)) ? $diff-1 : $diff;
-
-        return $years;
+        $d1 = new DateTime(Yii::app()->params->fecha_termino);
+        $d2 = new DateTime($fecha_nac);
+        $diff = $d2->diff($d1);
+        return $diff->y;
     }
 
     public function valida_passwd()
