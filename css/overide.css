@@ -3,6 +3,7 @@
 
 body{
 	font-family:"myriad-pro-condensed", 'Barlow Condensed', Arial, sans-serif;
+	
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family:"myriad-pro-condensed", 'Barlow Condensed', Arial, sans-serif;
@@ -313,7 +314,7 @@ table.como-participar td{
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/bg-expos.jpg) no-repeat center center scroll;
+    background: url(../img/bg-expos_2019.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -397,7 +398,7 @@ table.como-participar td{
 	}	
 	
 .faqdiv {
-	width:120px;
+	width:200px;
 	padding:0;
 	margin:auto;
 	text-align:center;
@@ -491,7 +492,7 @@ table.como-participar td{
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/bg-registro.jpg) no-repeat center center scroll;
+    background: url(../img/bg-registro_2019.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -508,6 +509,8 @@ table.como-participar td{
 	
 .registro-content{
 	padding-top:60px;
+	background: #FFFFFF;
+	color:#2d2c27; 
 	}
 
 span.required {
@@ -519,7 +522,7 @@ span.required {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/bg-medios.jpg) no-repeat center center scroll;
+    background: url(../img/bg-medios_2019.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -540,7 +543,8 @@ span.required {
 	
 
 .y {
-	color: #ffdc00;
+	color: darkred;
+	/*color: #ffdc00;*/
 }
 
 .tyc-content{
@@ -571,7 +575,8 @@ footer ul {
 }
 		
 #enlaces {
-	background-color:#595448;
+	background-color:#202020;
+	/*background-color:#595448;*/
 	padding: 30px 0;
 }
 				
@@ -798,7 +803,7 @@ footer ul {
 	#bases p{
 		font-size: 20px;
 		line-height:1;
-		text-align: center;
+		/*text-align: center;*/
 	}		
 		
 	.bases-section h2{
@@ -830,7 +835,8 @@ footer ul {
 		font-size:40px;
 		color:#ffffff;
 		font-weight:bold;
-		background-color:#99141b;
+		background-color:#343434;
+		/*background-color:#99141b;*/
 		text-align:center;
 		padding:20px 0;
 		margin:20px 0;
@@ -989,7 +995,7 @@ footer ul {
 	}
 	
 	.faqdiv{
-		width:180px;
+		width:250px;
 		float:left;
 	}
 	
@@ -1032,7 +1038,8 @@ footer ul {
 	}	
 	
 	.content-section {
-        padding-top: 50px;
+        /*padding-top: 50px;*/
+		padding-top: 0px;
     }	
 	
 	#colaboradores li img {
@@ -1084,7 +1091,7 @@ footer ul {
 }
 
 .sponsers img{
-	max-height:64px;
+	max-height:95px;
 	margin:10px auto 0 auto;
 }
 
@@ -1113,4 +1120,58 @@ img.img-xch{
 .media-bottom {
 	margin-right: 12px;
 	margin-bottom:4px;
+}
+
+.Sconvoca {
+	background-color: #ffffff;
+	color:#2d2c27;
+}
+.Sexpo {
+	background-color: #ffffff;
+	color:#2d2c27;
+}
+.Smedios {
+	background-color: #FFFFFF;
+	color:#2d2c27;
+}
+.Squienes {
+	background-color: #FFFFFF;
+	color:#2d2c27;
+}
+.quienes-header {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/bg-quienes.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.quienes-header h2{
+	font-size:48px;
+	padding: 60px 0;
+	margin:0;
+	text-shadow: 2px 2px 5px #000;
+	}		
+	
+.quienes-content .container{
+	padding-top:60px;
+	}		
+
+.quienes-content h3{
+	margin: 24px 0;
+	color:#ffd400;
+	}
+	
+.quienes-content p{	
+	font-size: 20px;
+	line-height:25px;
+	text-align: center;
+	}
+	
+.conabio {
+	font-variant: small-caps;
 }

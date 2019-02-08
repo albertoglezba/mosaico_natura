@@ -114,7 +114,7 @@
 				<li style="display: none">
 					<a class="page-scroll" href="<?php echo $yii_path; ?>/#preguntas">Preguntas Frecuentes</a>
 				</li>
-				<li style="display: none">
+				<li>
 					<a class="page-scroll" href="<?php echo $yii_path; ?>/#registro">Registro</a>
 				</li>
 				<li>
@@ -167,8 +167,8 @@
 									$this->setIdUsuario(Yii::app()->user->id);
 									$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 									echo "<div class='btn-group' role='group' aria-label='...'>";
-									echo CHtml::link('Tus fotografías', array('fotos/index'), array('class'=>'btn btn-primary disabled'));
-									echo CHtml::link('Tus videos', array('videos/index'), array('class'=>'btn btn-primary'));
+									echo CHtml::link('Tus fotografías', array('fotos/index'), array('class'=>'btn btn-primary'));
+									//echo CHtml::link('Tus videos', array('videos/index'), array('class'=>'btn btn-primary'));
 									echo CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('class'=>'btn btn-warning'));
 									echo CHtml::link('Cerrar sesión ('.Yii::app()->user->name.')', array('site/logout'), array('class'=>'btn btn-danger'));
 									echo "</div>";
@@ -176,8 +176,8 @@
 							} else {
 								$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
 								echo "<div class='btn-group' role='group' aria-label='...'>";
-								echo CHtml::link('Tus fotografías', array('fotos/index'), array('class'=>'btn btn-primary disabled'));
-								echo CHtml::link('Tus videos', array('videos/index'), array('class'=>'btn btn-primary'));
+								echo CHtml::link('Tus fotografías', array('fotos/index'), array('class'=>'btn btn-primary'));
+								//echo CHtml::link('Tus videos', array('videos/index'), array('class'=>'btn btn-primary'));
 								echo CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('class'=>'btn btn-warning'));
 								echo CHtml::link('Cerrar sesión ('.Yii::app()->user->name.')', array('site/logout'), array('class'=>'btn btn-danger'));
 								echo "</div>";
@@ -204,23 +204,33 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conabio.png" class="img-responsive" alt="Conabio"> </a>
+				<a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conabio_2019.png" class="img-responsive" alt="Conabio"> </a>
 			</div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
-				<a href="https://www.nationalgeographic.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" class="img-responsive" alt="National Geographic" > </a>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers"><a href="https://fmcn.org/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-fmcn-web-4.png" alt="Fondo Mexicano para la Conservación" class="img-responsive"> </a>
 			</div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo-esp.png" class="img-responsive" alt="National Geographic en español" > </a>
-			</div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
-				<a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-nikon.png" class="img-responsive img-gde" alt="Nikon" > </a>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers"><a href="https://lavaca.edu.mx/index.html" target="_blank"><img src="<?php echo $yii_path; ?>/img/lavaca-logo.png" alt="Fondo Mexicano para la Conservación" class="img-responsive"> </a>
 			</div>
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-epson.png" class="img-responsive img-ch" alt="Epson" > </a>
 			</div>
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
+				<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/SEDEMA_GOB_CDMX_1_extendido.svg" class="img-responsive" alt="SEDEMA"> </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="https://www.nationalgeographic.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" alt="National Geographic" class="img-responsive" > </a>
+			</div>
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo-esp.png" alt="National Geographic en español" class="img-responsive" > </a>
+			</div>
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-acir.png" class="img-responsive img-gde" alt="Fundación Acir" > </a>
 			</div>
+
+			<!--
+			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+				<a href="http://www.nikon.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-nikon.png" class="img-responsive img-gde" alt="Nikon" > </a>
+			</div>
+			
 			
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="http://http://cuartoscuro.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cuartoscuro.png" class="img-responsive" alt="Cuartoscuro" > </a>
@@ -247,18 +257,13 @@
 				<a href="https://www.rci.com" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-rci.png" class="img-responsive" alt="RCI" > </a>
 			</div>
 			
-			
-			
 			<div class="col-xs-4 col-md-6 col-lg-6 sponsers">
 				<a href="http://www.cenart.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-cultura-cenart.png" class="img-responsive img-ch" alt="CENART" > </a>
 			</div>
 			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
-				<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-sedema.png" class="img-responsive img-xch" alt="SEDEMA"> </a>
-			</div>
-			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
 				<a href="https://www.gob.mx/conanp" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conanp.png" class="img-responsive img-ch" alt="CONANP" > </a>
 			</div>
-			
+			-->
 			
 			
 			
@@ -273,12 +278,17 @@
 		<div class="col-md-3">
 			<p>NUESTROS COLABORADORES</p>
 			<ul>
-				<li><a href="http://www.gob.mx/conabio/" target="_blank">Conabio</a></li>
+				<li><a href="http://www.gob.mx/conabio/" target="_blank"><span class="conabio">Conabio</span></a></li>
+				<li><a href="https://fmcn.org/" target="_blank">Fondo Mexicano para la Conservación de la Naturaleza</a></li>
+				<li><a href="https://lavaca.edu.mx/" target="_blank">La vaca independiente</a></li>
+				<li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
+				<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank">Secretaría del Medio Ambiente</a></li>
 				<li><a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a> </li>
 				<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic en Espa&ntilde;ol</a></li>
-				<li><a href="http://www.nikon.com.mx/" target="_blank">Nikon</a></li>
-				<li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
 				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
+				
+				<!--
+				<li><a href="http://www.nikon.com.mx/" target="_blank">Nikon</a></li>
 				<li><a href="http://http://cuartoscuro.com.mx/" target="_blank">CUARTOSCURO</a></li>
 				<li><a href="http://www.mexicanisimo.com.mx/" target="_blank">Mexican&iacute;simo</a></li>
 				<li><a href="http://http://buceoxtabay.com/" target="_blank">Buceo Xtabay</a></li>
@@ -287,15 +297,10 @@
 				<li><a href="http://http://www.lemusunderwaterschool.com/" target="_blank">Lemus Underwater School</a></li>
 				<li><a href="https://www.mexikoo.com" target="_blank">Mexikoo</a></li>
 				<li><a href="https://www.rci.com" target="_blank">RCI</a></li>
-				<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank">CDMX</a></li>
 				<li><a href="https://www.gob.mx/cultura" target="_blank">Secretar&iacute;a de cultura</a></li>
 				<li><a href="http://www.cenart.gob.mx/" target="_blank">CENART</a></li>
 				<li><a href="https://www.gob.mx/conanp" target="_blank">CONANP</a></li>
-				
-				
-				
-				
-				
+				-->
 			</ul>
 		</div>
 		<div class="col-md-3">
