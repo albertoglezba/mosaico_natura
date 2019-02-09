@@ -78,7 +78,7 @@ p{
 .intro{
 	display: table;
 	width: 100%;
-	padding: 300px 0;
+	padding: 400px 0;
 	text-align: center;
 	color: #fff;
 	background: url(../img/bg-intro.gif) no-repeat bottom center scroll;
@@ -108,15 +108,12 @@ p{
 }
 
 .btn-circle{
-	width: 70px;
-	height: 70px;
-	margin-top: 45px;
-	padding: 7px 16px;
-	border: none;
+	width: 1.5em;
+	margin-top: 1.75em;
 	border-radius: 100%!important;
-	font-size: 40px;
+	font-size: 5em;
 	color: #a21215;
-	background: 0 0;
+	background: #ffffff80;
 	-webkit-transition: background .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out;
 	transition: background .3s ease-in-out;
