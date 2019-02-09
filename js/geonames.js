@@ -11,13 +11,15 @@ var porNombre = function (q) {
             if (typeof res.totalResultsCount !== 'undefined' && res.totalResultsCount > 0)
             {
                 var lugares_unicos = [];
+                $('#res-ubicaciones').empty();
+
                 $.each(res.geonames, function(index, ubicacion){
                     var nombre_lugar = ubicacion.name + ', ' + ubicacion.adminName1 + ', ' + ubicacion.countryCode;
 
                     if (lugares_unicos.indexOf(nombre_lugar) == -1)
                     {
                         lugares_unicos.push(nombre_lugar);
-                        $('#res-ubicaciones').append("<li>" + nombre_lugar + "</li>");
+                        $('#res-ubicaciones').append("<li lat='" + ubicacion.lat + "' lng='" + ubicacion.lng + "'>" + nombre_lugar + "</li>");
                     }
                 });
             }
@@ -41,4 +43,13 @@ var porCoordenadas = function (lat, lng) {
                 $('#Fotos_longitud').val(lng);
             }
         });
+};
+
+var seleccionaUbicacion = function()
+{
+    $('#res-ubicaciones').on('click', 'li', function() {
+        $('#Fotos_direccion').val($(this).html());
+        $('#Fotos_latitud').val($(this).attr('lat'));
+        $('#Fotos_longitud').val($(this).attr('lng'));
+    });
 };

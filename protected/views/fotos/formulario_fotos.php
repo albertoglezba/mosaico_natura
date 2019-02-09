@@ -128,6 +128,9 @@
                     porNombre($('#Fotos_direccion').val());
                 return false;
             });
+
+            seleccionaUbicacion();
         });
+
     </script>
 </div>
