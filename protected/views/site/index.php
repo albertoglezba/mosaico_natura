@@ -206,7 +206,7 @@
 			</div>
 			
 			<div class="col-xs-12 col-md-8 col-md-offset-2 fechas-concurso">
-				<p><strong>La recepci&oacute;n de fotograf&iacute;as ser&aacute; a partir del jueves 7 de febrero al domingo 10 de marzo de 2019 (23:00hrs)<br>
+				<p><strong>La recepci&oacute;n de fotograf&iacute;as ser&aacute; a partir del sabado 8 de febrero al domingo 10 de marzo de 2019 (23:00hrs)<br>
 					</strong></p><br>
 				<p><a style="color: darkred" href="<?php echo Yii::app()->baseUrl;?>/index.php/site/terminos_condiciones"><strong>Bases completas del concurso</strong></a></p>
 			</div>
