@@ -1,6 +1,7 @@
 body{
 	width: 100%;
 	height: 100%;
+	background-color: #202020;
 }
 
 p{
@@ -272,3 +273,37 @@ ul.banner-social-buttons{margin-top: 0;}
 img::selection{background: 0 0;}
 
 img::-moz-selection{background: 0 0;}
+
+
+/* textarea to show files as json */
+textarea#uploaded{
+	width: 100%;
+	min-height: 300px;
+	font-size: 1.5em;
+}
+
+/* AWS */
+/* show upload progress with bars */
+.progress-bar-area{
+	margin: 30px;
+}
+.progress{
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 2em!important;
+	background: #C7DA9F;
+	border-radius: 2em;
+	overflow: hidden;
+}
+.bar{
+	position: absolute;
+	width: 0;
+	height: 2em!important;
+	background: #85C220;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.bar.red{ background: tomato; }
