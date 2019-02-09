@@ -17,7 +17,6 @@ var porNombre = function (q) {
                     if (lugares_unicos.indexOf(nombre_lugar) == -1)
                     {
                         lugares_unicos.push(nombre_lugar);
-                        console.log(nombre_lugar);
                         $('#res-ubicaciones').append("<li>" + nombre_lugar + "</li>");
                     }
                 });
@@ -43,10 +42,3 @@ var porCoordenadas = function (lat, lng) {
             }
         });
 };
-
-$('#fotos-form').ready(function(){
-    $('#fotos-form').on('click', '#boton-ubicaciones', function(){
-        console.log('con clic');
-        return false;
-    });
-});
