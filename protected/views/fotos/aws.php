@@ -97,7 +97,7 @@
 <div class="containerAWS">
 	
 	<?php if ($adulto == "1") { ?>
-		<h3 class="text-left"><b>Segundo paso:</b> selecciona una fotografía <br />
+		<h3 class="text-left text-success"><b>Segundo paso:</b> selecciona una fotografía <br />
 			<small class="text-left text-warning">Debe ser un archivo JPG con 3000px como mínimo en su lado más grande</small>
 		</h3>
 	
@@ -116,7 +116,7 @@
 		<!-- Key is the file's name on S3 and will be filled in with JS -->
 		<input type="hidden" name="key" value="">
 		
-		<div class="fileUpload">
+		<div class="fileUpload col-sm-10 col-sm-offset-1">
 			<input type="file" name="file" id="file_to_upload" class="upload btn btn-link btn-lg">
 		</div>
 		
@@ -162,7 +162,8 @@
 				
 				var toAWS = function() {
 					$('#label_file').empty();
-					$('#label_file').removeClass('hidden').html('Tu archivo cumple con los requisitos, por favor espera a que termine la carga');
+					$('#label_file').removeClass('hidden').html("Tu archivo cumple con los requisitos, por favor espera a que termine la carga <span class='glyphicon glyphicon-ok-circle' " +
+						"aria-hidden='true'></span>");
 					$('#file_to_upload').hide();
 					// Actually submit to form to S3.
 					data.submit();

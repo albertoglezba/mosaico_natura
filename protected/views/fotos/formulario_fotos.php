@@ -1,6 +1,6 @@
 <?php $yii_path = Yii::app()->request->baseUrl; ?>
 
-<h3 class="text-left"><b><?php echo (($_POST['adulto'] == "1") ? "Tercer" : "Segundo") ?> paso:</b> completa el registro <br />
+<h3 class="text-left text-success"><b><?php echo (($_POST['adulto'] == "1") ? "Tercer" : "Segundo") ?> paso:</b> completa el registro <br />
 	<small class="text-left text-warning">Campos con <b class="required">*</b> son requeridos.</small>
 </h3>
 
@@ -18,45 +18,47 @@
 <div id="AjaxLoader" style="display: none"><img src="<?php echo Yii::app()->request->baseUrl; ?>/img/aplicacion/loading.gif"></img></div>
 
 <div class="form-group text-left">
-	<?php echo $form->labelEx($model,'titulo', array('class'=>'col-sm-1 control-label')); ?>
-	<div class="col-sm-4">
-		<?php echo $form->textField($model,'titulo',array('size'=>10,'cols'=>90, 'class'=>'form-control')); ?>
+	<?php echo $form->labelEx($model,'titulo', array('class'=>'col-sm-2 control-label text-right')); ?>
+	<div class="col-sm-6">
+		<?php echo $form->textField($model,'titulo',array('class'=>'form-control')); ?>
 		<h4><small>Puede ser algo ilustrativo como el nombre de la especie que viste, el lugar, etc.</small></h4>
 		<?php echo $form->error($model,'titulo'); ?>
 	</div>
-	
-	<?php echo $form->labelEx($model,'direccion', array('class'=>'col-sm-2 control-label')); ?>
-	<div class="col-sm-5">
+	<div class="clearfix"></div>
+	<?php echo $form->labelEx($model,'direccion', array('class'=>'col-sm-2 control-label text-right')); ?>
+	<div class="col-sm-4">
 		<div class="input-group">
-			<?php echo $form->textField($model,'direccion',array('size'=>60,'maxlength'=>500, 'class'=>'form-control text-right')); ?>
+			<?php echo $form->textField($model,'direccion',array('maxlength'=>500, 'class'=>'form-control')); ?>
 			<div class="input-group-addon"><a href="#" id="boton-ubicaciones"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></div>
 		</div>
 		<ul id="res-ubicaciones"></ul>
-		<h4><small>Puedes autocompletar el lugar en el cual tomaste tu fotografía, dar clic en el mapa o escribir las coordenadas.</small></h4>
 		<?php echo $form->error($model,'direccion'); ?>
 	</div>
+
+	<?php echo $form->labelEx($model,'latitud', array('class'=>'col-sm-1 control-label text-right')); ?>
+	<div class="col-sm-2">
+		<?php echo $form->textField($model,'latitud',array('maxlength'=>255, 'class'=>'form-control')); ?>
+		<?php echo $form->error($model,'latitud'); ?>
+	</div>
+	
+	<?php echo $form->labelEx($model,'longitud', array('class'=>'col-sm-1 control-label text-right')); ?>
+	<div class="col-sm-2">
+		<?php echo $form->textField($model,'longitud',array('maxlength'=>255, 'class'=>'form-control')); ?>
+		<?php echo $form->error($model,'longitud'); ?>
+	</div>
+	<h4 class="text-center"><small>Puedes buscar el lugar en donde se tomó la fotografía, escribir las coordenadas (latitud y longitud), o dar click en el mapa.</small></h4>
 	<div class="clearfix"></div>
 </div>
 
+<div id="mapa"></div>
 
-<div id="mapa" style="height: 500px;"></div>
-
+<div class="clearfix"></div>
 <div class="form-group text-left">
-	<?php echo $form->labelEx($model,'latitud', array('class'=>'col-sm-1 control-label')); ?>
-	<?php echo $form->textField($model,'latitud',array('size'=>60,'maxlength'=>255, 'class'=>'form-control')); ?>
-	<?php echo $form->error($model,'latitud'); ?>
-</div>
-
-<div class="form-group text-left">
-	<?php echo $form->labelEx($model,'longitud', array('class'=>'col-sm-1 control-label')); ?>
-	<?php echo $form->textField($model,'longitud',array('size'=>60,'maxlength'=>255, 'class'=>'form-control')); ?>
-	<?php echo $form->error($model,'longitud'); ?>
-</div>
-
-<div class="form-group text-left">
-	<?php echo $form->labelEx($model,'marca', array('class'=>'col-sm-1 control-label')); ?>
-	<?php echo $form->textField($model,'marca',array('size'=>60,'maxlength'=>255, 'class'=>'form-control')); ?>
-	<?php echo $form->error($model,'marca'); ?>
+	<?php echo $form->labelEx($model,'marca', array('class'=>'col-sm-5 control-label text-right')); ?>
+			<div class="col-sm-5">
+				<?php echo $form->textField($model,'marca',array('maxlength'=>255, 'class'=>'form-control')); ?>
+				<?php echo $form->error($model,'marca'); ?>
+			</div>
 </div>
 
 <script>
@@ -96,31 +98,39 @@
 	echo $form->error($model,'categoria_id');
 ?>
 
-<br>
+<div class="clearfix"></div>
 
-<?php echo CHtml::ajaxSubmitButton("Enviar fotografía",CHtml::normalizeUrl(array('fotos/formulario_fotos','render'=>true)),
-	array(
-		'dataType'=>'json',
-		'type'=>'post',
-		'success'=>'function(data) {
-                         $("#AjaxLoader").hide();  
+<div class="col-sm-4 col-sm-offset-4">
+	
+	<hr />
+	
+	<?php echo CHtml::ajaxSubmitButton("Enviar fotografía",CHtml::normalizeUrl(array('fotos/formulario_fotos','render'=>true)),
+		array(
+			'dataType'=>'json',
+			'type'=>'post',
+			'success'=>'function(data) {
+                         $("#AjaxLoader").hide();
                         if(data.status=="success"){
                          window.location.replace("'.Yii::app()->request->baseUrl.'/index.php/fotos/index?msj=Tu fotografía se subió correctamente");
                  		
                         }
                          else{
                         $.each(data, function(key, val) {
-                        $("#fotos-form #"+key+"_em_").text(val);                                                    
+                        $("#fotos-form #"+key+"_em_").text(val);
                         $("#fotos-form #"+key+"_em_").show();
                         });
-                        }       
+                        }
                     }',
-		'beforeSend'=>'function(){
+			'beforeSend'=>'function(){
                            $("#AjaxLoader").show();
                            $("#mybtn").prop("disabled", true);
                       }'
-	),array('id'=>'mybtn','class'=>'class1 class2 btn btn-lg btn-success', 'onclick'=>"this.disabled=true;"));
-?>
+		),array('id'=>'mybtn','class'=>'class1 class2 btn btn-block btn-success', 'onclick'=>"this.disabled=true;"));
+	?>
+	
+	<hr />
+	
+</div>
 
 <?php $this->endWidget(); ?>
 

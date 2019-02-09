@@ -121,10 +121,10 @@ class Fotos extends CActiveRecord
 				'categoria_id' => 'Categoría',
 				'fotografia' => 'Fotografía',
 				'direccion' => 'Ubicación',
-				'latitud' => 'Latitud',
-				'longitud' => 'Longitud',
+				'latitud' => 'Lat.',
+				'longitud' => 'Long.',
 				'titulo' => 'Título',
-				'marca' => 'Marca/modelo de tu cámara fotográfica'
+				'marca' => 'Marca y/o modelo de tu cámara fotográfica'
 		);
 	}
 
