@@ -15,9 +15,31 @@
 
 	<?php $yii_path = Yii::app()->request->baseUrl; ?>
 
+    <!-- Start of the Cascading Style Sheets -->
+    <link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/style_aws.css">
+
+    <!-- BOOTSTRAP Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+    <!-- BOOTSTRAP Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css" integrity="sha384-jzngWsPS6op3fgRCDTESqrEJwRKck+CILhJVO5VvaAZCq8JYf8HsR/HPpBOOPZfR" crossorigin="anonymous">
+
+    <!-- LEAFLET -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+
+    <link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/grayscale.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/overide.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/jquery.qtip.min.css" />
+
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,800" rel="stylesheet">
+
+    <link rel="icon" type="images/ico"	href="<?php echo $yii_path; ?>/favicon.ico">
+
 	<!-- Start of the JavaScript -->
-
-
 	<script type="text/javascript">
 		function MM_preloadImages() { //v3.0
 			var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
@@ -25,14 +47,19 @@
 					if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 		}
 	</script>
-	<!-- Load jQuery & jQuery UI (Needed for the FileUpload Plugin) -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM-wnXVHglXfilewWwsFUBgPRkKtW5XpU&libraries=places"></script>
+	<!-- Load jQuery & jQuery UI (Needed for the FileUpload Plugin) -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 	<script type="text/javascript" src="<?php echo $yii_path; ?>/js/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="<?php echo $yii_path; ?>/js/bootstrap.min.js"></script>
+
+    <!-- BOOTSTRAP Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+
+    <!-- LEAFLET -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+	<script type="text/javascript" src="<?php echo $yii_path; ?>/js/Control.Coordinates.js"></script>
 
 	<!-- Custom Theme JavaScript -->
 	<script type="text/javascript" src="<?php echo $yii_path; ?>/js/grayscale.js"></script>
@@ -41,30 +68,12 @@
 	<script type="text/javascript" src="<?php echo $yii_path; ?>/js/jquery.fileupload.js"></script>
 	<script type="text/javascript" src="<?php echo $yii_path; ?>/js/jquery.qtip.min.js"></script>
 
-
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
-	<!-- Start of the Cascading Style Sheets -->
-	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/style_aws.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/bootstrap-theme.min.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/grayscale.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/overide.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/jquery.qtip.min.css" />
-
-
-	<!-- Custom Fonts -->
-	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
-	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,800" rel="stylesheet">
-
-	<link rel="icon" type="images/ico"	href="http://www.mosaiconatura.net/favicon.ico">
 </head>
 
 
