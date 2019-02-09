@@ -51,5 +51,7 @@ var seleccionaUbicacion = function()
         $('#Fotos_direccion').val($(this).html());
         $('#Fotos_latitud').val($(this).attr('lat'));
         $('#Fotos_longitud').val($(this).attr('lng'));
+
+        map.flyTo([$(this).attr('lat'), $(this).attr('lng')], 12);
     });
 };

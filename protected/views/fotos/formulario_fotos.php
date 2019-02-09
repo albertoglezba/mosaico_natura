@@ -33,7 +33,7 @@
 
     <div class="row">
         <?php echo $form->labelEx($model,'direccion'); ?>
-        Puedes autocompletar el lugar en el cual tomaste tu fotografía, arrastrar el marcador del mapa o escribir las coordenadas.
+        Puedes autocompletar el lugar en el cual tomaste tu fotografía, dar clic en el mapa o escribir las coordenadas.
         <?php echo $form->textField($model,'direccion',array('size'=>60,'maxlength'=>500, 'class'=>'form-control')); ?>
         <?php echo $form->error($model,'direccion'); ?>
     </div>
@@ -62,7 +62,7 @@
     </div>
 
     <script>
-        var map = L.map('mapa').setView([24.21179847133122, -101.9306640625], 5);
+        map = L.map('mapa').setView([24.21179847133122, -101.9306640625], 5);
         L.tileLayer('https://maps.tilehosting.com/styles/topo/{z}/{x}/{y}.png?key=zlRxsCdX8uurAv6boyCD', {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
         var c = new L.Control.Coordinates();
         c.addTo(map);
