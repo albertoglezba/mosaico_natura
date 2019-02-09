@@ -170,7 +170,7 @@ class Fotos extends CActiveRecord
 
 			foreach ($categorias as $c)
 			{
-				if (isset($categorias_usuario[$c->id]) && $categorias_usuario[$c->id] >= 5)
+				if (isset($categorias_usuario[$c->id]) && $categorias_usuario[$c->id] >= Yii::app()->params['#_fotos_adulto_x_categoria'])
 					$lista.= "<option disabled>".$c->nombre."</option>";
 				else
 					$lista.= "<option value=\"".$c->id."\">".$c->nombre."</option>";
