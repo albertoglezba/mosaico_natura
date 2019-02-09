@@ -67,9 +67,13 @@
         var c = new L.Control.Coordinates();
         c.addTo(map);
 
+        ubicacion = L.marker([0, 0]);
+        ubicacion.addTo(map);
+
         map.on('click', function(e) {
             c.setCoordinates(e);
             porCoordenadas(e.latlng.lat, e.latlng.lng);
+            ubicacion.setLatLng(e.latlng);
         });
     </script>
 

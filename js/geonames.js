@@ -41,6 +41,7 @@ var porCoordenadas = function (lat, lng) {
                 $('#Fotos_direccion').val(nombre_lugar);
                 $('#Fotos_latitud').val(lat);
                 $('#Fotos_longitud').val(lng);
+                map.flyTo([lat, lng], 12);
             }
         });
 };
@@ -48,10 +49,14 @@ var porCoordenadas = function (lat, lng) {
 var seleccionaUbicacion = function()
 {
     $('#res-ubicaciones').on('click', 'li', function() {
-        $('#Fotos_direccion').val($(this).html());
-        $('#Fotos_latitud').val($(this).attr('lat'));
-        $('#Fotos_longitud').val($(this).attr('lng'));
+        var lat = $(this).attr('lat');
+        var lng = $(this).attr('lng');
 
-        map.flyTo([$(this).attr('lat'), $(this).attr('lng')], 12);
+        $('#Fotos_direccion').val($(this).html());
+        $('#Fotos_latitud').val(lat);
+        $('#Fotos_longitud').val(lng);
+
+        ubicacion.setLatLng(new L.LatLng(lat, lng));
+        map.flyTo([lat, lng], 12);
     });
 };
