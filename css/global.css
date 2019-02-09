@@ -78,8 +78,7 @@ p{
 .intro{
 	display: table;
 	width: 100%;
-	height: auto;
-	padding: 100px 0;
+	padding: 300px 0;
 	text-align: center;
 	color: #fff;
 	background: url(../img/bg-intro.gif) no-repeat bottom center scroll;
@@ -100,10 +99,6 @@ p{
 .intro .intro-body .intro-text{font-size: 18px;}
 
 @media(min-width:768px){
-	.intro{
-		height: 100%;
-		padding: 0;
-	}
 	.intro .intro-body .brand-heading{
 		font-size: 100px;
 	}

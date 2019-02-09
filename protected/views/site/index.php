@@ -4,6 +4,7 @@
 	<div class="intro-body">
 		<div class="container">
 			<div class="row">
+
 			</div>
 			<div class="col-md-12">
 				<a href="#about" class="btn btn-circle page-scroll">
