@@ -32,8 +32,8 @@
         <div class="form-group text-left">
             <?php $model=new Fotos; ?>
 
-            <?php echo CHtml::label('Categoria','categoria_id', array('class'=>'col-sm-2 control-label')); ?>
-            <div class="col-sm-6">
+            <?php echo CHtml::label('Categoria','categoria_id', array('class'=>'col-sm-1 control-label')); ?>
+            <div class="col-sm-5">
                 <?php echo $model->categorias($form, $model); ?>
                 <?php echo $form->error($model,'categoria_id'); ?>
 
