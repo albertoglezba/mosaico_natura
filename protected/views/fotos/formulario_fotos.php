@@ -15,13 +15,7 @@
 	),
 )); ?>
 
-	<h4><em>
-	<?php if ($_POST['adulto'] == "1") {
-		echo "Tercer";	
-	} else {
-		echo "Segundo";
-	} ?>
-	paso</em>, completa el registro</h4>
+	<h4><b><?php echo (($_POST['adulto'] == "1") ? "Tercer" : "Segundo") ?> paso</b>, completa el registro</h4>
 	
 	<div class="errorMessage" id="formResult"></div>
 	<div id="AjaxLoader" style="display: none"><img src="<?php echo Yii::app()->request->baseUrl; ?>/img/aplicacion/loading.gif"></img></div>
@@ -44,7 +38,7 @@
 		<?php echo $form->error($model,'direccion'); ?>
 	</div>
 	
-	<div id="mapa" style="width: 500px; height: 400px;"></div>				
+	<div id="mapa" style="height: 500px;"></div>
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'latitud'); ?>
@@ -65,18 +59,13 @@
 	</div>
 	
 	<script>
-	$('#mapa').locationpicker({
-		location: {latitude: 22.21179847133122, longitude: -101.9306640625},	
-		radius: 3,
-		inputBinding: {
-	        latitudeInput: $('#Fotos_latitud'),
-    	    longitudeInput: $('#Fotos_longitud'),
-        	locationNameInput: $('#Fotos_direccion')
-    	},
-    	enableAutocomplete: true,
-    	zoom: 4
-	});
-
+        var map = L.map('mapa').setView([24.21179847133122, -101.9306640625], 5);
+        L.tileLayer('https://maps.tilehosting.com/styles/topo/{z}/{x}/{y}.png?key=zlRxsCdX8uurAv6boyCD', {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+        var c = new L.Control.Coordinates();
+        c.addTo(map);
+        map.on('click', function(e) {
+            c.setCoordinates(e);
+        });
 	</script>
 
 	<?php 
