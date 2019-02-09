@@ -15,8 +15,6 @@
 	<?php $yii_path = Yii::app()->request->baseUrl; ?>
 	
 	<!-- Start of the Cascading Style Sheets -->
-	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/style_aws.css">
-	
 	<!-- BOOTSTRAP Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
 	<!-- BOOTSTRAP Optional theme -->
@@ -25,7 +23,7 @@
 	<!-- LEAFLET -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
 	
-	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/grayscale.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/global.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/overide.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo $yii_path; ?>/css/jquery.qtip.min.css" />
 	
@@ -215,6 +213,7 @@
 			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
 				<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/SEDEMA_GOB_CDMX_1_extendido.svg" class="img-responsive" alt="SEDEMA"> </a>
 			</div>
+			<div class="clearfix"></div>
 			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
 				<a href="https://www.nationalgeographic.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" alt="National Geographic" class="img-responsive" > </a>
 			</div>

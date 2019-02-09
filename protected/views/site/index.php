@@ -253,9 +253,7 @@
 					</div>
 				</div>
 			</div>
-			
-			<div class="row">
-			</div>
+
 		</div>
 	</div>
 </section>
@@ -333,39 +331,26 @@
 
 <!-- Medios Section -->
 <section id="medios" class="content-section text-center">
-	<div class="medios-header">
-		<div class="container">
+	<div class="medios-header row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<h2>MEDIOS</h2>
 			</div>
+	</div>
+	<div class="medios-content row">
+		<div class="col-lg-4 col-md-6 col-xs-12 text-center">
+			<i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary y"></i>
+			<h3>Noticias</h3>
+		</div>
+		<div class="col-lg-4 col-md-6 col-xs-12 text-center">
+			<i class="fa fa-4x fa-file-video-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
+			<h3>Videos</h3>
+		</div>
+		
+		<div class="col-lg-4 col-md-6 col-xs-12 text-center">
+			<i class="fa fa-4x fa-file-image-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
+			<h3>Anuncios</h3>
 		</div>
 	</div>
-	<section class="Smedios">
-		<div class="medios-content">
-			<div class="container">
-				
-				<div class="col-lg-4 col-md-6 col-xs-12 text-center">
-					<div class="service-box">
-						<i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary y"></i>
-						<h3>Noticias</h3>
-						<div class="list-group">
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-xs-12 text-center">
-					<div class="service-box">
-						<i class="fa fa-4x fa-file-video-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
-						<h3>Videos</h3>
-						<div class="list-group">
-
-				<div class="col-lg-4 col-md-6 col-xs-12 text-center">
-					<div class="service-box">
-						<i class="fa fa-4x fa-file-image-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
-						<h3>Anuncios</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 </section>
 
 <script type="text/javascript">
