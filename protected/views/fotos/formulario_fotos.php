@@ -121,4 +121,13 @@
 
     <?php $this->endWidget(); ?>
 
+    <script>
+        $('#fotos-form').ready(function(){
+            $('#fotos-form').on('click', '#boton-ubicaciones', function(){
+                if ($('#Fotos_direccion').val() != "")
+                    porNombre($('#Fotos_direccion').val());
+                return false;
+            });
+        });
+    </script>
 </div>
