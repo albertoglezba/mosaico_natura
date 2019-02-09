@@ -1,5 +1,8 @@
 <?php $yii_path = Yii::app()->request->baseUrl; ?>
 
+<script type="text/javascript" src="<?php echo $yii_path; ?>/js/locationpicker.jquery.js"></script>
+
+
 <div class="form">
 
     <?php $form=$this->beginWidget('CActiveForm', array(
@@ -12,13 +15,7 @@
         ),
     )); ?>
 
-    <h4><em>
-            <?php if ($_POST['adulto'] == "1") {
-                echo "Tercer";
-            } else {
-                echo "Segundo";
-            } ?>
-            paso</em>, completa el registro</h4>
+    <h4><b><?php echo (($_POST['adulto'] == "1") ? "Tercer" : "Segundo") ?> paso</b>, completa el registro</h4>
 
     <div class="errorMessage" id="formResult"></div>
     <div id="AjaxLoader" style="display: none"><img src="<?php echo Yii::app()->request->baseUrl; ?>/img/aplicacion/loading.gif"></img></div>
@@ -41,9 +38,7 @@
         <?php echo $form->error($model,'direccion'); ?>
     </div>
 
-    <ul id="res-ubicaciones"></ul>
-
-    <div id="mapa" style="width: 500px; height: 400px;"></div>
+    <div id="mapa" style="height: 500px;"></div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'latitud'); ?>
@@ -64,11 +59,13 @@
     </div>
 
     <script>
-        var mapa = L.map('mapa').setView([51.505, -0.09], 13);
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-            maxZoom: 18,
-        }).addTo(mapa);
+        var map = L.map('mapa').setView([24.21179847133122, -101.9306640625], 5);
+        L.tileLayer('https://maps.tilehosting.com/styles/topo/{z}/{x}/{y}.png?key=zlRxsCdX8uurAv6boyCD', {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+        var c = new L.Control.Coordinates();
+        c.addTo(map);
+        map.on('click', function(e) {
+            c.setCoordinates(e);
+        });
     </script>
 
     <?php
@@ -119,8 +116,4 @@
 
     <?php $this->endWidget(); ?>
 
-    <script>
-        porCoordenadas(23.79162789, -102.04376221);
-        porNombre('roma');
-    </script>
 </div>
