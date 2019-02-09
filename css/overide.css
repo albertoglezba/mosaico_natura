@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6{
 	font-weight:bold;
 }
 
-section#registro form *{
+#registro form select, #registro form label, #registro form input, #registro form span:not(.glyphicon){
 	font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial;
 }
 
@@ -510,9 +510,10 @@ table.como-participar td{
 	color:#2d2c27;
 }
 
-span.required{
-	font-size:2em;
-	vertical-align: middle;
+#registro span.required{
+	font-size:1.25em;
+	vertical-align: top;
+	font-weight: bolder;
 }
 
 .medios-header{
@@ -1041,8 +1042,6 @@ footer ul{
 	}
 }
 
-
-
 #terminos{
 	width: auto;
 	height:  550px;
@@ -1051,22 +1050,6 @@ footer ul{
 	margin: 30px;
 	padding: 30px;
 	box-shadow: 0px 0px 11px 2px #808080;
-}
-.fileUpload{
-	position: relative;
-	overflow: hidden;
-	margin: 10px;
-}
-.fileUpload input.upload{
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 0;
-	padding: 0;
-	font-size: 20px;
-	cursor: pointer;
-	opacity: 0;
-	filter: alpha(opacity=0);
 }
 
 .view{
