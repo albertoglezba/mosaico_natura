@@ -152,42 +152,38 @@
 			</div>
 		</div>
 		
-		<div class="registro-content">
-			<div class="container">
-				<div class="col-md-12">
-					<p>
-						<?php
-							if (!Yii::app()->user->isGuest){
-								if (!isset(Yii::app()->user->id_usuario) || empty(Yii::app()->user->id_usuario)){
-									if (!isset(Yii::app()->user->id) || empty(Yii::app()->user->id)){
-										Yii::app()->user->logout();
-										echo CHtml::link('Inicia sesión', array('site/login'));
-									}else{
-										$this->setIdUsuario(Yii::app()->user->id);
-										$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
-										echo "<div class='btn-group' role='group' aria-label='...'>";
-										echo CHtml::link('Tus fotografías', array('fotos/index'), array('class'=>'btn btn-primary'));
-										//echo CHtml::link('Tus videos', array('videos/index'), array('class'=>'btn btn-primary'));
-										echo CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('class'=>'btn btn-warning'));
-										echo CHtml::link('Cerrar sesión ('.Yii::app()->user->name.')', array('site/logout'), array('class'=>'btn btn-danger'));
-										echo "</div>";
-									}
-								}else{
-									$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
-									echo "<div class='btn-group' role='group' aria-label='...'>";
-									echo CHtml::link('Tus fotografías', array('fotos/index'), array('class'=>'btn btn-primary'));
-									//echo CHtml::link('Tus videos', array('videos/index'), array('class'=>'btn btn-primary'));
-									echo CHtml::link('Propiedades de tu cuenta', array('usuarios/'.$usuario->id), array('class'=>'btn btn-warning'));
-									echo CHtml::link('Cerrar sesión ('.Yii::app()->user->name.')', array('site/logout'), array('class'=>'btn btn-danger'));
-									echo "</div>";
-								}
-							}else{?>
-							
-							<?php }?>
-					</p>
+		<div class="registro-content row">
+			<div class="col-md-8 col-md-offset-2">
+				<?php
+					if (!Yii::app()->user->isGuest){
+						if (!isset(Yii::app()->user->id_usuario) || empty(Yii::app()->user->id_usuario)){
+							if (!isset(Yii::app()->user->id) || empty(Yii::app()->user->id)){
+								Yii::app()->user->logout();
+								echo CHtml::link('Inicia sesión', array('site/login'));
+							}else{
+								$this->setIdUsuario(Yii::app()->user->id);
+								$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+								echo "<div class='btn-group montserrat' role='group' aria-label='...'>";
+								echo CHtml::link("Tus fotografías <span class='glyphicon glyphicon-camera' aria-hidden='true'></span>", array('fotos/index'), array('class'=>'btn btn-default'));
+								echo CHtml::link("Propiedades de tu cuenta <span class='glyphicon glyphicon-cog' aria-hidden='true'></span>", array('usuarios/'.$usuario->id), array('class'=>'btn btn-default'));
+								echo CHtml::link("Cerrar sesión <small>(".Yii::app()->user->name.")</small> <span class='glyphicon glyphicon-log-out' aria-hidden='true'></span>", array('site/logout'),
+									array('class'=>'btn btn-default'));
+								echo "</div>";
+							}
+						}else{
+							$usuario = Usuarios::model()->findByPk(Yii::app()->user->id_usuario);
+							echo "<div class='btn-group montserrat' role='group' aria-label='...'>";
+							echo CHtml::link("Tus fotografías <span class='glyphicon glyphicon-camera' aria-hidden='true'></span>", array('fotos/index'), array('class'=>'btn btn-default'));
+							echo CHtml::link("Propiedades de tu cuenta <span class='glyphicon glyphicon-cog' aria-hidden='true'></span>", array('usuarios/'.$usuario->id), array('class'=>'btn btn-default'));
+							echo CHtml::link("Cerrar sesión <small>(".Yii::app()->user->name.")</small> <span class='glyphicon glyphicon-log-out' aria-hidden='true'></span>", array('site/logout'),
+								array
+							('class'=>'btn btn-default'));
+							echo "</div>";
+						}
+					}else{?>
 					
-					<?php echo $content; ?>
-				</div>
+					<?php }?>
+				<?php echo $content; ?>
 			</div>
 		</div>
 	

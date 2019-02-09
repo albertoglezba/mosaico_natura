@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6{
 	font-weight:bold;
 }
 
-#registro form select, #registro form label, #registro form input, #registro form span:not(.glyphicon), #res-ubicaciones li{
+.montserrat, #registro form select, #registro form label, #registro form input, #registro form span:not(.glyphicon), #res-ubicaciones li{
 	font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial;
 }
 

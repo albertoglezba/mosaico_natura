@@ -234,25 +234,6 @@ p{
 	}
 }
 
-.btn{
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-}
-
-.btn-default{
-	border: 1px solid #42dca3;
-	color: #42dca3;
-	background-color: transparent;
-}
-
-.btn-default:hover, .btn-default:focus{
-	border: 1px solid #42dca3;
-	outline: 0;
-	color: #000;
-	background-color: #42dca3;
-}
-
 ul.banner-social-buttons{margin-top: 0;}
 
 @media(max-width:1199px){
