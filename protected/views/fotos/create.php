@@ -18,7 +18,7 @@
         });
     </script>
 
-    <h3 class="text-left"><b>Primer paso</b>, elige una categoría <br />
+    <h3 class="text-left text-success"><b>Primer paso:</b> elige una categoría <br />
         <small class="text-left text-warning">(Recuerda que solo puedes subir hasta <?php echo Yii::app()->params['#_fotos_adulto_x_categoria']; ?> fotografías por categor&iacute;a, una vez procesada no se permiten hacer cambios)</small>
     </h3>
 
@@ -33,11 +33,11 @@
             <?php $model=new Fotos; ?>
 
             <?php echo CHtml::label('Categoria','categoria_id', array('class'=>'col-sm-2 control-label')); ?>
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <?php echo $model->categorias($form, $model); ?>
                 <?php echo $form->error($model,'categoria_id'); ?>
-
             </div>
+	        <div class="clearfix"></div>
         </div>
 
 
@@ -58,7 +58,7 @@
         });
     </script>
 
-    <h3 class="text-left">Primer paso</em>, selecciona una fotografía <br />
+    <h3 class="text-left text-success">Primer paso:</em> selecciona una fotografía <br />
         <small>(Para la categoria de jóvenes se permiten hasta <?php echo Yii::app()->params['#_fotos_juvenil']; ?> fotografías)</small>
     </h3>
     <h5 class="text-warning"><b>(Debe ser un .jpg con 3000px como mínimo en su lado más grande)</b></h5>

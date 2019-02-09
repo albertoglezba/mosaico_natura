@@ -121,10 +121,10 @@ class Fotos extends CActiveRecord
 				'categoria_id' => 'Categoría',
 				'fotografia' => 'Fotografía',
 				'direccion' => 'Ubicación',
-				'latitud' => 'Latitud',
-				'longitud' => 'Longitud',
+				'latitud' => 'Lat.',
+				'longitud' => 'Long.',
 				'titulo' => 'Título',
-				'marca' => 'Marca/modelo de tu cámara fotográfica'
+				'marca' => 'Marca y/o modelo de tu cámara fotográfica'
 		);
 	}
 
@@ -165,7 +165,7 @@ class Fotos extends CActiveRecord
 		if (count($categorias_usuario) > 0)
 		{
 			$lista = "<select name=\"Fotos[categoria_id]\" id=\"Fotos_categoria_id\" class=\"form-control\">";
-			$lista.= "<option>---Selecciona---</option>";
+			$lista.= "<option>-- Selecciona --</option>";
 			$categorias = Categorias::model()->findAll();
 
 			foreach ($categorias as $c)
@@ -179,7 +179,7 @@ class Fotos extends CActiveRecord
 		} else
 			$lista = $form->dropDownList($model, 'categoria_id', 
 					CHtml::listData(Categorias::model()->findAll(), 'id', 'nombre'),
-					array('prompt'=>'---Selecciona---', 'class'=>'form-control'));
+					array('prompt'=>'-- Selecciona --', 'class'=>'form-control'));
 		return $lista;	
 	}
 	
