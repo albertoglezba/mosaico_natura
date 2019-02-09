@@ -38,6 +38,9 @@
         <?php echo $form->error($model,'direccion'); ?>
     </div>
 
+    <a href="#" id="boton-ubicaciones">Buscar</a>
+    <ul id="res-ubicaciones"></ul>
+
     <div id="mapa" style="height: 500px;"></div>
 
     <div class="row">
@@ -63,8 +66,10 @@
         L.tileLayer('https://maps.tilehosting.com/styles/topo/{z}/{x}/{y}.png?key=zlRxsCdX8uurAv6boyCD', {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
         var c = new L.Control.Coordinates();
         c.addTo(map);
+
         map.on('click', function(e) {
             c.setCoordinates(e);
+            porCoordenadas(e.latlng.lat, e.latlng.lng);
         });
     </script>
 

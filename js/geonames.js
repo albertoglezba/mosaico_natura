@@ -18,7 +18,7 @@ var porNombre = function (q) {
                     {
                         lugares_unicos.push(nombre_lugar);
                         console.log(nombre_lugar);
-                        //$('#res-ubicaciones').append("<li>" + nombre_lugar + "</li>");
+                        $('#res-ubicaciones').append("<li>" + nombre_lugar + "</li>");
                     }
                 });
             }
@@ -32,13 +32,21 @@ var porCoordenadas = function (lat, lng) {
         method: "GET",
         url: url,
         dataType: 'json',
-        data: { lat: lat, lng: lng, username: 'calonsot', lang: 'es' }
+        data: { lat: lat, lng: lng, username: 'calonsot', lang: 'es', country: 'mx' }
     })
         .done(function( ubicaciones ) {
             if (typeof ubicaciones.postalCodes !== 'undefined' && ubicaciones.postalCodes.length > 0) {
                 var nombre_lugar = ubicaciones.postalCodes[0].placeName + ', ' + ubicaciones.postalCodes[0].adminName1 + ', ' + ubicaciones.postalCodes[0].countryCode;
-                console.log(nombre_lugar);
-                //$('#Fotos_direccion').val(nombre_lugar);
+                $('#Fotos_direccion').val(nombre_lugar);
+                $('#Fotos_latitud').val(lat);
+                $('#Fotos_longitud').val(lng);
             }
         });
 };
+
+$('#fotos-form').ready(function(){
+    $('#fotos-form').on('click', '#boton-ubicaciones', function(){
+        console.log('con clic');
+        return false;
+    });
+});
