@@ -83,7 +83,7 @@
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-				<i class="fa fa-bars"></i>
+				<i class="fa fa-bars blanco"></i>
 			</button>
 			<a class="navbar-brand page-scroll" href="<?php echo $yii_path; ?>/index.php">
 				<h2>MOSAICO NATURA M&Eacute;XICO</h2><img src="<?php echo $yii_path; ?>/img/logo-mosaiconatura.png" alt="Mosaico-Natura">
@@ -196,27 +196,27 @@
 <div id="colaboradores">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
 				<a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-conabio_2019.png" class="img-responsive" alt="Conabio"> </a>
 			</div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers"><a href="https://fmcn.org/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-fmcn-web-4.png" alt="Fondo Mexicano para la Conservación" class="img-responsive"> </a>
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers"><a href="https://fmcn.org/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-fmcn-web-4.png" alt="Fondo Mexicano para la Conservación" class="img-responsive"> </a>
 			</div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers"><a href="https://lavaca.edu.mx/index.html" target="_blank"><img src="<?php echo $yii_path; ?>/img/lavaca-logo.png" alt="Fondo Mexicano para la Conservación" class="img-responsive"> </a>
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers"><img src="<?php echo $yii_path; ?>/img/LOGO_CyR.png" alt="Fundación Claudia y Roberto Hernández" class="img-responsive">
 			</div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
-				<a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-epson.png" class="img-responsive img-ch" alt="Epson" > </a>
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
+			<a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-epson.png" class="img-responsive img-ch" alt="Epson" > </a>
 			</div>
+			<div class="clearfix"></div>
 			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
 				<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/SEDEMA_GOB_CDMX_1_extendido.svg" class="img-responsive" alt="SEDEMA"> </a>
 			</div>
-			<div class="clearfix"></div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
 				<a href="https://www.nationalgeographic.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo.png" alt="National Geographic" class="img-responsive" > </a>
 			</div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
 				<a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-natgeo-esp.png" alt="National Geographic en español" class="img-responsive" > </a>
 			</div>
-			<div class="col-xs-4 col-md-3 col-lg-2 sponsers">
+			<div class="col-xs-4 col-md-3 col-lg-3 sponsers">
 				<a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo-acir.png" class="img-responsive img-gde" alt="Fundación Acir" > </a>
 			</div>
 		</div>
@@ -231,7 +231,7 @@
 			<ul>
 				<li><a href="http://www.gob.mx/conabio/" target="_blank"><span class="conabio">Conabio</span></a></li>
 				<li><a href="https://fmcn.org/" target="_blank">Fondo Mexicano para la Conservación de la Naturaleza</a></li>
-				<li><a href="https://lavaca.edu.mx/" target="_blank">La vaca independiente</a></li>
+				<li style="color: white">Fundación Claudia y Roberto Hernández</li>
 				<li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
 				<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank">Secretaría del Medio Ambiente</a></li>
 				<li><a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a> </li>
@@ -269,7 +269,7 @@
 </footer>
 <footer id="copyright">
 	<div class="container text-center">
-		<p>Copyright &copy; Mosaico Natura <?php echo date('Y'); ?> | <a href="mailto:mosaiconatura@conabio.gob.mx">mosaiconatura@conabio.gob.mx</a></p>
+		<p style="color: gray">Copyright &copy; Mosaico Natura <?php echo date('Y'); ?> | <a href="mailto:mosaiconatura@conabio.gob.mx">mosaiconatura@conabio.gob.mx</a></p>
 	</div>
 </footer>
 
