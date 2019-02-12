@@ -98,16 +98,13 @@
 					<a href="<?php echo $yii_path; ?>#page-top"></a>
 				</li>
 				<li>
-					<a class="page-scroll" href="<?php echo $yii_path; ?>/#about">Qui&eacute;nes somos</a>
+					<a class="page-scroll" href="<?php echo $yii_path; ?>#about">Qui&eacute;nes somos</a>
 				</li>
 				<li>
-					<a class="page-scroll" href="<?php echo $yii_path; ?>/#bases">Concurso</a>
-				</li>
-				<li style="display: none">
-					<a class="page-scroll" href="<?php echo $yii_path; ?>/#jurado">Jurado</a>
+					<a class="page-scroll" href="<?php echo $yii_path; ?>#bases">Concurso</a>
 				</li>
 				<li>
-					<a class="page-scroll" href="<?php echo $yii_path; ?>/#expos">Exposiciones</a>
+					<a class="page-scroll" href="<?php echo $yii_path; ?>#expos">Exposiciones</a>
 				</li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ganadores</a>
@@ -119,10 +116,10 @@
 					</ul>
 				</li>
 				<li>
-					<a class="page-scroll" href="<?php echo $yii_path; ?>/#registro">Registro</a>
+					<a class="page-scroll" href="<?php echo $yii_path; ?>#registro">Registro</a>
 				</li>
 				<li>
-					<a class="page-scroll" href="<?php echo $yii_path; ?>/#medios">Medios</a>
+					<a class="page-scroll" href="<?php echo $yii_path; ?>#medios">Medios</a>
 				</li>
 			</ul>
 		</div>
