@@ -3,9 +3,22 @@
 <header class="intro">
 	<div class="intro-body">
 		<div class="container">
-			<div class="row">
-
-			</div>
+			 <div class="row">
+                <div class="col-md-8 col-md-offset-3">
+                  	<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+                </div>
+            </div>
 			<div class="col-md-12">
 				<a href="#about" class="btn btn-circle page-scroll">
 					<i class="fa fa-angle-double-down animated"></i>
@@ -59,7 +72,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-xs-12">
-					<p align="left">La Comisión Nacional para el Conocimiento y Uso de la Biodiversidad <strong>(<span class="conabio">Conabio</span>)</strong> a través de <strong>Mosaico Natura México,</strong> convoca al <strong>“Quinto Concurso Nacional de Fotografía de la Naturaleza”</strong> en el cual podrán participar aficionados y profesionales de la fotografía, nacionales o extranjeros radicadas en México.</p>
+					<p align="left">La Comisión Nacional para el Conocimiento y Uso de la Biodiversidad <strong>(<span class="conabio">Conabio</span>), </strong>el Fondo Mexicano para la Conservación de la Naturaleza (FMCN) y la Fundación Claudia y Roberto Hernández, a través de <strong>Mosaico Natura México,</strong> convocan al <strong>“5o. Concurso Nacional de Fotografía de la Naturaleza”</strong> en el cual podrán participar aficionados y profesionales de la fotografía, nacionales o extranjeros radicadas en México.</p>
 					<p align="left">La(s) fotografía(s) debe(n) representar la riqueza natural en México, es decir especies de plantas, hongos y animales nativos del país en vida silvestre, así como ecosistemas, usos de la biodiversidad, naturaleza en destinos turísticos y/o actividades humanas que tengan un impacto en la naturaleza. </p>
 				</div>
 			</div>
@@ -69,11 +82,11 @@
 			</div>
 			<div class="col-lg-12 col-xs-12">
 				<h3>ADULTOS <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span><small>  18 años en adelante. |  Cada participante podrá enviar hasta 2
-						fotografías por tema
-						.</></h3>
+						fotografías por tema</></h3>
 				<h3>J&Oacute;VENES <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span><small> 17 años al cierre del concurso. | Cada participante podrá
 						enviar hasta 3 fotografías de tema libre</small></h3>
 			</div>
+			<div class="row">
 			<div class="col-md-6 col-xs-12">
 				<h4 class="bases-izq">Temas</h4>
 				<div class="categorias-adultos">
@@ -104,12 +117,13 @@
 					</dl>
 				</div>
 			</div>
+				</div>
 			
 			<div class="col-lg-12 col-xs-12 bases-titulo">
 				<h3>PREMIOS Y RECONOCIMIENTOS</h3>
 			</div>
 			<div class="col-lg-12 col-xs-12">
-				<h3>Exhibición	de	fotografías finalistas   <i class="fa fa-caret-right"></i>   <span class="pleca_ama"> Rejas de Chapultepec. De abril a julio de 2019</span></h3>
+				<h3>Exhibición	de	fotografías finalistas   <i class="fa fa-caret-right"></i>   <span class="pleca_ama"><small> Rejas de Chapultepec.  De abril a julio de 2019</small></span></h3>
 			</div>
 			
 			<div class="col-md-6 col-xs-12">
@@ -207,7 +221,7 @@
 			</div>
 			
 			<div class="col-xs-12 col-md-8 col-md-offset-2 fechas-concurso">
-				<p><strong>La recepci&oacute;n de fotograf&iacute;as ser&aacute; a partir del sabado 8 de febrero al domingo 10 de marzo de 2019 (23:00hrs)<br>
+				<p><strong>La recepci&oacute;n de fotograf&iacute;as ser&aacute; a partir del  12 de febrero al domingo 10 de marzo de 2019 (23:00hrs)<br>
 					</strong></p><br>
 				<p><a style="color: darkred" href="<?php echo Yii::app()->baseUrl;?>/index.php/site/terminos_condiciones"><strong>Bases completas del concurso</strong></a></p>
 			</div>
