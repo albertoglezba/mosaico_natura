@@ -33,7 +33,7 @@
 			</div>
 			
 			<div class="col-lg-5">
-				<!-- <iframe class="video-mosaico" src="https://www.youtube.com/embed/eO8EqnD1t7U?rel=0&amp;showinfo=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LUBA7wQjyOI?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -340,11 +340,18 @@
 		<div class="col-lg-4 col-md-6 col-xs-12 text-center">
 			<i class="fa fa-4x fa-file-video-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
 			<h3>Videos</h3>
+			  <div class="list-group">
+                 <iframe width="60%" height="200" src="https://www.youtube-nocookie.com/embed/LUBA7wQjyOI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              </div>
 		</div>
 		
 		<div class="col-lg-4 col-md-6 col-xs-12 text-center">
 			<i class="fa fa-4x fa-file-image-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
 			<h3>Anuncios</h3>
+			<div class="list-group">
+				<a class="list-group-item sb" href="descargar/banner944x300.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> 944 x 300 px</a>
+				<a class="list-group-item sb" href="descargar/mediacarta.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> media carta</a>
+			</div>
 		</div>
 	</div>
 </section>
