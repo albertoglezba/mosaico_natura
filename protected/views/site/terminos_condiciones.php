@@ -1,6 +1,6 @@
 <div class="tyc-content">
 		<div class="col-md-12">
-			<p>La Comisión  Nacional para el Conocimiento y Uso de la Biodiversidad (<span class="conabio">Conabio</span>) a través de <strong>Mosaico  Natura México</strong>, convoca al <strong>&ldquo;5o.  Concurso Nacional de Fotografía de la Naturaleza&rdquo; </strong>en el cual podrán  participar todas las personas, nacionales o extranjeras radicadas en México.</p>
+			<p>La Comisión  Nacional para el Conocimiento y Uso de la Biodiversidad (<span class="conabio">Conabio</span>), el Fondo Mexicano para la Conservación de la Naturaleza (FMCN) y la Fundación Claudia y Roberto Hernández, a través de <strong>Mosaico  Natura México</strong>, convocan al <strong>&ldquo;5o.  Concurso Nacional de Fotografía de la Naturaleza&rdquo; </strong>en el cual podrán  participar todas las personas, nacionales o extranjeras radicadas en México.</p>
 		  <p>La(s)  fotografía(s) debe(n) representar la <strong>riqueza natural en México, </strong>es decir  especies de plantas, hongos y animales nativos del país en vida silvestre, así  como ecosistemas, usos de la biodiversidad, naturaleza en destinos turísticos y/o  actividades humanas que tengan un impacto en la naturaleza.</p>
 			
 			<h4 style="color: darkred"><strong><br>QUIÉNES PUEDEN PARTICIPAR</strong></h4>
@@ -63,7 +63,7 @@
 			
                         
           			<h4 style="color:darkred";>VIGENCIA DEL  CONCURSO Y FECHAS IMPORTANTES</h4>
-                        <p>La  participación de este concurso estará disponible a partir del jueves 7 febrero  hasta el domingo 10 de marzo de 2019 a las 23:00 h., que será la  fecha y hora límite para registrar la(s) fotografía(s).</p>
+                        <p>La  participación de este concurso estará disponible <strong>a partir del 12 de febrero  al domingo 10 de marzo de 2019</strong> a las 23:00 h., que será la  fecha y hora límite para registrar la(s) fotografía(s).</p>
                         <p><strong>Nota:</strong> Con el propósito de promover  nuevos valores, <strong>ningún participante podrá ganar en certámenes concecutivos  Mosaico Natura México,</strong> por lo que los ganadores del certamen anterior (<strong>Mosaico  Natura México IV - 2018</strong>) no podrán participar en este. Su participación se  aceptará nuevamente en el próximo concurso.</p>
 						<ul>
 						<li>
