@@ -333,19 +333,29 @@
 		</div>
 	</div>
 	<div class="medios-content row">
-		<div class="col-lg-4 col-md-6 col-xs-12 text-center">
+	  <div class="col-lg-2 col-md-6 col-xs-12 text-center">
 			<i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary y"></i>
 			<h3>Noticias</h3>
+			<p><a href="descargar/Boletin282_MNATURA5.pdf" target="_blank" style="color: darkred">Boletín de prensa</a></p>
 		</div>
-		<div class="col-lg-4 col-md-6 col-xs-12 text-center">
+		<div class="col-lg-2 col-md-6 col-xs-12 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-file-audio-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
+                    <h3>Spot</h3>
+                    <p>
+                    <audio src="descargar/SpotConcursoMN5.mp3" preload="auto" controls style="width:100%"></audio>
+                    </p>
+                </div>
+            </div>
+		<div class="col-lg-5 col-md-6 col-xs-12 text-center">
 			<i class="fa fa-4x fa-file-video-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
-			<h3>Videos</h3>
+			<h3>Video</h3>
 			  <div class="list-group">
                  <iframe width="60%" height="200" src="https://www.youtube-nocookie.com/embed/LUBA7wQjyOI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
               </div>
 		</div>
 		
-		<div class="col-lg-4 col-md-6 col-xs-12 text-center">
+		<div class="col-lg-3 col-md-6 col-xs-12 text-center">
 			<i class="fa fa-4x fa-file-image-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
 			<h3>Anuncios</h3>
 			<div class="list-group">
