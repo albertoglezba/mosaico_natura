@@ -123,13 +123,7 @@
                 <?php echo $form->checkBox($model,'acepto_terminos'); ?>
             </div>
         </div>
-
-        <div class="form-group">
-            <?php echo $form->labelEx($model,'distribucion', array('class'=>'col-sm-11 text-right')); ?>
-            <div class="col-sm-1">
-                <?php echo $form->checkBox($model,'distribucion'); ?>
-            </div>
-        </div>
+    
     <?php } else { //pone la confirmación del passwd ?>
         <br>Si no deseas cambiar tu contrase&ntilde;a por favor deja estos campos vac&iacute;os.
         <div class="form-group">

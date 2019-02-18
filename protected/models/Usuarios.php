@@ -301,7 +301,7 @@ class Usuarios extends CActiveRecord
         $mensaje.= "<a href=\"".Yii::app()->createAbsoluteUrl('usuarios/confirmo')."?id=".$this->id."&fec_alta=".urlencode($this->fec_alta)."\" target=\"_blank\">enlace</a>.";
         $cabeceras = "Content-type: text/html; charset=utf-8"."\r\n";
         $cabeceras.= "From: noreply@conabio.gob.mx"."\r\n";
-        mail($para, $titulo, $mensaje, $cabeceras);
+        mail($para, '=?utf-8?B?'.base64_encode($titulo).'?=', $mensaje, $cabeceras);
     }
 
     public function send_mail_recupera()
@@ -321,7 +321,7 @@ class Usuarios extends CActiveRecord
 
         $cabeceras = "Content-type: text/html; charset=utf-8"."\r\n";
         $cabeceras.= "From: noreply@conabio.gob.mx"."\r\n";
-        mail($para, $titulo, $mensaje, $cabeceras);
+        mail($para, '=?utf-8?B?'.base64_encode($titulo).'?=', $mensaje, $cabeceras);
     }
 
     /**
