@@ -18,7 +18,9 @@
 
     <?php echo $form->errorSummary($model, "", "", array('class' => "alert alert-danger btn-lg text-left")); ?>
 
-    <?php if(Usuarios::deboActualizarFechaNac($model->fecha_nac) && !$model->isNewRecord) { ?>
+    <?php if(Usuarios::deboActualizarFechaNac($model->fecha_nac) && !$model->isNewRecord) {
+        $model->fecha_nac = strftime('%Y-%m-%d', time());
+        ?>
         <hr />
         <div class="form-group">
             <div class="col-sm-12">
@@ -61,7 +63,9 @@
         </div>
     </div>
 
-    <?php if ($model->isNewRecord) { ?>
+    <?php if ($model->isNewRecord) {
+        $model->fecha_nac = strftime('%Y-%m-%d', time());
+        ?>
         <h3 class="text-danger">Los siguientes campos <strong>no pueden</strong> ser modificados una vez creado el registro.</h3>
 
 
