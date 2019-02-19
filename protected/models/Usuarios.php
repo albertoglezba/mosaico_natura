@@ -60,19 +60,18 @@ class Usuarios extends CActiveRecord
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('usuario, nombre, apellido, correo, municipio, estado, compromiso, difusion, fecha_nac','required'),
+            array('nombre, apellido, correo, municipio, estado, compromiso, difusion, fecha_nac','required'),
             array('acepto_terminos, passwd, confirma_passwd', 'required', 'on'=>'insert'),
             array('confirmo distribucion', 'numerical', 'integerOnly'=>true),
-            array('usuario, nombre, apellido, fecha_nac correo, telefonos, passwd, confirma_passwd, salt, municipio, estado', 'length', 'max'=>255),
+            array('nombre, apellido, fecha_nac correo, telefonos, passwd, confirma_passwd, salt, municipio, estado', 'length', 'max'=>255),
             array('compromiso', 'safe'),
             array('acepto_terminos', 'acepto_terminos_rule', 'on'=>'insert'),
             array('correo', 'valida_correo', 'on'=>'insert'),
-            array('usuario', 'valida_usuario', 'on'=>'insert'),
             array('fecha_nac', 'valida_fecha_nac', 'on'=>'insert, update'),
             array('confirma_passwd', 'valida_passwd'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, usuario, nombre, apellido, fecha_nac, correo, telefonos, municipio, estado, confirmo,
+            array('id, nombre, apellido, fecha_nac, correo, telefonos, municipio, estado, confirmo,
 				difusion,  fec_alta, fec_act', 'safe', 'on'=>'search'),
         );
     }
@@ -95,18 +94,6 @@ class Usuarios extends CActiveRecord
         }
     }
 
-    public function valida_usuario()
-    {
-        if (strlen($this->usuario) <= 2)
-            $this->addError($this->usuario, 'El campo usuario debe tener al menos 3 caracteres.');
-        elseif (preg_match('/\s/',$this->usuario))
-            $this->addError($this->usuario, 'El campo usuario no debe tener espacios.');
-        else {
-            $usuario_existe = $this->model()->findByAttributes(array('usuario'=>$this->usuario));
-            if ($usuario_existe != NULL)
-                $this->addError($this->usuario, 'Este usuario ya fue registrado por alguien más, por favor intenta con otro o recupera tu contraseña desde el inicio de sesión.');
-        }
-    }
     public function valida_fecha_nac(){
         if($this->cambia_passwd) return true;
 
@@ -130,24 +117,13 @@ class Usuarios extends CActiveRecord
         return (($edad < 6) || ($edad > 130));
     }
 
-    public static function dameEdad($fecha_nac){
-
-        $d1 = Yii::app()->params->fecha_termino_foto;
-        $d2 = str_replace('-', '', $fecha_nac);
-
+    public static function dameEdad($fecha_nac)
+    {
         //Para más allá de php5.3 (te odio ixmati)
-        //$d1 = new DateTime(Yii::app()->params->fecha_termino);
-        //$d2 = new DateTime($fecha_nac);
-        //$diff = $d2->diff($d1);
-
-        //El PHP de Ixmati es de 32 putos bits, no soporta arriba de 2mil millones (por eso devolvia '' cuando ponian fechas muy altas, TE ODIO PUTO IXMATI!!!)
-        //$diff = abs((strtotime($d1)-345600) - strtotime($d2));
-        //$years = floor($diff / (365*60*60*24));
-
-        $diff = substr($d1,0,4)-substr($d2,0,4);
-        $years = (substr($d1,4,4) < substr($d2,4,4)) ? $diff-1 : $diff;
-
-        return $years;
+        $d1 = new DateTime(Yii::app()->params->fecha_termino);
+        $d2 = new DateTime($fecha_nac);
+        $diff = $d2->diff($d1);
+        return $diff->y;
     }
 
     public function valida_passwd()
@@ -206,7 +182,6 @@ class Usuarios extends CActiveRecord
     {
         return array(
             'id' => 'ID',
-            'usuario' => 'Usuario',
             'nombre' => 'Nombre(s)',
             'apellido' => 'Apellido(s)',
             'fecha_nac' => 'Fecha de nacimiento',
@@ -239,7 +214,6 @@ class Usuarios extends CActiveRecord
         $criteria=new CDbCriteria;
 
         $criteria->compare('id',$this->id);
-        $criteria->compare('usuario',$this->usuario,true);
         $criteria->compare('nombre',$this->nombre,true);
         $criteria->compare('apellido',$this->apellido,true);
         $criteria->compare('fecha_nac',$this->fecha_nac);

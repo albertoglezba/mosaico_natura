@@ -121,10 +121,10 @@ class Fotos extends CActiveRecord
 				'categoria_id' => 'Categoría',
 				'fotografia' => 'Fotografía',
 				'direccion' => 'Ubicación',
-				'latitud' => 'Latitud',
-				'longitud' => 'Longitud',
+				'latitud' => 'Lat.',
+				'longitud' => 'Long.',
 				'titulo' => 'Título',
-				'marca' => 'Marca/modelo de tu cámara fotográfica'
+				'marca' => 'Marca y/o modelo de tu cámara fotográfica'
 		);
 	}
 
@@ -165,12 +165,12 @@ class Fotos extends CActiveRecord
 		if (count($categorias_usuario) > 0)
 		{
 			$lista = "<select name=\"Fotos[categoria_id]\" id=\"Fotos_categoria_id\" class=\"form-control\">";
-			$lista.= "<option>---Selecciona---</option>";
+			$lista.= "<option>-- Selecciona --</option>";
 			$categorias = Categorias::model()->findAll();
 
 			foreach ($categorias as $c)
 			{
-				if (isset($categorias_usuario[$c->id]) && $categorias_usuario[$c->id] >= 5)
+				if (isset($categorias_usuario[$c->id]) && $categorias_usuario[$c->id] >= Yii::app()->params['#_fotos_adulto_x_categoria'])
 					$lista.= "<option disabled>".$c->nombre."</option>";
 				else
 					$lista.= "<option value=\"".$c->id."\">".$c->nombre."</option>";
@@ -179,7 +179,7 @@ class Fotos extends CActiveRecord
 		} else
 			$lista = $form->dropDownList($model, 'categoria_id', 
 					CHtml::listData(Categorias::model()->findAll(), 'id', 'nombre'),
-					array('prompt'=>'---Selecciona---', 'class'=>'form-control'));
+					array('prompt'=>'-- Selecciona --', 'class'=>'form-control'));
 		return $lista;	
 	}
 	
