@@ -9,6 +9,7 @@
 	<meta name="author" content="">
 	
 	<title>Mosaico Natura M&eacute;xico</title>
+	<meta property="og:image" content="http://www.mosaiconatura.net/img/bg-intro.jpg" />
 	
 	<meta name="keywords" content="Mosaico Natura México, Fotografía, Naturaleza, Banco de imágenes, Fauna, Flora, Paisajes y ecosistemas, Deterioro ambiental, Conservación, Formas y texturas, Aérea y acuática, Usos y costumbres">
 	
