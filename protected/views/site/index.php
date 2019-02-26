@@ -1,27 +1,11 @@
 <?php $yii_path = Yii::app()->request->baseUrl; ?>
 
-<header class="intro">
-	<div class="intro-body">
-		<div class="container">
-			<div class="row">
-                <!-- <div class="col-md-12">
-                     <h1 class="mosaico-titulo">MOSAICO NATURA</h1>
-                 </div> -->
-
-                <div class="col-md-8 col-md-offset-3">
-                    <h2 class="mosaico-titulo"><br><br><br><br><br></h2>
-                </div>
-                <div class="col-md-8 col-md-offset-4">
-                    
-                </div>
-
-            </div>
-			<div class="col-md-12">
-				<a href="#about" class="btn btn-circle page-scroll">
-					<i class="fa fa-angle-double-down animated"></i>
-				</a>
-			</div>
-		</div>
+<header class="row">
+	<div class="col-xs-12 intro-body">
+		<img src="img/bg-intro.gif" class="img-responsive">
+		<a href="#about" class="btn btn-circle page-scroll">
+			<i class="fa fa-angle-double-down animated"></i>
+		</a>
 	</div>
 </header>
 
@@ -49,7 +33,7 @@
 			</div>
 			
 			<div class="col-lg-5">
-				<!-- <iframe class="video-mosaico" src="https://www.youtube.com/embed/eO8EqnD1t7U?rel=0&amp;showinfo=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LUBA7wQjyOI?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -69,7 +53,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-xs-12">
-					<p align="left">La Comisión Nacional para el Conocimiento y Uso de la Biodiversidad <strong>(<span class="conabio">Conabio</span>)</strong> a través de <strong>Mosaico Natura México,</strong> convoca al <strong>“Quinto Concurso Nacional de Fotografía de la Naturaleza”</strong> en el cual podrán participar aficionados y profesionales de la fotografía, nacionales o extranjeros radicadas en México.</p>
+					<p align="left">La Comisión Nacional para el Conocimiento y Uso de la Biodiversidad <strong>(<span class="conabio">Conabio</span>), </strong>el Fondo Mexicano para la Conservación de la Naturaleza (FMCN) y la Fundación Claudia y Roberto Hernández, a través de <strong>Mosaico Natura México,</strong> convocan al <strong>“5o. Concurso Nacional de Fotografía de la Naturaleza”</strong> en el cual podrán participar aficionados y profesionales de la fotografía, nacionales o extranjeros radicadas en México.</p>
 					<p align="left">La(s) fotografía(s) debe(n) representar la riqueza natural en México, es decir especies de plantas, hongos y animales nativos del país en vida silvestre, así como ecosistemas, usos de la biodiversidad, naturaleza en destinos turísticos y/o actividades humanas que tengan un impacto en la naturaleza. </p>
 				</div>
 			</div>
@@ -79,39 +63,40 @@
 			</div>
 			<div class="col-lg-12 col-xs-12">
 				<h3>ADULTOS <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span><small>  18 años en adelante. |  Cada participante podrá enviar hasta 2
-						fotografías por tema
-						.</></h3>
+						fotografías por tema</small></h3>
 				<h3>J&Oacute;VENES <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span><small> 17 años al cierre del concurso. | Cada participante podrá
 						enviar hasta 3 fotografías de tema libre</small></h3>
 			</div>
-			<div class="col-md-6 col-xs-12">
-				<h4 class="bases-izq">Temas</h4>
-				<div class="categorias-adultos">
-					<dl class="dl-horizontal">
-						<dt><img src="<?php echo $yii_path; ?>/img/bases-01.png" alt="Fauna silvestre"></dt>
-						<dd><span style="color:#4b5051; font-weight:bold;">Fauna Silvestre</span><br/>Incluye animales nativos de México en vida silvestre; desde pequeños insectos hasta grandes mamíferos, siempre que éstos, no estén en cautiverio o sean animales domésticos y/o mascotas.</dd>
-						<dt><img src="<?php echo $yii_path; ?>/img/bases-02.png" alt="Plantas y Hongos"></dt>
-						<dd><span style="color:#4b5051; font-weight:bold;">Plantas y Hongos</span><br/>
-							Incluye toda clase de especies vegetales y hongos nativos de México, en vida silvestre. No se aceptarán fotografías de plantas cultivadas, de maceta o jardín.</dd>
-						<dt><img src="<?php echo $yii_path; ?>/img/bases-04.png" alt="Naturaleza y ser humano"></dt>
-						<dd><span style="color:#4b5051; font-weight:bold;">Naturaleza y ser humano</span><br/>Refiere a usos y costumbres relacionadas con el entorno natural (actividades agrícolas, artesanales, gastronómicas, medicinales, espirituales, recreativas, ceremoniales), manejo sustentable, conservación y/o restauración, también se considera en esta categoría,  actividades que impacten de manera negativa, directa o indirectamente la biodiversidad.<br/></dd>
-						<dt><img src="<?php echo $yii_path; ?>/img/bases-03.png" alt="Paisajes y ecosistemas"></dt>
-						<dd><span style="color:#4b5051; font-weight:bold;">Paisajes con ecosistemas</span><br/>Vistas aéreas y terrestres de ecosistemas no perturbados de México, desde las costas hasta las altas montañas.</dd>
-						<dt>&nbsp;</dt>
-					</dl>
+			<div class="row">
+				<div class="col-md-6 col-xs-12">
+					<h4 class="bases-izq">Temas</h4>
+					<div class="categorias-adultos">
+						<dl class="dl-horizontal">
+							<dt><img src="<?php echo $yii_path; ?>/img/bases-01.png" alt="Fauna silvestre"></dt>
+							<dd><span style="color:#4b5051; font-weight:bold;">Fauna Silvestre</span><br/>Incluye animales nativos de México en vida silvestre; desde pequeños insectos hasta grandes mamíferos, siempre que éstos, no estén en cautiverio o sean animales domésticos y/o mascotas.</dd>
+							<dt><img src="<?php echo $yii_path; ?>/img/bases-02.png" alt="Plantas y Hongos"></dt>
+							<dd><span style="color:#4b5051; font-weight:bold;">Plantas y Hongos</span><br/>
+								Incluye toda clase de especies vegetales y hongos nativos de México, en vida silvestre. No se aceptarán fotografías de plantas cultivadas, de maceta o jardín.</dd>
+							<dt><img src="<?php echo $yii_path; ?>/img/bases-04.png" alt="Naturaleza y ser humano"></dt>
+							<dd><span style="color:#4b5051; font-weight:bold;">Naturaleza y ser humano</span><br/>Refiere a usos y costumbres relacionadas con el entorno natural (actividades agrícolas, artesanales, gastronómicas, medicinales, espirituales, recreativas, ceremoniales), manejo sustentable, conservación y/o restauración, también se considera en esta categoría,  actividades que impacten de manera negativa, directa o indirectamente la biodiversidad.<br/></dd>
+							<dt><img src="<?php echo $yii_path; ?>/img/bases-03.png" alt="Paisajes y ecosistemas"></dt>
+							<dd><span style="color:#4b5051; font-weight:bold;">Paisajes con ecosistemas</span><br/>Vistas aéreas y terrestres de ecosistemas no perturbados de México, desde las costas hasta las altas montañas.</dd>
+							<dt>&nbsp;</dt>
+						</dl>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-6 col-xs-12">
-				<div class="categorias-adultos">
-					<br><br>
-					<dl class="dl-horizontal">
-						<dt><img src="<?php echo $yii_path; ?>/img/bases-18.png" alt="Subacuática"></dt>
-						<dd><span style="color:#4b5051; font-weight:bold;">Fotografía Subacu&aacute;tica</span><br/>Imágenes de animales, plantas o hábitats subacuáticos, ya sea en un entorno marino o dulceacuícola. No se aceptarán fotografías de acuario.</dd>
-						<dt><img src="<?php echo $yii_path; ?>/img/bases-19.png" alt="Macro"></dt>
-						<dd><span style="color:#4b5051; font-weight:bold;">Pequeños gigantes</span><br/>Fotografías macro de especies o detalles que comúnmente no son percibidos a simple vista. Incluyen imágenes tomadas con microscopio.</dd>
-						<dt><img src="<?php echo $yii_path; ?>/img/bases-20.png" alt="Reportaje"></dt>
-						<dd><span style="color:#4b5051; font-weight:bold;">Tema libre (Jóvenes hasta 17 años)</span><br/> Incluye cualquier fotografía relacionada con la riqueza natural de México, es decir, animales o plantas en su ambiente natural, paisajes naturales, actividades relacionadas con el hombre y la naturaleza. No se aceptarán fotografías de plantas cultivadas, animales en cautiverio o cualquier otro ambiente controlado.</dd>
-					</dl>
+				<div class="col-md-6 col-xs-12">
+					<div class="categorias-adultos">
+						<br><br>
+						<dl class="dl-horizontal">
+							<dt><img src="<?php echo $yii_path; ?>/img/bases-18.png" alt="Subacuática"></dt>
+							<dd><span style="color:#4b5051; font-weight:bold;">Fotografía Subacu&aacute;tica</span><br/>Imágenes de animales, plantas o hábitats subacuáticos, ya sea en un entorno marino o dulceacuícola. No se aceptarán fotografías de acuario.</dd>
+							<dt><img src="<?php echo $yii_path; ?>/img/bases-19.png" alt="Macro"></dt>
+							<dd><span style="color:#4b5051; font-weight:bold;">Pequeños gigantes</span><br/>Fotografías macro de especies o detalles que comúnmente no son percibidos a simple vista. Incluyen imágenes tomadas con microscopio.</dd>
+							<dt><img src="<?php echo $yii_path; ?>/img/bases-20.png" alt="Reportaje"></dt>
+							<dd><span style="color:#4b5051; font-weight:bold;">Tema libre (Jóvenes hasta 17 años)</span><br/> Incluye cualquier fotografía relacionada con la riqueza natural de México, es decir, animales o plantas en su ambiente natural, paisajes naturales, actividades relacionadas con el hombre y la naturaleza. No se aceptarán fotografías de plantas cultivadas, animales en cautiverio o cualquier otro ambiente controlado.</dd>
+						</dl>
+					</div>
 				</div>
 			</div>
 			
@@ -119,7 +104,7 @@
 				<h3>PREMIOS Y RECONOCIMIENTOS</h3>
 			</div>
 			<div class="col-lg-12 col-xs-12">
-				<h3>Exhibición	de	fotografías finalistas   <i class="fa fa-caret-right"></i>   <span class="pleca_ama"> Rejas de Chapultepec. De abril a julio de 2019</span></h3>
+				<h3>Exhibición	de	fotografías finalistas   <i class="fa fa-caret-right"></i>   <span class="pleca_ama"><small> Rejas de Chapultepec.  De abril a julio de 2019</small></span></h3>
 			</div>
 			
 			<div class="col-md-6 col-xs-12">
@@ -217,7 +202,7 @@
 			</div>
 			
 			<div class="col-xs-12 col-md-8 col-md-offset-2 fechas-concurso">
-				<p><strong>La recepci&oacute;n de fotograf&iacute;as ser&aacute; a partir del sabado 8 de febrero al domingo 10 de marzo de 2019 (23:00hrs)<br>
+				<p><strong>La recepci&oacute;n de fotograf&iacute;as ser&aacute; a partir del  12 de febrero al domingo 10 de marzo de 2019 (23:00hrs)<br>
 					</strong></p><br>
 				<p><a style="color: darkred" href="<?php echo Yii::app()->baseUrl;?>/index.php/site/terminos_condiciones"><strong>Bases completas del concurso</strong></a></p>
 			</div>
@@ -264,7 +249,7 @@
 					</div>
 				</div>
 			</div>
-
+		
 		</div>
 	</div>
 </section>
@@ -343,23 +328,40 @@
 <!-- Medios Section -->
 <section id="medios" class="content-section text-center">
 	<div class="medios-header row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h2>MEDIOS</h2>
-			</div>
+		<div class="col-lg-8 col-lg-offset-2">
+			<h2>MEDIOS</h2>
+		</div>
 	</div>
 	<div class="medios-content row">
-		<div class="col-lg-4 col-md-6 col-xs-12 text-center">
+	  <div class="col-lg-2 col-md-6 col-xs-12 text-center">
 			<i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary y"></i>
 			<h3>Noticias</h3>
+			<p><a href="descargar/Boletin282_MNATURA5.pdf" target="_blank" style="color: darkred">Boletín de prensa</a></p>
 		</div>
-		<div class="col-lg-4 col-md-6 col-xs-12 text-center">
+		<div class="col-lg-2 col-md-6 col-xs-12 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-file-audio-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
+                    <h3>Spot</h3>
+                    <p>
+                    <audio src="descargar/SpotConcursoMN5.mp3" preload="auto" controls style="width:100%"></audio>
+                    </p>
+                </div>
+            </div>
+		<div class="col-lg-5 col-md-6 col-xs-12 text-center">
 			<i class="fa fa-4x fa-file-video-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
-			<h3>Videos</h3>
+			<h3>Video</h3>
+			  <div class="list-group">
+                 <iframe width="60%" height="200" src="https://www.youtube-nocookie.com/embed/LUBA7wQjyOI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              </div>
 		</div>
 		
-		<div class="col-lg-4 col-md-6 col-xs-12 text-center">
+		<div class="col-lg-3 col-md-6 col-xs-12 text-center">
 			<i class="fa fa-4x fa-file-image-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
 			<h3>Anuncios</h3>
+			<div class="list-group">
+				<a class="list-group-item sb" href="descargar/banner944x300.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> 944 x 300 px</a>
+				<a class="list-group-item sb" href="descargar/mediacarta.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> media carta</a>
+			</div>
 		</div>
 	</div>
 </section>

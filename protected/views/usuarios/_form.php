@@ -18,7 +18,9 @@
 
     <?php echo $form->errorSummary($model, "", "", array('class' => "alert alert-danger btn-lg text-left")); ?>
 
-    <?php if(Usuarios::deboActualizarFechaNac($model->fecha_nac) && !$model->isNewRecord) { ?>
+    <?php if(Usuarios::deboActualizarFechaNac($model->fecha_nac) && !$model->isNewRecord) {
+        $model->fecha_nac = strftime('%Y-%m-%d', time());
+        ?>
         <hr />
         <div class="form-group">
             <div class="col-sm-12">
@@ -61,7 +63,9 @@
         </div>
     </div>
 
-    <?php if ($model->isNewRecord) { ?>
+    <?php if ($model->isNewRecord) {
+        $model->fecha_nac = strftime('%Y-%m-%d', time());
+        ?>
         <h3 class="text-danger">Los siguientes campos <strong>no pueden</strong> ser modificados una vez creado el registro.</h3>
 
 
@@ -119,13 +123,7 @@
                 <?php echo $form->checkBox($model,'acepto_terminos'); ?>
             </div>
         </div>
-
-        <div class="form-group">
-            <?php echo $form->labelEx($model,'distribucion', array('class'=>'col-sm-11 text-right')); ?>
-            <div class="col-sm-1">
-                <?php echo $form->checkBox($model,'distribucion'); ?>
-            </div>
-        </div>
+    
     <?php } else { //pone la confirmación del passwd ?>
         <br>Si no deseas cambiar tu contrase&ntilde;a por favor deja estos campos vac&iacute;os.
         <div class="form-group">
