@@ -195,38 +195,41 @@
 	<div class="container">
 		
 		<div class="row">
-		<div class="col-xs-6 col-md-2 col-lg-2 sponsers">
+		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
 			<a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_conabio.jpg" alt="Conabio" class="img-responsive"></a>
 		</div>
-		<div class="col-xs-6 col-md-2 col-lg-2 sponsers">
+		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
 			<a href="https://fmcn.org/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_fondo.jpg" alt="Fondo Mexicano para la Conservación" class="img-responsive"></a>
 		</div>
-		<div class="col-xs-6 col-md-2 col-lg-2 sponsers">
+		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
 			<a href=""><img src="<?php echo $yii_path; ?>/img/logo_fundacion_cr.jpg" alt="Fundación Claudia y Roberto Hernández" class="img-responsive"></a>
 		</div>
-		<div class="col-xs-6 col-md-2 col-lg-2 sponsers">
+		<div class="col-xs-3 col-md-2 col-lg-2 sponsers">
 			<a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_epson.jpg" alt="Epson" class="img-responsive"></a>
 		</div>
 		<div class="col-xs-6 col-md-4 col-lg-4 sponsers">
 			<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_secmedioam_cdmx.jpg" alt="SEDEMA" class="img-responsive"></a>
 		</div>
 
-		<div class="col-xs-6 col-md-2 col-lg-2 sponsers">
+		<div class="col-xs-3 col-md-2 col-lg-2 sponsers">
 			<a href="https://www.nationalgeographic.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_natgeo.jpg" alt="National Geographic" class="img-responsive"></a>
 		</div>
-		<div class="col-xs-6 col-md-2 col-lg-2 sponsers">
+		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
 			<a href="http://www.ngenespanol.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_natgeo_esp.jpg" alt="National Geographic en español" class="img-responsive"></a>
 		</div>
-		<div class="col-xs-6 col-md-2 col-lg-2 sponsers">
+		<div class="col-xs-4 col-md-1 col-lg-1 sponsers">
 			<a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_fundacion_acir.jpg" alt="Fundación Acir" class="img-responsive"></a>
 		</div>
-		<div class="col-xs-6 col-md-2 col-lg-2 sponsers">
+		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
+			<a href="https://www.teleurban.tv" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_teleurban.jpg" alt="Tele Urban" class="img-responsive"></a>
+		</div>
+		<div class="col-xs-4 col-md-1 col-lg-1 sponsers">
 			<a href="https://www.biodiversidad.gob.mx/especies/Invasoras/proyecto.html" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_gef.jpg" alt="gef" sclass="img-responsive"></a>
 		</div>
-		<div class="col-xs-6 col-md-2 col-lg-2 sponsers">
+		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
 			<a href="http://www.mx.undp.org" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_pnud.jpg" alt="PNUD" class="img-responsive"></a>
 		</div>
-		<div class="col-xs-6 col-md-2 col-lg-2 sponsers">
+		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
 			<a href="http://www.mexicanisimo.com.mx" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_mexicanisimo.jpg" alt="Mexicanísimo" class="img-responsive"></a>
 		</div>
 		</div>
@@ -248,6 +251,7 @@
 				<li><a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a> </li>
 				<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic en Espa&ntilde;ol</a></li>
 				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
+				<li><a href="https://www.teleurban.tv" target="_blank">Tele Urban</a></li>
 				<li><a href="https://www.biodiversidad.gob.mx/especies/Invasoras/proyecto.html" target="_blank">gef</a></li>
 				<li><a href="http://www.mx.undp.org" target="_blank">PNUD</a></li>
 				<li><a href="http://www.mexicanisimo.com.mx" target="_blank">Mexicanísimo</a></li>
