@@ -359,7 +359,7 @@
 			<i class="fa fa-4x fa-file-image-o wow bounceIn text-primary y" data-wow-delay=".1s"></i>
 			<h3>Anuncios</h3>
 			<div class="list-group">
-				<a class="list-group-item sb" href="descargar/banner944x300.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> 944 x 300 px</a>
+				<a class="list-group-item sb" href="descargar/banner1900x708.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> 1900 x 708 px</a>
 				<a class="list-group-item sb" href="descargar/mediacarta.jpg" target="_blank"><i class="fa fa-download fa-fw"></i> media carta</a>
 			</div>
 		</div>
