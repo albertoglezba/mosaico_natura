@@ -47,7 +47,7 @@
                       
           
 		  <h4 style="color:darkred";>CARACTERÍSTICAS DE LAS FOTOGRAFÍAS</h4>
-                      <p>Las  fotografías deben de haber sido tomadas en alta resolución: 3,000 pixeles como  mínimo en el lado más largo en formato jpg o tif.</p>
+                      <p>Las  fotografías deben de haber sido tomadas en alta resolución: 3,000 pixeles como  mínimo en el lado más largo en formato jpg<strike> o tif</strike></p>
                       <p>Los  participantes podrán utilizar ajustes generales (exposición, saturación,  contraste, etcétera). <strong>No se aceptarán  fotografías que hayan sido manipuladas digitalmente eliminando partes de la  imagen o sustituirlas con otros elementos diferentes a la imagen original.</strong></p>
                       <p>Las  fotografías participantes deberán cumplir con lo siguiente: </p>
                       <p>Ser inéditas  y originales:</p>

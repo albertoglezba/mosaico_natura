@@ -98,7 +98,7 @@
 	
 	<?php if ($adulto == "1") { ?>
 		<h3 class="text-left text-success"><b>Segundo paso:</b> selecciona una fotografía <br />
-			<small class="text-left text-warning">Debe ser un archivo JPG o TIFF con 3000px como mínimo en su lado más grande</small>
+			<small class="text-left text-warning">Debe ser un archivo JPG con 3000px como mínimo en su lado más grande</small>
 		</h3>
 	
 	<?php } ?>
@@ -193,10 +193,10 @@
 					image.onload    = function(){
 						if (adulto == "1"){  // Para adultos
 							if (image.width >= 3000 || image.height >= 3000){
-								if ((file.type == 'image/jpeg')||(file.type == 'image/tiff')){
+								if ((file.type == 'image/jpeg')){
 									toAWS();
 								} else {
-									$('#label_file').removeClass('hidden').empty().html('Solo se admiten extensiones .jpg o .tiff');
+									$('#label_file').removeClass('hidden').empty().html('Solo se admiten extensiones .jpg');
 									return false;
 								}
 							} else {
@@ -205,10 +205,10 @@
 							}
 							
 						} else {  // Para jovenes
-							if ((file.type == 'image/jpeg')||(file.type == 'image/tiff')){
+							if ((file.type == 'image/jpeg')){
 								toAWS();
 							} else {
-								$('#label_file').removeClass('hidden').empty().html('Solo se admiten extensiones .jpg o .tiff');
+								$('#label_file').removeClass('hidden').empty().html('Solo se admiten extensiones .jpg');
 								return false;
 							}
 						}
