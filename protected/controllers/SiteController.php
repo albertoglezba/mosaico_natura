@@ -259,4 +259,11 @@ class SiteController extends Controller
 	{
 		$this->render('aws');
 	}
+	
+	public function actionEstadisticas(){
+		$stats = Usuarios::model()->dameEstadisticas();
+		$this->render('estadisticas',array(
+					'stats'=>$stats
+			));
+	}
 }
