@@ -199,7 +199,7 @@
 			<a href="http://www.gob.mx/conabio/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_conabio.jpg" alt="Conabio" class="img-responsive"></a>
 		</div>
 		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
-			<a href="https://fmcn.org/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_fondo.jpg" alt="Fondo Mexicano para la Conservación" class="img-responsive"></a>
+			<a href="https://www.gob.mx/conanp" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_conanp.jpg" alt="Comisión Nacional de Áreas Naturales Protegidas" class="img-responsive"></a>
 		</div>
 		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
 			<a href=""><img src="<?php echo $yii_path; ?>/img/logo_fundacion_cr.jpg" alt="Fundación Claudia y Roberto Hernández" class="img-responsive"></a>
@@ -211,7 +211,11 @@
 			<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_secmedioam_cdmx.jpg" alt="SEDEMA" class="img-responsive"></a>
 		</div>
 
-		<div class="col-xs-3 col-md-2 col-lg-2 sponsers">
+			
+		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
+			<a href="https://fmcn.org/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_fondo.jpg" alt="Fondo Mexicano para la Conservación" class="img-responsive"></a>
+		</div>
+		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
 			<a href="https://www.nationalgeographic.com/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_natgeo.jpg" alt="National Geographic" class="img-responsive"></a>
 		</div>
 		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
@@ -220,13 +224,13 @@
 		<div class="col-xs-4 col-md-1 col-lg-1 sponsers">
 			<a href="http://www.fundacionacir.org.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_fundacion_acir.jpg" alt="Fundación Acir" class="img-responsive"></a>
 		</div>
-		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
+		<div class="col-xs-4 col-md-1 col-lg-1 sponsers">
 			<a href="https://www.teleurban.tv" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_teleurban.jpg" alt="Tele Urban" class="img-responsive"></a>
 		</div>
 		<div class="col-xs-4 col-md-1 col-lg-1 sponsers">
 			<a href="https://www.biodiversidad.gob.mx/especies/Invasoras/proyecto.html" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_gef.jpg" alt="gef" sclass="img-responsive"></a>
 		</div>
-		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
+		<div class="col-xs-4 col-md-1 col-lg-1 sponsers">
 			<a href="http://www.mx.undp.org" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_pnud.jpg" alt="PNUD" class="img-responsive"></a>
 		</div>
 		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
