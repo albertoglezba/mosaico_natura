@@ -193,7 +193,7 @@
 					image.onload    = function(){
 						if (adulto == "1"){  // Para adultos
 							if (image.width >= 3000 || image.height >= 3000){
-								if (file.type == 'image/jpeg'){
+								if ((file.type == 'image/jpeg')){
 									toAWS();
 								} else {
 									$('#label_file').removeClass('hidden').empty().html('Solo se admiten extensiones .jpg');
@@ -205,7 +205,7 @@
 							}
 							
 						} else {  // Para jovenes
-							if (file.type == 'image/jpeg'){
+							if ((file.type == 'image/jpeg')){
 								toAWS();
 							} else {
 								$('#label_file').removeClass('hidden').empty().html('Solo se admiten extensiones .jpg');

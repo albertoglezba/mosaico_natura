@@ -336,4 +336,87 @@ class Usuarios extends CActiveRecord
         }
         return $categorias;
     }
+    
+    public static function dameEstadisticas(){
+	    $q = "
+SELECT 'Número de fotografías totales' as titulo, COUNT(*) as conteo FROM fotos
+union
+-- SELECT 'Número de videos totales', COUNT(*) FROM videos
+-- union
+SELECT 'Número total de registros NUEVOS' as titulo, count(*)  as conteo FROM usuarios WHERE fec_act > '2019-02-08 23:59:30'
+union
+SELECT 'Registros NUEVOS Adultos' as titulo, count(*)  as conteo FROM usuarios WHERE fec_act > '2019-02-08 23:59:30' AND fecha_nac < '2001-03-10'
+union
+SELECT 'Registros NUEVOS Jóvenes' as titulo, count(*)  as conteo FROM usuarios WHERE fec_act > '2019-02-08 23:59:30' AND fecha_nac > '2001-03-10' AND fecha_nac < '2013-03-10'
+union
+SELECT 'Número de participantes NUEVOS confirmados' as titulo, count(*) as conteo FROM usuarios WHERE fec_act > '2019-02-08 23:59:30' AND confirmo=1
+union
+SELECT  'Adultos NUEVOS confirmados' as titulo, count(*)  as conteo FROM usuarios WHERE fec_act > '2019-02-08 23:59:30' AND fecha_nac < '2001-03-10' AND confirmo=1
+union
+SELECT 'Jóvenes NUEVOS confirmados' as titulo, count(*)  as conteo FROM usuarios WHERE fec_act> '2019-02-08 23:59:30' AND fecha_nac > '2001-03-10' AND fecha_nac < '2013-03-10' AND confirmo=1
+union
+SELECT 'Participantes activos con al menos una fotografía o video' as titulo, COUNT(DISTINCT(ids))  as conteo FROM (
+SELECT u.id AS ids FROM usuarios u RIGHT JOIN fotos f ON f.usuario_id=u.id UNION
+SELECT u.id AS ids FROM usuarios u RIGHT JOIN videos v ON v.usuario_id=u.id) AS ids
+union
+-- participantes que regresan
+select 'Participantes de antiguos concursos que participaron de nuevo' as titulo, count(*)  as conteo from (select count(usuarios.id) from usuarios join fotos on usuarios.id= usuario_id WHERE usuarios.fec_act < '2019-02-08 23:59:30' group by usuarios.id) as t1
+union
+-- Total de fotografías por categoría (adultos)
+select 'Total de fotografías por categoría (adultos)' as titulo,0 as conteo
+union
+SELECT CONCAT(c.nombre, '') as titulo, COUNT(*)  as conteo FROM fotos f LEFT JOIN categorias c ON c.id=f.categoria_id WHERE categoria_id IS NOT NULL GROUP BY categoria_id
+union
+select 'Total de fotografías por categoría libre (jovenes)' as titulo,0 as conteo
+union
+SELECT 'Total de fotografías de jóvenes' as titulo, COUNT(*) as conteo FROM fotos WHERE categoria_id IS NULL
+union
+select 'Promedio de edades de los participantes' as titulo,0 as conteo
+union
+SELECT 'Promedio edad de participantes confirmados adultos' as titulo, (2019 - AVG(substring(fecha_nac, 1, 4))) as conteo FROM usuarios WHERE fecha_nac < '2001-03-10' AND usuarios.id IN
+((SELECT ids FROM(
+SELECT u.id AS ids FROM usuarios u RIGHT JOIN fotos f ON f.usuario_id=u.id UNION
+SELECT u.id AS ids FROM usuarios u RIGHT JOIN videos v ON v.usuario_id=u.id) AS ids))
+union
+SELECT 'Promedio edad de participantes confirmados jóvenes', (2019 - AVG(substring(fecha_nac, 1, 4)))  as conteo FROM usuarios WHERE fecha_nac > '2001-03-10' AND fecha_nac < '2013-03-10' AND usuarios.id IN
+((SELECT ids FROM(
+SELECT u.id AS ids FROM usuarios u RIGHT JOIN fotos f ON f.usuario_id=u.id UNION
+SELECT u.id AS ids FROM usuarios u RIGHT JOIN videos v ON v.usuario_id=u.id) AS ids))
+union
+-- Participantes activos por estado:
+select 'Participantes activos por estado' as titulo,0 as conteo
+union
+SELECT estado as titulo, count(*) as conteo FROM usuarios WHERE usuarios.id IN
+((SELECT ids FROM(
+SELECT u.id AS ids FROM usuarios u RIGHT JOIN fotos f ON f.usuario_id=u.id UNION
+SELECT u.id AS ids FROM usuarios u RIGHT JOIN videos v ON v.usuario_id=u.id) AS ids)) GROUP BY estado
+union
+-- Participantes adultos activos por estado:
+select 'Participantes adultos activos por estado' as titulo,0 as conteo
+union
+SELECT estado, count(*) as conteo FROM usuarios WHERE fecha_nac < '2001-03-10'  AND usuarios.id IN
+((SELECT ids FROM(
+SELECT u.id AS ids FROM usuarios u RIGHT JOIN fotos f ON f.usuario_id=u.id UNION
+SELECT u.id AS ids FROM usuarios u RIGHT JOIN videos v ON v.usuario_id=u.id) AS ids)) GROUP BY estado
+union
+-- Participantes jóvenes activos por estado:
+select 'Participantes jóvenes activos por estado',0 as conteo
+union
+SELECT estado as titulo, count(*) FROM usuarios WHERE fecha_nac > '2001-03-10' AND fecha_nac < '2013-03-10' AND usuarios.id IN
+((SELECT ids FROM(
+SELECT u.id AS ids FROM usuarios u RIGHT JOIN fotos f ON f.usuario_id=u.id UNION
+SELECT u.id AS ids FROM usuarios u RIGHT JOIN videos v ON v.usuario_id=u.id) AS ids)) GROUP BY estado
+union
+-- medio de difuision
+select 'Medio de difusión para participantes NUEVOS' as titulo,0 as conteo
+union
+select difusion as titulo, count(difusion) as conteo from usuarios WHERE fec_act > '2019-02-08 23:59:30' group by difusion
+union
+select 'Medio de difusión para participantes con al  menos una fotografía' as titulo,0 as conteo
+union
+select difusion as titulo, count(*)  as conteo from usuarios WHERE fec_act > '2019-02-08 23:59:30' and id in (select distinct usuario_id from fotos) group by difusion;
+";
+	    $stats = Yii::app()->db->createCommand($q)->queryAll();
+	    return $stats;
+    }
 }
