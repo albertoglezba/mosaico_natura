@@ -207,8 +207,11 @@
 		<div class="col-xs-3 col-md-2 col-lg-2 sponsers">
 			<a href="https://epson.com.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_epson.jpg" alt="Epson" class="img-responsive"></a>
 		</div>
-		<div class="col-xs-6 col-md-4 col-lg-4 sponsers">
+		<div class="col-xs-6 col-md-3 col-lg-3 sponsers">
 			<a href="http://www.sedema.cdmx.gob.mx/" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_secmedioam_cdmx.jpg" alt="SEDEMA" class="img-responsive"></a>
+		</div>
+		<div class="col-xs-4 col-md-1 col-lg-1 sponsers">
+			<a href="https://naucalpan.gob.mx" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_naucalpan.jpg" alt="Naucalpan de Juárez" class="img-responsive"></a>
 		</div>
 
 			
@@ -236,6 +239,9 @@
 		<div class="col-xs-4 col-md-2 col-lg-2 sponsers">
 			<a href="http://www.mexicanisimo.com.mx" target="_blank"><img src="<?php echo $yii_path; ?>/img/logo_mexicanisimo.jpg" alt="Mexicanísimo" class="img-responsive"></a>
 		</div>
+		
+			
+			
 		</div>
 		
 	</div>
