@@ -254,10 +254,11 @@
 			<p>NUESTROS COLABORADORES</p>
 			<ul>
 				<li><a href="http://www.gob.mx/conabio/" target="_blank"><span class="conabio">Conabio</span></a></li>
+				<li><a href="http://www.gob.mx/conanp/" target="_blank"><span class="conabio">Conanp</span></a></li>
 				<li><a href="https://fmcn.org/" target="_blank">Fondo Mexicano para la Conservación de la Naturaleza</a></li>
 				<li style="color: white">Fundación Claudia y Roberto Hernández</li>
 				<li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
-				<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank">Secretaría del Medio Ambiente</a></li>
+				<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank">Secretaría de Medio Ambiente de la CDMX</a></li>
 				<li><a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a> </li>
 				<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic en Espa&ntilde;ol</a></li>
 				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>
