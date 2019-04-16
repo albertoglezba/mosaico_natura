@@ -110,6 +110,7 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ganadores</a>
 					<ul class="dropdown-menu">
+						<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2019">Ganadores del V concurso</a></li>
 						<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2018">Ganadores del IV concurso</a></li>
 						<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2017">Ganadores del III concurso</a></li>
 						<li><a href="<?php echo $yii_path; ?>/ganadores_anteriores.html#ganadores_2016">Ganadores del II concurso</a></li>
@@ -254,10 +255,12 @@
 			<p>NUESTROS COLABORADORES</p>
 			<ul>
 				<li><a href="http://www.gob.mx/conabio/" target="_blank"><span class="conabio">Conabio</span></a></li>
-				<li><a href="https://fmcn.org/" target="_blank">Fondo Mexicano para la Conservación de la Naturaleza</a></li>
+				<li><a href="http://www.gob.mx/conabio/" target="_blank"><span class="conabio">Conanp</span></a></li>
 				<li style="color: white">Fundación Claudia y Roberto Hernández</li>
 				<li><a href="https://epson.com.mx/" target="_blank">Epson</a></li>
-				<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank">Secretaría del Medio Ambiente</a></li>
+				<li><a href="http://www.sedema.cdmx.gob.mx/" target="_blank">Secretaría del Medio Ambiente de la CDMX</a></li>
+				<li><a href="https://naucalpan.gob.mx" target="_blank">Secretaría de Cultura del Ayuntamiento de Naucalpan de Juárez</a></li>
+				<li><a href="https://fmcn.org/" target="_blank">Fondo Mexicano para la Conservación de la Naturaleza</a></li>
 				<li><a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a> </li>
 				<li><a href="http://www.ngenespanol.com/" target="_blank">National Geographic en Espa&ntilde;ol</a></li>
 				<li><a href="http://www.fundacionacir.org.mx/" target="_blank">Fundaci&oacute;n ACIR</a></li>

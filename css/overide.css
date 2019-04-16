@@ -666,6 +666,11 @@ footer ul{
 	margin-bottom:10px;
 }
 
+
+#ganadores {
+	color: #fff !important;
+}
+
 @media(min-width:992px){
 	
 	.nav li a{
