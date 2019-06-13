@@ -270,27 +270,26 @@
 			
 			<div class="col-md-4">
 				<h3><a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/7796/index.html" style="color: darkred" target="_blank">&quot;Visiones de nuestra naturaleza I&quot;</a></h3>
-				<p>Ganadores del Primer Concurso Nacional <br> de Fotograf&iacute;a de Naturaleza</p>
+				<p>Finalistas del Primer Concurso Nacional <br> de Fotograf&iacute;a de Naturaleza</p>
 				<hr>
 				<h3><a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/14172/index.html" style="color: darkred" target="_blank">&quot;Visiones de nuestra naturaleza IV&quot;</a></h3>
-				<p>Ganadores del Cuarto Concurso Nacional <br> de Fotograf&iacute;a de Naturaleza</p>
+				<p>Finalistas del Cuarto Concurso Nacional <br> de Fotograf&iacute;a de Naturaleza</p>
 			</div>
 			
 			
 			<div class="col-md-4">
 				<h3><a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/12546/index.html" style="color: darkred" target="_blank">&quot;Visiones de nuestra naturaleza II&quot;</a></h3>
-				<p>Ganadores del Segundo Concurso Nacional<br>de Fotograf&iacute;a de Naturaleza</p>
+				<p>Finalistas del Segundo Concurso Nacional<br>de Fotograf&iacute;a de Naturaleza</p>
 				<hr>
-				<h3 style="color: darkred">&quot;Tierra de Sol: Los paisajes de M&eacute;xico vistos por j&oacute;venes fot&oacute;grafos y antiguos viajeros&quot;</h3>
-				<p>Exposici&oacute;n permanente<br>
-					Lugar: Galer&iacute;a CasaCEM<br>Avenida Chapultepec Sur 376<br>Guadalajara, Jalisco</p>
+				<h3><a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/14865/index.html" style="color: darkred" target="_blank">&quot;Visiones de nuestra naturaleza V&quot;</a></h3>
+				<p>Finalistas del Quinto Concurso Nacional<br>de Fotograf&iacute;a de Naturaleza</p>
 			
 			</div>
 			
 			
 			<div class="col-md-4">
 				<h3><a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/13010/index.html" style="color: darkred" target="_blank">&quot;Visiones de nuestra naturaleza III&quot;</a></h3>
-				<p>Ganadores del Tercer Concurso Nacional<br>de Fotograf&iacute;a de Naturaleza</p>
+				<p>Finalistas del Tercer Concurso Nacional<br>de Fotograf&iacute;a de Naturaleza</p>
 				<hr>
 				<h3 style="color: darkred">ANTERIORES</h3>
 				<p><a href="http://bdi.conabio.gob.mx/fotoweb/archives/5032-Exposiciones/Exposiciones/25%20Miradas%20al%20Bosque/" style="color: darkred" target="_blank">&quot;25 Miradas al Bosque&quot;</a></p>
