@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	cropToFit="false"
+	watermarkPath="/Volumes/Diseño Grafico/01_Diseño/Fabiola/00_CONABIO/ma_conabio.png"
+	thumbFrameColor="rgba(255,212,0,1)"
+	showOpenButton="true"
+	useThumbDots="false"
+	useFullscreenExpand="false"
+	backgroundColor="rgba(45,44,39,1)"
+	showExpandButton="true"
+	screenMode="AUTO"
+	galleryTitlePosition="NONE"
+	showThumbsButton="true"
+	expandInNewPage="AUTO"
+	captionPosition="NONE"
+	showInfoButton="false"
+	showNavButtons="false"
+	useWatermark="true"
+	watermarkHAlign="LEFT"
+	watermarkVAlign="TOP"
+	buttonBarPosition="TOP"
+	showSplashPage="AUTO"
+	flickrShowTitle="false"
+
+>
+  <image imageURL="images/69_1ER_MACRO_2019-02-14_125926_154.jpg"
+	thumbURL="thumbs/69_1ER_MACRO_2019-02-14_125926_154.jpg"
+	linkURL="images/69_1ER_MACRO_2019-02-14_125926_154.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/69_1ER_MACRO_2019-02-14_125926_154.jpg">
+    <title><![CDATA[69_1ER_MACRO_2019-02-14_125926_154]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/71_2DO_MACRO_2019-03-02_113647_14942.jpg"
+	thumbURL="thumbs/71_2DO_MACRO_2019-03-02_113647_14942.jpg"
+	linkURL="images/71_2DO_MACRO_2019-03-02_113647_14942.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/71_2DO_MACRO_2019-03-02_113647_14942.jpg">
+    <title><![CDATA[71_2DO_MACRO_2019-03-02_113647_14942]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/74_3ER_MACRO_2019-03-10_234918_7967.jpg"
+	thumbURL="thumbs/74_3ER_MACRO_2019-03-10_234918_7967.jpg"
+	linkURL="images/74_3ER_MACRO_2019-03-10_234918_7967.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/74_3ER_MACRO_2019-03-10_234918_7967.jpg">
+    <title><![CDATA[74_3ER_MACRO_2019-03-10_234918_7967]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

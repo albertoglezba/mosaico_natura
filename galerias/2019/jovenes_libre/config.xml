@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	cropToFit="false"
+	watermarkPath="/Volumes/Diseño Grafico/01_Diseño/Fabiola/00_CONABIO/ma_conabio.png"
+	thumbFrameColor="rgba(255,212,0,1)"
+	showOpenButton="true"
+	useThumbDots="false"
+	useFullscreenExpand="false"
+	backgroundColor="rgba(45,44,39,1)"
+	showExpandButton="true"
+	screenMode="AUTO"
+	galleryTitlePosition="NONE"
+	showThumbsButton="true"
+	expandInNewPage="AUTO"
+	captionPosition="NONE"
+	showInfoButton="false"
+	showNavButtons="false"
+	useWatermark="true"
+	watermarkHAlign="LEFT"
+	watermarkVAlign="TOP"
+	buttonBarPosition="TOP"
+	showSplashPage="AUTO"
+	flickrShowTitle="false"
+
+>
+  <image imageURL="images/80_1ER_JUV_2019-03-10_234417_15626.jpg"
+	thumbURL="thumbs/80_1ER_JUV_2019-03-10_234417_15626.jpg"
+	linkURL="images/80_1ER_JUV_2019-03-10_234417_15626.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/jovenes/images/80_1ER_JUV_2019-03-10_234417_15626.jpg">
+    <title><![CDATA[80_1ER_JUV_2019-03-10_234417_15626]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/81_2DO_JUV_2019-03-10_171307_15557.jpg"
+	thumbURL="thumbs/81_2DO_JUV_2019-03-10_171307_15557.jpg"
+	linkURL="images/81_2DO_JUV_2019-03-10_171307_15557.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/jovenes/images/81_2DO_JUV_2019-03-10_171307_15557.jpg">
+    <title><![CDATA[81_2DO_JUV_2019-03-10_171307_15557]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/83_3ER_JUV_2019-03-09_001838_15374.jpg"
+	thumbURL="thumbs/83_3ER_JUV_2019-03-09_001838_15374.jpg"
+	linkURL="images/83_3ER_JUV_2019-03-09_001838_15374.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/jovenes/images/83_3ER_JUV_2019-03-09_001838_15374.jpg">
+    <title><![CDATA[83_3ER_JUV_2019-03-09_001838_15374]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

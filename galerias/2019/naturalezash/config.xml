@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	cropToFit="false"
+	watermarkPath="/Volumes/Diseño Grafico/01_Diseño/Fabiola/00_CONABIO/ma_conabio.png"
+	thumbFrameColor="rgba(255,212,0,1)"
+	showOpenButton="true"
+	useThumbDots="false"
+	useFullscreenExpand="false"
+	backgroundColor="rgba(45,44,39,1)"
+	showExpandButton="true"
+	screenMode="AUTO"
+	galleryTitlePosition="NONE"
+	showThumbsButton="true"
+	expandInNewPage="AUTO"
+	captionPosition="NONE"
+	showInfoButton="false"
+	showNavButtons="false"
+	useWatermark="true"
+	watermarkHAlign="LEFT"
+	watermarkVAlign="TOP"
+	buttonBarPosition="TOP"
+	showSplashPage="AUTO"
+	flickrShowTitle="false"
+
+>
+  <image imageURL="images/31_1ER_NATYHUM_2019-03-03_145558_12721.jpg"
+	thumbURL="thumbs/31_1ER_NATYHUM_2019-03-03_145558_12721.jpg"
+	linkURL="images/31_1ER_NATYHUM_2019-03-03_145558_12721.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/31_1ER_NATYHUM_2019-03-03_145558_12721.jpg">
+    <title><![CDATA[31_1ER_NATYHUM_2019-03-03_145558_12721]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/32_2DO_NATYHUM_2019-03-11_182203_3497.jpg"
+	thumbURL="thumbs/32_2DO_NATYHUM_2019-03-11_182203_3497.jpg"
+	linkURL="images/32_2DO_NATYHUM_2019-03-11_182203_3497.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/32_2DO_NATYHUM_2019-03-11_182203_3497.jpg">
+    <title><![CDATA[32_2DO_NATYHUM_2019-03-11_182203_3497]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/34_3ER_NATYHUM_2019-02-26_221510_14821.jpg"
+	thumbURL="thumbs/34_3ER_NATYHUM_2019-02-26_221510_14821.jpg"
+	linkURL="images/34_3ER_NATYHUM_2019-02-26_221510_14821.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/34_3ER_NATYHUM_2019-02-26_221510_14821.jpg">
+    <title><![CDATA[34_3ER_NATYHUM_2019-02-26_221510_14821]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

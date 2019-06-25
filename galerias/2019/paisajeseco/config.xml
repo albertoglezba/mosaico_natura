@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	cropToFit="false"
+	watermarkPath="/Volumes/Diseño Grafico/01_Diseño/Fabiola/00_CONABIO/ma_conabio.png"
+	thumbFrameColor="rgba(255,212,0,1)"
+	showOpenButton="true"
+	useThumbDots="false"
+	useFullscreenExpand="false"
+	backgroundColor="rgba(45,44,39,1)"
+	showExpandButton="true"
+	screenMode="AUTO"
+	galleryTitlePosition="NONE"
+	showThumbsButton="true"
+	expandInNewPage="AUTO"
+	captionPosition="NONE"
+	showInfoButton="false"
+	showNavButtons="false"
+	useWatermark="true"
+	watermarkHAlign="LEFT"
+	watermarkVAlign="TOP"
+	buttonBarPosition="TOP"
+	showSplashPage="AUTO"
+	flickrShowTitle="false"
+
+>
+  <image imageURL="images/58_1ER_PAISA_2019-03-01_143338_9732.jpg"
+	thumbURL="thumbs/58_1ER_PAISA_2019-03-01_143338_9732.jpg"
+	linkURL="images/58_1ER_PAISA_2019-03-01_143338_9732.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/58_1ER_PAISA_2019-03-01_143338_9732.jpg">
+    <title><![CDATA[58_1ER_PAISA_2019-03-01_143338_9732]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/59_2DO_PAISA_2019-03-08_193611_15093.jpg"
+	thumbURL="thumbs/59_2DO_PAISA_2019-03-08_193611_15093.jpg"
+	linkURL="images/59_2DO_PAISA_2019-03-08_193611_15093.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/59_2DO_PAISA_2019-03-08_193611_15093.jpg">
+    <title><![CDATA[59_2DO_PAISA_2019-03-08_193611_15093]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/60_3ER_PAISA_2019-03-09_171916_5662.jpg"
+	thumbURL="thumbs/60_3ER_PAISA_2019-03-09_171916_5662.jpg"
+	linkURL="images/60_3ER_PAISA_2019-03-09_171916_5662.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/60_3ER_PAISA_2019-03-09_171916_5662.jpg">
+    <title><![CDATA[60_3ER_PAISA_2019-03-09_171916_5662]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

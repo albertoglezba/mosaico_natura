@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	cropToFit="false"
+	watermarkPath="/Volumes/Diseño Grafico/01_Diseño/Fabiola/00_CONABIO/ma_conabio.png"
+	thumbFrameColor="rgba(255,212,0,1)"
+	showOpenButton="true"
+	useThumbDots="false"
+	useFullscreenExpand="false"
+	backgroundColor="rgba(45,44,39,1)"
+	showExpandButton="true"
+	screenMode="AUTO"
+	galleryTitlePosition="NONE"
+	showThumbsButton="true"
+	expandInNewPage="AUTO"
+	captionPosition="NONE"
+	showInfoButton="false"
+	showNavButtons="false"
+	useWatermark="true"
+	watermarkHAlign="LEFT"
+	watermarkVAlign="TOP"
+	buttonBarPosition="TOP"
+	showSplashPage="AUTO"
+	flickrShowTitle="false"
+
+>
+  <image imageURL="images/17_1ER_SUB_2019-03-09_132000_132.jpg"
+	thumbURL="thumbs/17_1ER_SUB_2019-03-09_132000_132.jpg"
+	linkURL="images/17_1ER_SUB_2019-03-09_132000_132.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/17_1ER_SUB_2019-03-09_132000_132.jpg">
+    <title><![CDATA[17_1ER_SUB_2019-03-09_132000_132]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/23_2DO_SUB_2019-02-28_113419_1738.jpg"
+	thumbURL="thumbs/23_2DO_SUB_2019-02-28_113419_1738.jpg"
+	linkURL="images/23_2DO_SUB_2019-02-28_113419_1738.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/23_2DO_SUB_2019-02-28_113419_1738.jpg">
+    <title><![CDATA[23_2DO_SUB_2019-02-28_113419_1738]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/25_3ER_SUB_2019-03-10_120857_15111.jpg"
+	thumbURL="thumbs/25_3ER_SUB_2019-03-10_120857_15111.jpg"
+	linkURL="images/25_3ER_SUB_2019-03-10_120857_15111.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/25_3ER_SUB_2019-03-10_120857_15111.jpg">
+    <title><![CDATA[25_3ER_SUB_2019-03-10_120857_15111]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

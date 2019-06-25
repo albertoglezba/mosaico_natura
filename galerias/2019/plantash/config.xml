@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	cropToFit="false"
+	watermarkPath="/Volumes/Diseño Grafico/01_Diseño/Fabiola/00_CONABIO/ma_conabio.png"
+	thumbFrameColor="rgba(255,212,0,1)"
+	showOpenButton="true"
+	useThumbDots="false"
+	useFullscreenExpand="false"
+	backgroundColor="rgba(45,44,39,1)"
+	showExpandButton="true"
+	screenMode="AUTO"
+	galleryTitlePosition="NONE"
+	showThumbsButton="true"
+	expandInNewPage="AUTO"
+	captionPosition="NONE"
+	showInfoButton="false"
+	showNavButtons="false"
+	useWatermark="true"
+	watermarkHAlign="LEFT"
+	watermarkVAlign="TOP"
+	buttonBarPosition="TOP"
+	showSplashPage="AUTO"
+	flickrShowTitle="false"
+
+>
+  <image imageURL="images/44_1ER_PLYHON_2019-03-08_235138_13929.jpg"
+	thumbURL="thumbs/44_1ER_PLYHON_2019-03-08_235138_13929.jpg"
+	linkURL="images/44_1ER_PLYHON_2019-03-08_235138_13929.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/44_1ER_PLYHON_2019-03-08_235138_13929.jpg">
+    <title><![CDATA[44_1ER_PLYHON_2019-03-08_235138_13929]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/53_2DO_PLYHON_2019-03-06_163841_6302.jpg"
+	thumbURL="thumbs/53_2DO_PLYHON_2019-03-06_163841_6302.jpg"
+	linkURL="images/53_2DO_PLYHON_2019-03-06_163841_6302.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/53_2DO_PLYHON_2019-03-06_163841_6302.jpg">
+    <title><![CDATA[53_2DO_PLYHON_2019-03-06_163841_6302]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/45_3ER_PLYHON_2019-02-13_133934_311.jpg"
+	thumbURL="thumbs/45_3ER_PLYHON_2019-02-13_133934_311.jpg"
+	linkURL="images/45_3ER_PLYHON_2019-02-13_133934_311.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/datos/3. Mosaico-NaturaMexico/5.Concurso_Mosaico_Natura_2018-2019/Exposición/FINAL/baja/45_3ER_PLYHON_2019-02-13_133934_311.jpg">
+    <title><![CDATA[45_3ER_PLYHON_2019-02-13_133934_311]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>
