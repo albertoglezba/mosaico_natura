@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	showAudioButton="true"
+	showInfoButton="true"
+	showNavButtons="true"
+	showAutoPlayButton="true"
+	backButtonPosition="NONE"
+	backButtonUseIcon="true"
+	galleryTitlePosition="OVERLAY"
+	maxThumbColumns="8"
+	enableDirectLinks="true"
+	useFullscreenExpand="true"
+	galleryTitle="Ganadores V Concurso"
+	useThumbDots="false"
+	galleryTitleHAlign="LEFT"
+	captionHAlign="RIGHT"
+	captionPosition="BELOW_IMAGE"
+	maxCaptionHeight="50"
+	backgroundScale="NONE"
+	showAutoPlayStatus="false"
+	autoPlayThumbs="false"
+	loopAudio="false"
+	addSEOContent="false"
+	showSplashPage="NEVER"
+	thumbCornerRadius="4"
+	expandedBackgroundColor="rgba(45,44,39,1)"
+	backgroundColor="rgba(45,44,39,1)"
+
+>
+  <image imageURL="images/08_1ER_FAU_2019-03-07_132022_4831.jpg"
+	thumbURL="thumbs/08_1ER_FAU_2019-03-07_132022_4831.jpg"
+	linkURL="images/08_1ER_FAU_2019-03-07_132022_4831.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/08_1ER_FAU_2019-03-07_132022_4831.jpg">
+    <title><![CDATA[Fauna silvestre | 1er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/12_2DO_FAU_2019-03-10_223349_9621.jpg"
+	thumbURL="thumbs/12_2DO_FAU_2019-03-10_223349_9621.jpg"
+	linkURL="images/12_2DO_FAU_2019-03-10_223349_9621.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/12_2DO_FAU_2019-03-10_223349_9621.jpg">
+    <title><![CDATA[Fauna silvestre | 2do lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/04_3er_FAU_2019-03-04_210536_140.jpg"
+	thumbURL="thumbs/04_3er_FAU_2019-03-04_210536_140.jpg"
+	linkURL="images/04_3er_FAU_2019-03-04_210536_140.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/04_3er_FAU_2019-03-04_210536_140.jpg">
+    <title><![CDATA[Fauna silvestre | 3er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/44_1ER_PLYHON_2019-03-08_235138_13929.jpg"
+	thumbURL="thumbs/44_1ER_PLYHON_2019-03-08_235138_13929.jpg"
+	linkURL="images/44_1ER_PLYHON_2019-03-08_235138_13929.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/44_1ER_PLYHON_2019-03-08_235138_13929.jpg">
+    <title><![CDATA[Plantas y hongos | 1er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/53_2DO_PLYHON_2019-03-06_163841_6302.jpg"
+	thumbURL="thumbs/53_2DO_PLYHON_2019-03-06_163841_6302.jpg"
+	linkURL="images/53_2DO_PLYHON_2019-03-06_163841_6302.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/53_2DO_PLYHON_2019-03-06_163841_6302.jpg">
+    <title><![CDATA[Plantas y hongos | 2do lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/45_3ER_PLYHON_2019-02-13_133934_311.jpg"
+	thumbURL="thumbs/45_3ER_PLYHON_2019-02-13_133934_311.jpg"
+	linkURL="images/45_3ER_PLYHON_2019-02-13_133934_311.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/45_3ER_PLYHON_2019-02-13_133934_311.jpg">
+    <title><![CDATA[Plantas y hongos | 3er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/31_1ER_NATYHUM_2019-03-03_145558_12721.jpg"
+	thumbURL="thumbs/31_1ER_NATYHUM_2019-03-03_145558_12721.jpg"
+	linkURL="images/31_1ER_NATYHUM_2019-03-03_145558_12721.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/31_1ER_NATYHUM_2019-03-03_145558_12721.jpg">
+    <title><![CDATA[Naturaleza y ser humano | 1er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/32_2DO_NATYHUM_2019-03-11_182203_3497.jpg"
+	thumbURL="thumbs/32_2DO_NATYHUM_2019-03-11_182203_3497.jpg"
+	linkURL="images/32_2DO_NATYHUM_2019-03-11_182203_3497.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/32_2DO_NATYHUM_2019-03-11_182203_3497.jpg">
+    <title><![CDATA[Naturaleza y ser humano | 2do lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/34_3ER_NATYHUM_2019-02-26_221510_14821.jpg"
+	thumbURL="thumbs/34_3ER_NATYHUM_2019-02-26_221510_14821.jpg"
+	linkURL="images/34_3ER_NATYHUM_2019-02-26_221510_14821.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/34_3ER_NATYHUM_2019-02-26_221510_14821.jpg">
+    <title><![CDATA[Naturaleza y ser humano | 3er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/58_1ER_PAISA_2019-03-01_143338_9732.jpg"
+	thumbURL="thumbs/58_1ER_PAISA_2019-03-01_143338_9732.jpg"
+	linkURL="images/58_1ER_PAISA_2019-03-01_143338_9732.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/58_1ER_PAISA_2019-03-01_143338_9732.jpg">
+    <title><![CDATA[Paisajes y ecosistemas | 1er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/59_2DO_PAISA_2019-03-08_193611_15093.jpg"
+	thumbURL="thumbs/59_2DO_PAISA_2019-03-08_193611_15093.jpg"
+	linkURL="images/59_2DO_PAISA_2019-03-08_193611_15093.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/59_2DO_PAISA_2019-03-08_193611_15093.jpg">
+    <title><![CDATA[Paisajes y ecosistemas | 2do lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/60_3ER_PAISA_2019-03-09_171916_5662.jpg"
+	thumbURL="thumbs/60_3ER_PAISA_2019-03-09_171916_5662.jpg"
+	linkURL="images/60_3ER_PAISA_2019-03-09_171916_5662.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/60_3ER_PAISA_2019-03-09_171916_5662.jpg">
+    <title><![CDATA[Paisajes y ecosistemas | 3er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/17_1ER_SUB_2019-03-09_132000_132.jpg"
+	thumbURL="thumbs/17_1ER_SUB_2019-03-09_132000_132.jpg"
+	linkURL="images/17_1ER_SUB_2019-03-09_132000_132.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/17_1ER_SUB_2019-03-09_132000_132.jpg">
+    <title><![CDATA[Subacuática | 1er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/23_2DO_SUB_2019-02-28_113419_1738.jpg"
+	thumbURL="thumbs/23_2DO_SUB_2019-02-28_113419_1738.jpg"
+	linkURL="images/23_2DO_SUB_2019-02-28_113419_1738.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/23_2DO_SUB_2019-02-28_113419_1738.jpg">
+    <title><![CDATA[Subacuática | 2do lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/25_3ER_SUB_2019-03-10_120857_15111.jpg"
+	thumbURL="thumbs/25_3ER_SUB_2019-03-10_120857_15111.jpg"
+	linkURL="images/25_3ER_SUB_2019-03-10_120857_15111.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/25_3ER_SUB_2019-03-10_120857_15111.jpg">
+    <title><![CDATA[Subacuática | 3er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/69_1ER_MACRO_2019-02-14_125926_154.jpg"
+	thumbURL="thumbs/69_1ER_MACRO_2019-02-14_125926_154.jpg"
+	linkURL="images/69_1ER_MACRO_2019-02-14_125926_154.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/69_1ER_MACRO_2019-02-14_125926_154.jpg">
+    <title><![CDATA[Pequeños gigantes | 1er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/71_2DO_MACRO_2019-03-02_113647_14942.jpg"
+	thumbURL="thumbs/71_2DO_MACRO_2019-03-02_113647_14942.jpg"
+	linkURL="images/71_2DO_MACRO_2019-03-02_113647_14942.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/71_2DO_MACRO_2019-03-02_113647_14942.jpg">
+    <title><![CDATA[Pequeños gigantes | 2do lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/74_3ER_MACRO_2019-03-10_234918_7967.jpg"
+	thumbURL="thumbs/74_3ER_MACRO_2019-03-10_234918_7967.jpg"
+	linkURL="images/74_3ER_MACRO_2019-03-10_234918_7967.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/74_3ER_MACRO_2019-03-10_234918_7967.jpg">
+    <title><![CDATA[Pequeños gigantes | 3er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/80_1ER_JUV_2019-03-10_234417_15626.jpg"
+	thumbURL="thumbs/80_1ER_JUV_2019-03-10_234417_15626.jpg"
+	linkURL="images/80_1ER_JUV_2019-03-10_234417_15626.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/80_1ER_JUV_2019-03-10_234417_15626.jpg">
+    <title><![CDATA[Jóvenes | 1er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/81_2DO_JUV_2019-03-10_171307_15557.jpg"
+	thumbURL="thumbs/81_2DO_JUV_2019-03-10_171307_15557.jpg"
+	linkURL="images/81_2DO_JUV_2019-03-10_171307_15557.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/81_2DO_JUV_2019-03-10_171307_15557.jpg">
+    <title><![CDATA[Jóvenes | 2do lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/83_3ER_JUV_2019-03-09_001838_15374.jpg"
+	thumbURL="thumbs/83_3ER_JUV_2019-03-09_001838_15374.jpg"
+	linkURL="images/83_3ER_JUV_2019-03-09_001838_15374.jpg"
+	linkTarget="_blank"
+	sourcePath="/Volumes/flopez/public_html/mosaico_natura/galerias/2019/fauna2/images/83_3ER_JUV_2019-03-09_001838_15374.jpg">
+    <title><![CDATA[Jóvenes | 3er lugar]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

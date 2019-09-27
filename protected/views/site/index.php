@@ -2,7 +2,7 @@
 
 <header class="row">
 	<div class="col-xs-12 intro-body">
-		<img src="img/bg-intro.gif" class="img-responsive">
+		<img src="img/bg-intro-6.jpg" class="img-responsive">
 		<a href="#about" class="btn btn-circle page-scroll">
 			<i class="fa fa-angle-double-down animated"></i>
 		</a>
