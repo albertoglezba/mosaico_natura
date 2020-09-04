@@ -258,6 +258,7 @@
 <section id="expos" class="content-section text-center Sexpo">
 	<div class="expos-header">
 		<div class="container">
+
 			<div class="col-lg-12">
 				<h2>EXPOSICIONES Y PUBLICACIONES</h2>
 			
@@ -270,33 +271,36 @@
 			
 			<div class="col-md-4">
 				<h3><a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/7796/index.html" style="color: darkred" target="_blank">&quot;Visiones de nuestra naturaleza I&quot;</a></h3>
-				<p>Finalistas del Primer Concurso Nacional <br> de Fotograf&iacute;a de Naturaleza</p>
+				<p>Finalistas del primer concurso</p>
 				<hr>
 				<h3><a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/14172/index.html" style="color: darkred" target="_blank">&quot;Visiones de nuestra naturaleza IV&quot;</a></h3>
-				<p>Finalistas del Cuarto Concurso Nacional <br> de Fotograf&iacute;a de Naturaleza</p>
+				<p>Finalistas del cuarto concurso</p>
+				<hr>
+				<h3><a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/15237/index.html" style="color: darkred" target="_blank">&quot;Visiones de nuestra naturaleza: 5 años de naturaleza y arte</a></h3>
+				<p>Recopilación de las mejores fotografías que han participado en el concurso durante 2015-2019</p>
 			</div>
 			
 			
 			<div class="col-md-4">
 				<h3><a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/12546/index.html" style="color: darkred" target="_blank">&quot;Visiones de nuestra naturaleza II&quot;</a></h3>
-				<p>Finalistas del Segundo Concurso Nacional<br>de Fotograf&iacute;a de Naturaleza</p>
+				<p>Finalistas del segundo concurso</p>
 				<hr>
 				<h3><a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/14865/index.html" style="color: darkred" target="_blank">&quot;Visiones de nuestra naturaleza V&quot;</a></h3>
-				<p>Finalistas del Quinto Concurso Nacional<br>de Fotograf&iacute;a de Naturaleza</p>
+				<p>Finalistas del quinto concurso</p>
 			
 			</div>
 			
 			
 			<div class="col-md-4">
 				<h3><a href="http://bioteca.biodiversidad.gob.mx/janium/Galerias/13010/index.html" style="color: darkred" target="_blank">&quot;Visiones de nuestra naturaleza III&quot;</a></h3>
-				<p>Finalistas del Tercer Concurso Nacional<br>de Fotograf&iacute;a de Naturaleza</p>
+				<p>Finalistas del tercer concurso</p>
 				<hr>
 				<h3 style="color: darkred">ANTERIORES</h3>
 				<p><a href="http://bdi.conabio.gob.mx/fotoweb/archives/5032-Exposiciones/Exposiciones/25%20Miradas%20al%20Bosque/" style="color: darkred" target="_blank">&quot;25 Miradas al Bosque&quot;</a></p>
 				<p><a href="http://bdi.conabio.gob.mx/fotoweb/archives/5032-Exposiciones/Exposiciones/Biodiversidad%20mexicana%20riqueza%20natural%20de%20M%C3%A9xico%20MuseoHN/" style="color: darkred" target="_blank">&quot;Biodiversidad Mexicana&quot;</a></p>
 				<p>&quot;creArte conCiencia&quot;</p>
 				<hr>
-				<p><a href="http://www.biodiversidad.gob.mx/Difusion/exposiciones.html" style="color: darkred" target="_blank">Otras exposiciones</a></p>
+				<p><a href="https://www.biodiversidad.gob.mx/conabio/exposiciones" style="color: darkred" target="_blank">Otras exposiciones</a></p>
 				<p>&nbsp;</p>
 			</div>
 		</div>
